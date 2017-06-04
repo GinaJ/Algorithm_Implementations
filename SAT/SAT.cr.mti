@@ -1,0 +1,233 @@
+C:/Users/Gina/Desktop/SAT/0_iv.vhd {1 {vcom -work work -2002 -explicit C:/Users/Gina/Desktop/SAT/0_iv.vhd
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity iv
+-- Compiling architecture behavioral of iv
+-- Compiling configuration cfg_iv_behavioral
+-- Loading entity iv
+-- Loading architecture behavioral of iv
+
+} {} {}} C:/Users/Gina/Desktop/SAT/05_ALU_P4_sum_generator_generic.vhd {1 {vcom -work work -2002 -explicit C:/Users/Gina/Desktop/SAT/05_ALU_P4_sum_generator_generic.vhd
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package std_logic_unsigned
+-- Compiling entity sum_generator
+-- Compiling architecture structural of sum_generator
+
+} {} {}} C:/Users/Gina/Desktop/SAT/s1_pipeline.vhd {1 {vcom -work work -2002 -explicit C:/Users/Gina/Desktop/SAT/s1_pipeline.vhd
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package numeric_std
+-- Loading package mytypes
+-- Compiling entity pipeline
+-- Compiling architecture behavioral of pipeline
+
+} {} {}} C:/Users/Gina/Desktop/SAT/s1_sat_plane.vhd {1 {vcom -work work -2002 -explicit C:/Users/Gina/Desktop/SAT/s1_sat_plane.vhd
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package std_logic_unsigned
+-- Loading package numeric_std
+-- Loading package mytypes
+-- Compiling entity sat_plane
+-- Compiling architecture struct_sat_plane of sat_plane
+
+} {} {}} C:/Users/Gina/Desktop/SAT/0_AND_2.vhd {1 {vcom -work work -2002 -explicit C:/Users/Gina/Desktop/SAT/0_AND_2.vhd
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity and_2
+-- Compiling architecture arch1 of and_2
+-- Compiling architecture arch2 of and_2
+-- Loading entity and_2
+-- Compiling configuration cfg_and2_arch1
+-- Loading entity and_2
+-- Loading architecture arch1 of and_2
+-- Compiling configuration cfg_and2_arch2
+-- Loading entity and_2
+-- Loading architecture arch2 of and_2
+
+} {} {}} C:/Users/Gina/Desktop/SAT/01_ALU_P4_fa.vhd {1 {vcom -work work -2002 -explicit C:/Users/Gina/Desktop/SAT/01_ALU_P4_fa.vhd
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity fa
+-- Compiling architecture behavioral of fa
+
+} {} {}} C:/Users/Gina/Desktop/SAT/matrix_sat.vhd {1 {vcom -work work -2002 -explicit C:/Users/Gina/Desktop/SAT/matrix_sat.vhd
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package numeric_std
+-- Loading package textio
+-- Loading package std_logic_textio
+-- Loading package mytypes
+-- Compiling entity matrix_sat
+-- Compiling architecture matrix_sat_bhe of matrix_sat
+
+} {} {}} C:/Users/Gina/Desktop/SAT/tb_sat.vhd {1 {vcom -work work -2002 -explicit C:/Users/Gina/Desktop/SAT/tb_sat.vhd
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package mytypes
+-- Compiling entity tb_sat
+-- Compiling architecture test of tb_sat
+
+} {} {}} C:/Users/Gina/Desktop/SAT/matrix_A.vhd {1 {vcom -work work -2002 -explicit C:/Users/Gina/Desktop/SAT/matrix_A.vhd
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package numeric_std
+-- Loading package textio
+-- Loading package std_logic_textio
+-- Loading package mytypes
+-- Compiling entity matrix_a
+-- Compiling architecture matrix_a_bhe of matrix_a
+
+} {} {}} C:/Users/Gina/Desktop/SAT/04_ALU_P4_sparse_tree_carry_gen.vhd {1 {vcom -work work -2002 -explicit C:/Users/Gina/Desktop/SAT/04_ALU_P4_sparse_tree_carry_gen.vhd
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package std_logic_unsigned
+-- Compiling entity sparce_tree
+-- Compiling architecture structural of sparce_tree
+
+} {} {}} C:/Users/Gina/Desktop/SAT/02_ALU_P4_rca_generic.vhd {1 {vcom -work work -2002 -explicit C:/Users/Gina/Desktop/SAT/02_ALU_P4_rca_generic.vhd
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package std_logic_unsigned
+-- Compiling entity rca_generic
+-- Compiling architecture structural of rca_generic
+-- Compiling architecture behavioral of rca_generic
+-- Loading entity rca_generic
+
+} {} {}} C:/Users/Gina/Desktop/SAT/0_MUX21_generic.vhd {0 {vcom -work work -2002 -explicit C:/Users/Gina/Desktop/SAT/0_MUX21_generic.vhd
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity mux21_generic
+-- Compiling architecture behavioral of mux21_generic
+-- Compiling architecture structural of mux21_generic
+-- Loading entity mux21_generic
+-- Compiling configuration cfg_mux21_gen_behavioral
+-- Loading entity mux21_generic
+-- Loading architecture behavioral of mux21_generic
+-- Compiling configuration cfg_mux21_gen_structural
+-- Loading entity mux21_generic
+-- Loading architecture structural of mux21_generic
+-- Loading entity iv
+-- Loading configuration cfg_iv_behavioral
+** Error: (vcom-11) Could not find work.cfg_nd2_arch2.
+** Error: C:/Users/Gina/Desktop/SAT/0_MUX21_generic.vhd(73): (vcom-1195) Cannot find expanded name "work.cfg_nd2_arch2".
+** Error: C:/Users/Gina/Desktop/SAT/0_MUX21_generic.vhd(73): (vcom-1106) Name (expanded name) is not a configuration name.
+** Error: C:/Users/Gina/Desktop/SAT/0_MUX21_generic.vhd(73): Unknown expanded name.
+** Error: C:/Users/Gina/Desktop/SAT/0_MUX21_generic.vhd(77): VHDL Compiler exiting
+
+} {17.0 22.0} {}} C:/Users/Gina/Desktop/SAT/0_block_pg.vhd {1 {vcom -work work -2002 -explicit C:/Users/Gina/Desktop/SAT/0_block_pg.vhd
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity block_pg
+-- Compiling architecture behavioral of block_pg
+-- Compiling configuration cfg_block_pg_behavioral
+-- Loading entity block_pg
+-- Loading architecture behavioral of block_pg
+
+} {} {}} C:/Users/Gina/Desktop/SAT/0_block_g.vhd {1 {vcom -work work -2002 -explicit C:/Users/Gina/Desktop/SAT/0_block_g.vhd
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity block_g
+-- Compiling architecture behavioral of block_g
+-- Compiling configuration cfg_block_g_behavioral
+-- Loading entity block_g
+-- Loading architecture behavioral of block_g
+
+} {} {}} C:/Users/Gina/Desktop/SAT/s0_sat_cell.vhd {1 {vcom -work work -2002 -explicit C:/Users/Gina/Desktop/SAT/s0_sat_cell.vhd
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package numeric_std
+-- Loading package mytypes
+-- Compiling entity sat_cell
+-- Compiling architecture struct_sat_cell of sat_cell
+
+} {} {}} C:/Users/Gina/Desktop/SAT/03_EXECUTE_ALU_P4_cs_generic.vhd {1 {vcom -work work -2002 -explicit C:/Users/Gina/Desktop/SAT/03_EXECUTE_ALU_P4_cs_generic.vhd
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package std_logic_unsigned
+-- Compiling entity cs_generic
+-- Compiling architecture structural of cs_generic
+
+} {} {}} C:/Users/Gina/Desktop/SAT/0_mux1.vhd {0 {vcom -work work -2002 -explicit C:/Users/Gina/Desktop/SAT/0_mux1.vhd
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity mux1
+-- Compiling architecture behavioral of mux1
+-- Compiling architecture structural of mux1
+-- Loading entity mux1
+-- Compiling configuration cfg_mux21_behavioral
+-- Loading entity mux1
+-- Loading architecture behavioral of mux1
+-- Compiling configuration cfg_mux21_structural
+-- Loading entity mux1
+-- Loading architecture structural of mux1
+-- Loading entity iv
+-- Loading configuration cfg_iv_behavioral
+** Error: (vcom-11) Could not find work.cfg_nd2_arch2.
+** Error: C:/Users/Gina/Desktop/SAT/0_mux1.vhd(71): (vcom-1195) Cannot find expanded name "work.cfg_nd2_arch2".
+** Error: C:/Users/Gina/Desktop/SAT/0_mux1.vhd(71): (vcom-1106) Name (expanded name) is not a configuration name.
+** Error: C:/Users/Gina/Desktop/SAT/0_mux1.vhd(71): Unknown expanded name.
+** Error: C:/Users/Gina/Desktop/SAT/0_mux1.vhd(75): VHDL Compiler exiting
+
+} {17.0 22.0} {}} C:/Users/Gina/Desktop/SAT/000_myTypes.vhd {1 {vcom -work work -2002 -explicit C:/Users/Gina/Desktop/SAT/000_myTypes.vhd
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling package mytypes
+
+} {} {}} C:/Users/Gina/Desktop/SAT/06_ALU_P4adder.vhd {1 {vcom -work work -2002 -explicit C:/Users/Gina/Desktop/SAT/06_ALU_P4adder.vhd
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package std_logic_unsigned
+-- Compiling entity p4adder
+-- Compiling architecture structural of p4adder
+
+} {} {}} C:/Users/Gina/Desktop/SAT/0_nd2.vhd {1 {vcom -work work -2002 -explicit C:/Users/Gina/Desktop/SAT/0_nd2.vhd
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity nd2
+-- Compiling architecture arch1 of nd2
+-- Compiling architecture arch2 of nd2
+-- Loading entity nd2
+-- Compiling configuration cfg_nd2_arch1
+-- Loading entity nd2
+-- Loading architecture arch1 of nd2
+-- Compiling configuration cfg_nd2_arch2
+-- Loading entity nd2
+-- Loading architecture arch2 of nd2
+
+} {} {}} C:/Users/Gina/Desktop/SAT/s2_sat.vhd {1 {vcom -work work -2002 -explicit C:/Users/Gina/Desktop/SAT/s2_sat.vhd
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package numeric_std
+-- Loading package mytypes
+-- Compiling entity sat
+-- Compiling architecture struct_sat of sat
+
+} {} {}}
