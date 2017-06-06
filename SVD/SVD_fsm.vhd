@@ -26,13 +26,49 @@ architecture beh_svd of svd_fsm is
   constant total_bit: natural :=N_int+N_float;
   
   signal state : std_logic_vector(2 downto 0);
-  signal sum, product, lambda1, lambda2 : std_logic_vector(total_bit - 1 downto 0);
+  signal zero_float : std_logic_vector((N_float/2)-1 downto 0);
+  signal zero_int : std_logic_vector((N_int/2)-1 downto 0);
+  signal sum, product, lambda1, lambda2, zero : std_logic_vector(total_bit - 1 downto 0);
   --to store the value of the matrix
   type t11 is array (0 to N_size - 1) of std_logic_vector(total_bit - 1 downto 0);
   type t1 is array (0 to N_size -1) of t11;
   Signal C, CTC, Sigma, U, V, CTC_lambdaI : t1;
   
+  
+  function  sqrt  ( d : UNSIGNED ) return UNSIGNED is
+      variable a : unsigned((N_int+N_float)-1 downto 0):=d;  --original input.
+      variable q : unsigned(((N_int+N_float)/2)-1 downto 0):=(others => '0');  --result.
+      variable left,right,r : unsigned(((N_int+N_float)/2)+1 downto 0):=(others => '0');  --input to adder/sub.r-remainder.
+      variable i : integer:=0;
+
+      begin
+          for i in 0 to ((N_int+N_float)/2)-1 loop
+                  right(0):='1';
+                  right(1):=r(((N_int+N_float)/2)+1);
+                  right(((N_int+N_float)/2)+1 downto 2):=q;
+                  left(1 downto 0):=a((N_int+N_float)-1 downto (N_int+N_float)-2);
+                  left(((N_int+N_float)/2)+1 downto 2):=r(((N_int+N_float)/2)-1  downto 0);
+                  a((N_int+N_float)-1 downto 2):=a((N_int+N_float)-3 downto 0);  --shifting by 2 bit.
+                  if ( r(((N_int+N_float)/2)+1) = '1') then
+                  r := left + right;
+                  else
+                  r := left - right;
+                  end if;
+                  q(((N_int+N_float)/2)-1 downto 1) := q(((N_int+N_float)/2)-2 downto 0);
+                  q(0) := not r(((N_int+N_float)/2)+1);
+          end loop; 
+      return q;
+
+      end sqrt;
+  
+  
+    
+    
+  
   begin
+        zero_int <=(others=>'0');
+        zero_float <=(others=>'0');
+        zero <=(others=>'0');
       matrix_fill: process (rst)
         begin
         if (rst='1' and rst'event) then
@@ -47,6 +83,7 @@ architecture beh_svd of svd_fsm is
        
        SVD_fill: process (clk)
         begin
+
         if (clk='1' and rst'event) then
             case state is
             
@@ -73,6 +110,20 @@ architecture beh_svd of svd_fsm is
             CTC_lambdaI(0)(1)<=CTC(0)(1);
             CTC_lambdaI(1)(0)<=CTC(1)(1);
             CTC_lambdaI(1)(1)<=std_logic_vector(to_signed(to_integer(signed(CTC(1)(1))-signed(lambda2)),(n_int+N_float)));
+            
+            --building the Sigma amtrix
+            Sigma(0)(0)((N_int+N_float)-1 downto((N_int)/2+N_float))<=zero_int;
+            Sigma(0)(0)((N_float/2)-1 downto(0))<=zero_float;
+            Sigma(0)(0)(((N_int)/2+N_float)-1 downto (N_float/2))<= std_logic_vector(sqrt(unsigned(lambda1))); 
+            
+            Sigma(0)(1)<=zero;
+            Sigma(1)(0)<=zero;
+            
+            Sigma(1)(1)((N_int+N_float)-1 downto((N_int)/2+N_float))<=zero_int;
+            Sigma(1)(1)((N_float/2)-1 downto(0))<=zero_float;
+            Sigma(1)(1)(((N_int)/2+N_float)-1 downto (N_float/2))<= std_logic_vector(sqrt(unsigned(lambda2))); 
+            
+            state <="100";
             when others =>             
              end case; 
         end if;
