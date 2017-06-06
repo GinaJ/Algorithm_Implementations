@@ -30,7 +30,7 @@ architecture beh_svd of svd_fsm is
   --to store the value of the matrix
   type t11 is array (0 to N_size - 1) of std_logic_vector(total_bit - 1 downto 0);
   type t1 is array (0 to N_size -1) of t11;
-  Signal C, CTC, Sigma, U, V : t1;
+  Signal C, CTC, Sigma, U, V, CTC_lambdaI : t1;
   
   begin
       matrix_fill: process (rst)
@@ -63,9 +63,16 @@ architecture beh_svd of svd_fsm is
              product <=std_logic_vector(to_signed(to_integer((signed(c(0)(0))*signed(c(1)(1)))-(signed(c(1)(0))*signed(c(0)(1)))),(n_int+N_float)));
              state <="010";
             when "010" =>
+            --find the eigenvalue
             lambda1<=std_logic_vector(to_signed(((to_integer((signed(sum)+(signed(sum)*signed(sum))-(4*signed(product)))))/2),(n_int+N_float)));
             lambda2<=std_logic_vector(to_signed(((to_integer((signed(sum)-(signed(sum)*signed(sum))-(4*signed(product)))))/2),(n_int+N_float)));
-            
+            state <="011";
+            when "011"=>
+            --building the matrix CTC-lambdaI
+            CTC_lambdaI(0)(0)<=std_logic_vector(to_signed(to_integer(signed(CTC(0)(0))-signed(lambda1)),(n_int+N_float)));
+            CTC_lambdaI(0)(1)<=CTC(0)(1);
+            CTC_lambdaI(1)(0)<=CTC(1)(1);
+            CTC_lambdaI(1)(1)<=std_logic_vector(to_signed(to_integer(signed(CTC(1)(1))-signed(lambda2)),(n_int+N_float)));
             when others =>             
              end case; 
         end if;
