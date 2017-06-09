@@ -1,3 +1,6 @@
+--(C) Gina Jiang
+--gina.jiang.93@email.com
+
 library IEEE;
 use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
