@@ -29,6 +29,10 @@ architecture beh_svd of svd_fsm is
   signal zero_float : std_logic_vector((N_float/2)-1 downto 0);
   signal zero_int : std_logic_vector((N_int/2)-1 downto 0);
   signal sum, product, lambda1, lambda2, zero : std_logic_vector(total_bit - 1 downto 0);
+  
+  type v1 is array (0 to N_size - 1) of std_logic_vector(total_bit - 1 downto 0);
+  signal eigenvector1, eigenvector2:v1;
+  
   --to store the value of the matrix
   type t11 is array (0 to N_size - 1) of std_logic_vector(total_bit - 1 downto 0);
   type t1 is array (0 to N_size -1) of t11;
