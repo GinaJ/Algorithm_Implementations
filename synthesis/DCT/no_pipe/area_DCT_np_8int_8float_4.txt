@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : DCT_TOP_N_int8_N_float8_N_size4
+Version: F-2011.09-SP3
+Date   : Thu May 25 15:52:38 2017
+****************************************
+
+Information: Updating design information... (UID-85)
+Warning: Design 'DCT_TOP_N_int8_N_float8_N_size4' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+Library(s) Used:
+
+    C28SOI_SC_12_CORE_LL (File: /software/design-kits/cmp/28nm_fdsoi/v2p4/C28SOI_SC_12_CORE_LL@2.2@20131004.0/libs/C28SOI_SC_12_CORE_LL_tt28_0.90V_0.00V_0.00V_0.00V_25C.db)
+
+Number of ports:                          354
+Number of nets:                           856
+Number of cells:                           68
+Number of combinational cells:             37
+Number of sequential cells:                 0
+Number of macros:                           0
+Number of buf/inv:                         37
+Number of references:                      32
+
+Combinational area:       69551.108109
+Noncombinational area:     250.675209
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:          69801.783318
+Total area:                 undefined
+1

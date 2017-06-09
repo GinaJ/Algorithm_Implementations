@@ -1,0 +1,533 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : TEP_TOP_size3_Nbit16
+Version: F-2011.09-SP3
+Date   : Sat May 27 18:57:36 2017
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: tt28_0.90V_0.00V_0.00V_0.00V_25C   Library: C28SOI_SC_12_CORE_LL
+Wire Load Model Mode: enclosed
+
+  Startpoint: IN_tep[128]
+              (input port)
+  Endpoint: out_tep[223]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  TEP_TOP_size3_Nbit16
+                     wl_zero               C28SOI_SC_12_CORE_LL
+  RCA_generic_N4_1272
+                     wl_zero               C28SOI_SC_12_CORE_LL
+  cs_generic_N4_636  wl_zero               C28SOI_SC_12_CORE_LL
+  MUX21_GENERIC_N4_636
+                     wl_zero               C28SOI_SC_12_CORE_LL
+  TEP_unit_Nbit16_8  wl_zero               C28SOI_SC_12_CORE_LL
+  sparce_tree_POWER4_8
+                     wl_zero               C28SOI_SC_12_CORE_LL
+  P4adder_N16_PowerN4_8
+                     wl_zero               C28SOI_SC_12_CORE_LL
+  MUX21_GENERIC_N4_479
+                     wl_zero               C28SOI_SC_12_CORE_LL
+  booth_mul_red_Nbit16_8
+                     wl_zero               C28SOI_SC_12_CORE_LL
+  MUX21_GENERIC_N32_255
+                     wl_zero               C28SOI_SC_12_CORE_LL
+  booth_mux_generic_N32_64
+                     wl_zero               C28SOI_SC_12_CORE_LL
+  MUX21_GENERIC_N32_254
+                     wl_zero               C28SOI_SC_12_CORE_LL
+  MUX21_GENERIC_N32_253
+                     wl_zero               C28SOI_SC_12_CORE_LL
+  sparce_tree_POWER5_56
+                     wl_zero               C28SOI_SC_12_CORE_LL
+  P4adder_N32_PowerN5_56
+                     wl_zero               C28SOI_SC_12_CORE_LL
+  MUX21_GENERIC_N4_473
+                     wl_zero               C28SOI_SC_12_CORE_LL
+  cs_generic_N4_465  wl_zero               C28SOI_SC_12_CORE_LL
+  MUX21_GENERIC_N4_465
+                     wl_zero               C28SOI_SC_12_CORE_LL
+  cs_generic_N4_457  wl_zero               C28SOI_SC_12_CORE_LL
+  MUX21_GENERIC_N4_457
+                     wl_zero               C28SOI_SC_12_CORE_LL
+  cs_generic_N4_449  wl_zero               C28SOI_SC_12_CORE_LL
+  MUX21_GENERIC_N4_449
+                     wl_zero               C28SOI_SC_12_CORE_LL
+  cs_generic_N4_441  wl_zero               C28SOI_SC_12_CORE_LL
+  MUX21_GENERIC_N4_441
+                     wl_zero               C28SOI_SC_12_CORE_LL
+  cs_generic_N4_433  wl_zero               C28SOI_SC_12_CORE_LL
+  MUX21_GENERIC_N4_433
+                     wl_zero               C28SOI_SC_12_CORE_LL
+  cs_generic_N4_425  wl_zero               C28SOI_SC_12_CORE_LL
+  MUX21_GENERIC_N4_425
+                     wl_zero               C28SOI_SC_12_CORE_LL
+  RCA_generic_N4_1250
+                     wl_zero               C28SOI_SC_12_CORE_LL
+  cs_generic_N4_625  wl_zero               C28SOI_SC_12_CORE_LL
+  MUX21_GENERIC_N4_625
+                     wl_zero               C28SOI_SC_12_CORE_LL
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  input external delay                                    0.00       0.00 f
+  IN_tep[128] (in)                                        0.00       0.00 f
+  tep0_1_2/tsx[0] (TEP_unit_Nbit16_8)                     0.00       0.00 f
+  tep0_1_2/add_0/A[0] (P4adder_N16_PowerN4_33)            0.00       0.00 f
+  tep0_1_2/add_0/USum_generator/A[0] (Sum_generator_Nbit16_Nblock4_33)
+                                                          0.00       0.00 f
+  tep0_1_2/add_0/USum_generator/cs_gen_1/A[0] (cs_generic_N4_636)
+                                                          0.00       0.00 f
+  tep0_1_2/add_0/USum_generator/cs_gen_1/UADDER1/A[0] (RCA_generic_N4_1272)
+                                                          0.00       0.00 f
+  tep0_1_2/add_0/USum_generator/cs_gen_1/UADDER1/add_1_root_add_46_2/U1_0/CO (C12T28SOI_LL_FA1X8_P0)
+                                                          0.03       0.03 f
+  tep0_1_2/add_0/USum_generator/cs_gen_1/UADDER1/add_1_root_add_46_2/U1_1/CO (C12T28SOI_LL_FA1X8_P0)
+                                                          0.04       0.07 f
+  tep0_1_2/add_0/USum_generator/cs_gen_1/UADDER1/add_1_root_add_46_2/U1_2/CO (C12T28SOI_LL_FA1X8_P0)
+                                                          0.04       0.11 f
+  tep0_1_2/add_0/USum_generator/cs_gen_1/UADDER1/add_1_root_add_46_2/U1_3/S0 (C12T28SOI_LL_FA1X8_P0)
+                                                          0.05       0.16 r
+  tep0_1_2/add_0/USum_generator/cs_gen_1/UADDER1/S[3] (RCA_generic_N4_1272)
+                                                          0.00       0.16 r
+  tep0_1_2/add_0/USum_generator/cs_gen_1/U1/A[3] (MUX21_GENERIC_N4_636)
+                                                          0.00       0.16 r
+  tep0_1_2/add_0/USum_generator/cs_gen_1/U1/UND2_3/A (ND2_7631)
+                                                          0.00       0.16 r
+  tep0_1_2/add_0/USum_generator/cs_gen_1/U1/UND2_3/U1/Z (C12T28SOI_LL_NAND2X3_P0)
+                                                          0.01       0.17 f
+  tep0_1_2/add_0/USum_generator/cs_gen_1/U1/UND2_3/Y (ND2_7631)
+                                                          0.00       0.17 f
+  tep0_1_2/add_0/USum_generator/cs_gen_1/U1/UND3_3/B (ND2_7630)
+                                                          0.00       0.17 f
+  tep0_1_2/add_0/USum_generator/cs_gen_1/U1/UND3_3/U1/Z (C12T28SOI_LL_NAND2X3_P0)
+                                                          0.04       0.21 r
+  tep0_1_2/add_0/USum_generator/cs_gen_1/U1/UND3_3/Y (ND2_7630)
+                                                          0.00       0.21 r
+  tep0_1_2/add_0/USum_generator/cs_gen_1/U1/Y[3] (MUX21_GENERIC_N4_636)
+                                                          0.00       0.21 r
+  tep0_1_2/add_0/USum_generator/cs_gen_1/S[3] (cs_generic_N4_636)
+                                                          0.00       0.21 r
+  tep0_1_2/add_0/USum_generator/S[3] (Sum_generator_Nbit16_Nblock4_33)
+                                                          0.00       0.21 r
+  tep0_1_2/add_0/S[3] (P4adder_N16_PowerN4_33)            0.00       0.21 r
+  tep0_1_2/sub_0/A[3] (SUB_P4adder_N16_PowerN4_8)         0.00       0.21 r
+  tep0_1_2/sub_0/sub_0/A[3] (P4adder_N16_PowerN4_8)       0.00       0.21 r
+  tep0_1_2/sub_0/sub_0/Usparce_tree/A[4] (sparce_tree_POWER4_8)
+                                                          0.00       0.21 r
+  tep0_1_2/sub_0/sub_0/Usparce_tree/U7/Z (C12T28SOI_LLS_XOR2X6_P0)
+                                                          0.04       0.25 r
+  tep0_1_2/sub_0/sub_0/Usparce_tree/blkpg_1_2/Pik (block_pg_1600)
+                                                          0.00       0.25 r
+  tep0_1_2/sub_0/sub_0/Usparce_tree/blkpg_1_2/U1/Z (C12T28SOI_LL_AND2X8_P0)
+                                                          0.03       0.28 r
+  tep0_1_2/sub_0/sub_0/Usparce_tree/blkpg_1_2/Pij (block_pg_1600)
+                                                          0.00       0.28 r
+  tep0_1_2/sub_0/sub_0/Usparce_tree/blkg_2_1/Pik (block_g_606)
+                                                          0.00       0.28 r
+  tep0_1_2/sub_0/sub_0/Usparce_tree/blkg_2_1/U1/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       0.30 r
+  tep0_1_2/sub_0/sub_0/Usparce_tree/blkg_2_1/Gij (block_g_606)
+                                                          0.00       0.30 r
+  tep0_1_2/sub_0/sub_0/Usparce_tree/Cout[1] (sparce_tree_POWER4_8)
+                                                          0.00       0.30 r
+  tep0_1_2/sub_0/sub_0/USum_generator/Ci[1] (Sum_generator_Nbit16_Nblock4_8)
+                                                          0.00       0.30 r
+  tep0_1_2/sub_0/sub_0/USum_generator/cs_gen_2/Ci (cs_generic_N4_479)
+                                                          0.00       0.30 r
+  tep0_1_2/sub_0/sub_0/USum_generator/cs_gen_2/U1/SEL (MUX21_GENERIC_N4_479)
+                                                          0.00       0.30 r
+  tep0_1_2/sub_0/sub_0/USum_generator/cs_gen_2/U1/UIV/A (IV_479)
+                                                          0.00       0.30 r
+  tep0_1_2/sub_0/sub_0/USum_generator/cs_gen_2/U1/UIV/U1/Z (C12T28SOI_LL_IVX4_P0)
+                                                          0.02       0.32 f
+  tep0_1_2/sub_0/sub_0/USum_generator/cs_gen_2/U1/UIV/Y (IV_479)
+                                                          0.00       0.32 f
+  tep0_1_2/sub_0/sub_0/USum_generator/cs_gen_2/U1/UND2_0/B (ND2_5738)
+                                                          0.00       0.32 f
+  tep0_1_2/sub_0/sub_0/USum_generator/cs_gen_2/U1/UND2_0/U1/Z (C12T28SOI_LL_NAND2X3_P0)
+                                                          0.01       0.33 r
+  tep0_1_2/sub_0/sub_0/USum_generator/cs_gen_2/U1/UND2_0/Y (ND2_5738)
+                                                          0.00       0.33 r
+  tep0_1_2/sub_0/sub_0/USum_generator/cs_gen_2/U1/UND3_0/B (ND2_5737)
+                                                          0.00       0.33 r
+  tep0_1_2/sub_0/sub_0/USum_generator/cs_gen_2/U1/UND3_0/U1/Z (C12T28SOI_LL_NAND2X3_P0)
+                                                          0.05       0.38 f
+  tep0_1_2/sub_0/sub_0/USum_generator/cs_gen_2/U1/UND3_0/Y (ND2_5737)
+                                                          0.00       0.38 f
+  tep0_1_2/sub_0/sub_0/USum_generator/cs_gen_2/U1/Y[0] (MUX21_GENERIC_N4_479)
+                                                          0.00       0.38 f
+  tep0_1_2/sub_0/sub_0/USum_generator/cs_gen_2/S[0] (cs_generic_N4_479)
+                                                          0.00       0.38 f
+  tep0_1_2/sub_0/sub_0/USum_generator/S[4] (Sum_generator_Nbit16_Nblock4_8)
+                                                          0.00       0.38 f
+  tep0_1_2/sub_0/sub_0/S[4] (P4adder_N16_PowerN4_8)       0.00       0.38 f
+  tep0_1_2/sub_0/S[4] (SUB_P4adder_N16_PowerN4_8)         0.00       0.38 f
+  tep0_1_2/mult_0/A[4] (booth_mul_red_Nbit16_8)           0.00       0.38 f
+  tep0_1_2/mult_0/U53/Z (C12T28SOI_LL_IVX4_P0)            0.11       0.50 r
+  tep0_1_2/mult_0/add_83_C111/U1_1_5/CO (C12T28SOI_LL_HA1X8_P0)
+                                                          0.07       0.56 r
+  tep0_1_2/mult_0/add_83_C111/U1_1_6/CO (C12T28SOI_LL_HA1X8_P0)
+                                                          0.03       0.59 r
+  tep0_1_2/mult_0/add_83_C111/U1_1_7/CO (C12T28SOI_LL_HA1X8_P0)
+                                                          0.03       0.62 r
+  tep0_1_2/mult_0/add_83_C111/U1_1_8/CO (C12T28SOI_LL_HA1X8_P0)
+                                                          0.03       0.64 r
+  tep0_1_2/mult_0/add_83_C111/U1_1_9/CO (C12T28SOI_LL_HA1X8_P0)
+                                                          0.03       0.67 r
+  tep0_1_2/mult_0/add_83_C111/U1_1_10/CO (C12T28SOI_LL_HA1X8_P0)
+                                                          0.03       0.70 r
+  tep0_1_2/mult_0/add_83_C111/U1_1_11/S0 (C12T28SOI_LL_HA1X8_P0)
+                                                          0.04       0.74 f
+  tep0_1_2/mult_0/Muxes_0/A_neg_double[11] (booth_mux_generic_N32_64)
+                                                          0.00       0.74 f
+  tep0_1_2/mult_0/Muxes_0/mux2/B[11] (MUX21_GENERIC_N32_255)
+                                                          0.00       0.74 f
+  tep0_1_2/mult_0/Muxes_0/mux2/UND1_11/A (ND2_32196)      0.00       0.74 f
+  tep0_1_2/mult_0/Muxes_0/mux2/UND1_11/U1/Z (C12T28SOI_LL_NAND2X3_P0)
+                                                          0.01       0.75 r
+  tep0_1_2/mult_0/Muxes_0/mux2/UND1_11/Y (ND2_32196)      0.00       0.75 r
+  tep0_1_2/mult_0/Muxes_0/mux2/UND3_11/A (ND2_32194)      0.00       0.75 r
+  tep0_1_2/mult_0/Muxes_0/mux2/UND3_11/U1/Z (C12T28SOI_LL_NAND2X3_P0)
+                                                          0.01       0.76 f
+  tep0_1_2/mult_0/Muxes_0/mux2/UND3_11/Y (ND2_32194)      0.00       0.76 f
+  tep0_1_2/mult_0/Muxes_0/mux2/Y[11] (MUX21_GENERIC_N32_255)
+                                                          0.00       0.76 f
+  tep0_1_2/mult_0/Muxes_0/mux3/B[11] (MUX21_GENERIC_N32_254)
+                                                          0.00       0.76 f
+  tep0_1_2/mult_0/Muxes_0/mux3/UND1_11/A (ND2_32100)      0.00       0.76 f
+  tep0_1_2/mult_0/Muxes_0/mux3/UND1_11/U1/Z (C12T28SOI_LL_NAND2X3_P0)
+                                                          0.01       0.77 r
+  tep0_1_2/mult_0/Muxes_0/mux3/UND1_11/Y (ND2_32100)      0.00       0.77 r
+  tep0_1_2/mult_0/Muxes_0/mux3/UND3_11/A (ND2_32098)      0.00       0.77 r
+  tep0_1_2/mult_0/Muxes_0/mux3/UND3_11/U1/Z (C12T28SOI_LL_NAND2X3_P0)
+                                                          0.01       0.78 f
+  tep0_1_2/mult_0/Muxes_0/mux3/UND3_11/Y (ND2_32098)      0.00       0.78 f
+  tep0_1_2/mult_0/Muxes_0/mux3/Y[11] (MUX21_GENERIC_N32_254)
+                                                          0.00       0.78 f
+  tep0_1_2/mult_0/Muxes_0/mux4/A[11] (MUX21_GENERIC_N32_253)
+                                                          0.00       0.78 f
+  tep0_1_2/mult_0/Muxes_0/mux4/UND2_11/A (ND2_32003)      0.00       0.78 f
+  tep0_1_2/mult_0/Muxes_0/mux4/UND2_11/U1/Z (C12T28SOI_LL_NAND2X3_P0)
+                                                          0.01       0.79 r
+  tep0_1_2/mult_0/Muxes_0/mux4/UND2_11/Y (ND2_32003)      0.00       0.79 r
+  tep0_1_2/mult_0/Muxes_0/mux4/UND3_11/B (ND2_32002)      0.00       0.79 r
+  tep0_1_2/mult_0/Muxes_0/mux4/UND3_11/U1/Z (C12T28SOI_LL_NAND2X3_P0)
+                                                          0.04       0.83 f
+  tep0_1_2/mult_0/Muxes_0/mux4/UND3_11/Y (ND2_32002)      0.00       0.83 f
+  tep0_1_2/mult_0/Muxes_0/mux4/Y[11] (MUX21_GENERIC_N32_253)
+                                                          0.00       0.83 f
+  tep0_1_2/mult_0/Muxes_0/Y[11] (booth_mux_generic_N32_64)
+                                                          0.00       0.83 f
+  tep0_1_2/mult_0/sum_1/B[11] (P4adder_N32_PowerN5_56)
+                                                          0.00       0.83 f
+  tep0_1_2/mult_0/sum_1/Usparce_tree/B[12] (sparce_tree_POWER5_56)
+                                                          0.00       0.83 f
+  tep0_1_2/mult_0/sum_1/Usparce_tree/U61/Z (C12T28SOI_LL_AND2X8_P0)
+                                                          0.04       0.88 f
+  tep0_1_2/mult_0/sum_1/Usparce_tree/blkpg_1_6/Gik (block_pg_1585)
+                                                          0.00       0.88 f
+  tep0_1_2/mult_0/sum_1/Usparce_tree/blkpg_1_6/U2/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       0.91 f
+  tep0_1_2/mult_0/sum_1/Usparce_tree/blkpg_1_6/Gij (block_pg_1585)
+                                                          0.00       0.91 f
+  tep0_1_2/mult_0/sum_1/Usparce_tree/blkpg_2_3/Gik (block_pg_1573)
+                                                          0.00       0.91 f
+  tep0_1_2/mult_0/sum_1/Usparce_tree/blkpg_2_3/U2/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       0.94 f
+  tep0_1_2/mult_0/sum_1/Usparce_tree/blkpg_2_3/Gij (block_pg_1573)
+                                                          0.00       0.94 f
+  tep0_1_2/mult_0/sum_1/Usparce_tree/blkg_4_1_1/Gik (block_g_597)
+                                                          0.00       0.94 f
+  tep0_1_2/mult_0/sum_1/Usparce_tree/blkg_4_1_1/U1/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.04       0.97 f
+  tep0_1_2/mult_0/sum_1/Usparce_tree/blkg_4_1_1/Gij (block_g_597)
+                                                          0.00       0.97 f
+  tep0_1_2/mult_0/sum_1/Usparce_tree/Cout[3] (sparce_tree_POWER5_56)
+                                                          0.00       0.97 f
+  tep0_1_2/mult_0/sum_1/USum_generator/Ci[3] (Sum_generator_Nbit32_Nblock8_56)
+                                                          0.00       0.97 f
+  tep0_1_2/mult_0/sum_1/USum_generator/cs_gen_4/Ci (cs_generic_N4_473)
+                                                          0.00       0.97 f
+  tep0_1_2/mult_0/sum_1/USum_generator/cs_gen_4/U1/SEL (MUX21_GENERIC_N4_473)
+                                                          0.00       0.97 f
+  tep0_1_2/mult_0/sum_1/USum_generator/cs_gen_4/U1/UND1_0/B (ND2_5667)
+                                                          0.00       0.97 f
+  tep0_1_2/mult_0/sum_1/USum_generator/cs_gen_4/U1/UND1_0/U1/Z (C12T28SOI_LL_NAND2X3_P0)
+                                                          0.01       0.99 r
+  tep0_1_2/mult_0/sum_1/USum_generator/cs_gen_4/U1/UND1_0/Y (ND2_5667)
+                                                          0.00       0.99 r
+  tep0_1_2/mult_0/sum_1/USum_generator/cs_gen_4/U1/UND3_0/A (ND2_5665)
+                                                          0.00       0.99 r
+  tep0_1_2/mult_0/sum_1/USum_generator/cs_gen_4/U1/UND3_0/U1/Z (C12T28SOI_LL_NAND2X3_P0)
+                                                          0.04       1.03 f
+  tep0_1_2/mult_0/sum_1/USum_generator/cs_gen_4/U1/UND3_0/Y (ND2_5665)
+                                                          0.00       1.03 f
+  tep0_1_2/mult_0/sum_1/USum_generator/cs_gen_4/U1/Y[0] (MUX21_GENERIC_N4_473)
+                                                          0.00       1.03 f
+  tep0_1_2/mult_0/sum_1/USum_generator/cs_gen_4/S[0] (cs_generic_N4_473)
+                                                          0.00       1.03 f
+  tep0_1_2/mult_0/sum_1/USum_generator/S[12] (Sum_generator_Nbit32_Nblock8_56)
+                                                          0.00       1.03 f
+  tep0_1_2/mult_0/sum_1/S[12] (P4adder_N32_PowerN5_56)
+                                                          0.00       1.03 f
+  tep0_1_2/mult_0/sum_2/B[12] (P4adder_N32_PowerN5_55)
+                                                          0.00       1.03 f
+  tep0_1_2/mult_0/sum_2/USum_generator/B[12] (Sum_generator_Nbit32_Nblock8_55)
+                                                          0.00       1.03 f
+  tep0_1_2/mult_0/sum_2/USum_generator/cs_gen_4/B[0] (cs_generic_N4_465)
+                                                          0.00       1.03 f
+  tep0_1_2/mult_0/sum_2/USum_generator/cs_gen_4/UADDER1/B[0] (RCA_generic_N4_930)
+                                                          0.00       1.03 f
+  tep0_1_2/mult_0/sum_2/USum_generator/cs_gen_4/UADDER1/add_1_root_add_46_2/U1_0/S0 (C12T28SOI_LL_FA1X8_P0)
+                                                          0.05       1.08 f
+  tep0_1_2/mult_0/sum_2/USum_generator/cs_gen_4/UADDER1/S[0] (RCA_generic_N4_930)
+                                                          0.00       1.08 f
+  tep0_1_2/mult_0/sum_2/USum_generator/cs_gen_4/U1/A[0] (MUX21_GENERIC_N4_465)
+                                                          0.00       1.08 f
+  tep0_1_2/mult_0/sum_2/USum_generator/cs_gen_4/U1/UND2_0/A (ND2_5570)
+                                                          0.00       1.08 f
+  tep0_1_2/mult_0/sum_2/USum_generator/cs_gen_4/U1/UND2_0/U1/Z (C12T28SOI_LL_NAND2X3_P0)
+                                                          0.01       1.09 r
+  tep0_1_2/mult_0/sum_2/USum_generator/cs_gen_4/U1/UND2_0/Y (ND2_5570)
+                                                          0.00       1.09 r
+  tep0_1_2/mult_0/sum_2/USum_generator/cs_gen_4/U1/UND3_0/B (ND2_5569)
+                                                          0.00       1.09 r
+  tep0_1_2/mult_0/sum_2/USum_generator/cs_gen_4/U1/UND3_0/U1/Z (C12T28SOI_LL_NAND2X3_P0)
+                                                          0.04       1.14 f
+  tep0_1_2/mult_0/sum_2/USum_generator/cs_gen_4/U1/UND3_0/Y (ND2_5569)
+                                                          0.00       1.14 f
+  tep0_1_2/mult_0/sum_2/USum_generator/cs_gen_4/U1/Y[0] (MUX21_GENERIC_N4_465)
+                                                          0.00       1.14 f
+  tep0_1_2/mult_0/sum_2/USum_generator/cs_gen_4/S[0] (cs_generic_N4_465)
+                                                          0.00       1.14 f
+  tep0_1_2/mult_0/sum_2/USum_generator/S[12] (Sum_generator_Nbit32_Nblock8_55)
+                                                          0.00       1.14 f
+  tep0_1_2/mult_0/sum_2/S[12] (P4adder_N32_PowerN5_55)
+                                                          0.00       1.14 f
+  tep0_1_2/mult_0/sum_3/B[12] (P4adder_N32_PowerN5_54)
+                                                          0.00       1.14 f
+  tep0_1_2/mult_0/sum_3/USum_generator/B[12] (Sum_generator_Nbit32_Nblock8_54)
+                                                          0.00       1.14 f
+  tep0_1_2/mult_0/sum_3/USum_generator/cs_gen_4/B[0] (cs_generic_N4_457)
+                                                          0.00       1.14 f
+  tep0_1_2/mult_0/sum_3/USum_generator/cs_gen_4/UADDER1/B[0] (RCA_generic_N4_914)
+                                                          0.00       1.14 f
+  tep0_1_2/mult_0/sum_3/USum_generator/cs_gen_4/UADDER1/add_1_root_add_46_2/U1_0/S0 (C12T28SOI_LL_FA1X8_P0)
+                                                          0.05       1.19 f
+  tep0_1_2/mult_0/sum_3/USum_generator/cs_gen_4/UADDER1/S[0] (RCA_generic_N4_914)
+                                                          0.00       1.19 f
+  tep0_1_2/mult_0/sum_3/USum_generator/cs_gen_4/U1/A[0] (MUX21_GENERIC_N4_457)
+                                                          0.00       1.19 f
+  tep0_1_2/mult_0/sum_3/USum_generator/cs_gen_4/U1/UND2_0/A (ND2_5474)
+                                                          0.00       1.19 f
+  tep0_1_2/mult_0/sum_3/USum_generator/cs_gen_4/U1/UND2_0/U1/Z (C12T28SOI_LL_NAND2X3_P0)
+                                                          0.01       1.20 r
+  tep0_1_2/mult_0/sum_3/USum_generator/cs_gen_4/U1/UND2_0/Y (ND2_5474)
+                                                          0.00       1.20 r
+  tep0_1_2/mult_0/sum_3/USum_generator/cs_gen_4/U1/UND3_0/B (ND2_5473)
+                                                          0.00       1.20 r
+  tep0_1_2/mult_0/sum_3/USum_generator/cs_gen_4/U1/UND3_0/U1/Z (C12T28SOI_LL_NAND2X3_P0)
+                                                          0.04       1.24 f
+  tep0_1_2/mult_0/sum_3/USum_generator/cs_gen_4/U1/UND3_0/Y (ND2_5473)
+                                                          0.00       1.24 f
+  tep0_1_2/mult_0/sum_3/USum_generator/cs_gen_4/U1/Y[0] (MUX21_GENERIC_N4_457)
+                                                          0.00       1.24 f
+  tep0_1_2/mult_0/sum_3/USum_generator/cs_gen_4/S[0] (cs_generic_N4_457)
+                                                          0.00       1.24 f
+  tep0_1_2/mult_0/sum_3/USum_generator/S[12] (Sum_generator_Nbit32_Nblock8_54)
+                                                          0.00       1.24 f
+  tep0_1_2/mult_0/sum_3/S[12] (P4adder_N32_PowerN5_54)
+                                                          0.00       1.24 f
+  tep0_1_2/mult_0/sum_4/B[12] (P4adder_N32_PowerN5_53)
+                                                          0.00       1.24 f
+  tep0_1_2/mult_0/sum_4/USum_generator/B[12] (Sum_generator_Nbit32_Nblock8_53)
+                                                          0.00       1.24 f
+  tep0_1_2/mult_0/sum_4/USum_generator/cs_gen_4/B[0] (cs_generic_N4_449)
+                                                          0.00       1.24 f
+  tep0_1_2/mult_0/sum_4/USum_generator/cs_gen_4/UADDER1/B[0] (RCA_generic_N4_898)
+                                                          0.00       1.24 f
+  tep0_1_2/mult_0/sum_4/USum_generator/cs_gen_4/UADDER1/add_1_root_add_46_2/U1_0/S0 (C12T28SOI_LL_FA1X8_P0)
+                                                          0.05       1.30 f
+  tep0_1_2/mult_0/sum_4/USum_generator/cs_gen_4/UADDER1/S[0] (RCA_generic_N4_898)
+                                                          0.00       1.30 f
+  tep0_1_2/mult_0/sum_4/USum_generator/cs_gen_4/U1/A[0] (MUX21_GENERIC_N4_449)
+                                                          0.00       1.30 f
+  tep0_1_2/mult_0/sum_4/USum_generator/cs_gen_4/U1/UND2_0/A (ND2_5378)
+                                                          0.00       1.30 f
+  tep0_1_2/mult_0/sum_4/USum_generator/cs_gen_4/U1/UND2_0/U1/Z (C12T28SOI_LL_NAND2X3_P0)
+                                                          0.01       1.31 r
+  tep0_1_2/mult_0/sum_4/USum_generator/cs_gen_4/U1/UND2_0/Y (ND2_5378)
+                                                          0.00       1.31 r
+  tep0_1_2/mult_0/sum_4/USum_generator/cs_gen_4/U1/UND3_0/B (ND2_5377)
+                                                          0.00       1.31 r
+  tep0_1_2/mult_0/sum_4/USum_generator/cs_gen_4/U1/UND3_0/U1/Z (C12T28SOI_LL_NAND2X3_P0)
+                                                          0.04       1.35 f
+  tep0_1_2/mult_0/sum_4/USum_generator/cs_gen_4/U1/UND3_0/Y (ND2_5377)
+                                                          0.00       1.35 f
+  tep0_1_2/mult_0/sum_4/USum_generator/cs_gen_4/U1/Y[0] (MUX21_GENERIC_N4_449)
+                                                          0.00       1.35 f
+  tep0_1_2/mult_0/sum_4/USum_generator/cs_gen_4/S[0] (cs_generic_N4_449)
+                                                          0.00       1.35 f
+  tep0_1_2/mult_0/sum_4/USum_generator/S[12] (Sum_generator_Nbit32_Nblock8_53)
+                                                          0.00       1.35 f
+  tep0_1_2/mult_0/sum_4/S[12] (P4adder_N32_PowerN5_53)
+                                                          0.00       1.35 f
+  tep0_1_2/mult_0/sum_5/B[12] (P4adder_N32_PowerN5_52)
+                                                          0.00       1.35 f
+  tep0_1_2/mult_0/sum_5/USum_generator/B[12] (Sum_generator_Nbit32_Nblock8_52)
+                                                          0.00       1.35 f
+  tep0_1_2/mult_0/sum_5/USum_generator/cs_gen_4/B[0] (cs_generic_N4_441)
+                                                          0.00       1.35 f
+  tep0_1_2/mult_0/sum_5/USum_generator/cs_gen_4/UADDER1/B[0] (RCA_generic_N4_882)
+                                                          0.00       1.35 f
+  tep0_1_2/mult_0/sum_5/USum_generator/cs_gen_4/UADDER1/add_1_root_add_46_2/U1_0/S0 (C12T28SOI_LL_FA1X8_P0)
+                                                          0.05       1.41 f
+  tep0_1_2/mult_0/sum_5/USum_generator/cs_gen_4/UADDER1/S[0] (RCA_generic_N4_882)
+                                                          0.00       1.41 f
+  tep0_1_2/mult_0/sum_5/USum_generator/cs_gen_4/U1/A[0] (MUX21_GENERIC_N4_441)
+                                                          0.00       1.41 f
+  tep0_1_2/mult_0/sum_5/USum_generator/cs_gen_4/U1/UND2_0/A (ND2_5282)
+                                                          0.00       1.41 f
+  tep0_1_2/mult_0/sum_5/USum_generator/cs_gen_4/U1/UND2_0/U1/Z (C12T28SOI_LL_NAND2X3_P0)
+                                                          0.01       1.41 r
+  tep0_1_2/mult_0/sum_5/USum_generator/cs_gen_4/U1/UND2_0/Y (ND2_5282)
+                                                          0.00       1.41 r
+  tep0_1_2/mult_0/sum_5/USum_generator/cs_gen_4/U1/UND3_0/B (ND2_5281)
+                                                          0.00       1.41 r
+  tep0_1_2/mult_0/sum_5/USum_generator/cs_gen_4/U1/UND3_0/U1/Z (C12T28SOI_LL_NAND2X3_P0)
+                                                          0.04       1.46 f
+  tep0_1_2/mult_0/sum_5/USum_generator/cs_gen_4/U1/UND3_0/Y (ND2_5281)
+                                                          0.00       1.46 f
+  tep0_1_2/mult_0/sum_5/USum_generator/cs_gen_4/U1/Y[0] (MUX21_GENERIC_N4_441)
+                                                          0.00       1.46 f
+  tep0_1_2/mult_0/sum_5/USum_generator/cs_gen_4/S[0] (cs_generic_N4_441)
+                                                          0.00       1.46 f
+  tep0_1_2/mult_0/sum_5/USum_generator/S[12] (Sum_generator_Nbit32_Nblock8_52)
+                                                          0.00       1.46 f
+  tep0_1_2/mult_0/sum_5/S[12] (P4adder_N32_PowerN5_52)
+                                                          0.00       1.46 f
+  tep0_1_2/mult_0/sum_6/B[12] (P4adder_N32_PowerN5_51)
+                                                          0.00       1.46 f
+  tep0_1_2/mult_0/sum_6/USum_generator/B[12] (Sum_generator_Nbit32_Nblock8_51)
+                                                          0.00       1.46 f
+  tep0_1_2/mult_0/sum_6/USum_generator/cs_gen_4/B[0] (cs_generic_N4_433)
+                                                          0.00       1.46 f
+  tep0_1_2/mult_0/sum_6/USum_generator/cs_gen_4/UADDER1/B[0] (RCA_generic_N4_866)
+                                                          0.00       1.46 f
+  tep0_1_2/mult_0/sum_6/USum_generator/cs_gen_4/UADDER1/add_1_root_add_46_2/U1_0/S0 (C12T28SOI_LL_FA1X8_P0)
+                                                          0.05       1.51 f
+  tep0_1_2/mult_0/sum_6/USum_generator/cs_gen_4/UADDER1/S[0] (RCA_generic_N4_866)
+                                                          0.00       1.51 f
+  tep0_1_2/mult_0/sum_6/USum_generator/cs_gen_4/U1/A[0] (MUX21_GENERIC_N4_433)
+                                                          0.00       1.51 f
+  tep0_1_2/mult_0/sum_6/USum_generator/cs_gen_4/U1/UND2_0/A (ND2_5186)
+                                                          0.00       1.51 f
+  tep0_1_2/mult_0/sum_6/USum_generator/cs_gen_4/U1/UND2_0/U1/Z (C12T28SOI_LL_NAND2X3_P0)
+                                                          0.01       1.52 r
+  tep0_1_2/mult_0/sum_6/USum_generator/cs_gen_4/U1/UND2_0/Y (ND2_5186)
+                                                          0.00       1.52 r
+  tep0_1_2/mult_0/sum_6/USum_generator/cs_gen_4/U1/UND3_0/B (ND2_5185)
+                                                          0.00       1.52 r
+  tep0_1_2/mult_0/sum_6/USum_generator/cs_gen_4/U1/UND3_0/U1/Z (C12T28SOI_LL_NAND2X3_P0)
+                                                          0.04       1.57 f
+  tep0_1_2/mult_0/sum_6/USum_generator/cs_gen_4/U1/UND3_0/Y (ND2_5185)
+                                                          0.00       1.57 f
+  tep0_1_2/mult_0/sum_6/USum_generator/cs_gen_4/U1/Y[0] (MUX21_GENERIC_N4_433)
+                                                          0.00       1.57 f
+  tep0_1_2/mult_0/sum_6/USum_generator/cs_gen_4/S[0] (cs_generic_N4_433)
+                                                          0.00       1.57 f
+  tep0_1_2/mult_0/sum_6/USum_generator/S[12] (Sum_generator_Nbit32_Nblock8_51)
+                                                          0.00       1.57 f
+  tep0_1_2/mult_0/sum_6/S[12] (P4adder_N32_PowerN5_51)
+                                                          0.00       1.57 f
+  tep0_1_2/mult_0/sum_7/B[12] (P4adder_N32_PowerN5_50)
+                                                          0.00       1.57 f
+  tep0_1_2/mult_0/sum_7/USum_generator/B[12] (Sum_generator_Nbit32_Nblock8_50)
+                                                          0.00       1.57 f
+  tep0_1_2/mult_0/sum_7/USum_generator/cs_gen_4/B[0] (cs_generic_N4_425)
+                                                          0.00       1.57 f
+  tep0_1_2/mult_0/sum_7/USum_generator/cs_gen_4/UADDER1/B[0] (RCA_generic_N4_850)
+                                                          0.00       1.57 f
+  tep0_1_2/mult_0/sum_7/USum_generator/cs_gen_4/UADDER1/add_1_root_add_46_2/U1_0/S0 (C12T28SOI_LL_FA1X8_P0)
+                                                          0.05       1.62 f
+  tep0_1_2/mult_0/sum_7/USum_generator/cs_gen_4/UADDER1/S[0] (RCA_generic_N4_850)
+                                                          0.00       1.62 f
+  tep0_1_2/mult_0/sum_7/USum_generator/cs_gen_4/U1/A[0] (MUX21_GENERIC_N4_425)
+                                                          0.00       1.62 f
+  tep0_1_2/mult_0/sum_7/USum_generator/cs_gen_4/U1/UND2_0/A (ND2_5090)
+                                                          0.00       1.62 f
+  tep0_1_2/mult_0/sum_7/USum_generator/cs_gen_4/U1/UND2_0/U1/Z (C12T28SOI_LL_NAND2X3_P0)
+                                                          0.01       1.63 r
+  tep0_1_2/mult_0/sum_7/USum_generator/cs_gen_4/U1/UND2_0/Y (ND2_5090)
+                                                          0.00       1.63 r
+  tep0_1_2/mult_0/sum_7/USum_generator/cs_gen_4/U1/UND3_0/B (ND2_5089)
+                                                          0.00       1.63 r
+  tep0_1_2/mult_0/sum_7/USum_generator/cs_gen_4/U1/UND3_0/U1/Z (C12T28SOI_LL_NAND2X3_P0)
+                                                          0.04       1.67 f
+  tep0_1_2/mult_0/sum_7/USum_generator/cs_gen_4/U1/UND3_0/Y (ND2_5089)
+                                                          0.00       1.67 f
+  tep0_1_2/mult_0/sum_7/USum_generator/cs_gen_4/U1/Y[0] (MUX21_GENERIC_N4_425)
+                                                          0.00       1.67 f
+  tep0_1_2/mult_0/sum_7/USum_generator/cs_gen_4/S[0] (cs_generic_N4_425)
+                                                          0.00       1.67 f
+  tep0_1_2/mult_0/sum_7/USum_generator/S[12] (Sum_generator_Nbit32_Nblock8_50)
+                                                          0.00       1.67 f
+  tep0_1_2/mult_0/sum_7/S[12] (P4adder_N32_PowerN5_50)
+                                                          0.00       1.67 f
+  tep0_1_2/mult_0/Res[12] (booth_mul_red_Nbit16_8)        0.00       1.67 f
+  tep0_1_2/add_3/A[12] (P4adder_N16_PowerN4_31)           0.00       1.67 f
+  tep0_1_2/add_3/USum_generator/A[12] (Sum_generator_Nbit16_Nblock4_31)
+                                                          0.00       1.67 f
+  tep0_1_2/add_3/USum_generator/cs_gen_4/A[0] (cs_generic_N4_625)
+                                                          0.00       1.67 f
+  tep0_1_2/add_3/USum_generator/cs_gen_4/UADDER1/A[0] (RCA_generic_N4_1250)
+                                                          0.00       1.67 f
+  tep0_1_2/add_3/USum_generator/cs_gen_4/UADDER1/add_1_root_add_46_2/U1_0/CO (C12T28SOI_LL_FA1X8_P0)
+                                                          0.06       1.73 f
+  tep0_1_2/add_3/USum_generator/cs_gen_4/UADDER1/add_1_root_add_46_2/U1_1/CO (C12T28SOI_LL_FA1X8_P0)
+                                                          0.04       1.77 f
+  tep0_1_2/add_3/USum_generator/cs_gen_4/UADDER1/add_1_root_add_46_2/U1_2/CO (C12T28SOI_LL_FA1X8_P0)
+                                                          0.04       1.81 f
+  tep0_1_2/add_3/USum_generator/cs_gen_4/UADDER1/add_1_root_add_46_2/U1_3/S0 (C12T28SOI_LL_FA1X8_P0)
+                                                          0.05       1.86 r
+  tep0_1_2/add_3/USum_generator/cs_gen_4/UADDER1/S[3] (RCA_generic_N4_1250)
+                                                          0.00       1.86 r
+  tep0_1_2/add_3/USum_generator/cs_gen_4/U1/A[3] (MUX21_GENERIC_N4_625)
+                                                          0.00       1.86 r
+  tep0_1_2/add_3/USum_generator/cs_gen_4/U1/UND2_3/A (ND2_7499)
+                                                          0.00       1.86 r
+  tep0_1_2/add_3/USum_generator/cs_gen_4/U1/UND2_3/U1/Z (C12T28SOI_LL_NAND2X3_P0)
+                                                          0.01       1.87 f
+  tep0_1_2/add_3/USum_generator/cs_gen_4/U1/UND2_3/Y (ND2_7499)
+                                                          0.00       1.87 f
+  tep0_1_2/add_3/USum_generator/cs_gen_4/U1/UND3_3/B (ND2_7498)
+                                                          0.00       1.87 f
+  tep0_1_2/add_3/USum_generator/cs_gen_4/U1/UND3_3/U1/Z (C12T28SOI_LL_NAND2X3_P0)
+                                                          0.01       1.88 r
+  tep0_1_2/add_3/USum_generator/cs_gen_4/U1/UND3_3/Y (ND2_7498)
+                                                          0.00       1.88 r
+  tep0_1_2/add_3/USum_generator/cs_gen_4/U1/Y[3] (MUX21_GENERIC_N4_625)
+                                                          0.00       1.88 r
+  tep0_1_2/add_3/USum_generator/cs_gen_4/S[3] (cs_generic_N4_625)
+                                                          0.00       1.88 r
+  tep0_1_2/add_3/USum_generator/S[15] (Sum_generator_Nbit16_Nblock4_31)
+                                                          0.00       1.88 r
+  tep0_1_2/add_3/S[15] (P4adder_N16_PowerN4_31)           0.00       1.88 r
+  tep0_1_2/res[15] (TEP_unit_Nbit16_8)                    0.00       1.88 r
+  out_tep[223] (out)                                      0.00       1.88 r
+  data arrival time                                                  1.88
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+1

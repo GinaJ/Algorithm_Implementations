@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : TEP_TOP_size3_Nbit16
+Version: F-2011.09-SP3
+Date   : Sat May 27 18:56:03 2017
+****************************************
+
+Information: Updating design information... (UID-85)
+Warning: Design 'TEP_TOP_size3_Nbit16' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+Library(s) Used:
+
+    C28SOI_SC_12_CORE_LL (File: /software/design-kits/cmp/28nm_fdsoi/v2p4/C28SOI_SC_12_CORE_LL@2.2@20131004.0/libs/C28SOI_SC_12_CORE_LL_tt28_0.90V_0.00V_0.00V_0.00V_25C.db)
+
+Number of ports:                          400
+Number of nets:                           290
+Number of cells:                            9
+Number of combinational cells:              0
+Number of sequential cells:                 0
+Number of macros:                           0
+Number of buf/inv:                          0
+Number of references:                       9
+
+Combinational area:       43544.045428
+Noncombinational area:       0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:          43544.045428
+Total area:                 undefined
+1
