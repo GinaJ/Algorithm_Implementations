@@ -1,0 +1,224 @@
+\chapter{Synthesis Results}
+After having properly tested the architecture of each hardware implementation, the following step is its synthesis to determine the maximum clock frequency, area and power consumption.\\
+The chosen sizes are smaller because I used the \textit{Pentium 4 adder} and the \textit{booth multiplier} as adder and as multiplier. Due to their complexity, the synthesys requires much time.
+
+\section{Integral Image}
+\begin{itemize}
+	\item  16 
+	\item size = 8x8
+\end{itemize}
+\begin{center}
+	\begin{tabular}{  p{4.2cm} | p{6.7cm} }
+			
+		\hline
+	 & \quad \textbf{Integral Image}\\
+	 & \quad Pipelined\\
+		\hline
+		Total cell area & \quad37055.540208 $ \mu m^2{} $\\
+
+		Data arrival time & \quad 0.62 $ ns  $\\
+		Internal Power & \quad	3.9107$ mW $\\
+		Switching Power & \quad1.8435$ mW $\\
+		Total Dynamic Power & \quad5.7542$ mW $\\
+		Leakage Power & \quad0.3724 $ mW $ \\
+		Total Power & \quad6.1266 $ mW $\\
+		\hline
+		
+	\end{tabular}
+\end{center}
+\bigskip
+
+\section{Discrete Cosine Transformation} \label{synDCT}
+For this DCT's hadware implementation (\ref{DCTH}), I synthesized both the pipeline and not pipeline architecture. I also synthesized a small version of the LLM architecture (\ref{llmarch}).
+The not pipelined version, consumes more power and take a little time more than the pipelined one. However it has a smaller area due to the absence of pipeline registers.
+\subsection{DCT pipelined}
+\begin{itemize}
+\item  8 bits for integer part
+\item 8 bits for fractional part
+\item size = 4
+\end{itemize}
+\begin{center}
+	\begin{tabular}{ p{4.2cm} | p{8cm} }
+		
+		\hline 
+		 & \quad \textbf{Discrete Cosine Transformation}\\
+		& \quad Pipelined\\
+		
+		\hline
+		Total cell area & \quad 70428.471340$ \mu m^2{} $\\
+
+		Data arrival time & \quad 1.83 $ ns $\\
+		Internal Power & \quad 4.5759$ mW $\\
+		Switching Power & \quad 3.4865$ mW $\\
+		Total Dynamic Power & \quad 8.0625$ mW $\\
+		Leakage Power&\quad  0.6491 $ mW $\\
+		Total Power & \quad 8.7116$ mW $\\
+		\hline
+		
+	\end{tabular}
+\end{center}
+\bigskip
+\subsection{DCT not pipelined}
+\begin{itemize}
+	\item  8 bits for integer part
+	\item 8 bits for fractional part
+	\item size = 4
+\end{itemize}
+%\textcolor{red}{{\Large MODIFICARE, mettere osservazioni}}
+\begin{center}
+	\begin{tabular}{ p{5.2cm} | p{8cm} }
+		
+		\hline 
+		& \quad \textbf{Discrete Cosine Transformation}\\
+		& \quad Not Pipelined\\
+		
+		\hline
+		Total cell area & \quad 69801.783318$ \mu m^2{} $\\
+		
+		Data arrival time & \quad 2.05 $ ns $\\
+		Internal Power & \quad 5.1175$ mW $\\
+		Switching Power & \quad 3.9349$ mW $\\
+		Total Dynamic Power & \quad 9.0523$ mW $\\
+		Leakage Power&\quad  0.6446 $ mW $\\
+		Total Power  & \quad 9.6970$ mW $\\
+		\hline
+		
+	\end{tabular}
+\end{center}
+\bigskip
+\subsection{LLM DCT}
+The LLM DCT architecture shows better performance in everything.\\
+However we remember the complexity of the design for high order (subsection \ref{HLLM}).
+\begin{itemize}
+	\item  8 bits for integer part
+	\item 8 bits for fractional part
+	\item size = 4
+\end{itemize}
+\begin{center}
+	\begin{tabular}{ p{4.2cm} | p{8cm} }
+		
+		\hline 
+		& \quad \textbf{LLM DCT}\\
+	
+		
+		\hline
+		Total cell area & \quad 21937.344292$ \mu m^2{} $\\
+		
+		Data arrival time & \quad 1.70 $ ns $\\
+		Internal Power & \quad 2.8416$ mW $\\
+		Switching Power & \quad 2.3913$ mW $\\
+		Total Dynamic Power & \quad  5.2329$ mW $\\
+		Leakage Power&\quad  0.2063 $ mW $\\
+		Total Power & \quad 5.4392 $ mW $\\
+		\hline
+		
+	\end{tabular}
+\end{center}
+\bigskip
+\section{Binomial Filter}
+I synthesized both the implementation described in the subsection \ref{h1} and \ref{h2}.\\We can clearly see that the version 1 is better than the version 2 because it requires less computation, actually it leaves the border values unchanged.
+\subsection{Binomial Filter v1}
+\begin{itemize}
+	\item  16 bits
+	\item size = 4x4
+\end{itemize}
+\begin{center}
+	\begin{tabular}{ p{5.2cm} | p{8cm} }
+		
+		\hline 
+		& \quad \textbf{Binomial Filter v1}\\
+		
+		
+		\hline
+		Total cell area & \quad 3795.379296$ \mu m^2{} $\\
+		
+		Data arrival time & \quad 0.87 $ ns $\\
+		Internal Power & \quad 1.5640 $ mW $\\
+		Switching Power & \quad 1.0043$ mW $\\
+		Total Dynamic Power & \quad 2.5684$ mW $\\
+		Leakage Power&\quad  0.0405198 $ mW $\\
+		Total Power  & \quad 2.6089$ mW $\\
+		\hline
+		
+	\end{tabular}
+\end{center}
+\bigskip
+
+\subsection{Binomial Filter v2}
+\begin{itemize}
+	\item  16 bits
+	\item size = 4x4
+\end{itemize}
+\begin{center}
+	\begin{tabular}{ p{5.2cm} | p{8cm} }
+		
+		\hline 
+	& \quad \textbf{Binomial Filter v2}\\
+		
+		
+		\hline
+		Total cell area & \quad 8223.321808$ \mu m^2{} $\\
+		
+		Data arrival time & \quad 0.93 $ ns $\\
+		Internal Power & \quad 3.3129 $ mW $\\
+		Switching Power & \quad 2.0846$ mW $\\
+		Total Dynamic Power & \quad 5.3975$ mW $\\
+		Leakage Power&\quad  0.0870836 $ mW $\\
+		Total Power  & \quad 5.4846$ mW $\\
+		\hline
+		
+	\end{tabular}
+\end{center}
+\bigskip
+\section{FIR}
+\begin{itemize}
+	\item  16 bits
+	\item size = 8
+\end{itemize}
+\begin{center}
+	\begin{tabular}{ p{5.2cm} | p{8cm} }
+		
+		\hline 
+		& \quad \textbf{FIR Filter}\\
+		
+		
+		\hline
+		Total cell area & \quad 35128.637271$ \mu m^2{} $\\
+		
+		Data arrival time & \quad 2.55 $ ns $\\
+		Internal Power & \quad2.3964 $ mW $\\
+		Switching Power & \quad 1.8437$ mW $\\
+		Total Dynamic Power & \quad 4.2401 $ mW $\\
+		Leakage Power&\quad  0.3212 $ mW $\\
+		Total Power  & \quad 4.5612$ mW $\\
+		\hline
+		
+	\end{tabular}
+\end{center}
+\bigskip
+\section{Transport Equation Problem}
+\begin{itemize}
+	\item  16 bits
+	\item size = 3x3
+\end{itemize}
+\begin{center}
+	\begin{tabular}{ p{5.2cm} | p{8cm} }
+		
+		\hline 
+		\label{syn_tep}& \quad \textbf{Transport Equation Problem}\\
+		
+		
+		\hline
+		Total cell area & \quad 43544.045428$ \mu m^2{} $\\
+		
+		Data arrival time & \quad 1.88 $ ns $\\
+		Internal Power & \quad8.9910 $ mW $\\
+		Switching Power & \quad 7.1353$ mW $\\
+		Total Dynamic Power & \quad 16.1263 $ mW $\\
+		Leakage Power&\quad  0.4151 $ mW $\\
+		Total Power  & \quad 16.5418$ mW $\\
+		\hline
+		
+	\end{tabular}
+\end{center}
+\bigskip

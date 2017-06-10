@@ -1,0 +1,78 @@
+\chapter{Introduction}
+The topic discussed in this work of thesis is based on an ASIC (Application-specific integrated circuit) architecture to implement some algorithm regarding the image processing and imange filtering.\\
+\section{Advantages of an ASIC based design}
+An application-specific integrated circuit (ASIC), is an integrated circuit (IC) customized for a particular use, rather than intended for general-purpose use.\\
+The advantages of an ASIC can be divided into four major areas: Unit
+cost, performance, power consumption and flexibility. 
+\subsection{Unit cost}
+One of the biggest advantages which an ASIC based product enjoys over
+an FPGA based product is a significantly lower unit cost once a certain
+volume has been reached. Unfortunately the volume required to offset
+the high NRE costs of an ASIC is very high which means that many
+projects are never a candidate for ASICs.\\
+For example, in \cite{asic1}, the authors show an example where the total design cost for a standard cell based ASIC is \textdollar 5.5M whereas the design cost for the FPGA based product is \textdollar165K. It is clear that the volume has to be quite high before an ASIC can be considered. \\It should also be noted that this comparison is for a 0.13 $ \mu $m process.\\ More modern technology nodes have even higher NRE costs and therefore even higher volumes are necessary before it makes
+sense to consider an ASIC.
+
+
+\subsection{Performance}
+Another reason for using an ASIC is the higher performance which can
+be gained by using a modern ASIC process. During a comparison of over
+20 different designs it was found that an ASIC design was on average 3.2
+times faster than an FPGA manufactured on the same technology node
+\cite{asic2}. \\This is slightly misleading though, as FPGAs are often manufactured using the latest technologies whereas an ASIC could be manufactured
+using an older technology for cost reasons. In this case the performance
+gap will be lower.
+
+\subsection{Power consumption}
+An ASIC based system usually has significantly lower power consumption
+than a comparable FPGA based system. While some FPGAs are
+specifically targeting low power users, such as the new iCE65 from SiliconBlue,
+most FPGAs are not targeted specifically at low power users.
+The main reason for this is of course the reconfigurability of the FPGA.
+There is a lot of logic in an FPGA which is used only for configuration.
+While the dynamic power consumption of the reconfiguration logic
+is practically 0, all of the configuration logic contributes to the leakage
+power.\\
+Another reason why ASICs are better from a power consumption perspective
+is that it is easier to implement power reduction techniques like
+clock gating and power gating.\\
+While it is possible to perform clock gating in an FPGAs, it is seldomly
+used in practice. One reason is that FPGAs have a limited number
+of signals optimized for clock distribution. While flip-flops in an FPGA
+can also be fed from a local connection, this will complicate static timing
+analysis. FPGA vendors strongly recommend users to avoid clock gating
+and to use the clock enable signal of the flip-flops instead.\\
+While clock gating is possible but hard to do in an FPGA today, selective
+power gating is not possible in modern FPGAs. \\
+\\However, in Actel\textquoteright s Igloo \cite{asic3} FPGA it is possible to freeze the entire FPGA by using a special Flash*Freeze pin. While Actel do not say exactly how this is implemented,
+it is reasonable to assume that some sort of power gating is involved.
+Spartan 3A FPGAs has a similar mode activated by a suspend pin which
+allows the device to retain its state while in a low power mode.\\
+True selective power gating has also been investigated in a modified
+Spartan 3 architecture \cite{asic4}, but the authors state that there is not enoughcommercial value in such features yet due to the performance and area
+penalty of the power gating features.
+
+\subsection{Flexibility}
+The final main reason for using an ASIC instead of an FPGA is the flexibility
+you gain with an ASIC. An ASIC allows the designer to implement
+many circuits which are either impossible or impractical to create
+in the programmable logic of an FPGA. This includes for example A/D
+converters, D/A converters, high density SRAM and DRAM memories,
+non volatile memories, PLLs, multipliers, serializers/deserializers, and
+a wide variety of sensors.\\
+Many FPGAs do contain some specialized blocks, but these blocks are
+selected to be quite general so that they are usable in a wide variety of
+contexts. This also means that the blocks are far from optimal for many
+users. In contrast, an ASIC designer can use a block which has been
+configured with optimal parameters for the application the designer is
+envisioning. This allows an ASIC designer to both save area and increase
+the performance.\\
+The ultimate in flexibility is the ability of an ASIC designer to design
+either part of the circuit or the entire circuit using full custom methods.
+This allows the designer to create specialized blocks which have no parallel
+in FPGAs. For example, if a designer wanted to create an image
+processor with integrated image sensor, this would not be possible to do with the FPGAs currently available.\\
+Full custom techniques are also able to reduce the power and area or
+increase the performance. For a more thorough discussion about this, see
+for example \cite{asic4}
+%\section{ASIC vs General Purpose}

@@ -1,0 +1,106 @@
+%% Creator: Inkscape 0.91_64bit, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'dct_scheme.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{595.27559055bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,1.41428571)%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{dct_scheme.pdf}}%
+    \put(0.16396452,1.0513787){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{+}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{dct_scheme.pdf}}%
+    \put(0.35553947,1.05412961){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{+}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{dct_scheme.pdf}}%
+    \put(0.78922175,1.05130533){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{+}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{dct_scheme.pdf}}%
+    \put(0.17210988,0.77105202){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{+}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{dct_scheme.pdf}}%
+    \put(0.36368483,0.77380293){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{+}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{dct_scheme.pdf}}%
+    \put(0.7973671,0.77097865){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{+}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{dct_scheme.pdf}}%
+    \put(0.18033713,0.33436812){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{+}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{dct_scheme.pdf}}%
+    \put(0.37191204,0.33711903){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{+}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=9]{dct_scheme.pdf}}%
+    \put(0.80559432,0.33429471){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{+}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=10]{dct_scheme.pdf}}%
+    \put(0.12671202,1.33431595){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{}}}%
+    \put(0.15435828,1.28900681){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{c0,0 }}}%
+    \put(0.20147622,1.28566017){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{x0}}}%
+    \put(0.35233361,1.2912581){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{c1,0 }}}%
+    \put(0.39945152,1.28791147){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{x0}}}%
+    \put(0.76525004,1.2844703){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{cN-1,0 }}}%
+    \put(0.8338706,1.28112367){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{x0}}}%
+    \put(0.1067295,1.12542088){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{c0,1 }}}%
+    \put(0.15384743,1.12207425){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{x1}}}%
+    \put(0.30470481,1.12767218){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{c1,1 }}}%
+    \put(0.35182275,1.12432554){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{x1}}}%
+    \put(0.7122456,1.12357221){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{cN-1,1 }}}%
+    \put(0.78624182,1.11753774){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{x1}}}%
+    \put(0.11487485,0.85119388){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{c0,2 }}}%
+    \put(0.16199279,0.84784726){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{x2}}}%
+    \put(0.31285021,0.85344517){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{c1,2 }}}%
+    \put(0.3599681,0.85009854){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{x2}}}%
+    \put(0.73097856,0.84529981){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{cN-1,2 }}}%
+    \put(0.79438718,0.84331072){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{x2}}}%
+    \put(0.09885703,0.41315229){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{c0,N-1 }}}%
+    \put(0.16478978,0.4098057){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{xN-1}}}%
+    \put(0.29683236,0.41540357){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{c1,N-1}}}%
+    \put(0.36276511,0.41205699){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{xN-1}}}%
+    \put(0.72856363,0.40861583){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{c2,N-1 }}}%
+    \put(0.79718419,0.40526917){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{xN-1}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=11]{dct_scheme.pdf}}%
+    \put(0.49532882,1.33047619){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.21502641\unitlength}\raggedright \end{minipage}}}%
+    \put(0.55503863,1.28401511){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{. . .}}}%
+    \put(0.56112019,1.06309817){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{. . .}}}%
+    \put(0.56342405,0.79469906){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{. . .}}}%
+    \put(0.56227211,0.35427885){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{. . .}}}%
+    \put(0.21681547,0.66069097){\color[rgb]{0,0,0}\rotatebox{-90}{\makebox(0,0)[lb]{\smash{. . .}}}}%
+    \put(0.40918734,0.67029034){\color[rgb]{0,0,0}\rotatebox{-90}{\makebox(0,0)[lb]{\smash{. . .}}}}%
+    \put(0.84192807,0.66721856){\color[rgb]{0,0,0}\rotatebox{-90}{\makebox(0,0)[lb]{\smash{. . .}}}}%
+  \end{picture}%
+\endgroup%
