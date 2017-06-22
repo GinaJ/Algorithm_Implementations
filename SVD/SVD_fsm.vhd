@@ -112,13 +112,13 @@ architecture beh_svd of svd_fsm is
             lambda2<=std_logic_vector(to_signed(((to_integer((signed(sum)-(signed(sum)*signed(sum))-(4*signed(product)))))/2),(n_int+N_float)));
             state <="011";
             when "011"=>
-            --building the matrix CTC-lambdaI
+            --building the first row of CTC-lambda1I and second row of CTC-lambda2I
             CTC_lambdaI(0)(0)<=std_logic_vector(to_signed(to_integer(signed(CTC(0)(0))-signed(lambda1)),(n_int+N_float)));
             CTC_lambdaI(0)(1)<=CTC(0)(1);
             CTC_lambdaI(1)(0)<=CTC(1)(1);
             CTC_lambdaI(1)(1)<=std_logic_vector(to_signed(to_integer(signed(CTC(1)(1))-signed(lambda2)),(n_int+N_float)));
             
-            --building the Sigma amtrix
+            --building the Sigma matrix
             Sigma(0)(0)((N_int+N_float)-1 downto((N_int)/2+N_float))<=zero_int;
             Sigma(0)(0)((N_float/2)-1 downto(0))<=zero_float;
             Sigma(0)(0)(((N_int)/2+N_float)-1 downto (N_float/2))<= std_logic_vector(sqrt(unsigned(lambda1))); 

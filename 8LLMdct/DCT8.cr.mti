@@ -1,0 +1,190 @@
+C:/Users/Gina/Desktop/dct8x8/0_nd2.vhd {1 {vcom -work work -2002 -explicit C:/Users/Gina/Desktop/dct8x8/0_nd2.vhd
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity nd2
+-- Compiling architecture arch1 of nd2
+-- Compiling architecture arch2 of nd2
+-- Loading entity nd2
+-- Compiling configuration cfg_nd2_arch1
+-- Loading entity nd2
+-- Loading architecture arch1 of nd2
+-- Compiling configuration cfg_nd2_arch2
+-- Loading entity nd2
+-- Loading architecture arch2 of nd2
+
+} {} {}} C:/Users/Gina/Desktop/dct8x8/01_ALU_P4_fa.vhd {1 {vcom -work work -2002 -explicit C:/Users/Gina/Desktop/dct8x8/01_ALU_P4_fa.vhd
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity fa
+-- Compiling architecture behavioral of fa
+
+} {} {}} C:/Users/Gina/Desktop/dct8x8/DCT_00_pipeline.vhd {1 {vcom -work work -2002 -explicit C:/Users/Gina/Desktop/dct8x8/DCT_00_pipeline.vhd
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package numeric_std
+-- Loading package mytypes
+-- Compiling entity pipeline
+-- Compiling architecture behavioral of pipeline
+
+} {} {}} C:/Users/Gina/Desktop/dct8x8/05_ALU_P4_sum_generator_generic.vhd {1 {vcom -work work -2002 -explicit C:/Users/Gina/Desktop/dct8x8/05_ALU_P4_sum_generator_generic.vhd
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package std_logic_unsigned
+-- Compiling entity sum_generator
+-- Compiling architecture structural of sum_generator
+
+} {} {}} C:/Users/Gina/Desktop/dct8x8/0_block_pg.vhd {1 {vcom -work work -2002 -explicit C:/Users/Gina/Desktop/dct8x8/0_block_pg.vhd
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity block_pg
+-- Compiling architecture behavioral of block_pg
+-- Compiling configuration cfg_block_pg_behavioral
+-- Loading entity block_pg
+-- Loading architecture behavioral of block_pg
+
+} {} {}} C:/Users/Gina/Desktop/dct8x8/DCT_result.vhd {1 {vcom -work work -2002 -explicit C:/Users/Gina/Desktop/dct8x8/DCT_result.vhd
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package numeric_std
+-- Loading package textio
+-- Loading package std_logic_textio
+-- Loading package mytypes
+-- Compiling entity dct_result
+-- Compiling architecture dct_result_bhe of dct_result
+
+} {} {}} C:/Users/Gina/Desktop/dct8x8/06_ALU_P4adder.vhd {1 {vcom -work work -2002 -explicit C:/Users/Gina/Desktop/dct8x8/06_ALU_P4adder.vhd
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package std_logic_unsigned
+-- Compiling entity p4adder
+-- Compiling architecture structural of p4adder
+
+} {} {}} C:/Users/Gina/Desktop/dct8x8/0_mux1.vhd {1 {vcom -work work -2002 -explicit C:/Users/Gina/Desktop/dct8x8/0_mux1.vhd
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity mux1
+-- Compiling architecture behavioral of mux1
+-- Compiling architecture structural of mux1
+-- Loading entity mux1
+-- Compiling configuration cfg_mux21_behavioral
+-- Loading entity mux1
+-- Loading architecture behavioral of mux1
+-- Compiling configuration cfg_mux21_structural
+-- Loading entity mux1
+-- Loading architecture structural of mux1
+-- Loading entity iv
+-- Loading entity nd2
+-- Loading configuration cfg_iv_behavioral
+-- Loading configuration cfg_nd2_arch2
+
+} {} {}} C:/Users/Gina/Desktop/dct8x8/03_EXECUTE_ALU_P4_cs_generic.vhd {1 {vcom -work work -2002 -explicit C:/Users/Gina/Desktop/dct8x8/03_EXECUTE_ALU_P4_cs_generic.vhd
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package std_logic_unsigned
+-- Compiling entity cs_generic
+-- Compiling architecture structural of cs_generic
+
+} {} {}} C:/Users/Gina/Desktop/dct8x8/0_AND_2.vhd {1 {vcom -work work -2002 -explicit C:/Users/Gina/Desktop/dct8x8/0_AND_2.vhd
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity and_2
+-- Compiling architecture arch1 of and_2
+-- Compiling architecture arch2 of and_2
+-- Loading entity and_2
+-- Compiling configuration cfg_and2_arch1
+-- Loading entity and_2
+-- Loading architecture arch1 of and_2
+-- Compiling configuration cfg_and2_arch2
+-- Loading entity and_2
+-- Loading architecture arch2 of and_2
+
+} {} {}} C:/Users/Gina/Desktop/dct8x8/BOOTHMUL_RED.vhd {1 {vcom -work work -2002 -explicit C:/Users/Gina/Desktop/dct8x8/BOOTHMUL_RED.vhd
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package numeric_std
+-- Compiling entity booth_mul_red
+-- Compiling architecture structural of booth_mul_red
+
+} {} {}} C:/Users/Gina/Desktop/dct8x8/04_ALU_P4_sparse_tree_carry_gen.vhd {1 {vcom -work work -2002 -explicit C:/Users/Gina/Desktop/dct8x8/04_ALU_P4_sparse_tree_carry_gen.vhd
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package std_logic_unsigned
+-- Compiling entity sparce_tree
+-- Compiling architecture structural of sparce_tree
+
+} {} {}} C:/Users/Gina/Desktop/dct8x8/0_iv.vhd {1 {vcom -work work -2002 -explicit C:/Users/Gina/Desktop/dct8x8/0_iv.vhd
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity iv
+-- Compiling architecture behavioral of iv
+-- Compiling configuration cfg_iv_behavioral
+-- Loading entity iv
+-- Loading architecture behavioral of iv
+
+} {} {}} C:/Users/Gina/Desktop/dct8x8/02_ALU_P4_rca_generic.vhd {1 {vcom -work work -2002 -explicit C:/Users/Gina/Desktop/dct8x8/02_ALU_P4_rca_generic.vhd
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package std_logic_unsigned
+-- Compiling entity rca_generic
+-- Compiling architecture structural of rca_generic
+-- Compiling architecture behavioral of rca_generic
+-- Loading entity rca_generic
+
+} {} {}} C:/Users/Gina/Desktop/dct8x8/0_block_g.vhd {1 {vcom -work work -2002 -explicit C:/Users/Gina/Desktop/dct8x8/0_block_g.vhd
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity block_g
+-- Compiling architecture behavioral of block_g
+-- Compiling configuration cfg_block_g_behavioral
+-- Loading entity block_g
+-- Loading architecture behavioral of block_g
+
+} {} {}} C:/Users/Gina/Desktop/dct8x8/0_MUX21_generic.vhd {1 {vcom -work work -2002 -explicit C:/Users/Gina/Desktop/dct8x8/0_MUX21_generic.vhd
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity mux21_generic
+-- Compiling architecture behavioral of mux21_generic
+-- Compiling architecture structural of mux21_generic
+-- Loading entity mux21_generic
+-- Compiling configuration cfg_mux21_gen_behavioral
+-- Loading entity mux21_generic
+-- Loading architecture behavioral of mux21_generic
+-- Compiling configuration cfg_mux21_gen_structural
+-- Loading entity mux21_generic
+-- Loading architecture structural of mux21_generic
+-- Loading entity iv
+-- Loading entity nd2
+-- Loading configuration cfg_iv_behavioral
+-- Loading configuration cfg_nd2_arch2
+
+} {} {}} C:/Users/Gina/Desktop/dct8x8/booth_mux_generic.vhd {1 {vcom -work work -2002 -explicit C:/Users/Gina/Desktop/dct8x8/booth_mux_generic.vhd
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity booth_mux_generic
+-- Compiling architecture behavioral of booth_mux_generic
+-- Compiling architecture structural of booth_mux_generic
+-- Loading entity booth_mux_generic
+
+} {} {}}

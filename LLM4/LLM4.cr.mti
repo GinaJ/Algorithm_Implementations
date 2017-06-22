@@ -1,0 +1,107 @@
+C:/Users/Gina/Desktop/LLM4/07_ALU_SUB_P4adder.vhd {1 {vcom -work work -2002 -explicit C:/Users/Gina/Desktop/LLM4/07_ALU_SUB_P4adder.vhd
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package std_logic_unsigned
+-- Compiling entity sub_p4adder
+-- Compiling architecture structural of sub_p4adder
+
+} {} {}} C:/Users/Gina/Desktop/LLM4/DCT_00_pipeline.vhd {1 {vcom -work work -2002 -explicit C:/Users/Gina/Desktop/LLM4/DCT_00_pipeline.vhd
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package numeric_std
+-- Loading package mytypes
+-- Compiling entity pipeline
+-- Compiling architecture behavioral of pipeline
+
+} {} {}} C:/Users/Gina/Desktop/LLM4/0_block_pg.vhd {1 {vcom -work work -2002 -explicit C:/Users/Gina/Desktop/LLM4/0_block_pg.vhd
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity block_pg
+-- Compiling architecture behavioral of block_pg
+-- Compiling configuration cfg_block_pg_behavioral
+-- Loading entity block_pg
+-- Loading architecture behavioral of block_pg
+
+} {} {}} C:/Users/Gina/Desktop/LLM4/0_mux1.vhd {1 {vcom -work work -2002 -explicit C:/Users/Gina/Desktop/LLM4/0_mux1.vhd
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity mux1
+-- Compiling architecture behavioral of mux1
+-- Compiling architecture structural of mux1
+-- Loading entity mux1
+-- Compiling configuration cfg_mux21_behavioral
+-- Loading entity mux1
+-- Loading architecture behavioral of mux1
+-- Compiling configuration cfg_mux21_structural
+-- Loading entity mux1
+-- Loading architecture structural of mux1
+-- Loading entity iv
+-- Loading entity nd2
+-- Loading configuration cfg_iv_behavioral
+-- Loading configuration cfg_nd2_arch2
+
+} {} {}} C:/Users/Gina/Desktop/LLM4/0_AND_2.vhd {1 {vcom -work work -2002 -explicit C:/Users/Gina/Desktop/LLM4/0_AND_2.vhd
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity and_2
+-- Compiling architecture arch1 of and_2
+-- Compiling architecture arch2 of and_2
+-- Loading entity and_2
+-- Compiling configuration cfg_and2_arch1
+-- Loading entity and_2
+-- Loading architecture arch1 of and_2
+-- Compiling configuration cfg_and2_arch2
+-- Loading entity and_2
+-- Loading architecture arch2 of and_2
+
+} {} {}} C:/Users/Gina/Desktop/LLM4/tb_dct4.vhd {0 {vcom -work work -2002 -explicit C:/Users/Gina/Desktop/LLM4/tb_dct4.vhd
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package mytypes
+-- Compiling entity tb_dct4
+** Error: C:/Users/Gina/Desktop/LLM4/tb_dct4.vhd(11): Labels do not match: 'tb_dct4' and 'tb_dct8'.
+** Error: C:/Users/Gina/Desktop/LLM4/tb_dct4.vhd(11): VHDL Compiler exiting
+
+} {7.0 9.0} {}} C:/Users/Gina/Desktop/LLM4/0_iv.vhd {1 {vcom -work work -2002 -explicit C:/Users/Gina/Desktop/LLM4/0_iv.vhd
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity iv
+-- Compiling architecture behavioral of iv
+-- Compiling configuration cfg_iv_behavioral
+-- Loading entity iv
+-- Loading architecture behavioral of iv
+
+} {} {}} C:/Users/Gina/Desktop/LLM4/0_block_g.vhd {1 {vcom -work work -2002 -explicit C:/Users/Gina/Desktop/LLM4/0_block_g.vhd
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity block_g
+-- Compiling architecture behavioral of block_g
+-- Compiling configuration cfg_block_g_behavioral
+-- Loading entity block_g
+-- Loading architecture behavioral of block_g
+
+} {} {}} C:/Users/Gina/Desktop/LLM4/0_nd2.vhd {1 {vcom -work work -2002 -explicit C:/Users/Gina/Desktop/LLM4/0_nd2.vhd
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity nd2
+-- Compiling architecture arch1 of nd2
+-- Compiling architecture arch2 of nd2
+-- Loading entity nd2
+-- Compiling configuration cfg_nd2_arch1
+-- Loading entity nd2
+-- Loading architecture arch1 of nd2
+-- Compiling configuration cfg_nd2_arch2
+-- Loading entity nd2
+-- Loading architecture arch2 of nd2
+
+} {} {}}

@@ -1,0 +1,60 @@
+#
+#		".synopsys_dc.setup" Initialization File for
+#
+#		    Dc_Shell and Design_Analyzer
+#
+# 	Default configurations will be used set in the installation
+#	dir .synopsys_dc.detup file, except from the directives given below
+#
+
+#SynopsysInstall = get_unix_variable(SYNOPSYS);
+
+set search_path {/software/design-kits/cmp/28nm_fdsoi/v2p4/C28SOI_SC_12_CORE_LL@2.2@20131004.0/libs ./}
+#C32_SC_12_CORE_LL_C28SOI@2.1@20121009.0--10924/libs ./}
+#set serarch_path {/home/phd-students/umberto.garlando/Desktop}
+
+# ================================================= #
+# Define a work library in the current project dir  #
+# to hold temporaryinclude files and keep the project area #
+# uncluttered. Note: You must create a subdirectory # 
+# in your project directory called WORK. Des. Comp. #
+# will not create this directory for you.           #
+# ================================================= #
+
+ define_design_lib -path ./work WORK
+
+  
+
+# ================================================= #
+# General configuration settings.                   #
+# ================================================= #
+
+# usign standard configuration in installation dir
+
+set hdlin_enable_configurations "true"
+set power_preserve_rtl_hier_names "true"
+
+# ================================================= #
+# Set the link, target and synthetic library        #
+# variables. Use synlibs (with the -fc switch) to   #
+# determine the link and target library settings.   #
+# You may like to copy this file to your project    #
+# directory and append the output of synlibs.       #
+
+
+#set link_library "C32_SC_12_CORE_LL_tt28_0.92V_0.00V_0.00V_0.00V_25C.db"
+#set target_library "C32_SC_12_CORE_LL_tt28_0.92V_0.00V_0.00V_0.00V_25C.db"
+#set symbol_library "C32_SC_12_CORE_LL.slib"
+
+
+set link_library "* C28SOI_SC_12_CORE_LL_tt28_0.90V_0.00V_0.00V_0.00V_25C.db"
+#C32_SC_12_CORE_LL_tt28_0.92V_0.00V_0.00V_0.00V_25C.db"
+set target_library "C28SOI_SC_12_CORE_LL_tt28_0.90V_0.00V_0.00V_0.00V_25C.db"
+#C32_SC_12_CORE_LL_tt28_0.92V_0.00V_0.00V_0.00V_25C.db"
+set symbol_library "C28SOI_SC_12_CORE_LL.slib"
+#C32_SC_12_CORE_LL.slib"
+#set link_library "FinFET_7nm_HVT_030.db"
+#set target_library "FinFET_7nm_HVT_030.db"
+
+
+
