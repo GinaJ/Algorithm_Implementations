@@ -1,18 +1,110 @@
-library ieee;
-use ieee.std_logic_1164.all;
-use IEEE.NUMERIC_STD.all;
-use IEEE.std_logic_arith.all;
+library IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
+USE IEEE.NUMERIC_STD.ALL;
+use WORK.all;
 use work.myTypes.all;
 
 
     entity cell is
       generic (    
-        bit : natural := nbits); 
+        nbit : natural := TG_nbit); 
       port (
     clk : in std_logic;
     rst : in std_logic;
-    input: in std_logic_vector((N_size*N_int)-1 downto 0);
-    output: out std_logic_vector(N_size*(N_int+N_float)- 1 downto 0)
+    input: in std_logic_vector(nbit-1 downto 0);
+    output: out std_logic_vector(nbit- 1 downto 0)
       
 		);
    end cell;
+   
+   architecture beh_cell of cell is
+   signal Mx, My, Mz : 	std_logic_vector(nbit-1 downto 0);
+   signal TGxx, TGxy, TGxz, TGyx, TGyy, TGyz, TGzx, TGzy, TGzz : 	std_logic_vector(nbit-1 downto 0);
+   signal op1, op2 : 	std_logic_vector(nbit-1 downto 0);
+   signal Hx, Hy, Hz : 	std_logic_vector(nbit-1 downto 0);
+   type state_type is (READ_MX, READ_MY, READ_MZ, READ_TGxx, READ_TGxy, READ_TGxz,READ_TGyx,READ_TGyy,READ_TGyz,READ_TGzx,READ_TGzy,READ_TGzz, IDLE);
+   signal fsm_state: state_type;
+    
+begin
+
+	proc_fsm : process(clk,rst) 
+     variable temp : 	std_logic_vector(nbit-1 downto 0);
+	begin
+		if rst = '1' then
+			-- asynchronous reset.
+			Mx    <=(others =>'0');
+      My    <=(others =>'0');
+      Mz    <=(others =>'0');
+      TGxx  <=(others =>'0');
+      TGxy  <=(others =>'0');
+      TGxz  <=(others =>'0');
+      TGyx  <=(others =>'0');
+      TGyy  <=(others =>'0');
+      TGyz  <=(others =>'0');
+      TGzx  <=(others =>'0');
+      TGzy  <=(others =>'0');
+      TGzz  <=(others =>'0');
+      output<=(others =>'0'); 
+      fsm_state 	<= READ_MX;
+		elsif (clk'event and clk = '1') then -- Working on rising edge
+            
+        case fsm_state is
+					when READ_MX=>    
+						Mx<=input;
+						fsm_state 	<= READ_MY; 				
+						
+					when READ_MY => 
+						My<=input;
+						fsm_state 	<= READ_MZ;  
+	
+					when READ_MZ => 
+						Mz<=input;
+						fsm_state 	<= READ_TGxx;
+					
+          when READ_TGxx => 
+						TGxx<=input;
+            op1<=std_logic_vector(to_signed(to_integer(signed(input)*signed(Mx)),nbit));
+						fsm_state 	<= READ_TGxy;  
+          when READ_TGxy => 
+						TGxy<=input;
+            op1<=std_logic_vector(to_signed(to_integer(signed(input)*signed(My)),nbit));
+						fsm_state 	<= READ_TGxz; 
+          when READ_TGxz => 
+						TGxz<=input;
+            temp :=std_logic_vector(to_signed(to_integer(signed(op1)+signed(op2)+(signed(input)*signed(Mz))),(nbit)));          
+            
+            output<=temp;
+            Hx<=temp;
+            --Hx<=std_logic_vector(to_signed(to_integer(op1+op2+(signed(input)*signed(Mz))),(nbit)));  
+						fsm_state 	<= READ_TGyx; 
+          when READ_TGyx => 
+						
+						fsm_state 	<= READ_TGyy;  
+          when READ_TGyy => 
+						
+						fsm_state 	<= READ_TGyz; 
+          when READ_TGyz => 
+						
+						fsm_state 	<= READ_TGzx; 
+          when READ_TGzx => 
+						
+						fsm_state 	<= READ_TGzy;  
+          when READ_TGzy => 
+						
+						fsm_state 	<= READ_TGzz; 
+          when READ_TGzz => 
+						
+						fsm_state 	<= IDLE; 
+					when IDLE => 
+						--In idle always ask to read the first operand
+						
+						fsm_state 	<= READ_Mx;						
+					when OTHERS =>
+						
+						fsm_state <= READ_Mx;
+        end case;
+            
+		end if;
+	end process;
+	
+end architecture beh_cell;
