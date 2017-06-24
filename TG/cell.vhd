@@ -44,13 +44,29 @@ begin
       TGzx  <=(others =>'0');
       TGzy  <=(others =>'0');
       TGzz  <=(others =>'0');
+      op1   <=(others =>'0');
+      op2   <=(others =>'0');
       output<=(others =>'0'); 
       fsm_state 	<= READ_MX;
-		elsif (clk'event and clk = '1') then -- Working on rising edge
+		elsif (clk'event and clk = '1' and rst='0') then -- Working on rising edge
             
         case fsm_state is
 					when READ_MX=>    
 						Mx<=input;
+            My    <=(others =>'0');
+            Mz    <=(others =>'0');
+            TGxx  <=(others =>'0');
+            TGxy  <=(others =>'0');
+            TGxz  <=(others =>'0');
+            TGyx  <=(others =>'0');
+            TGyy  <=(others =>'0');
+            TGyz  <=(others =>'0');
+            TGzx  <=(others =>'0');
+            TGzy  <=(others =>'0');
+            TGzz  <=(others =>'0');
+            op1   <=(others =>'0');
+            op2   <=(others =>'0');
+            output<=(others =>'0'); 
 						fsm_state 	<= READ_MY; 				
 						
 					when READ_MY => 
@@ -67,7 +83,7 @@ begin
 						fsm_state 	<= READ_TGxy;  
           when READ_TGxy => 
 						TGxy<=input;
-            op1<=std_logic_vector(to_signed(to_integer(signed(input)*signed(My)),nbit));
+            op2<=std_logic_vector(to_signed(to_integer(signed(input)*signed(My)),nbit));
 						fsm_state 	<= READ_TGxz; 
           when READ_TGxz => 
 						TGxz<=input;
@@ -78,24 +94,45 @@ begin
             --Hx<=std_logic_vector(to_signed(to_integer(op1+op2+(signed(input)*signed(Mz))),(nbit)));  
 						fsm_state 	<= READ_TGyx; 
           when READ_TGyx => 
+          TGyx<=input;
+            op1<=std_logic_vector(to_signed(to_integer(signed(input)*signed(Mx)),nbit));
 						
 						fsm_state 	<= READ_TGyy;  
           when READ_TGyy => 
+          TGyy<=input;
+            op2<=std_logic_vector(to_signed(to_integer(signed(input)*signed(My)),nbit));
+						
 						
 						fsm_state 	<= READ_TGyz; 
           when READ_TGyz => 
+            TGyz<=input;
+            temp :=std_logic_vector(to_signed(to_integer(signed(op1)+signed(op2)+(signed(input)*signed(Mz))),(nbit)));          
+            
+            output<=temp;
+            Hy<=temp;
 						
 						fsm_state 	<= READ_TGzx; 
           when READ_TGzx => 
+            TGzx<=input;
+            op2<=std_logic_vector(to_signed(to_integer(signed(input)*signed(Mx)),nbit));
+						
 						
 						fsm_state 	<= READ_TGzy;  
           when READ_TGzy => 
+            TGzy<=input;
+            op1<=std_logic_vector(to_signed(to_integer(signed(input)*signed(My)),nbit));
+						
 						
 						fsm_state 	<= READ_TGzz; 
           when READ_TGzz => 
+            TGzz<=input;
+            temp :=std_logic_vector(to_signed(to_integer(signed(op1)+signed(op2)+(signed(input)*signed(Mz))),(nbit)));          
+            
+            output<=temp;
+            Hz<=temp;
 						
-						fsm_state 	<= IDLE; 
-					when IDLE => 
+					--	fsm_state 	<= IDLE; 
+					--when IDLE => 
 						--In idle always ask to read the first operand
 						
 						fsm_state 	<= READ_Mx;						
