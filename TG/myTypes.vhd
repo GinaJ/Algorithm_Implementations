@@ -7,8 +7,8 @@ package myTypes is
     constant TG_NBIT : natural := 16;    
     
     --Define size of the CUBE (size of i, j, k)
-    constant i_size : natural:=3;
+    constant i_size : natural:=2;
     constant j_size : natural:=3;
-    constant k_size : natural:=3;
+    constant k_size : natural:=4;
     
     end myTypes;
