@@ -22,7 +22,7 @@ use work.myTypes.all;
    signal TGxx, TGxy, TGxz, TGyx, TGyy, TGyz, TGzx, TGzy, TGzz : 	std_logic_vector(nbit-1 downto 0);
    signal op1, op2 : 	std_logic_vector(nbit-1 downto 0);
    signal Hx, Hy, Hz : 	std_logic_vector(nbit-1 downto 0);
-   type state_type is (READ_MX, READ_MY, READ_MZ, READ_TGxx, READ_TGxy, READ_TGxz,READ_TGyx,READ_TGyy,READ_TGyz,READ_TGzx,READ_TGzy,READ_TGzz, IDLE);
+   type state_type is (READ_MX, READ_MY, READ_MZ, READ_TGxx, READ_TGxy, READ_TGxz,READ_TGyx,READ_TGyy,READ_TGyz,READ_TGzx,READ_TGzy,READ_TGzz);
    signal fsm_state: state_type;
     
 begin
@@ -35,6 +35,9 @@ begin
 			Mx    <=(others =>'0');
       My    <=(others =>'0');
       Mz    <=(others =>'0');
+      Hx    <=(others =>'0');
+      Hy    <=(others =>'0');
+      Hz    <=(others =>'0');
       TGxx  <=(others =>'0');
       TGxy  <=(others =>'0');
       TGxz  <=(others =>'0');
@@ -53,8 +56,8 @@ begin
         case fsm_state is
 					when READ_MX=>    
 						Mx<=input;
-            My    <=(others =>'0');
-            Mz    <=(others =>'0');
+            --My    <=(others =>'0');
+            --Mz    <=(others =>'0');
             TGxx  <=(others =>'0');
             TGxy  <=(others =>'0');
             TGxz  <=(others =>'0');
@@ -66,15 +69,18 @@ begin
             TGzz  <=(others =>'0');
             op1   <=(others =>'0');
             op2   <=(others =>'0');
-            output<=(others =>'0'); 
+            --output<=(others =>'0'); 
+            output<=Mx;
 						fsm_state 	<= READ_MY; 				
 						
 					when READ_MY => 
 						My<=input;
+            output<=My;
 						fsm_state 	<= READ_MZ;  
 	
 					when READ_MZ => 
 						Mz<=input;
+            output<=Mz;
 						fsm_state 	<= READ_TGxx;
 					
           when READ_TGxx => 
