@@ -30,29 +30,30 @@ begin
 	proc_fsm : process(clk,rst) 
      variable temp : 	std_logic_vector(nbit-1 downto 0);
 	begin
-		if rst = '1' then
-			-- asynchronous reset.
-			Mx    <=(others =>'0');
-      My    <=(others =>'0');
-      Mz    <=(others =>'0');
-      Hx    <=(others =>'0');
-      Hy    <=(others =>'0');
-      Hz    <=(others =>'0');
-      TGxx  <=(others =>'0');
-      TGxy  <=(others =>'0');
-      TGxz  <=(others =>'0');
-      TGyx  <=(others =>'0');
-      TGyy  <=(others =>'0');
-      TGyz  <=(others =>'0');
-      TGzx  <=(others =>'0');
-      TGzy  <=(others =>'0');
-      TGzz  <=(others =>'0');
-      op1   <=(others =>'0');
-      op2   <=(others =>'0');
-      output<=(others =>'0'); 
-      fsm_state 	<= READ_MX;
-		elsif (clk'event and clk = '1' and rst='0') then -- Working on rising edge
-            
+		
+		if (clk'event and clk = '1' and rst='0') then -- Working on rising edge
+            if rst = '1' then
+                -- synchronous reset.
+                Mx    <=(others =>'0');
+                My    <=(others =>'0');
+                Mz    <=(others =>'0');
+                Hx    <=(others =>'0');
+                Hy    <=(others =>'0');
+                Hz    <=(others =>'0');
+                TGxx  <=(others =>'0');
+                TGxy  <=(others =>'0');
+                TGxz  <=(others =>'0');
+                TGyx  <=(others =>'0');
+                TGyy  <=(others =>'0');
+                TGyz  <=(others =>'0');
+                TGzx  <=(others =>'0');
+                TGzy  <=(others =>'0');
+                TGzz  <=(others =>'0');
+                op1   <=(others =>'0');
+                op2   <=(others =>'0');
+                output<=(others =>'0'); 
+                fsm_state 	<= READ_MX;
+            end if;
         case fsm_state is
 					when READ_MX=>    
 						Mx<=input;
@@ -70,17 +71,20 @@ begin
             op1   <=(others =>'0');
             op2   <=(others =>'0');
             --output<=(others =>'0'); 
-            output<=Mx;
+            --output<=Mx;
+            output<=input;
 						fsm_state 	<= READ_MY; 				
 						
 					when READ_MY => 
 						My<=input;
-            output<=My;
+            --output<=My;
+            output<=input;
 						fsm_state 	<= READ_MZ;  
 	
 					when READ_MZ => 
 						Mz<=input;
-            output<=Mz;
+            --output<=Mz;
+            output<=input;
 						fsm_state 	<= READ_TGxx;
 					
           when READ_TGxx => 
