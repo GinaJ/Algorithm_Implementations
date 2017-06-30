@@ -73,7 +73,7 @@ begin
             --temp :=std_logic_vector(to_signed(to_integer(signed(op1)+signed(op2)+(signed(input)*signed(Mz))),(nbit)));          
             
             output<=Hx;
-            Hx<=inputt;
+            Hx<=input;
             --Hx<=std_logic_vector(to_signed(to_integer(op1+op2+(signed(input)*signed(Mz))),(nbit)));  
 						fsm_state 	<= READ_TGyx; 
           when READ_TGyx => 
