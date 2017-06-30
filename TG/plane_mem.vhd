@@ -5,11 +5,11 @@ use WORK.all;
 use work.myTypes.all;
 
 
-    entity plane_mem is
+    entity mem_plane is
       generic (    
+        nbit : natural := TG_nbit;
         size_1 : natural := i_size;
-        size_2 : natural := j_size;
-        nbit : natural := TG_nbit); 
+        size_2 : natural := j_size); 
       port (
     clk : in std_logic;
     rst : in std_logic;
@@ -17,9 +17,9 @@ use work.myTypes.all;
     output: out std_logic_vector((size_1*size_2*nbit)- 1 downto 0)
       
 		);
-   end plane_mem;
+   end mem_plane;
    
- architecture struct_plane_mem of  plane_mem is 
+ architecture struct_mem_plane of  mem_plane is 
    component memory_cell is
       generic (    
         nbit : natural := TG_nbit); 
@@ -44,4 +44,4 @@ use work.myTypes.all;
     end generate;
   end generate;
    
-   end struct_plane_mem;
+   end struct_mem_plane;
