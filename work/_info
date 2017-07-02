@@ -5,7 +5,7 @@ cModel Technology
 dC:\Users\Gina\Desktop\svd
 Ecell
 Z0 w1498832615
-Z1 DPx4 work 7 mytypes 0 22 lhJ:Ske?>MJU4FGkkgPi01
+Z1 DPx4 work 7 mytypes 0 22 I;LL33POf>LSzFHOboDci0
 Z2 DPx4 ieee 11 numeric_std 0 22 =NSdli^?T5OD8;4F<blj<3
 Z3 DPx4 ieee 14 std_logic_1164 0 22 GH1=`jDDBJ=`LM;:Ak`kf2
 Z4 dC:\Users\Gina\Desktop\Algorithm_Implementations
@@ -64,91 +64,27 @@ R12
 R8
 R9
 !s100 2iAd6eGS?KM84o;6_?^>90
-Emem_plane
-Z17 w1498832881
-R1
-R2
-R3
-R4
-Z18 8C:/Users/Gina/Desktop/Algorithm_Implementations/TG/plane_mem.vhd
-Z19 FC:/Users/Gina/Desktop/Algorithm_Implementations/TG/plane_mem.vhd
-l0
-L8
-VL5[85>cg`:[hb33:J4h=[0
-R7
-32
-R8
-R9
-!s100 2ga>O8C8^I0>h=8IOJaf83
-Astruct_mem_plane
-R1
-R2
-R3
-DEx4 work 9 mem_plane 0 22 L5[85>cg`:[hb33:J4h=[0
-l47
-L23
-Vod3[XSNZ88m<DLUkCXXO;0
-R7
-32
-R10
-R11
-R12
-R8
-R9
-!s100 EUk268TS`i`a?]9bHIK9[1
-Ememory_cell
-Z20 w1498811680
-R1
-R2
-R3
-R4
-Z21 8C:/Users/Gina/Desktop/Algorithm_Implementations/TG/memory_cell.vhd
-Z22 FC:/Users/Gina/Desktop/Algorithm_Implementations/TG/memory_cell.vhd
-l0
-L8
-VoGNnMJf7H7;@[KUCko8Eg3
-R7
-32
-R8
-R9
-!s100 o<fL>Y4;KXHgNOJPd6TTE1
-Abeh_memory_cell
-R1
-R2
-R3
-DEx4 work 11 memory_cell 0 22 oGNnMJf7H7;@[KUCko8Eg3
-l28
-L20
-VKK3@N_DfcG=Rn@3Gikd2=2
-R7
-32
-R10
-R11
-R12
-R8
-R9
-!s100 FEPUZOJ`[=FMz_h45`na81
 Pmytypes
 R3
-w1498313805
+w1499014451
 R4
 8C:/Users/Gina/Desktop/Algorithm_Implementations/TG/myTypes.vhd
 FC:/Users/Gina/Desktop/Algorithm_Implementations/TG/myTypes.vhd
 l0
 L4
-VlhJ:Ske?>MJU4FGkkgPi01
+VI;LL33POf>LSzFHOboDci0
 R7
 32
-Z23 Mx1 4 ieee 14 std_logic_1164
+Z17 Mx1 4 ieee 14 std_logic_1164
 R8
 R9
-!s100 nLm=YFf<h=KVgFbbQY=`k1
+!s100 0k=SGm^WU1zQzXSb427Le2
 Erst_delay
-Z24 w1498832574
+Z18 w1498832574
 R3
 R4
-Z25 8C:/Users/Gina/Desktop/Algorithm_Implementations/TG/rst_delay.vhd
-Z26 FC:/Users/Gina/Desktop/Algorithm_Implementations/TG/rst_delay.vhd
+Z19 8C:/Users/Gina/Desktop/Algorithm_Implementations/TG/rst_delay.vhd
+Z20 FC:/Users/Gina/Desktop/Algorithm_Implementations/TG/rst_delay.vhd
 l0
 L4
 V<J8>1o3AgIK=M0^Q:g2AJ1
@@ -165,62 +101,65 @@ L14
 VAhLNJBUCZ5IZ2c48@MPc[3
 R7
 32
-R23
+R17
 R8
 R9
 !s100 R8LNgASV;He0Yz9VL7CBH3
-Etb_tg_cell
-Z27 w1498307778
+Esum_all
+Z21 w1499016611
 R1
+R2
 R3
 R4
-Z28 8C:/Users/Gina/Desktop/Algorithm_Implementations/TG/tb_cell.vhd
-Z29 FC:/Users/Gina/Desktop/Algorithm_Implementations/TG/tb_cell.vhd
+Z22 8C:/Users/Gina/Desktop/Algorithm_Implementations/TG/sum_all.vhd
+Z23 FC:/Users/Gina/Desktop/Algorithm_Implementations/TG/sum_all.vhd
 l0
-L6
-VaSLdb[hZcVFdlGUm9[zfi2
+L8
+V;eF9=i=WEl;gge=3bOML_1
 R7
 32
 R8
 R9
-!s100 aCY::biD_^L:W^j]H`UU91
-Atest_tg_cell
+!s100 KlIm_7ge11N;gNX:in1lM0
+Abeh_sum
 R1
+R2
 R3
-DEx4 work 10 tb_tg_cell 0 22 aSLdb[hZcVFdlGUm9[zfi2
-l30
-L11
-Vi?]9Tce?gg1IRI0j[XoOn3
+DEx4 work 7 sum_all 0 22 ;eF9=i=WEl;gge=3bOML_1
+l39
+L26
+V76:>k=0TSV4hUKQaARih;1
+!s100 m:hfIIbM6j`XMe@KRUGX]1
 R7
 32
-R16
+R10
+R11
 R12
 R8
 R9
-!s100 VPdbCTTD^GzA6bh`5@AB?3
 Etb_tg_top_2d
-Z30 w1498314300
+Z24 w1499016518
 R1
 R3
 R4
-Z31 8C:/Users/Gina/Desktop/Algorithm_Implementations/TG/tb_tg_top_2d.vhd
-Z32 FC:/Users/Gina/Desktop/Algorithm_Implementations/TG/tb_tg_top_2d.vhd
+Z25 8C:/Users/Gina/Desktop/Algorithm_Implementations/TG/tb_tg_top_2d.vhd
+Z26 FC:/Users/Gina/Desktop/Algorithm_Implementations/TG/tb_tg_top_2d.vhd
 l0
 L6
 VHkbek>VbT4CN00D7`XPk92
+!s100 L=5]?H^mZz^jJ@cfVH0AL0
 R7
 32
 R8
 R9
-!s100 L=5]?H^mZz^jJ@cfVH0AL0
 Atest_tg_top_2d
 R1
 R3
-DEx4 work 12 tb_tg_top_2d 0 22 Hkbek>VbT4CN00D7`XPk92
-l35
+Z27 DEx4 work 12 tb_tg_top_2d 0 22 Hkbek>VbT4CN00D7`XPk92
+l41
 L14
-Vd99e6;7aH:ZALJ]c;`;:92
-!s100 f8HQj_S2<c?JQo1Xf^XQz2
+Z28 V2k2VQ?JGTGLD4o1kTNEZe3
+Z29 !s100 3g46I4IUHU9c?Lmi?j:5o0
 R7
 32
 R16
@@ -228,31 +167,31 @@ R12
 R8
 R9
 Etg_top_2d
-Z33 w1498833145
+Z30 w1499016485
 R1
 R3
 R4
-Z34 8C:/Users/Gina/Desktop/Algorithm_Implementations/TG/tg_top_2d.vhd
-Z35 FC:/Users/Gina/Desktop/Algorithm_Implementations/TG/tg_top_2d.vhd
+Z31 8C:/Users/Gina/Desktop/Algorithm_Implementations/TG/tg_top_2d.vhd
+Z32 FC:/Users/Gina/Desktop/Algorithm_Implementations/TG/tg_top_2d.vhd
 l0
 L7
-VBZan=X>dDmnSFNeKOBmD@3
-!s100 PL`8?jo6?A<jd:m]gOA;e1
+Vnh_JikfejT[HfU5g@<0bm1
 R7
 32
 R8
 R9
+!s100 :E0m:JJ8[69b=<jHJe]c;0
 Astruct_tg_top_2d
 R1
 R3
-Z36 DEx4 work 9 tg_top_2d 0 22 BZan=X>dDmnSFNeKOBmD@3
-l67
-L22
-Z37 V`iEiceU^5FKMaP01NC1:K2
-Z38 !s100 hejIbiLAjZc3Lz4eZFf9:2
+DEx4 work 9 tg_top_2d 0 22 nh_JikfejT[HfU5g@<0bm1
+l84
+L25
+V0:4HOO_Si>V@YiTK^^jXU3
 R7
 32
 R16
 R12
 R8
 R9
+!s100 @1c6MkKf@134TkAVB19A^2

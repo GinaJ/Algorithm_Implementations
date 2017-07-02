@@ -1,0 +1,150 @@
+Loading db file '/software/design-kits/cmp/28nm_fdsoi/v2p4/C28SOI_SC_12_CORE_LL@2.2@20131004.0/libs/C28SOI_SC_12_CORE_LL_tt28_0.90V_0.00V_0.00V_0.00V_25C.db'
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: There is no defined clock in the design. (PWR-80)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : DCT_TOP_N_int8_N_float8_N_size4
+Version: F-2011.09-SP3
+Date   : Sat Jul  1 19:50:30 2017
+****************************************
+
+
+Library(s) Used:
+
+    C28SOI_SC_12_CORE_LL (File: /software/design-kits/cmp/28nm_fdsoi/v2p4/C28SOI_SC_12_CORE_LL@2.2@20131004.0/libs/C28SOI_SC_12_CORE_LL_tt28_0.90V_0.00V_0.00V_0.00V_25C.db)
+
+
+Operating Conditions: tt28_0.90V_0.00V_0.00V_0.00V_25C   Library: C28SOI_SC_12_CORE_LL
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+DCT_TOP_N_int8_N_float8_N_size4
+                       wl_zero           C28SOI_SC_12_CORE_LL
+pipeline_N32_0         wl_zero           C28SOI_SC_12_CORE_LL
+pipeline_N64_0         wl_zero           C28SOI_SC_12_CORE_LL
+multiplier_nbit16_0    wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit16_0         wl_zero           C28SOI_SC_12_CORE_LL
+pipeline_N32_1         wl_zero           C28SOI_SC_12_CORE_LL
+pipeline_N32_2         wl_zero           C28SOI_SC_12_CORE_LL
+pipeline_N64_1         wl_zero           C28SOI_SC_12_CORE_LL
+pipeline_N64_2         wl_zero           C28SOI_SC_12_CORE_LL
+multiplier_nbit16_1    wl_zero           C28SOI_SC_12_CORE_LL
+multiplier_nbit16_2    wl_zero           C28SOI_SC_12_CORE_LL
+multiplier_nbit16_3    wl_zero           C28SOI_SC_12_CORE_LL
+multiplier_nbit16_4    wl_zero           C28SOI_SC_12_CORE_LL
+multiplier_nbit16_5    wl_zero           C28SOI_SC_12_CORE_LL
+multiplier_nbit16_6    wl_zero           C28SOI_SC_12_CORE_LL
+multiplier_nbit16_7    wl_zero           C28SOI_SC_12_CORE_LL
+multiplier_nbit16_8    wl_zero           C28SOI_SC_12_CORE_LL
+multiplier_nbit16_9    wl_zero           C28SOI_SC_12_CORE_LL
+multiplier_nbit16_10   wl_zero           C28SOI_SC_12_CORE_LL
+multiplier_nbit16_11   wl_zero           C28SOI_SC_12_CORE_LL
+multiplier_nbit16_12   wl_zero           C28SOI_SC_12_CORE_LL
+multiplier_nbit16_13   wl_zero           C28SOI_SC_12_CORE_LL
+multiplier_nbit16_14   wl_zero           C28SOI_SC_12_CORE_LL
+multiplier_nbit16_15   wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit16_1         wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit16_2         wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit16_3         wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit16_4         wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit16_5         wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit16_6         wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit16_7         wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit16_8         wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit16_9         wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit16_10        wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit16_11        wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit16_1_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+multiplier_nbit16_1_DW02_mult_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit16_2_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+multiplier_nbit16_2_DW02_mult_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit16_3_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+multiplier_nbit16_3_DW02_mult_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit16_4_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+multiplier_nbit16_4_DW02_mult_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit16_5_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+multiplier_nbit16_5_DW02_mult_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit16_6_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+multiplier_nbit16_6_DW02_mult_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit16_7_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+multiplier_nbit16_7_DW02_mult_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit16_8_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+multiplier_nbit16_8_DW02_mult_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit16_9_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+multiplier_nbit16_9_DW02_mult_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit16_10_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+multiplier_nbit16_10_DW02_mult_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit16_11_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+multiplier_nbit16_11_DW02_mult_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit16_0_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+multiplier_nbit16_12_DW02_mult_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+multiplier_nbit16_13_DW02_mult_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+multiplier_nbit16_14_DW02_mult_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+multiplier_nbit16_15_DW02_mult_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+multiplier_nbit16_0_DW02_mult_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+
+
+Global Operating Voltage = 0.9  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1mW
+
+
+  Cell Internal Power  = 609.1960 uW   (59%)
+  Net Switching Power  = 415.1367 uW   (41%)
+                         ---------
+Total Dynamic Power    =   1.0243 mW  (100%)
+
+Cell Leakage Power     =  66.1068 uW
+
+Information: report_power power group summary does not include estimated clock tree power. (PWR-789)
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register           0.0000            0.0000            0.0000            0.0000  (   0.00%)
+sequential     7.7303e-02        2.9452e-03        6.8192e-03        8.7067e-02  (   7.98%)
+combinational      0.5319            0.4122        5.9287e-02            1.0034  (  92.02%)
+--------------------------------------------------------------------------------------------------
+Total              0.6092 mW         0.4151 mW     6.6106e-02 mW         1.0904 mW
+1

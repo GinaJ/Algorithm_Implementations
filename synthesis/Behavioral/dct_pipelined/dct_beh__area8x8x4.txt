@@ -1,0 +1,28 @@
+ 
+****************************************
+Report : area
+Design : DCT_TOP_N_int8_N_float8_N_size4
+Version: F-2011.09-SP3
+Date   : Sat Jul  1 19:50:38 2017
+****************************************
+
+Library(s) Used:
+
+    C28SOI_SC_12_CORE_LL (File: /software/design-kits/cmp/28nm_fdsoi/v2p4/C28SOI_SC_12_CORE_LL@2.2@20131004.0/libs/C28SOI_SC_12_CORE_LL_tt28_0.90V_0.00V_0.00V_0.00V_25C.db)
+
+Number of ports:                          354
+Number of nets:                          1014
+Number of cells:                           38
+Number of combinational cells:              4
+Number of sequential cells:                 0
+Number of macros:                           0
+Number of buf/inv:                          4
+Number of references:                      35
+
+Combinational area:       6762.029008
+Noncombinational area:     752.025627
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:          7514.054635
+Total area:                 undefined
+1

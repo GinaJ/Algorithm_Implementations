@@ -1,11 +1,11 @@
-C:/Users/Gina/Desktop/Algorithm_Implementations/TG/memory_cell.vhd {1 {vcom -work work -2002 -explicit C:/Users/Gina/Desktop/Algorithm_Implementations/TG/memory_cell.vhd
+C:/Users/Gina/Desktop/Algorithm_Implementations/TG/cell.vhd {1 {vcom -work work -2002 -explicit C:/Users/Gina/Desktop/Algorithm_Implementations/TG/cell.vhd
 Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
 -- Loading package standard
 -- Loading package std_logic_1164
 -- Loading package numeric_std
 -- Loading package mytypes
--- Compiling entity memory_cell
--- Compiling architecture beh_memory_cell of memory_cell
+-- Compiling entity cell
+-- Compiling architecture beh_cell of cell
 
 } {} {}} C:/Users/Gina/Desktop/Algorithm_Implementations/TG/logic_plane.vhd {1 {vcom -work work -2002 -explicit C:/Users/Gina/Desktop/Algorithm_Implementations/TG/logic_plane.vhd
 Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
@@ -15,36 +15,11 @@ Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
 -- Compiling entity logic_plane
 -- Compiling architecture struct_logic_plane of logic_plane
 
-} {} {}} C:/Users/Gina/Desktop/Algorithm_Implementations/TG/tb_cell.vhd {1 {vcom -work work -2002 -explicit C:/Users/Gina/Desktop/Algorithm_Implementations/TG/tb_cell.vhd
+} {} {}} C:/Users/Gina/Desktop/Algorithm_Implementations/TG/rst_delay.vhd {1 {vcom -work work -2002 -explicit C:/Users/Gina/Desktop/Algorithm_Implementations/TG/rst_delay.vhd
 Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
 -- Loading package standard
 -- Loading package std_logic_1164
--- Loading package mytypes
--- Compiling entity tb_tg_cell
--- Compiling architecture test_tg_cell of tb_tg_cell
-
-} {} {}} C:/Users/Gina/Desktop/Algorithm_Implementations/TG/tg_top_2d.vhd {0 {vcom -work work -2002 -explicit C:/Users/Gina/Desktop/Algorithm_Implementations/TG/tg_top_2d.vhd
-Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
--- Loading package standard
--- Loading package std_logic_1164
--- Loading package mytypes
--- Compiling entity tg_top_2d
--- Compiling architecture struct_tg_top_2d of tg_top_2d
-** Error: C:/Users/Gina/Desktop/Algorithm_Implementations/TG/tg_top_2d.vhd(81): Cannot read output "out_tg".
-** Error: C:/Users/Gina/Desktop/Algorithm_Implementations/TG/tg_top_2d.vhd(89): VHDL Compiler exiting
-
-} {8.0 10.0} {}} C:/Users/Gina/Desktop/Algorithm_Implementations/TG/tb_tg_top_2d.vhd {1 {vcom -work work -2002 -explicit C:/Users/Gina/Desktop/Algorithm_Implementations/TG/tb_tg_top_2d.vhd
-Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
--- Loading package standard
--- Loading package std_logic_1164
--- Loading package mytypes
--- Compiling entity tb_tg_top_2d
--- Compiling architecture test_tg_top_2d of tb_tg_top_2d
-
-} {} {}} C:/Users/Gina/Desktop/Algorithm_Implementations/TG/myTypes.vhd {1 {vcom -work work -2002 -explicit C:/Users/Gina/Desktop/Algorithm_Implementations/TG/myTypes.vhd
-Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
--- Loading package standard
--- Loading package std_logic_1164
--- Compiling package mytypes
+-- Compiling entity rst_delay
+-- Compiling architecture behavioral of rst_delay
 
 } {} {}}

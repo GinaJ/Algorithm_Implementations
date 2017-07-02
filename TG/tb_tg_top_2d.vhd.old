@@ -14,11 +14,8 @@ end tb_tg_top_2d;
 architecture TEST_tg_top_2d of tb_tg_top_2d is
     signal Clock: std_logic := '0';
     signal Reset: std_logic := '1';
-    signal finished : std_logic :='0';
     signal tg_input :  std_logic_vector(size_1*size_2*nbit-1 downto 0);
-    signal output_hx : std_logic_vector(nbit-1 downto 0);
-    signal output_hy : std_logic_vector(nbit-1 downto 0);
-    signal output_hz : std_logic_vector(nbit-1 downto 0);
+    signal tg_output : std_logic_vector(size_1*size_2*nbit-1 downto 0);
     
     component TG_top_2d is
       generic (    
@@ -30,10 +27,7 @@ architecture TEST_tg_top_2d of tb_tg_top_2d is
     clk : in std_logic;
     rst : in std_logic;
     IN_TG: in std_logic_vector((size_1*size_2*nbit)-1 downto 0);
-    finished: out std_logic;
-    output_hx: out std_logic_vector(nbit- 1 downto 0);
-    output_hy: out std_logic_vector(nbit- 1 downto 0);
-    output_hz: out std_logic_vector(nbit- 1 downto 0)
+    OUT_TG: out std_logic_vector((size_1*size_2*nbit)- 1 downto 0)
     );
    end component TG_top_2d;
 
@@ -42,7 +36,7 @@ architecture TEST_tg_top_2d of tb_tg_top_2d is
         -- instance 
 	DUT: TG_top_2d
    Generic Map (nbit, size_1, size_2, size_3)   
-	Port Map (clock, Reset, tg_input, finished,output_hx, output_hy, output_hz);
+	Port Map (clock, Reset, tg_input, tg_output);
    
   
   
@@ -84,7 +78,7 @@ architecture TEST_tg_top_2d of tb_tg_top_2d is
             
             x"001D000200030000" after 54 ns, --tgxx
             x"001E000200030000" after 56 ns, --tgyz
-            x"001F000200030000" after 58 ns, --tgzz
+            x"001F000200030000" after 58 ns; --tgzz
             
             ---------------------------------------------------
             
