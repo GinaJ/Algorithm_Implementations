@@ -106,3 +106,42 @@ Now we have to propagate the values on the border to the boundary, thus having
 	19&-19&10&-30&-14&-14
 	\end{bmatrix}$
 \end{center}
+\bigskip
+\section{Comparison with LIM's architecture}
+I take the results of the LIM's architecture. 
+The pseudocode for the LIM architecture is the following:
+\begin{enumerate}
+ \item Each cell reads its own value; 
+ \item Reads N-W-S-E cells data (4 different values);
+ \item Computes sums/subtractions and a multiplication; 
+ \item Boundary cells just copy their neighbours' values;
+ \item Writes the final result in its own memory;
+\end{enumerate}
+As already said, the main advantage of the LIM architecture is the parallelism: the presence of many cells that can work autonomously greatly increases the speed of the computation of algorithms that can be executed in parallel.\\
+In particular, the duration of the algorithms doesn't depend on the number of cells composing the grid.
+The total duration for the computation is equal to:
+\begin{itemize}
+\item $ N $ clock cycles to write the data;
+ \item $ 16 \cdot i  $clock cycles to compute the algorithm;
+ \item $ 2N+1 $ clock cycles to read the data through a remote read.\\
+\end{itemize}
+Therefore,
+\begin{center}
+	$ t =  N + 16\cdot i +2N +1=3N + 16\cdot i +1  $
+\end{center}
+   \begin{center}
+   	\begin{tabular}{ | p{1.8cm} | >{\centering\arraybackslash}p{6cm} | >{\centering\arraybackslash}p{6cm} | }
+   		\hline
+   		\label{table:tep_tab} & LIM & This work \\
+   		\hline
+   		Area & $ N^{2}$  cells   & $3N^{2}
+   		$  adders, $N^{2}$ substractors, multipliers \\
+   		\hline
+   		Time & $3N + 16\cdot i +1 $&
+   		
+   		(time for 3 additions) + time for a single multiplication 
+   		\\
+   		\hline
+   		
+   	\end{tabular}
+   \end{center}

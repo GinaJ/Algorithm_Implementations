@@ -1,60 +1,17 @@
 \select@language {english}
 \contentsline {chapter}{Acknowledgments}{{\relax \fontsize {8}{9.5}\selectfont \rm \uppercase {i}}}{chapter*.1}
-\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
-\contentsline {section}{\numberline {1.1}Advantages of an ASIC based design}{1}{section.1.1}
-\contentsline {subsection}{\numberline {1.1.1}Unit cost}{1}{subsection.1.1.1}
-\contentsline {subsection}{\numberline {1.1.2}Performance}{2}{subsection.1.1.2}
-\contentsline {subsection}{\numberline {1.1.3}Power consumption}{2}{subsection.1.1.3}
-\contentsline {subsection}{\numberline {1.1.4}Flexibility}{3}{subsection.1.1.4}
-\contentsline {chapter}{\numberline {2}Integral Image Algorithm}{4}{chapter.2}
-\contentsline {section}{\numberline {2.1}Method used}{5}{section.2.1}
-\contentsline {section}{\numberline {2.2}Hardware Implementation}{7}{section.2.2}
-\contentsline {section}{\numberline {2.3}Pipelined Implementation}{11}{section.2.3}
-\contentsline {section}{\numberline {2.4}Simulation and Test}{13}{section.2.4}
-\contentsline {section}{\numberline {2.5}Comparison}{17}{section.2.5}
-\contentsline {subsection}{\numberline {2.5.1}Inclusive Scan algorithm}{17}{subsection.2.5.1}
-\contentsline {subsection}{\numberline {2.5.2}Balanced Trees Parallel Scan algorithm}{17}{subsection.2.5.2}
-\contentsline {subsection}{\numberline {2.5.3}Comparing the 3 algorithm implementations}{18}{subsection.2.5.3}
-\contentsline {subsection}{\numberline {2.5.4}Logic-In-Memory architecture}{19}{subsection.2.5.4}
-\contentsline {subsection}{\numberline {2.5.5}Comparison with the LIM architecture}{22}{subsection.2.5.5}
-\contentsline {chapter}{\numberline {3}Discrete cosine transform}{23}{chapter.3}
-\contentsline {section}{\numberline {3.1}Hardware Implementation}{24}{section.3.1}
-\contentsline {section}{\numberline {3.2}Simulation and Test}{27}{section.3.2}
-\contentsline {section}{\numberline {3.3}Comparison}{30}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Systolic array architecture}{30}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}Comparison with systolic array implementation}{31}{subsection.3.3.2}
-\contentsline {section}{\numberline {3.4}LLM DCT}{35}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}Architecture of the LLM DCT}{36}{subsection.3.4.1}
-\contentsline {subsection}{\numberline {3.4.2}Simulation and test}{38}{subsection.3.4.2}
-\contentsline {subsection}{\numberline {3.4.3}Comparison}{40}{subsection.3.4.3}
-\contentsline {subsection}{\numberline {3.4.4}High Order LLM DCT}{44}{subsection.3.4.4}
-\contentsline {chapter}{\numberline {4}Binomial Filter}{46}{chapter.4}
-\contentsline {section}{\numberline {4.1}Hardware implementations}{49}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Hardware implementation type 1}{49}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}Hardware implementation type 2}{53}{subsection.4.1.2}
-\contentsline {section}{\numberline {4.2}Simulations}{54}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Simulation type 1}{54}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}Simulation type 2}{56}{subsection.4.2.2}
-\contentsline {section}{\numberline {4.3}Comparison}{59}{section.4.3}
-\contentsline {subsubsection}{\numberline {4.3.0.1}Logic-In-Memory implementation}{59}{subsubsection.4.3.0.1}
-\contentsline {chapter}{\numberline {5}Digital Filter FIR}{60}{chapter.5}
-\contentsline {section}{\numberline {5.1}Digital filters properties}{60}{section.5.1}
-\contentsline {section}{\numberline {5.2}Hardware Implementation}{61}{section.5.2}
-\contentsline {section}{\numberline {5.3}Simulation}{62}{section.5.3}
-\contentsline {chapter}{\numberline {6}Transport equation problem}{64}{chapter.6}
-\contentsline {section}{\numberline {6.1}Hardware Implementation}{66}{section.6.1}
-\contentsline {section}{\numberline {6.2}Simulation}{69}{section.6.2}
-\contentsline {chapter}{\numberline {7}Singular Value Decomposition}{71}{chapter.7}
-\contentsline {section}{\numberline {7.1}A VHDL Function for finding SQUARE ROOT}{71}{section.7.1}
-\contentsline {chapter}{\numberline {8}Synthesis Results}{72}{chapter.8}
-\contentsline {section}{\numberline {8.1}Integral Image}{72}{section.8.1}
-\contentsline {section}{\numberline {8.2}Discrete Cosine Transformation}{72}{section.8.2}
-\contentsline {subsection}{\numberline {8.2.1}DCT pipelined}{73}{subsection.8.2.1}
-\contentsline {subsection}{\numberline {8.2.2}DCT not pipelined}{73}{subsection.8.2.2}
-\contentsline {subsection}{\numberline {8.2.3}LLM DCT}{74}{subsection.8.2.3}
-\contentsline {section}{\numberline {8.3}Binomial Filter}{74}{section.8.3}
-\contentsline {subsection}{\numberline {8.3.1}Binomial Filter v1}{75}{subsection.8.3.1}
-\contentsline {subsection}{\numberline {8.3.2}Binomial Filter v2}{75}{subsection.8.3.2}
-\contentsline {section}{\numberline {8.4}FIR}{75}{section.8.4}
-\contentsline {section}{\numberline {8.5}Transport Equation Problem}{76}{section.8.5}
-\contentsline {chapter}{Bibliography}{77}{chapter*.53}
+\contentsline {chapter}{\numberline {1}Magnetostatic field calculation 3D}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Logic Plan}{1}{section.1.1}
+\contentsline {subsection}{\numberline {1.1.1}Product TG and M}{1}{subsection.1.1.1}
+\contentsline {chapter}{\numberline {2}Synthesis Results}{2}{chapter.2}
+\contentsline {section}{\numberline {2.1}Integral Image}{2}{section.2.1}
+\contentsline {section}{\numberline {2.2}Discrete Cosine Transformation}{2}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}DCT pipelined}{3}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}DCT not pipelined}{3}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.3}LLM DCT}{4}{subsection.2.2.3}
+\contentsline {section}{\numberline {2.3}Binomial Filter}{4}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Binomial Filter v1}{5}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Binomial Filter v2}{5}{subsection.2.3.2}
+\contentsline {section}{\numberline {2.4}FIR}{5}{section.2.4}
+\contentsline {section}{\numberline {2.5}Transport Equation Problem}{6}{section.2.5}
+\contentsline {chapter}{Bibliography}{7}{chapter*.4}

@@ -1,0 +1,33 @@
+\chapter{Magnetostatic field calculation 3D}
+In general, the magnetostatic field is connected to the magnetization[M] through the magnetizing tensor.
+
+
+  The evaluation of the magnetostatic field of a given cell requires the summation on all cells of the mesh due to the the long range of the dipole interaction.
+  
+  \begin{center} \label{3d_formula}
+  	$ \overrightarrow{H}(ijk)=-M_{s}\sum\limits_{i'=1}^{N_{x}} \sum\limits_{j'=1}^{N_{y}}\sum\limits_{k'=1}^{N_{z}}\begin{bmatrix}
+  	TG_{xx} & TG_{xy} & TG_{xz}\\
+  	TG_{yx} & TG_{yy}& TG_{yz}    	\\
+  	TG_{zx}&TG_{zy} & TG_{zz}  
+  	\end{bmatrix}_{(i-i',j-j',k-k')}\begin{bmatrix}
+  	m_{x}\\
+  	m_{y}\\
+  	m_{z}\end{bmatrix}_{(i,j,k)}$
+  \end{center}
+  
+  \section{Logic Plan}
+  
+  \subsection{Product TG and M}
+  Each cell $ (i'j'k') $ has a finite state machine that evaluates the product
+  \begin{center}
+  		$ \overrightarrow{h}(i-i',j-j',k-k')= \begin{bmatrix}
+  	TG_{xx} & TG_{xy} & TG_{xz}\\
+  	TG_{yx} & TG_{yy}& TG_{yz}    	\\
+  	TG_{zx}&TG_{zy} & TG_{zz}  
+  	\end{bmatrix}_{(i-i',j-j',k-k')}\begin{bmatrix}
+  	m_{x}\\
+  	m_{y}\\
+  	m_{z}\end{bmatrix}_{(i,j,k)}$
+  \end{center} 
+  
+  
