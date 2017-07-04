@@ -44,7 +44,7 @@ In general, the magnetostatic field is connected to the magnetization $ [\overri
   	 \item \textbf{READ\_MZ}: save $ m_z $ value
   	 \item \textbf{READ\_TGxx}: read $ TG_{xx} $ value and computing $ op1= TG_{xx}\cdot m_x$
   	 \item \textbf{READ\_TGxy}: read $ TG_{xy} $ value and computing $ op2= TG_{xy}\cdot m_y$
-  	 \item \textbf{READ\_TGxz}: read $ TG_{xz} $ value and computing $ h_x= TG_{xz}\cdot m_z +op1+op2$
+  	 \item \textbf{READ\_TGxz}: read $ TG_{xz} $ value and computing $ h_x= TG_{xz}\cdot m_z +op1+op2$.
   	 \item \textbf{READ\_TGyx}:read $ TG_{yx} $ value and computing $ op1= TG_{yx}\cdot m_x$
   	 \item \textbf{READ\_TGyy}:read $ TG_{yy} $ value and computing $ op2= TG_{yy}\cdot m_y$
   	 \item \textbf{READ\_TGyz}: read $ TG_{yz} $ value and computing $ h_y= TG_{yz}\cdot m_z +op1+op2$
@@ -54,14 +54,32 @@ In general, the magnetostatic field is connected to the magnetization $ [\overri
   \end{itemize}
    
      \section{Logic Plane}
-     This component group all the cells in a given plane, and enable the computation of the magnetostatic field contributions between the cell \textit{ijk} and the all the cells in a given plane (i.e. k is fixed).
+     This component groups all the cells in a given plane, and enables the computation of the magnetostatic field contributions between the cell \textit{ijk} and all the cells in a given plane (i.e. $ k $ is fixed).
      \begin{center}
-     	$ \overrightarrow{h}(i-i',j-j',k-k^*)$\quad \quad $ \forall i'<N_x,$ $ j'<N_y,$ $ k=k^* $
+     	$ \overrightarrow{h}(i-i',j-j',k-k^*)$\quad \quad $ \forall i'<N_x,$\quad $ j'<N_y,$ \qquad $ k=k^* $\\
+     	   \end{center}
+     	   which can be also seen as	$ \overrightarrow{h}(i-i',j-j',k-k^*)$ can be computed as
+     	      \begin{center}
+     	$ \begin{bmatrix}
+     	TG_{xx} & TG_{xy} & TG_{xz}\\
+     	TG_{yx} & TG_{yy}& TG_{yz}    	\\
+     	TG_{zx}&TG_{zy} & TG_{zz}  
+     	\end{bmatrix}_{(i-i',j-j',k-k^*)}\begin{bmatrix}
+     	m_{x}\\
+     	m_{y}\\
+     	m_{z}\end{bmatrix}_{(i',j',k^*)} $ \quad \quad $ \forall i'<N_x,$ \quad $ j'<N_y,$ 
      \end{center}
-          All this computation can be done in parallel.
+          All this computation can be done in parallel. 
+          
+          \begin{figure}[h]
+          	\centering
+          	\includegraphics[width=0.9\textwidth]{imm/3d/logic_plane1.png}  
+          	\caption{Magnetostatic field of each cell in a given plane}
+          	\label{fig:logic_ plane}
+          \end{figure}
     \section{Sum all}
     The \textit{sum\_all} is a component that given a fixed $ k^* $ (i.e. a given plane) evaluates the magnetostatic field of all cells in a fixed plane.
-    The input is given by the \textit{logic plane}
+    The input is given by the \textit{logic plane}, as shown in the fig. \ref{fig:logic_ plane}.
     \begin{center}
     	$ \sum\limits_{i'=1}^{N_{x}} \sum\limits_{j'=1}^{N_{y}}\begin{bmatrix}
     	TG_{xx} & TG_{xy} & TG_{xz}\\
@@ -73,5 +91,18 @@ In general, the magnetostatic field is connected to the magnetization $ [\overri
     	m_{z}\end{bmatrix}_{(i',j',k^*)} $
     \end{center}
     By looking to the formula \ref{3d_formula}, we have to evaluate the sum for each plane, so we store this sum and wait for the next plane to be computed and added to the previous sum.\\
-    Of course when we reach the $ k^{th} $ plane, we stop the sum and we set a signal to tell that the calculation is finished.
+    Of course when we reach the $ k^{th} $ plane, we stop the sum and we set a signal to tell that the calculation is finished.\\
+    Overall, this component perform the following computation\\
+    \begin{center}
+    	$ \sum\limits_{k'=1}^{N_{z}}\begin{pmatrix}
+    	\sum\limits_{i'=1}^{N_{x}} \sum\limits_{j'=1}^{N_{y}}\begin{bmatrix}
+    	TG_{xx} & TG_{xy} & TG_{xz}\\
+    	TG_{yx} & TG_{yy}& TG_{yz}    	\\
+    	TG_{zx}&TG_{zy} & TG_{zz}  
+    	\end{bmatrix}_{(i-i',j-j',k-k')}\begin{bmatrix}
+    	m_{x}\\
+    	m_{y}\\
+    	m_{z}\end{bmatrix}_{(i',j',k')}
+    	\end{pmatrix} $
+    \end{center}
   

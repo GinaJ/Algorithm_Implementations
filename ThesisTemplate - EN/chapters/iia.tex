@@ -6,7 +6,7 @@
   The aim of the IIA is to calculate the sum of values in a rectangular subset of a grid. In particular, the final value of a point inside a grid can be written as:
   
   \begin{equation} \label{eq:IIA eq}
-  I(x,y)=\sum\limits_{x'<x \\ y'y}  i(x',y')
+  I(x,y)=\sum\limits_{x'=1}^{x}\sum\limits_{y'=1}^{y}  i(x',y')
   \end{equation}
    
    As shown in the figure \ref{fig:IIA}, the value of the dark blue rectangle can be calculated as the sum of all the light blue rectangles.
@@ -22,7 +22,7 @@
  \section{Method used}
  I decided to use the approach ASAP (as soon as possible), so in this implementation we try to maximize the parallelism.
  To better explain, we first look to the Integral Image of a 1D array.
- At each step \textit{i} wehave the array  partitioned in array of size $ 2^{i} $, and each of them has its own integral image values.\\
+ At each step \textit{i} we have the array  partitioned in array of size $ 2^{i} $, and each of them has its own integral image values.\\
  In the next step \textit{i+1}, we pair two consecutive array of size $ 2^{i} $, (thus having an array of $ 2^{i+1} $) and do the Integral image. \\Since we have already computed the partial integral image, for the new one, the elements from \textit{1} to $ 2^{i} $ has the correct values, while for the elements from $ 2^{i} $ to $ 2^{i+1} $ we need to sum the value stored in position $2^{i} $.
  Figure \ref{fig:iia0} represents this method, while figure \ref{fig:iia1} shows an example of an 8-array.
  
