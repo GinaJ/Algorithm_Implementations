@@ -1,53 +1,14 @@
 \BOOKMARK [0][]{chapter*.1}{Acknowledgments}{}% 1
-\BOOKMARK [0][]{chapter.1}{Introduction}{}% 2
-\BOOKMARK [1][]{section.1.1}{Advantages of an ASIC based design}{chapter.1}% 3
-\BOOKMARK [2][]{subsection.1.1.1}{Unit cost}{section.1.1}% 4
-\BOOKMARK [2][]{subsection.1.1.2}{Performance}{section.1.1}% 5
-\BOOKMARK [2][]{subsection.1.1.3}{Power consumption}{section.1.1}% 6
-\BOOKMARK [2][]{subsection.1.1.4}{Flexibility}{section.1.1}% 7
-\BOOKMARK [0][]{chapter.2}{Integral Image Algorithm}{}% 8
-\BOOKMARK [1][]{section.2.1}{Method used}{chapter.2}% 9
-\BOOKMARK [1][]{section.2.2}{Hardware Implementation}{chapter.2}% 10
-\BOOKMARK [1][]{section.2.3}{Pipelined Implementation}{chapter.2}% 11
-\BOOKMARK [1][]{section.2.4}{Simulation and Test}{chapter.2}% 12
-\BOOKMARK [1][]{section.2.5}{Comparison}{chapter.2}% 13
-\BOOKMARK [2][]{subsection.2.5.1}{Inclusive Scan algorithm}{section.2.5}% 14
-\BOOKMARK [2][]{subsection.2.5.2}{Balanced Trees Parallel Scan algorithm}{section.2.5}% 15
-\BOOKMARK [2][]{subsection.2.5.3}{Comparing the 3 algorithm implementations}{section.2.5}% 16
-\BOOKMARK [2][]{subsection.2.5.4}{Logic-In-Memory architecture}{section.2.5}% 17
-\BOOKMARK [2][]{subsection.2.5.5}{Comparison with the LIM architecture}{section.2.5}% 18
-\BOOKMARK [0][]{chapter.3}{Discrete cosine transform}{}% 19
-\BOOKMARK [1][]{section.3.1}{Hardware Implementation}{chapter.3}% 20
-\BOOKMARK [1][]{section.3.2}{Simulation and Test}{chapter.3}% 21
-\BOOKMARK [1][]{section.3.3}{Comparison}{chapter.3}% 22
-\BOOKMARK [2][]{subsection.3.3.1}{Systolic array architecture}{section.3.3}% 23
-\BOOKMARK [2][]{subsection.3.3.2}{Comparison with systolic array implementation}{section.3.3}% 24
-\BOOKMARK [1][]{section.3.4}{LLM DCT}{chapter.3}% 25
-\BOOKMARK [2][]{subsection.3.4.1}{Architecture of the LLM DCT}{section.3.4}% 26
-\BOOKMARK [2][]{subsection.3.4.2}{Simulation and test}{section.3.4}% 27
-\BOOKMARK [2][]{subsection.3.4.3}{Comparison}{section.3.4}% 28
-\BOOKMARK [2][]{subsection.3.4.4}{High Order LLM DCT}{section.3.4}% 29
-\BOOKMARK [0][]{chapter.4}{Binomial Filter}{}% 30
-\BOOKMARK [1][]{section.4.1}{Hardware implementations}{chapter.4}% 31
-\BOOKMARK [2][]{subsection.4.1.1}{Hardware implementation type 1}{section.4.1}% 32
-\BOOKMARK [2][]{subsection.4.1.2}{Hardware implementation type 2}{section.4.1}% 33
-\BOOKMARK [1][]{section.4.2}{Simulations}{chapter.4}% 34
-\BOOKMARK [2][]{subsection.4.2.1}{Simulation type 1}{section.4.2}% 35
-\BOOKMARK [2][]{subsection.4.2.2}{Simulation type 2}{section.4.2}% 36
-\BOOKMARK [1][]{section.4.3}{Comparison}{chapter.4}% 37
-\BOOKMARK [2][]{subsubsection.4.3.0.1}{Logic-In-Memory implementation}{section.4.3}% 38
-\BOOKMARK [0][]{chapter.5}{Digital Filter FIR}{}% 39
-\BOOKMARK [1][]{section.5.1}{Digital filters properties}{chapter.5}% 40
-\BOOKMARK [1][]{section.5.2}{Hardware Implementation}{chapter.5}% 41
-\BOOKMARK [1][]{section.5.3}{Simulation}{chapter.5}% 42
-\BOOKMARK [0][]{chapter.6}{Transport equation problem}{}% 43
-\BOOKMARK [1][]{section.6.1}{Hardware Implementation}{chapter.6}% 44
-\BOOKMARK [1][]{section.6.2}{Simulation}{chapter.6}% 45
-\BOOKMARK [1][]{section.6.3}{Comparison with LIM's architecture}{chapter.6}% 46
-\BOOKMARK [0][]{chapter.7}{Magnetostatic field calculation 3D}{}% 47
-\BOOKMARK [1][]{section.7.1}{Product TG and M}{chapter.7}% 48
-\BOOKMARK [1][]{section.7.2}{Logic Plane}{chapter.7}% 49
-\BOOKMARK [1][]{section.7.3}{Sum all}{chapter.7}% 50
-\BOOKMARK [0][]{chapter.8}{Singular Value Decomposition}{}% 51
-\BOOKMARK [1][]{section.8.1}{A VHDL Function for finding SQUARE ROOT}{chapter.8}% 52
-\BOOKMARK [0][]{chapter*.55}{Bibliography}{}% 53
+\BOOKMARK [0][]{chapter.1}{Integral Image Algorithm}{}% 2
+\BOOKMARK [1][]{section.1.1}{Method used}{chapter.1}% 3
+\BOOKMARK [1][]{section.1.2}{Hardware Implementation}{chapter.1}% 4
+\BOOKMARK [1][]{section.1.3}{Pipelined Implementation}{chapter.1}% 5
+\BOOKMARK [1][]{section.1.4}{Simulation and Test}{chapter.1}% 6
+\BOOKMARK [1][]{section.1.5}{Comparison}{chapter.1}% 7
+\BOOKMARK [2][]{subsection.1.5.1}{Inclusive Scan algorithm}{section.1.5}% 8
+\BOOKMARK [2][]{subsection.1.5.2}{Balanced Trees Parallel Scan algorithm}{section.1.5}% 9
+\BOOKMARK [2][]{subsection.1.5.3}{Comparing the 3 algorithm implementations}{section.1.5}% 10
+\BOOKMARK [2][]{subsection.1.5.4}{Logic-In-Memory architecture}{section.1.5}% 11
+\BOOKMARK [2][]{subsection.1.5.5}{Comparison with the LIM architecture}{section.1.5}% 12
+\BOOKMARK [1][]{section.1.6}{Characteristics}{chapter.1}% 13
+\BOOKMARK [0][]{chapter*.21}{Bibliography}{}% 14
