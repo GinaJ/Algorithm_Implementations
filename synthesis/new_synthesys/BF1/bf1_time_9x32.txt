@@ -1,0 +1,147 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : BF_TOP_nbit32_size9
+Version: F-2011.09-SP3
+Date   : Sat Jul  8 21:05:57 2017
+****************************************
+
+Operating Conditions: tt28_0.90V_0.00V_0.00V_0.00V_25C   Library: C28SOI_SC_12_CORE_LL
+Wire Load Model Mode: enclosed
+
+  Startpoint: IN_BF[1985]
+              (input port)
+  Endpoint: OUT_BF[1691]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  BF_TOP_nbit32_size9
+                     wl_zero               C28SOI_SC_12_CORE_LL
+  BF_add_shift_3_Nbit32_98
+                     wl_zero               C28SOI_SC_12_CORE_LL
+  BF_add_shift_3_Nbit32_35
+                     wl_zero               C28SOI_SC_12_CORE_LL
+  adder_nbit32_69_DW01_add_0
+                     wl_zero               C28SOI_SC_12_CORE_LL
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  input external delay                                    0.00       0.00 r
+  IN_BF[1985] (in)                                        0.00       0.00 r
+  add_bf_2_1/A[1] (BF_add_shift_3_Nbit32_98)              0.00       0.00 r
+  add_bf_2_1/sum1/X[1] (adder_nbit32_196)                 0.00       0.00 r
+  add_bf_2_1/sum1/add_18/A[1] (adder_nbit32_196_DW01_add_0)
+                                                          0.00       0.00 r
+  add_bf_2_1/sum1/add_18/U1_1/S0 (C12T28SOI_LL_FA1X8_P0)
+                                                          0.04       0.04 f
+  add_bf_2_1/sum1/add_18/SUM[1] (adder_nbit32_196_DW01_add_0)
+                                                          0.00       0.04 f
+  add_bf_2_1/sum1/R[1] (adder_nbit32_196)                 0.00       0.04 f
+  add_bf_2_1/sum2/Y[1] (adder_nbit32_195)                 0.00       0.04 f
+  add_bf_2_1/sum2/add_18/B[1] (adder_nbit32_195_DW01_add_0)
+                                                          0.00       0.04 f
+  add_bf_2_1/sum2/add_18/U1_1/S0 (C12T28SOI_LL_FA1X8_P0)
+                                                          0.06       0.11 r
+  add_bf_2_1/sum2/add_18/SUM[1] (adder_nbit32_195_DW01_add_0)
+                                                          0.00       0.11 r
+  add_bf_2_1/sum2/R[1] (adder_nbit32_195)                 0.00       0.11 r
+  add_bf_2_1/Res[1] (BF_add_shift_3_Nbit32_98)            0.00       0.11 r
+  add_bf_3_1_0/A[1] (BF_add_shift_3_Nbit32_35)            0.00       0.11 r
+  add_bf_3_1_0/sum1/X[1] (adder_nbit32_70)                0.00       0.11 r
+  add_bf_3_1_0/sum1/add_18/A[1] (adder_nbit32_70_DW01_add_0)
+                                                          0.00       0.11 r
+  add_bf_3_1_0/sum1/add_18/U1_1/S0 (C12T28SOI_LL_FA1X8_P0)
+                                                          0.05       0.16 f
+  add_bf_3_1_0/sum1/add_18/SUM[1] (adder_nbit32_70_DW01_add_0)
+                                                          0.00       0.16 f
+  add_bf_3_1_0/sum1/R[1] (adder_nbit32_70)                0.00       0.16 f
+  add_bf_3_1_0/sum2/Y[1] (adder_nbit32_69)                0.00       0.16 f
+  add_bf_3_1_0/sum2/add_18/B[1] (adder_nbit32_69_DW01_add_0)
+                                                          0.00       0.16 f
+  add_bf_3_1_0/sum2/add_18/U8/Z (C12T28SOI_LL_OA112X8_P0)
+                                                          0.03       0.19 f
+  add_bf_3_1_0/sum2/add_18/U7/Z (C12T28SOI_LL_AO12X8_P0)
+                                                          0.03       0.22 f
+  add_bf_3_1_0/sum2/add_18/U6/Z (C12T28SOI_LL_OA12X8_P0)
+                                                          0.02       0.24 f
+  add_bf_3_1_0/sum2/add_18/U5/Z (C12T28SOI_LL_AOI12X6_P0)
+                                                          0.02       0.26 r
+  add_bf_3_1_0/sum2/add_18/U1/Z (C12T28SOI_LL_IVX8_P0)
+                                                          0.01       0.27 f
+  add_bf_3_1_0/sum2/add_18/U4/Z (C12T28SOI_LL_OAI12X6_P0)
+                                                          0.01       0.28 r
+  add_bf_3_1_0/sum2/add_18/U3/Z (C12T28SOI_LL_OAI12X6_P0)
+                                                          0.02       0.30 f
+  add_bf_3_1_0/sum2/add_18/U1_4/CO (C12T28SOI_LL_FA1X8_P0)
+                                                          0.04       0.34 f
+  add_bf_3_1_0/sum2/add_18/U1_5/CO (C12T28SOI_LL_FA1X8_P0)
+                                                          0.04       0.38 f
+  add_bf_3_1_0/sum2/add_18/U1_6/CO (C12T28SOI_LL_FA1X8_P0)
+                                                          0.04       0.42 f
+  add_bf_3_1_0/sum2/add_18/U1_7/CO (C12T28SOI_LL_FA1X8_P0)
+                                                          0.04       0.46 f
+  add_bf_3_1_0/sum2/add_18/U1_8/CO (C12T28SOI_LL_FA1X8_P0)
+                                                          0.04       0.49 f
+  add_bf_3_1_0/sum2/add_18/U1_9/CO (C12T28SOI_LL_FA1X8_P0)
+                                                          0.04       0.53 f
+  add_bf_3_1_0/sum2/add_18/U1_10/CO (C12T28SOI_LL_FA1X8_P0)
+                                                          0.04       0.57 f
+  add_bf_3_1_0/sum2/add_18/U1_11/CO (C12T28SOI_LL_FA1X8_P0)
+                                                          0.04       0.61 f
+  add_bf_3_1_0/sum2/add_18/U1_12/CO (C12T28SOI_LL_FA1X8_P0)
+                                                          0.04       0.65 f
+  add_bf_3_1_0/sum2/add_18/U1_13/CO (C12T28SOI_LL_FA1X8_P0)
+                                                          0.04       0.69 f
+  add_bf_3_1_0/sum2/add_18/U1_14/CO (C12T28SOI_LL_FA1X8_P0)
+                                                          0.04       0.72 f
+  add_bf_3_1_0/sum2/add_18/U1_15/CO (C12T28SOI_LL_FA1X8_P0)
+                                                          0.04       0.76 f
+  add_bf_3_1_0/sum2/add_18/U1_16/CO (C12T28SOI_LL_FA1X8_P0)
+                                                          0.04       0.80 f
+  add_bf_3_1_0/sum2/add_18/U1_17/CO (C12T28SOI_LL_FA1X8_P0)
+                                                          0.04       0.84 f
+  add_bf_3_1_0/sum2/add_18/U1_18/CO (C12T28SOI_LL_FA1X8_P0)
+                                                          0.04       0.88 f
+  add_bf_3_1_0/sum2/add_18/U1_19/CO (C12T28SOI_LL_FA1X8_P0)
+                                                          0.04       0.92 f
+  add_bf_3_1_0/sum2/add_18/U1_20/CO (C12T28SOI_LL_FA1X8_P0)
+                                                          0.04       0.95 f
+  add_bf_3_1_0/sum2/add_18/U1_21/CO (C12T28SOI_LL_FA1X8_P0)
+                                                          0.04       0.99 f
+  add_bf_3_1_0/sum2/add_18/U1_22/CO (C12T28SOI_LL_FA1X8_P0)
+                                                          0.04       1.03 f
+  add_bf_3_1_0/sum2/add_18/U1_23/CO (C12T28SOI_LL_FA1X8_P0)
+                                                          0.04       1.07 f
+  add_bf_3_1_0/sum2/add_18/U1_24/CO (C12T28SOI_LL_FA1X8_P0)
+                                                          0.04       1.11 f
+  add_bf_3_1_0/sum2/add_18/U1_25/CO (C12T28SOI_LL_FA1X8_P0)
+                                                          0.04       1.15 f
+  add_bf_3_1_0/sum2/add_18/U1_26/CO (C12T28SOI_LL_FA1X8_P0)
+                                                          0.04       1.18 f
+  add_bf_3_1_0/sum2/add_18/U1_27/CO (C12T28SOI_LL_FA1X8_P0)
+                                                          0.04       1.22 f
+  add_bf_3_1_0/sum2/add_18/U1_28/CO (C12T28SOI_LL_FA1X8_P0)
+                                                          0.04       1.26 f
+  add_bf_3_1_0/sum2/add_18/U1_29/CO (C12T28SOI_LL_FA1X8_P0)
+                                                          0.04       1.30 f
+  add_bf_3_1_0/sum2/add_18/U1_30/CO (C12T28SOI_LL_FA1X8_P0)
+                                                          0.04       1.34 f
+  add_bf_3_1_0/sum2/add_18/U1_31/S0 (C12T28SOI_LL_FA1X8_P0)
+                                                          0.05       1.39 r
+  add_bf_3_1_0/sum2/add_18/SUM[31] (adder_nbit32_69_DW01_add_0)
+                                                          0.00       1.39 r
+  add_bf_3_1_0/sum2/R[31] (adder_nbit32_69)               0.00       1.39 r
+  add_bf_3_1_0/Res[31] (BF_add_shift_3_Nbit32_35)         0.00       1.39 r
+  OUT_BF[1691] (out)                                      0.00       1.39 r
+  data arrival time                                                  1.39
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+1
