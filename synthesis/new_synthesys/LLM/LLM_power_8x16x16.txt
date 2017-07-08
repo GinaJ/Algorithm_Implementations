@@ -1,0 +1,219 @@
+Loading db file '/software/design-kits/cmp/28nm_fdsoi/v2p4/C28SOI_SC_12_CORE_LL@2.2@20131004.0/libs/C28SOI_SC_12_CORE_LL_tt28_0.90V_0.00V_0.00V_0.00V_25C.db'
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: There is no defined clock in the design. (PWR-80)
+Warning: Design has unannotated primary inputs. (PWR-414)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : DCT8_TOP_N_int16_N_float16_N_size8
+Version: F-2011.09-SP3
+Date   : Sat Jul  8 20:24:18 2017
+****************************************
+
+
+Library(s) Used:
+
+    C28SOI_SC_12_CORE_LL (File: /software/design-kits/cmp/28nm_fdsoi/v2p4/C28SOI_SC_12_CORE_LL@2.2@20131004.0/libs/C28SOI_SC_12_CORE_LL_tt28_0.90V_0.00V_0.00V_0.00V_25C.db)
+
+
+Operating Conditions: tt28_0.90V_0.00V_0.00V_0.00V_25C   Library: C28SOI_SC_12_CORE_LL
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+DCT8_TOP_N_int16_N_float16_N_size8
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_0         wl_zero           C28SOI_SC_12_CORE_LL
+substractor_nbit32_0   wl_zero           C28SOI_SC_12_CORE_LL
+DCT_LLM_rotation_N_int16_N_float16_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+multiplier_nbit32_0    wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_1         wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_2         wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_3         wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_4         wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_5         wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_6         wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_7         wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_8         wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_9         wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_10        wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_11        wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_12        wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_13        wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_14        wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_15        wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_16        wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_17        wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_18        wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_19        wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_20        wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_21        wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_22        wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_23        wl_zero           C28SOI_SC_12_CORE_LL
+substractor_nbit32_1   wl_zero           C28SOI_SC_12_CORE_LL
+substractor_nbit32_2   wl_zero           C28SOI_SC_12_CORE_LL
+substractor_nbit32_3   wl_zero           C28SOI_SC_12_CORE_LL
+substractor_nbit32_4   wl_zero           C28SOI_SC_12_CORE_LL
+substractor_nbit32_5   wl_zero           C28SOI_SC_12_CORE_LL
+substractor_nbit32_6   wl_zero           C28SOI_SC_12_CORE_LL
+substractor_nbit32_7   wl_zero           C28SOI_SC_12_CORE_LL
+substractor_nbit32_8   wl_zero           C28SOI_SC_12_CORE_LL
+DCT_LLM_rotation_N_int16_N_float16_1
+                       wl_zero           C28SOI_SC_12_CORE_LL
+DCT_LLM_rotation_N_int16_N_float16_2
+                       wl_zero           C28SOI_SC_12_CORE_LL
+DCT_LLM_rotation_N_int16_N_float16_3
+                       wl_zero           C28SOI_SC_12_CORE_LL
+DCT_LLM_rotation_N_int16_N_float16_4
+                       wl_zero           C28SOI_SC_12_CORE_LL
+multiplier_nbit32_1    wl_zero           C28SOI_SC_12_CORE_LL
+multiplier_nbit32_2    wl_zero           C28SOI_SC_12_CORE_LL
+multiplier_nbit32_3    wl_zero           C28SOI_SC_12_CORE_LL
+multiplier_nbit32_4    wl_zero           C28SOI_SC_12_CORE_LL
+multiplier_nbit32_5    wl_zero           C28SOI_SC_12_CORE_LL
+multiplier_nbit32_6    wl_zero           C28SOI_SC_12_CORE_LL
+multiplier_nbit32_7    wl_zero           C28SOI_SC_12_CORE_LL
+multiplier_nbit32_8    wl_zero           C28SOI_SC_12_CORE_LL
+multiplier_nbit32_9    wl_zero           C28SOI_SC_12_CORE_LL
+multiplier_nbit32_10   wl_zero           C28SOI_SC_12_CORE_LL
+multiplier_nbit32_11   wl_zero           C28SOI_SC_12_CORE_LL
+multiplier_nbit32_12   wl_zero           C28SOI_SC_12_CORE_LL
+multiplier_nbit32_13   wl_zero           C28SOI_SC_12_CORE_LL
+multiplier_nbit32_14   wl_zero           C28SOI_SC_12_CORE_LL
+multiplier_nbit32_15   wl_zero           C28SOI_SC_12_CORE_LL
+multiplier_nbit32_16   wl_zero           C28SOI_SC_12_CORE_LL
+multiplier_nbit32_16_DW02_mult_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+multiplier_nbit32_0_DW02_mult_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_16_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_17_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+substractor_nbit32_1_DW01_sub_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+substractor_nbit32_2_DW01_sub_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_1_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_2_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+multiplier_nbit32_1_DW02_mult_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+multiplier_nbit32_2_DW02_mult_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+multiplier_nbit32_3_DW02_mult_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_3_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_4_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_5_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+multiplier_nbit32_4_DW02_mult_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+multiplier_nbit32_5_DW02_mult_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+multiplier_nbit32_6_DW02_mult_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_6_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_7_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_8_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+multiplier_nbit32_7_DW02_mult_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+multiplier_nbit32_8_DW02_mult_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+multiplier_nbit32_9_DW02_mult_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_9_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_10_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_11_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+multiplier_nbit32_10_DW02_mult_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+multiplier_nbit32_11_DW02_mult_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+multiplier_nbit32_12_DW02_mult_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_12_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_13_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_14_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+multiplier_nbit32_13_DW02_mult_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+multiplier_nbit32_14_DW02_mult_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+multiplier_nbit32_15_DW02_mult_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_15_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+substractor_nbit32_3_DW01_sub_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_18_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+substractor_nbit32_4_DW01_sub_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_19_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+substractor_nbit32_5_DW01_sub_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_20_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+substractor_nbit32_6_DW01_sub_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_21_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+substractor_nbit32_7_DW01_sub_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_22_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+substractor_nbit32_8_DW01_sub_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_23_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+substractor_nbit32_0_DW01_sub_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_0_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+
+
+Global Operating Voltage = 0.9  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1mW
+
+
+  Cell Internal Power  =  11.4379 mW   (54%)
+  Net Switching Power  =   9.7004 mW   (46%)
+                         ---------
+Total Dynamic Power    =  21.1382 mW  (100%)
+
+Cell Leakage Power     = 278.9133 uW
+
+Information: report_power power group summary does not include estimated clock tree power. (PWR-789)
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register           0.0000            0.0000            0.0000            0.0000  (   0.00%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational     11.4379            9.7003            0.2789           21.4174  ( 100.00%)
+--------------------------------------------------------------------------------------------------
+Total             11.4379 mW         9.7003 mW         0.2789 mW        21.4174 mW
+1
