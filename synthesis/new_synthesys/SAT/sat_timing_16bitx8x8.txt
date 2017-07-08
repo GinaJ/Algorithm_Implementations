@@ -1,0 +1,96 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : sat_COL_A8_ROW_A8
+Version: F-2011.09-SP3
+Date   : Sat Jul  8 20:11:54 2017
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: tt28_0.90V_0.00V_0.00V_0.00V_25C   Library: C28SOI_SC_12_CORE_LL
+Wire Load Model Mode: enclosed
+
+  Startpoint: pipe_cycle_2/output_reg[576]
+              (rising edge-triggered flip-flop)
+  Endpoint: OUT_A[447] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sat_COL_A8_ROW_A8  wl_zero               C28SOI_SC_12_CORE_LL
+  adder_nbit16_61_DW01_add_0
+                     wl_zero               C28SOI_SC_12_CORE_LL
+  adder_nbit16_28_DW01_add_0
+                     wl_zero               C28SOI_SC_12_CORE_LL
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  pipe_cycle_2/output_reg[576]/CP (C12T28SOI_LL_DFPQX8_P0)
+                                                          0.00 #     0.00 r
+  pipe_cycle_2/output_reg[576]/Q (C12T28SOI_LL_DFPQX8_P0)
+                                                          0.07       0.07 r
+  pipe_cycle_2/output[576] (pipeline_N1024_1)             0.00       0.07 r
+  sp_cycle_2/IN_A[576] (sat_plane_COL_A8_ROW_A8_LEVEL3)
+                                                          0.00       0.07 r
+  sp_cycle_2/s0_0/IN_A[576] (sat_cell_COL_A8_ROW_A8)      0.00       0.07 r
+  sp_cycle_2/s0_0/sum_0_3/X[0] (adder_nbit16_61)          0.00       0.07 r
+  sp_cycle_2/s0_0/sum_0_3/add_18/A[0] (adder_nbit16_61_DW01_add_0)
+                                                          0.00       0.07 r
+  sp_cycle_2/s0_0/sum_0_3/add_18/U1/Z (C12T28SOI_LL_AND2X8_P0)
+                                                          0.04       0.11 r
+  sp_cycle_2/s0_0/sum_0_3/add_18/U1_1/S0 (C12T28SOI_LL_FA1X8_P0)
+                                                          0.06       0.17 f
+  sp_cycle_2/s0_0/sum_0_3/add_18/SUM[1] (adder_nbit16_61_DW01_add_0)
+                                                          0.00       0.17 f
+  sp_cycle_2/s0_0/sum_0_3/R[1] (adder_nbit16_61)          0.00       0.17 f
+  sp_cycle_2/s0_0/low_sum_0_4/X[1] (adder_nbit16_28)      0.00       0.17 f
+  sp_cycle_2/s0_0/low_sum_0_4/add_18/A[1] (adder_nbit16_28_DW01_add_0)
+                                                          0.00       0.17 f
+  sp_cycle_2/s0_0/low_sum_0_4/add_18/U1_1/CO (C12T28SOI_LL_FA1X8_P0)
+                                                          0.05       0.22 f
+  sp_cycle_2/s0_0/low_sum_0_4/add_18/U1_2/CO (C12T28SOI_LL_FA1X8_P0)
+                                                          0.04       0.26 f
+  sp_cycle_2/s0_0/low_sum_0_4/add_18/U1_3/CO (C12T28SOI_LL_FA1X8_P0)
+                                                          0.04       0.30 f
+  sp_cycle_2/s0_0/low_sum_0_4/add_18/U1_4/CO (C12T28SOI_LL_FA1X8_P0)
+                                                          0.04       0.34 f
+  sp_cycle_2/s0_0/low_sum_0_4/add_18/U1_5/CO (C12T28SOI_LL_FA1X8_P0)
+                                                          0.04       0.38 f
+  sp_cycle_2/s0_0/low_sum_0_4/add_18/U1_6/CO (C12T28SOI_LL_FA1X8_P0)
+                                                          0.04       0.42 f
+  sp_cycle_2/s0_0/low_sum_0_4/add_18/U1_7/CO (C12T28SOI_LL_FA1X8_P0)
+                                                          0.04       0.45 f
+  sp_cycle_2/s0_0/low_sum_0_4/add_18/U1_8/CO (C12T28SOI_LL_FA1X8_P0)
+                                                          0.04       0.49 f
+  sp_cycle_2/s0_0/low_sum_0_4/add_18/U1_9/CO (C12T28SOI_LL_FA1X8_P0)
+                                                          0.04       0.53 f
+  sp_cycle_2/s0_0/low_sum_0_4/add_18/U1_10/CO (C12T28SOI_LL_FA1X8_P0)
+                                                          0.04       0.57 f
+  sp_cycle_2/s0_0/low_sum_0_4/add_18/U1_11/CO (C12T28SOI_LL_FA1X8_P0)
+                                                          0.04       0.61 f
+  sp_cycle_2/s0_0/low_sum_0_4/add_18/U1_12/CO (C12T28SOI_LL_FA1X8_P0)
+                                                          0.04       0.65 f
+  sp_cycle_2/s0_0/low_sum_0_4/add_18/U1_13/CO (C12T28SOI_LL_FA1X8_P0)
+                                                          0.04       0.68 f
+  sp_cycle_2/s0_0/low_sum_0_4/add_18/U1_14/CO (C12T28SOI_LL_FA1X8_P0)
+                                                          0.04       0.72 f
+  sp_cycle_2/s0_0/low_sum_0_4/add_18/U1_15/S0 (C12T28SOI_LL_FA1X8_P0)
+                                                          0.05       0.77 r
+  sp_cycle_2/s0_0/low_sum_0_4/add_18/SUM[15] (adder_nbit16_28_DW01_add_0)
+                                                          0.00       0.77 r
+  sp_cycle_2/s0_0/low_sum_0_4/R[15] (adder_nbit16_28)     0.00       0.77 r
+  sp_cycle_2/s0_0/OUT_A[447] (sat_cell_COL_A8_ROW_A8)     0.00       0.77 r
+  sp_cycle_2/OUT_A[447] (sat_plane_COL_A8_ROW_A8_LEVEL3)
+                                                          0.00       0.77 r
+  OUT_A[447] (out)                                        0.00       0.77 r
+  data arrival time                                                  0.77
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+1

@@ -1,0 +1,684 @@
+Loading db file '/software/design-kits/cmp/28nm_fdsoi/v2p4/C28SOI_SC_12_CORE_LL@2.2@20131004.0/libs/C28SOI_SC_12_CORE_LL_tt28_0.90V_0.00V_0.00V_0.00V_25C.db'
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: There is no defined clock in the design. (PWR-80)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : sat_COL_A8_ROW_A8
+Version: F-2011.09-SP3
+Date   : Sat Jul  8 19:50:56 2017
+****************************************
+
+
+Library(s) Used:
+
+    C28SOI_SC_12_CORE_LL (File: /software/design-kits/cmp/28nm_fdsoi/v2p4/C28SOI_SC_12_CORE_LL@2.2@20131004.0/libs/C28SOI_SC_12_CORE_LL_tt28_0.90V_0.00V_0.00V_0.00V_25C.db)
+
+
+Operating Conditions: tt28_0.90V_0.00V_0.00V_0.00V_25C   Library: C28SOI_SC_12_CORE_LL
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+sat_COL_A8_ROW_A8      wl_zero           C28SOI_SC_12_CORE_LL
+sat_plane_COL_A8_ROW_A8_LEVEL1
+                       wl_zero           C28SOI_SC_12_CORE_LL
+pipeline_N2048_0       wl_zero           C28SOI_SC_12_CORE_LL
+sat_plane_COL_A8_ROW_A8_LEVEL2
+                       wl_zero           C28SOI_SC_12_CORE_LL
+sat_plane_COL_A8_ROW_A8_LEVEL3
+                       wl_zero           C28SOI_SC_12_CORE_LL
+sat_cell_COL_A2_ROW_A2_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+sat_cell_COL_A4_ROW_A4_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+sat_cell_COL_A8_ROW_A8 wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_0         wl_zero           C28SOI_SC_12_CORE_LL
+pipeline_N2048_1       wl_zero           C28SOI_SC_12_CORE_LL
+sat_cell_COL_A2_ROW_A2_1
+                       wl_zero           C28SOI_SC_12_CORE_LL
+sat_cell_COL_A2_ROW_A2_2
+                       wl_zero           C28SOI_SC_12_CORE_LL
+sat_cell_COL_A2_ROW_A2_3
+                       wl_zero           C28SOI_SC_12_CORE_LL
+sat_cell_COL_A2_ROW_A2_4
+                       wl_zero           C28SOI_SC_12_CORE_LL
+sat_cell_COL_A2_ROW_A2_5
+                       wl_zero           C28SOI_SC_12_CORE_LL
+sat_cell_COL_A2_ROW_A2_6
+                       wl_zero           C28SOI_SC_12_CORE_LL
+sat_cell_COL_A2_ROW_A2_7
+                       wl_zero           C28SOI_SC_12_CORE_LL
+sat_cell_COL_A2_ROW_A2_8
+                       wl_zero           C28SOI_SC_12_CORE_LL
+sat_cell_COL_A2_ROW_A2_9
+                       wl_zero           C28SOI_SC_12_CORE_LL
+sat_cell_COL_A2_ROW_A2_10
+                       wl_zero           C28SOI_SC_12_CORE_LL
+sat_cell_COL_A2_ROW_A2_11
+                       wl_zero           C28SOI_SC_12_CORE_LL
+sat_cell_COL_A2_ROW_A2_12
+                       wl_zero           C28SOI_SC_12_CORE_LL
+sat_cell_COL_A2_ROW_A2_13
+                       wl_zero           C28SOI_SC_12_CORE_LL
+sat_cell_COL_A2_ROW_A2_14
+                       wl_zero           C28SOI_SC_12_CORE_LL
+sat_cell_COL_A2_ROW_A2_15
+                       wl_zero           C28SOI_SC_12_CORE_LL
+sat_cell_COL_A4_ROW_A4_1
+                       wl_zero           C28SOI_SC_12_CORE_LL
+sat_cell_COL_A4_ROW_A4_2
+                       wl_zero           C28SOI_SC_12_CORE_LL
+sat_cell_COL_A4_ROW_A4_3
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_1         wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_2         wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_3         wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_4         wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_5         wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_6         wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_7         wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_8         wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_9         wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_10        wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_11        wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_12        wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_13        wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_14        wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_15        wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_16        wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_17        wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_18        wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_19        wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_20        wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_21        wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_22        wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_23        wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_24        wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_25        wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_26        wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_27        wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_28        wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_29        wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_30        wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_31        wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_32        wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_33        wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_34        wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_35        wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_36        wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_37        wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_38        wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_39        wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_40        wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_41        wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_42        wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_43        wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_44        wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_45        wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_46        wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_47        wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_48        wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_49        wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_50        wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_51        wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_52        wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_53        wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_54        wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_55        wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_56        wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_57        wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_58        wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_59        wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_60        wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_61        wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_62        wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_63        wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_64        wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_65        wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_66        wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_67        wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_68        wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_69        wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_70        wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_71        wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_72        wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_73        wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_74        wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_75        wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_76        wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_77        wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_78        wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_79        wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_80        wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_81        wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_82        wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_83        wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_84        wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_85        wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_86        wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_87        wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_88        wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_89        wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_90        wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_91        wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_92        wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_93        wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_94        wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_95        wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_96        wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_97        wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_98        wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_99        wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_100       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_101       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_102       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_103       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_104       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_105       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_106       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_107       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_108       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_109       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_110       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_111       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_112       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_113       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_114       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_115       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_116       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_117       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_118       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_119       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_120       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_121       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_122       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_123       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_124       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_125       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_126       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_127       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_128       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_129       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_130       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_131       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_132       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_133       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_134       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_135       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_136       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_137       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_138       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_139       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_140       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_141       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_142       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_143       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_144       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_145       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_146       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_147       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_148       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_149       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_150       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_151       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_152       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_153       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_154       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_155       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_156       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_157       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_158       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_159       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_160       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_161       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_162       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_163       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_164       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_165       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_166       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_167       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_168       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_169       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_170       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_171       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_172       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_173       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_174       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_175       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_176       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_177       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_178       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_179       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_180       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_181       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_182       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_183       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_184       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_185       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_186       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_187       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_188       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_189       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_190       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_191       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_1_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_2_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_3_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_4_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_5_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_6_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_7_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_8_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_9_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_10_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_11_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_12_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_13_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_14_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_15_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_16_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_17_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_18_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_19_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_20_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_21_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_22_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_23_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_24_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_25_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_26_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_27_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_28_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_29_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_30_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_31_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_32_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_33_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_34_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_35_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_36_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_37_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_38_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_39_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_40_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_41_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_42_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_43_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_44_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_45_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_46_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_47_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_48_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_49_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_50_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_51_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_52_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_53_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_54_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_55_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_56_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_57_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_58_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_59_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_60_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_61_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_62_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_63_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_64_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_65_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_66_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_67_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_68_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_69_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_70_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_71_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_72_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_73_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_74_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_75_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_76_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_77_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_78_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_79_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_80_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_81_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_82_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_83_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_84_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_85_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_86_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_87_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_88_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_89_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_90_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_91_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_92_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_93_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_94_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_95_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_96_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_97_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_98_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_99_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_100_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_101_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_102_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_103_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_104_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_105_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_106_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_107_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_108_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_109_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_110_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_111_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_112_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_113_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_114_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_115_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_116_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_117_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_118_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_119_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_120_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_121_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_122_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_123_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_124_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_125_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_126_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_127_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_128_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_129_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_130_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_131_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_132_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_133_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_134_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_135_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_136_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_137_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_138_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_139_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_140_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_141_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_142_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_143_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_144_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_145_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_146_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_147_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_148_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_149_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_150_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_151_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_152_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_153_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_154_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_155_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_156_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_157_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_158_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_159_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_160_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_161_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_162_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_163_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_164_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_165_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_166_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_167_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_168_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_169_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_170_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_171_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_172_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_173_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_174_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_175_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_176_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_177_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_178_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_179_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_180_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_181_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_182_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_183_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_184_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_185_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_186_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_187_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_188_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_189_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_190_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_191_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+adder_nbit32_0_DW01_add_0
+                       wl_zero           C28SOI_SC_12_CORE_LL
+
+
+Global Operating Voltage = 0.9  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1mW
+
+
+  Cell Internal Power  =   3.7686 mW   (74%)
+  Net Switching Power  =   1.3180 mW   (26%)
+                         ---------
+Total Dynamic Power    =   5.0866 mW  (100%)
+
+Cell Leakage Power     = 278.2540 uW
+
+Information: report_power power group summary does not include estimated clock tree power. (PWR-789)
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register           0.0000            0.0000            0.0000            0.0000  (   0.00%)
+sequential         1.1916            0.1038        9.6207e-02            1.3916  (  25.94%)
+combinational      2.5770            1.2142            0.1820            3.9733  (  74.06%)
+--------------------------------------------------------------------------------------------------
+Total              3.7686 mW         1.3180 mW         0.2783 mW         5.3649 mW
+1
