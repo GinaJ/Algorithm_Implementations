@@ -1,0 +1,656 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : FIR_TOP_N_bits32_N_size81
+Version: F-2011.09-SP3
+Date   : Sat Jul  8 22:35:58 2017
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: tt28_0.90V_0.00V_0.00V_0.00V_25C   Library: C28SOI_SC_12_CORE_LL
+Wire Load Model Mode: enclosed
+
+  Startpoint: pipe_fir_1/output_reg[29]
+              (rising edge-triggered flip-flop)
+  Endpoint: OUT_FIR[31]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FIR_TOP_N_bits32_N_size81
+                     wl_zero               C28SOI_SC_12_CORE_LL
+  multiplier_nbit32_80_DW02_mult_0
+                     wl_zero               C28SOI_SC_12_CORE_LL
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  pipe_fir_1/output_reg[29]/CP (C12T28SOI_LL_DFPQX8_P0)
+                                                          0.00 #     0.00 r
+  pipe_fir_1/output_reg[29]/Q (C12T28SOI_LL_DFPQX8_P0)
+                                                          0.04       0.04 r
+  pipe_fir_1/output[29] (FIR_reg_N32_0)                   0.00       0.04 r
+  mult_fir_1/Y[29] (multiplier_nbit32_80)                 0.00       0.04 r
+  mult_fir_1/mult_18/B[29] (multiplier_nbit32_80_DW02_mult_0)
+                                                          0.00       0.04 r
+  mult_fir_1/mult_18/U112/Z (C12T28SOI_LL_IVX8_P0)        0.01       0.05 f
+  mult_fir_1/mult_18/U450/Z (C12T28SOI_LL_NOR2X3_P0)      0.03       0.07 r
+  mult_fir_1/mult_18/U31/Z (C12T28SOI_LL_AND2X8_P0)       0.04       0.11 r
+  mult_fir_1/mult_18/S2_2_29/Z (C12T28SOI_LL_XOR3X8_P0)
+                                                          0.05       0.16 f
+  mult_fir_1/mult_18/S2_3_28/S0 (C12T28SOI_LL_FA1X8_P0)
+                                                          0.06       0.21 r
+  mult_fir_1/mult_18/S2_4_27/S0 (C12T28SOI_LL_FA1X8_P0)
+                                                          0.05       0.26 f
+  mult_fir_1/mult_18/S2_5_26/S0 (C12T28SOI_LL_FA1X8_P0)
+                                                          0.05       0.31 r
+  mult_fir_1/mult_18/S2_6_25/S0 (C12T28SOI_LL_FA1X8_P0)
+                                                          0.05       0.36 f
+  mult_fir_1/mult_18/S2_7_24/S0 (C12T28SOI_LL_FA1X8_P0)
+                                                          0.05       0.41 r
+  mult_fir_1/mult_18/S2_8_23/S0 (C12T28SOI_LL_FA1X8_P0)
+                                                          0.05       0.46 f
+  mult_fir_1/mult_18/S2_9_22/S0 (C12T28SOI_LL_FA1X8_P0)
+                                                          0.05       0.51 r
+  mult_fir_1/mult_18/S2_10_21/S0 (C12T28SOI_LL_FA1X8_P0)
+                                                          0.05       0.56 f
+  mult_fir_1/mult_18/S2_11_20/S0 (C12T28SOI_LL_FA1X8_P0)
+                                                          0.05       0.61 r
+  mult_fir_1/mult_18/S2_12_19/S0 (C12T28SOI_LL_FA1X8_P0)
+                                                          0.05       0.66 f
+  mult_fir_1/mult_18/S2_13_18/S0 (C12T28SOI_LL_FA1X8_P0)
+                                                          0.05       0.71 r
+  mult_fir_1/mult_18/S2_14_17/S0 (C12T28SOI_LL_FA1X8_P0)
+                                                          0.05       0.76 f
+  mult_fir_1/mult_18/S2_15_16/S0 (C12T28SOI_LL_FA1X8_P0)
+                                                          0.05       0.81 r
+  mult_fir_1/mult_18/S2_16_15/S0 (C12T28SOI_LL_FA1X8_P0)
+                                                          0.05       0.85 f
+  mult_fir_1/mult_18/S2_17_14/S0 (C12T28SOI_LL_FA1X8_P0)
+                                                          0.05       0.91 r
+  mult_fir_1/mult_18/S2_18_13/S0 (C12T28SOI_LL_FA1X8_P0)
+                                                          0.05       0.95 f
+  mult_fir_1/mult_18/S2_19_12/S0 (C12T28SOI_LL_FA1X8_P0)
+                                                          0.05       1.01 r
+  mult_fir_1/mult_18/S2_20_11/S0 (C12T28SOI_LL_FA1X8_P0)
+                                                          0.05       1.05 f
+  mult_fir_1/mult_18/S2_21_10/S0 (C12T28SOI_LL_FA1X8_P0)
+                                                          0.05       1.11 r
+  mult_fir_1/mult_18/S2_22_9/S0 (C12T28SOI_LL_FA1X8_P0)
+                                                          0.05       1.15 f
+  mult_fir_1/mult_18/S2_23_8/S0 (C12T28SOI_LL_FA1X8_P0)
+                                                          0.05       1.20 r
+  mult_fir_1/mult_18/S2_24_7/S0 (C12T28SOI_LL_FA1X8_P0)
+                                                          0.05       1.25 f
+  mult_fir_1/mult_18/S2_25_6/S0 (C12T28SOI_LL_FA1X8_P0)
+                                                          0.05       1.30 r
+  mult_fir_1/mult_18/S2_26_5/S0 (C12T28SOI_LL_FA1X8_P0)
+                                                          0.05       1.35 f
+  mult_fir_1/mult_18/S2_27_4/S0 (C12T28SOI_LL_FA1X8_P0)
+                                                          0.05       1.40 r
+  mult_fir_1/mult_18/S2_28_3/S0 (C12T28SOI_LL_FA1X8_P0)
+                                                          0.05       1.45 f
+  mult_fir_1/mult_18/S2_29_2/S0 (C12T28SOI_LL_FA1X8_P0)
+                                                          0.05       1.50 r
+  mult_fir_1/mult_18/S2_30_1/S0 (C12T28SOI_LL_FA1X8_P0)
+                                                          0.05       1.55 f
+  mult_fir_1/mult_18/S4_0/S0 (C12T28SOI_LL_FA1X8_P0)      0.05       1.60 r
+  mult_fir_1/mult_18/S14_31_0/S0 (C12T28SOI_LL_FA1X8_P0)
+                                                          0.05       1.65 f
+  mult_fir_1/mult_18/PRODUCT[31] (multiplier_nbit32_80_DW02_mult_0)
+                                                          0.00       1.65 f
+  mult_fir_1/R[31] (multiplier_nbit32_80)                 0.00       1.65 f
+  add_dct_1/Y[31] (adder_nbit32_0)                        0.00       1.65 f
+  add_dct_1/add_18/B[31] (adder_nbit32_0_DW01_add_0)      0.00       1.65 f
+  add_dct_1/add_18/U1_31/S0 (C12T28SOI_LL_FA1X8_P0)       0.06       1.71 r
+  add_dct_1/add_18/SUM[31] (adder_nbit32_0_DW01_add_0)
+                                                          0.00       1.71 r
+  add_dct_1/R[31] (adder_nbit32_0)                        0.00       1.71 r
+  add_dct_2/X[31] (adder_nbit32_79)                       0.00       1.71 r
+  add_dct_2/add_18/A[31] (adder_nbit32_79_DW01_add_0)     0.00       1.71 r
+  add_dct_2/add_18/U1_31/S0 (C12T28SOI_LL_FA1X8_P0)       0.05       1.76 f
+  add_dct_2/add_18/SUM[31] (adder_nbit32_79_DW01_add_0)
+                                                          0.00       1.76 f
+  add_dct_2/R[31] (adder_nbit32_79)                       0.00       1.76 f
+  add_dct_3/X[31] (adder_nbit32_78)                       0.00       1.76 f
+  add_dct_3/add_18/A[31] (adder_nbit32_78_DW01_add_0)     0.00       1.76 f
+  add_dct_3/add_18/U1_31/S0 (C12T28SOI_LL_FA1X8_P0)       0.06       1.81 r
+  add_dct_3/add_18/SUM[31] (adder_nbit32_78_DW01_add_0)
+                                                          0.00       1.81 r
+  add_dct_3/R[31] (adder_nbit32_78)                       0.00       1.81 r
+  add_dct_4/X[31] (adder_nbit32_77)                       0.00       1.81 r
+  add_dct_4/add_18/A[31] (adder_nbit32_77_DW01_add_0)     0.00       1.81 r
+  add_dct_4/add_18/U1_31/S0 (C12T28SOI_LL_FA1X8_P0)       0.05       1.86 f
+  add_dct_4/add_18/SUM[31] (adder_nbit32_77_DW01_add_0)
+                                                          0.00       1.86 f
+  add_dct_4/R[31] (adder_nbit32_77)                       0.00       1.86 f
+  add_dct_5/X[31] (adder_nbit32_76)                       0.00       1.86 f
+  add_dct_5/add_18/A[31] (adder_nbit32_76_DW01_add_0)     0.00       1.86 f
+  add_dct_5/add_18/U1_31/S0 (C12T28SOI_LL_FA1X8_P0)       0.06       1.92 r
+  add_dct_5/add_18/SUM[31] (adder_nbit32_76_DW01_add_0)
+                                                          0.00       1.92 r
+  add_dct_5/R[31] (adder_nbit32_76)                       0.00       1.92 r
+  add_dct_6/X[31] (adder_nbit32_75)                       0.00       1.92 r
+  add_dct_6/add_18/A[31] (adder_nbit32_75_DW01_add_0)     0.00       1.92 r
+  add_dct_6/add_18/U1_31/S0 (C12T28SOI_LL_FA1X8_P0)       0.05       1.97 f
+  add_dct_6/add_18/SUM[31] (adder_nbit32_75_DW01_add_0)
+                                                          0.00       1.97 f
+  add_dct_6/R[31] (adder_nbit32_75)                       0.00       1.97 f
+  add_dct_7/X[31] (adder_nbit32_74)                       0.00       1.97 f
+  add_dct_7/add_18/A[31] (adder_nbit32_74_DW01_add_0)     0.00       1.97 f
+  add_dct_7/add_18/U1_31/S0 (C12T28SOI_LL_FA1X8_P0)       0.06       2.03 r
+  add_dct_7/add_18/SUM[31] (adder_nbit32_74_DW01_add_0)
+                                                          0.00       2.03 r
+  add_dct_7/R[31] (adder_nbit32_74)                       0.00       2.03 r
+  add_dct_8/X[31] (adder_nbit32_73)                       0.00       2.03 r
+  add_dct_8/add_18/A[31] (adder_nbit32_73_DW01_add_0)     0.00       2.03 r
+  add_dct_8/add_18/U1_31/S0 (C12T28SOI_LL_FA1X8_P0)       0.05       2.08 f
+  add_dct_8/add_18/SUM[31] (adder_nbit32_73_DW01_add_0)
+                                                          0.00       2.08 f
+  add_dct_8/R[31] (adder_nbit32_73)                       0.00       2.08 f
+  add_dct_9/X[31] (adder_nbit32_72)                       0.00       2.08 f
+  add_dct_9/add_18/A[31] (adder_nbit32_72_DW01_add_0)     0.00       2.08 f
+  add_dct_9/add_18/U1_31/S0 (C12T28SOI_LL_FA1X8_P0)       0.06       2.14 r
+  add_dct_9/add_18/SUM[31] (adder_nbit32_72_DW01_add_0)
+                                                          0.00       2.14 r
+  add_dct_9/R[31] (adder_nbit32_72)                       0.00       2.14 r
+  add_dct_10/X[31] (adder_nbit32_71)                      0.00       2.14 r
+  add_dct_10/add_18/A[31] (adder_nbit32_71_DW01_add_0)
+                                                          0.00       2.14 r
+  add_dct_10/add_18/U1_31/S0 (C12T28SOI_LL_FA1X8_P0)      0.05       2.19 f
+  add_dct_10/add_18/SUM[31] (adder_nbit32_71_DW01_add_0)
+                                                          0.00       2.19 f
+  add_dct_10/R[31] (adder_nbit32_71)                      0.00       2.19 f
+  add_dct_11/X[31] (adder_nbit32_70)                      0.00       2.19 f
+  add_dct_11/add_18/A[31] (adder_nbit32_70_DW01_add_0)
+                                                          0.00       2.19 f
+  add_dct_11/add_18/U1_31/S0 (C12T28SOI_LL_FA1X8_P0)      0.06       2.25 r
+  add_dct_11/add_18/SUM[31] (adder_nbit32_70_DW01_add_0)
+                                                          0.00       2.25 r
+  add_dct_11/R[31] (adder_nbit32_70)                      0.00       2.25 r
+  add_dct_12/X[31] (adder_nbit32_69)                      0.00       2.25 r
+  add_dct_12/add_18/A[31] (adder_nbit32_69_DW01_add_0)
+                                                          0.00       2.25 r
+  add_dct_12/add_18/U1_31/S0 (C12T28SOI_LL_FA1X8_P0)      0.05       2.30 f
+  add_dct_12/add_18/SUM[31] (adder_nbit32_69_DW01_add_0)
+                                                          0.00       2.30 f
+  add_dct_12/R[31] (adder_nbit32_69)                      0.00       2.30 f
+  add_dct_13/X[31] (adder_nbit32_68)                      0.00       2.30 f
+  add_dct_13/add_18/A[31] (adder_nbit32_68_DW01_add_0)
+                                                          0.00       2.30 f
+  add_dct_13/add_18/U1_31/S0 (C12T28SOI_LL_FA1X8_P0)      0.06       2.35 r
+  add_dct_13/add_18/SUM[31] (adder_nbit32_68_DW01_add_0)
+                                                          0.00       2.35 r
+  add_dct_13/R[31] (adder_nbit32_68)                      0.00       2.35 r
+  add_dct_14/X[31] (adder_nbit32_67)                      0.00       2.35 r
+  add_dct_14/add_18/A[31] (adder_nbit32_67_DW01_add_0)
+                                                          0.00       2.35 r
+  add_dct_14/add_18/U1_31/S0 (C12T28SOI_LL_FA1X8_P0)      0.05       2.41 f
+  add_dct_14/add_18/SUM[31] (adder_nbit32_67_DW01_add_0)
+                                                          0.00       2.41 f
+  add_dct_14/R[31] (adder_nbit32_67)                      0.00       2.41 f
+  add_dct_15/X[31] (adder_nbit32_66)                      0.00       2.41 f
+  add_dct_15/add_18/A[31] (adder_nbit32_66_DW01_add_0)
+                                                          0.00       2.41 f
+  add_dct_15/add_18/U1_31/S0 (C12T28SOI_LL_FA1X8_P0)      0.06       2.46 r
+  add_dct_15/add_18/SUM[31] (adder_nbit32_66_DW01_add_0)
+                                                          0.00       2.46 r
+  add_dct_15/R[31] (adder_nbit32_66)                      0.00       2.46 r
+  add_dct_16/X[31] (adder_nbit32_65)                      0.00       2.46 r
+  add_dct_16/add_18/A[31] (adder_nbit32_65_DW01_add_0)
+                                                          0.00       2.46 r
+  add_dct_16/add_18/U1_31/S0 (C12T28SOI_LL_FA1X8_P0)      0.05       2.51 f
+  add_dct_16/add_18/SUM[31] (adder_nbit32_65_DW01_add_0)
+                                                          0.00       2.51 f
+  add_dct_16/R[31] (adder_nbit32_65)                      0.00       2.51 f
+  add_dct_17/X[31] (adder_nbit32_64)                      0.00       2.51 f
+  add_dct_17/add_18/A[31] (adder_nbit32_64_DW01_add_0)
+                                                          0.00       2.51 f
+  add_dct_17/add_18/U1_31/S0 (C12T28SOI_LL_FA1X8_P0)      0.06       2.57 r
+  add_dct_17/add_18/SUM[31] (adder_nbit32_64_DW01_add_0)
+                                                          0.00       2.57 r
+  add_dct_17/R[31] (adder_nbit32_64)                      0.00       2.57 r
+  add_dct_18/X[31] (adder_nbit32_63)                      0.00       2.57 r
+  add_dct_18/add_18/A[31] (adder_nbit32_63_DW01_add_0)
+                                                          0.00       2.57 r
+  add_dct_18/add_18/U1_31/S0 (C12T28SOI_LL_FA1X8_P0)      0.05       2.62 f
+  add_dct_18/add_18/SUM[31] (adder_nbit32_63_DW01_add_0)
+                                                          0.00       2.62 f
+  add_dct_18/R[31] (adder_nbit32_63)                      0.00       2.62 f
+  add_dct_19/X[31] (adder_nbit32_62)                      0.00       2.62 f
+  add_dct_19/add_18/A[31] (adder_nbit32_62_DW01_add_0)
+                                                          0.00       2.62 f
+  add_dct_19/add_18/U1_31/S0 (C12T28SOI_LL_FA1X8_P0)      0.06       2.68 r
+  add_dct_19/add_18/SUM[31] (adder_nbit32_62_DW01_add_0)
+                                                          0.00       2.68 r
+  add_dct_19/R[31] (adder_nbit32_62)                      0.00       2.68 r
+  add_dct_20/X[31] (adder_nbit32_61)                      0.00       2.68 r
+  add_dct_20/add_18/A[31] (adder_nbit32_61_DW01_add_0)
+                                                          0.00       2.68 r
+  add_dct_20/add_18/U1_31/S0 (C12T28SOI_LL_FA1X8_P0)      0.05       2.73 f
+  add_dct_20/add_18/SUM[31] (adder_nbit32_61_DW01_add_0)
+                                                          0.00       2.73 f
+  add_dct_20/R[31] (adder_nbit32_61)                      0.00       2.73 f
+  add_dct_21/X[31] (adder_nbit32_60)                      0.00       2.73 f
+  add_dct_21/add_18/A[31] (adder_nbit32_60_DW01_add_0)
+                                                          0.00       2.73 f
+  add_dct_21/add_18/U1_31/S0 (C12T28SOI_LL_FA1X8_P0)      0.06       2.79 r
+  add_dct_21/add_18/SUM[31] (adder_nbit32_60_DW01_add_0)
+                                                          0.00       2.79 r
+  add_dct_21/R[31] (adder_nbit32_60)                      0.00       2.79 r
+  add_dct_22/X[31] (adder_nbit32_59)                      0.00       2.79 r
+  add_dct_22/add_18/A[31] (adder_nbit32_59_DW01_add_0)
+                                                          0.00       2.79 r
+  add_dct_22/add_18/U1_31/S0 (C12T28SOI_LL_FA1X8_P0)      0.05       2.84 f
+  add_dct_22/add_18/SUM[31] (adder_nbit32_59_DW01_add_0)
+                                                          0.00       2.84 f
+  add_dct_22/R[31] (adder_nbit32_59)                      0.00       2.84 f
+  add_dct_23/X[31] (adder_nbit32_58)                      0.00       2.84 f
+  add_dct_23/add_18/A[31] (adder_nbit32_58_DW01_add_0)
+                                                          0.00       2.84 f
+  add_dct_23/add_18/U1_31/S0 (C12T28SOI_LL_FA1X8_P0)      0.06       2.90 r
+  add_dct_23/add_18/SUM[31] (adder_nbit32_58_DW01_add_0)
+                                                          0.00       2.90 r
+  add_dct_23/R[31] (adder_nbit32_58)                      0.00       2.90 r
+  add_dct_24/X[31] (adder_nbit32_57)                      0.00       2.90 r
+  add_dct_24/add_18/A[31] (adder_nbit32_57_DW01_add_0)
+                                                          0.00       2.90 r
+  add_dct_24/add_18/U1_31/S0 (C12T28SOI_LL_FA1X8_P0)      0.05       2.95 f
+  add_dct_24/add_18/SUM[31] (adder_nbit32_57_DW01_add_0)
+                                                          0.00       2.95 f
+  add_dct_24/R[31] (adder_nbit32_57)                      0.00       2.95 f
+  add_dct_25/X[31] (adder_nbit32_56)                      0.00       2.95 f
+  add_dct_25/add_18/A[31] (adder_nbit32_56_DW01_add_0)
+                                                          0.00       2.95 f
+  add_dct_25/add_18/U1_31/S0 (C12T28SOI_LL_FA1X8_P0)      0.06       3.00 r
+  add_dct_25/add_18/SUM[31] (adder_nbit32_56_DW01_add_0)
+                                                          0.00       3.00 r
+  add_dct_25/R[31] (adder_nbit32_56)                      0.00       3.00 r
+  add_dct_26/X[31] (adder_nbit32_55)                      0.00       3.00 r
+  add_dct_26/add_18/A[31] (adder_nbit32_55_DW01_add_0)
+                                                          0.00       3.00 r
+  add_dct_26/add_18/U1_31/S0 (C12T28SOI_LL_FA1X8_P0)      0.05       3.05 f
+  add_dct_26/add_18/SUM[31] (adder_nbit32_55_DW01_add_0)
+                                                          0.00       3.05 f
+  add_dct_26/R[31] (adder_nbit32_55)                      0.00       3.05 f
+  add_dct_27/X[31] (adder_nbit32_54)                      0.00       3.05 f
+  add_dct_27/add_18/A[31] (adder_nbit32_54_DW01_add_0)
+                                                          0.00       3.05 f
+  add_dct_27/add_18/U1_31/S0 (C12T28SOI_LL_FA1X8_P0)      0.06       3.11 r
+  add_dct_27/add_18/SUM[31] (adder_nbit32_54_DW01_add_0)
+                                                          0.00       3.11 r
+  add_dct_27/R[31] (adder_nbit32_54)                      0.00       3.11 r
+  add_dct_28/X[31] (adder_nbit32_53)                      0.00       3.11 r
+  add_dct_28/add_18/A[31] (adder_nbit32_53_DW01_add_0)
+                                                          0.00       3.11 r
+  add_dct_28/add_18/U1_31/S0 (C12T28SOI_LL_FA1X8_P0)      0.05       3.16 f
+  add_dct_28/add_18/SUM[31] (adder_nbit32_53_DW01_add_0)
+                                                          0.00       3.16 f
+  add_dct_28/R[31] (adder_nbit32_53)                      0.00       3.16 f
+  add_dct_29/X[31] (adder_nbit32_52)                      0.00       3.16 f
+  add_dct_29/add_18/A[31] (adder_nbit32_52_DW01_add_0)
+                                                          0.00       3.16 f
+  add_dct_29/add_18/U1_31/S0 (C12T28SOI_LL_FA1X8_P0)      0.06       3.22 r
+  add_dct_29/add_18/SUM[31] (adder_nbit32_52_DW01_add_0)
+                                                          0.00       3.22 r
+  add_dct_29/R[31] (adder_nbit32_52)                      0.00       3.22 r
+  add_dct_30/X[31] (adder_nbit32_51)                      0.00       3.22 r
+  add_dct_30/add_18/A[31] (adder_nbit32_51_DW01_add_0)
+                                                          0.00       3.22 r
+  add_dct_30/add_18/U1_31/S0 (C12T28SOI_LL_FA1X8_P0)      0.05       3.27 f
+  add_dct_30/add_18/SUM[31] (adder_nbit32_51_DW01_add_0)
+                                                          0.00       3.27 f
+  add_dct_30/R[31] (adder_nbit32_51)                      0.00       3.27 f
+  add_dct_31/X[31] (adder_nbit32_50)                      0.00       3.27 f
+  add_dct_31/add_18/A[31] (adder_nbit32_50_DW01_add_0)
+                                                          0.00       3.27 f
+  add_dct_31/add_18/U1_31/S0 (C12T28SOI_LL_FA1X8_P0)      0.06       3.33 r
+  add_dct_31/add_18/SUM[31] (adder_nbit32_50_DW01_add_0)
+                                                          0.00       3.33 r
+  add_dct_31/R[31] (adder_nbit32_50)                      0.00       3.33 r
+  add_dct_32/X[31] (adder_nbit32_49)                      0.00       3.33 r
+  add_dct_32/add_18/A[31] (adder_nbit32_49_DW01_add_0)
+                                                          0.00       3.33 r
+  add_dct_32/add_18/U1_31/S0 (C12T28SOI_LL_FA1X8_P0)      0.05       3.38 f
+  add_dct_32/add_18/SUM[31] (adder_nbit32_49_DW01_add_0)
+                                                          0.00       3.38 f
+  add_dct_32/R[31] (adder_nbit32_49)                      0.00       3.38 f
+  add_dct_33/X[31] (adder_nbit32_48)                      0.00       3.38 f
+  add_dct_33/add_18/A[31] (adder_nbit32_48_DW01_add_0)
+                                                          0.00       3.38 f
+  add_dct_33/add_18/U1_31/S0 (C12T28SOI_LL_FA1X8_P0)      0.06       3.44 r
+  add_dct_33/add_18/SUM[31] (adder_nbit32_48_DW01_add_0)
+                                                          0.00       3.44 r
+  add_dct_33/R[31] (adder_nbit32_48)                      0.00       3.44 r
+  add_dct_34/X[31] (adder_nbit32_47)                      0.00       3.44 r
+  add_dct_34/add_18/A[31] (adder_nbit32_47_DW01_add_0)
+                                                          0.00       3.44 r
+  add_dct_34/add_18/U1_31/S0 (C12T28SOI_LL_FA1X8_P0)      0.05       3.49 f
+  add_dct_34/add_18/SUM[31] (adder_nbit32_47_DW01_add_0)
+                                                          0.00       3.49 f
+  add_dct_34/R[31] (adder_nbit32_47)                      0.00       3.49 f
+  add_dct_35/X[31] (adder_nbit32_46)                      0.00       3.49 f
+  add_dct_35/add_18/A[31] (adder_nbit32_46_DW01_add_0)
+                                                          0.00       3.49 f
+  add_dct_35/add_18/U1_31/S0 (C12T28SOI_LL_FA1X8_P0)      0.06       3.54 r
+  add_dct_35/add_18/SUM[31] (adder_nbit32_46_DW01_add_0)
+                                                          0.00       3.54 r
+  add_dct_35/R[31] (adder_nbit32_46)                      0.00       3.54 r
+  add_dct_36/X[31] (adder_nbit32_45)                      0.00       3.54 r
+  add_dct_36/add_18/A[31] (adder_nbit32_45_DW01_add_0)
+                                                          0.00       3.54 r
+  add_dct_36/add_18/U1_31/S0 (C12T28SOI_LL_FA1X8_P0)      0.05       3.60 f
+  add_dct_36/add_18/SUM[31] (adder_nbit32_45_DW01_add_0)
+                                                          0.00       3.60 f
+  add_dct_36/R[31] (adder_nbit32_45)                      0.00       3.60 f
+  add_dct_37/X[31] (adder_nbit32_44)                      0.00       3.60 f
+  add_dct_37/add_18/A[31] (adder_nbit32_44_DW01_add_0)
+                                                          0.00       3.60 f
+  add_dct_37/add_18/U1_31/S0 (C12T28SOI_LL_FA1X8_P0)      0.06       3.65 r
+  add_dct_37/add_18/SUM[31] (adder_nbit32_44_DW01_add_0)
+                                                          0.00       3.65 r
+  add_dct_37/R[31] (adder_nbit32_44)                      0.00       3.65 r
+  add_dct_38/X[31] (adder_nbit32_43)                      0.00       3.65 r
+  add_dct_38/add_18/A[31] (adder_nbit32_43_DW01_add_0)
+                                                          0.00       3.65 r
+  add_dct_38/add_18/U1_31/S0 (C12T28SOI_LL_FA1X8_P0)      0.05       3.70 f
+  add_dct_38/add_18/SUM[31] (adder_nbit32_43_DW01_add_0)
+                                                          0.00       3.70 f
+  add_dct_38/R[31] (adder_nbit32_43)                      0.00       3.70 f
+  add_dct_39/X[31] (adder_nbit32_42)                      0.00       3.70 f
+  add_dct_39/add_18/A[31] (adder_nbit32_42_DW01_add_0)
+                                                          0.00       3.70 f
+  add_dct_39/add_18/U1_31/S0 (C12T28SOI_LL_FA1X8_P0)      0.06       3.76 r
+  add_dct_39/add_18/SUM[31] (adder_nbit32_42_DW01_add_0)
+                                                          0.00       3.76 r
+  add_dct_39/R[31] (adder_nbit32_42)                      0.00       3.76 r
+  add_dct_40/X[31] (adder_nbit32_41)                      0.00       3.76 r
+  add_dct_40/add_18/A[31] (adder_nbit32_41_DW01_add_0)
+                                                          0.00       3.76 r
+  add_dct_40/add_18/U1_31/S0 (C12T28SOI_LL_FA1X8_P0)      0.05       3.81 f
+  add_dct_40/add_18/SUM[31] (adder_nbit32_41_DW01_add_0)
+                                                          0.00       3.81 f
+  add_dct_40/R[31] (adder_nbit32_41)                      0.00       3.81 f
+  add_dct_41/X[31] (adder_nbit32_40)                      0.00       3.81 f
+  add_dct_41/add_18/A[31] (adder_nbit32_40_DW01_add_0)
+                                                          0.00       3.81 f
+  add_dct_41/add_18/U1_31/S0 (C12T28SOI_LL_FA1X8_P0)      0.06       3.87 r
+  add_dct_41/add_18/SUM[31] (adder_nbit32_40_DW01_add_0)
+                                                          0.00       3.87 r
+  add_dct_41/R[31] (adder_nbit32_40)                      0.00       3.87 r
+  add_dct_42/X[31] (adder_nbit32_39)                      0.00       3.87 r
+  add_dct_42/add_18/A[31] (adder_nbit32_39_DW01_add_0)
+                                                          0.00       3.87 r
+  add_dct_42/add_18/U1_31/S0 (C12T28SOI_LL_FA1X8_P0)      0.05       3.92 f
+  add_dct_42/add_18/SUM[31] (adder_nbit32_39_DW01_add_0)
+                                                          0.00       3.92 f
+  add_dct_42/R[31] (adder_nbit32_39)                      0.00       3.92 f
+  add_dct_43/X[31] (adder_nbit32_38)                      0.00       3.92 f
+  add_dct_43/add_18/A[31] (adder_nbit32_38_DW01_add_0)
+                                                          0.00       3.92 f
+  add_dct_43/add_18/U1_31/S0 (C12T28SOI_LL_FA1X8_P0)      0.06       3.98 r
+  add_dct_43/add_18/SUM[31] (adder_nbit32_38_DW01_add_0)
+                                                          0.00       3.98 r
+  add_dct_43/R[31] (adder_nbit32_38)                      0.00       3.98 r
+  add_dct_44/X[31] (adder_nbit32_37)                      0.00       3.98 r
+  add_dct_44/add_18/A[31] (adder_nbit32_37_DW01_add_0)
+                                                          0.00       3.98 r
+  add_dct_44/add_18/U1_31/S0 (C12T28SOI_LL_FA1X8_P0)      0.05       4.03 f
+  add_dct_44/add_18/SUM[31] (adder_nbit32_37_DW01_add_0)
+                                                          0.00       4.03 f
+  add_dct_44/R[31] (adder_nbit32_37)                      0.00       4.03 f
+  add_dct_45/X[31] (adder_nbit32_36)                      0.00       4.03 f
+  add_dct_45/add_18/A[31] (adder_nbit32_36_DW01_add_0)
+                                                          0.00       4.03 f
+  add_dct_45/add_18/U1_31/S0 (C12T28SOI_LL_FA1X8_P0)      0.06       4.09 r
+  add_dct_45/add_18/SUM[31] (adder_nbit32_36_DW01_add_0)
+                                                          0.00       4.09 r
+  add_dct_45/R[31] (adder_nbit32_36)                      0.00       4.09 r
+  add_dct_46/X[31] (adder_nbit32_35)                      0.00       4.09 r
+  add_dct_46/add_18/A[31] (adder_nbit32_35_DW01_add_0)
+                                                          0.00       4.09 r
+  add_dct_46/add_18/U1_31/S0 (C12T28SOI_LL_FA1X8_P0)      0.05       4.14 f
+  add_dct_46/add_18/SUM[31] (adder_nbit32_35_DW01_add_0)
+                                                          0.00       4.14 f
+  add_dct_46/R[31] (adder_nbit32_35)                      0.00       4.14 f
+  add_dct_47/X[31] (adder_nbit32_34)                      0.00       4.14 f
+  add_dct_47/add_18/A[31] (adder_nbit32_34_DW01_add_0)
+                                                          0.00       4.14 f
+  add_dct_47/add_18/U1_31/S0 (C12T28SOI_LL_FA1X8_P0)      0.06       4.19 r
+  add_dct_47/add_18/SUM[31] (adder_nbit32_34_DW01_add_0)
+                                                          0.00       4.19 r
+  add_dct_47/R[31] (adder_nbit32_34)                      0.00       4.19 r
+  add_dct_48/X[31] (adder_nbit32_33)                      0.00       4.19 r
+  add_dct_48/add_18/A[31] (adder_nbit32_33_DW01_add_0)
+                                                          0.00       4.19 r
+  add_dct_48/add_18/U1_31/S0 (C12T28SOI_LL_FA1X8_P0)      0.05       4.24 f
+  add_dct_48/add_18/SUM[31] (adder_nbit32_33_DW01_add_0)
+                                                          0.00       4.24 f
+  add_dct_48/R[31] (adder_nbit32_33)                      0.00       4.24 f
+  add_dct_49/X[31] (adder_nbit32_32)                      0.00       4.24 f
+  add_dct_49/add_18/A[31] (adder_nbit32_32_DW01_add_0)
+                                                          0.00       4.24 f
+  add_dct_49/add_18/U1_31/S0 (C12T28SOI_LL_FA1X8_P0)      0.06       4.30 r
+  add_dct_49/add_18/SUM[31] (adder_nbit32_32_DW01_add_0)
+                                                          0.00       4.30 r
+  add_dct_49/R[31] (adder_nbit32_32)                      0.00       4.30 r
+  add_dct_50/X[31] (adder_nbit32_31)                      0.00       4.30 r
+  add_dct_50/add_18/A[31] (adder_nbit32_31_DW01_add_0)
+                                                          0.00       4.30 r
+  add_dct_50/add_18/U1_31/S0 (C12T28SOI_LL_FA1X8_P0)      0.05       4.35 f
+  add_dct_50/add_18/SUM[31] (adder_nbit32_31_DW01_add_0)
+                                                          0.00       4.35 f
+  add_dct_50/R[31] (adder_nbit32_31)                      0.00       4.35 f
+  add_dct_51/X[31] (adder_nbit32_30)                      0.00       4.35 f
+  add_dct_51/add_18/A[31] (adder_nbit32_30_DW01_add_0)
+                                                          0.00       4.35 f
+  add_dct_51/add_18/U1_31/S0 (C12T28SOI_LL_FA1X8_P0)      0.06       4.41 r
+  add_dct_51/add_18/SUM[31] (adder_nbit32_30_DW01_add_0)
+                                                          0.00       4.41 r
+  add_dct_51/R[31] (adder_nbit32_30)                      0.00       4.41 r
+  add_dct_52/X[31] (adder_nbit32_29)                      0.00       4.41 r
+  add_dct_52/add_18/A[31] (adder_nbit32_29_DW01_add_0)
+                                                          0.00       4.41 r
+  add_dct_52/add_18/U1_31/S0 (C12T28SOI_LL_FA1X8_P0)      0.05       4.46 f
+  add_dct_52/add_18/SUM[31] (adder_nbit32_29_DW01_add_0)
+                                                          0.00       4.46 f
+  add_dct_52/R[31] (adder_nbit32_29)                      0.00       4.46 f
+  add_dct_53/X[31] (adder_nbit32_28)                      0.00       4.46 f
+  add_dct_53/add_18/A[31] (adder_nbit32_28_DW01_add_0)
+                                                          0.00       4.46 f
+  add_dct_53/add_18/U1_31/S0 (C12T28SOI_LL_FA1X8_P0)      0.06       4.52 r
+  add_dct_53/add_18/SUM[31] (adder_nbit32_28_DW01_add_0)
+                                                          0.00       4.52 r
+  add_dct_53/R[31] (adder_nbit32_28)                      0.00       4.52 r
+  add_dct_54/X[31] (adder_nbit32_27)                      0.00       4.52 r
+  add_dct_54/add_18/A[31] (adder_nbit32_27_DW01_add_0)
+                                                          0.00       4.52 r
+  add_dct_54/add_18/U1_31/S0 (C12T28SOI_LL_FA1X8_P0)      0.05       4.57 f
+  add_dct_54/add_18/SUM[31] (adder_nbit32_27_DW01_add_0)
+                                                          0.00       4.57 f
+  add_dct_54/R[31] (adder_nbit32_27)                      0.00       4.57 f
+  add_dct_55/X[31] (adder_nbit32_26)                      0.00       4.57 f
+  add_dct_55/add_18/A[31] (adder_nbit32_26_DW01_add_0)
+                                                          0.00       4.57 f
+  add_dct_55/add_18/U1_31/S0 (C12T28SOI_LL_FA1X8_P0)      0.06       4.63 r
+  add_dct_55/add_18/SUM[31] (adder_nbit32_26_DW01_add_0)
+                                                          0.00       4.63 r
+  add_dct_55/R[31] (adder_nbit32_26)                      0.00       4.63 r
+  add_dct_56/X[31] (adder_nbit32_25)                      0.00       4.63 r
+  add_dct_56/add_18/A[31] (adder_nbit32_25_DW01_add_0)
+                                                          0.00       4.63 r
+  add_dct_56/add_18/U1_31/S0 (C12T28SOI_LL_FA1X8_P0)      0.05       4.68 f
+  add_dct_56/add_18/SUM[31] (adder_nbit32_25_DW01_add_0)
+                                                          0.00       4.68 f
+  add_dct_56/R[31] (adder_nbit32_25)                      0.00       4.68 f
+  add_dct_57/X[31] (adder_nbit32_24)                      0.00       4.68 f
+  add_dct_57/add_18/A[31] (adder_nbit32_24_DW01_add_0)
+                                                          0.00       4.68 f
+  add_dct_57/add_18/U1_31/S0 (C12T28SOI_LL_FA1X8_P0)      0.06       4.74 r
+  add_dct_57/add_18/SUM[31] (adder_nbit32_24_DW01_add_0)
+                                                          0.00       4.74 r
+  add_dct_57/R[31] (adder_nbit32_24)                      0.00       4.74 r
+  add_dct_58/X[31] (adder_nbit32_23)                      0.00       4.74 r
+  add_dct_58/add_18/A[31] (adder_nbit32_23_DW01_add_0)
+                                                          0.00       4.74 r
+  add_dct_58/add_18/U1_31/S0 (C12T28SOI_LL_FA1X8_P0)      0.05       4.79 f
+  add_dct_58/add_18/SUM[31] (adder_nbit32_23_DW01_add_0)
+                                                          0.00       4.79 f
+  add_dct_58/R[31] (adder_nbit32_23)                      0.00       4.79 f
+  add_dct_59/X[31] (adder_nbit32_22)                      0.00       4.79 f
+  add_dct_59/add_18/A[31] (adder_nbit32_22_DW01_add_0)
+                                                          0.00       4.79 f
+  add_dct_59/add_18/U1_31/S0 (C12T28SOI_LL_FA1X8_P0)      0.06       4.84 r
+  add_dct_59/add_18/SUM[31] (adder_nbit32_22_DW01_add_0)
+                                                          0.00       4.84 r
+  add_dct_59/R[31] (adder_nbit32_22)                      0.00       4.84 r
+  add_dct_60/X[31] (adder_nbit32_21)                      0.00       4.84 r
+  add_dct_60/add_18/A[31] (adder_nbit32_21_DW01_add_0)
+                                                          0.00       4.84 r
+  add_dct_60/add_18/U1_31/S0 (C12T28SOI_LL_FA1X8_P0)      0.05       4.89 f
+  add_dct_60/add_18/SUM[31] (adder_nbit32_21_DW01_add_0)
+                                                          0.00       4.89 f
+  add_dct_60/R[31] (adder_nbit32_21)                      0.00       4.89 f
+  add_dct_61/X[31] (adder_nbit32_20)                      0.00       4.89 f
+  add_dct_61/add_18/A[31] (adder_nbit32_20_DW01_add_0)
+                                                          0.00       4.89 f
+  add_dct_61/add_18/U1_31/S0 (C12T28SOI_LL_FA1X8_P0)      0.06       4.95 r
+  add_dct_61/add_18/SUM[31] (adder_nbit32_20_DW01_add_0)
+                                                          0.00       4.95 r
+  add_dct_61/R[31] (adder_nbit32_20)                      0.00       4.95 r
+  add_dct_62/X[31] (adder_nbit32_19)                      0.00       4.95 r
+  add_dct_62/add_18/A[31] (adder_nbit32_19_DW01_add_0)
+                                                          0.00       4.95 r
+  add_dct_62/add_18/U1_31/S0 (C12T28SOI_LL_FA1X8_P0)      0.05       5.00 f
+  add_dct_62/add_18/SUM[31] (adder_nbit32_19_DW01_add_0)
+                                                          0.00       5.00 f
+  add_dct_62/R[31] (adder_nbit32_19)                      0.00       5.00 f
+  add_dct_63/X[31] (adder_nbit32_18)                      0.00       5.00 f
+  add_dct_63/add_18/A[31] (adder_nbit32_18_DW01_add_0)
+                                                          0.00       5.00 f
+  add_dct_63/add_18/U1_31/S0 (C12T28SOI_LL_FA1X8_P0)      0.06       5.06 r
+  add_dct_63/add_18/SUM[31] (adder_nbit32_18_DW01_add_0)
+                                                          0.00       5.06 r
+  add_dct_63/R[31] (adder_nbit32_18)                      0.00       5.06 r
+  add_dct_64/X[31] (adder_nbit32_17)                      0.00       5.06 r
+  add_dct_64/add_18/A[31] (adder_nbit32_17_DW01_add_0)
+                                                          0.00       5.06 r
+  add_dct_64/add_18/U1_31/S0 (C12T28SOI_LL_FA1X8_P0)      0.05       5.11 f
+  add_dct_64/add_18/SUM[31] (adder_nbit32_17_DW01_add_0)
+                                                          0.00       5.11 f
+  add_dct_64/R[31] (adder_nbit32_17)                      0.00       5.11 f
+  add_dct_65/X[31] (adder_nbit32_16)                      0.00       5.11 f
+  add_dct_65/add_18/A[31] (adder_nbit32_16_DW01_add_0)
+                                                          0.00       5.11 f
+  add_dct_65/add_18/U1_31/S0 (C12T28SOI_LL_FA1X8_P0)      0.06       5.17 r
+  add_dct_65/add_18/SUM[31] (adder_nbit32_16_DW01_add_0)
+                                                          0.00       5.17 r
+  add_dct_65/R[31] (adder_nbit32_16)                      0.00       5.17 r
+  add_dct_66/X[31] (adder_nbit32_15)                      0.00       5.17 r
+  add_dct_66/add_18/A[31] (adder_nbit32_15_DW01_add_0)
+                                                          0.00       5.17 r
+  add_dct_66/add_18/U1_31/S0 (C12T28SOI_LL_FA1X8_P0)      0.05       5.22 f
+  add_dct_66/add_18/SUM[31] (adder_nbit32_15_DW01_add_0)
+                                                          0.00       5.22 f
+  add_dct_66/R[31] (adder_nbit32_15)                      0.00       5.22 f
+  add_dct_67/X[31] (adder_nbit32_14)                      0.00       5.22 f
+  add_dct_67/add_18/A[31] (adder_nbit32_14_DW01_add_0)
+                                                          0.00       5.22 f
+  add_dct_67/add_18/U1_31/S0 (C12T28SOI_LL_FA1X8_P0)      0.06       5.28 r
+  add_dct_67/add_18/SUM[31] (adder_nbit32_14_DW01_add_0)
+                                                          0.00       5.28 r
+  add_dct_67/R[31] (adder_nbit32_14)                      0.00       5.28 r
+  add_dct_68/X[31] (adder_nbit32_13)                      0.00       5.28 r
+  add_dct_68/add_18/A[31] (adder_nbit32_13_DW01_add_0)
+                                                          0.00       5.28 r
+  add_dct_68/add_18/U1_31/S0 (C12T28SOI_LL_FA1X8_P0)      0.05       5.33 f
+  add_dct_68/add_18/SUM[31] (adder_nbit32_13_DW01_add_0)
+                                                          0.00       5.33 f
+  add_dct_68/R[31] (adder_nbit32_13)                      0.00       5.33 f
+  add_dct_69/X[31] (adder_nbit32_12)                      0.00       5.33 f
+  add_dct_69/add_18/A[31] (adder_nbit32_12_DW01_add_0)
+                                                          0.00       5.33 f
+  add_dct_69/add_18/U1_31/S0 (C12T28SOI_LL_FA1X8_P0)      0.06       5.38 r
+  add_dct_69/add_18/SUM[31] (adder_nbit32_12_DW01_add_0)
+                                                          0.00       5.38 r
+  add_dct_69/R[31] (adder_nbit32_12)                      0.00       5.38 r
+  add_dct_70/X[31] (adder_nbit32_11)                      0.00       5.38 r
+  add_dct_70/add_18/A[31] (adder_nbit32_11_DW01_add_0)
+                                                          0.00       5.38 r
+  add_dct_70/add_18/U1_31/S0 (C12T28SOI_LL_FA1X8_P0)      0.05       5.43 f
+  add_dct_70/add_18/SUM[31] (adder_nbit32_11_DW01_add_0)
+                                                          0.00       5.43 f
+  add_dct_70/R[31] (adder_nbit32_11)                      0.00       5.43 f
+  add_dct_71/X[31] (adder_nbit32_10)                      0.00       5.43 f
+  add_dct_71/add_18/A[31] (adder_nbit32_10_DW01_add_0)
+                                                          0.00       5.43 f
+  add_dct_71/add_18/U1_31/S0 (C12T28SOI_LL_FA1X8_P0)      0.06       5.49 r
+  add_dct_71/add_18/SUM[31] (adder_nbit32_10_DW01_add_0)
+                                                          0.00       5.49 r
+  add_dct_71/R[31] (adder_nbit32_10)                      0.00       5.49 r
+  add_dct_72/X[31] (adder_nbit32_9)                       0.00       5.49 r
+  add_dct_72/add_18/A[31] (adder_nbit32_9_DW01_add_0)     0.00       5.49 r
+  add_dct_72/add_18/U1_31/S0 (C12T28SOI_LL_FA1X8_P0)      0.05       5.54 f
+  add_dct_72/add_18/SUM[31] (adder_nbit32_9_DW01_add_0)
+                                                          0.00       5.54 f
+  add_dct_72/R[31] (adder_nbit32_9)                       0.00       5.54 f
+  add_dct_73/X[31] (adder_nbit32_8)                       0.00       5.54 f
+  add_dct_73/add_18/A[31] (adder_nbit32_8_DW01_add_0)     0.00       5.54 f
+  add_dct_73/add_18/U1_31/S0 (C12T28SOI_LL_FA1X8_P0)      0.06       5.60 r
+  add_dct_73/add_18/SUM[31] (adder_nbit32_8_DW01_add_0)
+                                                          0.00       5.60 r
+  add_dct_73/R[31] (adder_nbit32_8)                       0.00       5.60 r
+  add_dct_74/X[31] (adder_nbit32_7)                       0.00       5.60 r
+  add_dct_74/add_18/A[31] (adder_nbit32_7_DW01_add_0)     0.00       5.60 r
+  add_dct_74/add_18/U1_31/S0 (C12T28SOI_LL_FA1X8_P0)      0.05       5.65 f
+  add_dct_74/add_18/SUM[31] (adder_nbit32_7_DW01_add_0)
+                                                          0.00       5.65 f
+  add_dct_74/R[31] (adder_nbit32_7)                       0.00       5.65 f
+  add_dct_75/X[31] (adder_nbit32_6)                       0.00       5.65 f
+  add_dct_75/add_18/A[31] (adder_nbit32_6_DW01_add_0)     0.00       5.65 f
+  add_dct_75/add_18/U1_31/S0 (C12T28SOI_LL_FA1X8_P0)      0.06       5.71 r
+  add_dct_75/add_18/SUM[31] (adder_nbit32_6_DW01_add_0)
+                                                          0.00       5.71 r
+  add_dct_75/R[31] (adder_nbit32_6)                       0.00       5.71 r
+  add_dct_76/X[31] (adder_nbit32_5)                       0.00       5.71 r
+  add_dct_76/add_18/A[31] (adder_nbit32_5_DW01_add_0)     0.00       5.71 r
+  add_dct_76/add_18/U1_31/S0 (C12T28SOI_LL_FA1X8_P0)      0.05       5.76 f
+  add_dct_76/add_18/SUM[31] (adder_nbit32_5_DW01_add_0)
+                                                          0.00       5.76 f
+  add_dct_76/R[31] (adder_nbit32_5)                       0.00       5.76 f
+  add_dct_77/X[31] (adder_nbit32_4)                       0.00       5.76 f
+  add_dct_77/add_18/A[31] (adder_nbit32_4_DW01_add_0)     0.00       5.76 f
+  add_dct_77/add_18/U1_31/S0 (C12T28SOI_LL_FA1X8_P0)      0.06       5.82 r
+  add_dct_77/add_18/SUM[31] (adder_nbit32_4_DW01_add_0)
+                                                          0.00       5.82 r
+  add_dct_77/R[31] (adder_nbit32_4)                       0.00       5.82 r
+  add_dct_78/X[31] (adder_nbit32_3)                       0.00       5.82 r
+  add_dct_78/add_18/A[31] (adder_nbit32_3_DW01_add_0)     0.00       5.82 r
+  add_dct_78/add_18/U1_31/S0 (C12T28SOI_LL_FA1X8_P0)      0.05       5.87 f
+  add_dct_78/add_18/SUM[31] (adder_nbit32_3_DW01_add_0)
+                                                          0.00       5.87 f
+  add_dct_78/R[31] (adder_nbit32_3)                       0.00       5.87 f
+  add_dct_79/X[31] (adder_nbit32_2)                       0.00       5.87 f
+  add_dct_79/add_18/A[31] (adder_nbit32_2_DW01_add_0)     0.00       5.87 f
+  add_dct_79/add_18/U1_31/S0 (C12T28SOI_LL_FA1X8_P0)      0.06       5.93 r
+  add_dct_79/add_18/SUM[31] (adder_nbit32_2_DW01_add_0)
+                                                          0.00       5.93 r
+  add_dct_79/R[31] (adder_nbit32_2)                       0.00       5.93 r
+  add_dct_80/X[31] (adder_nbit32_1)                       0.00       5.93 r
+  add_dct_80/add_18/A[31] (adder_nbit32_1_DW01_add_0)     0.00       5.93 r
+  add_dct_80/add_18/U1_31/S0 (C12T28SOI_LL_FA1X8_P0)      0.04       5.97 f
+  add_dct_80/add_18/SUM[31] (adder_nbit32_1_DW01_add_0)
+                                                          0.00       5.97 f
+  add_dct_80/R[31] (adder_nbit32_1)                       0.00       5.97 f
+  OUT_FIR[31] (out)                                       0.00       5.97 f
+  data arrival time                                                  5.97
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+1

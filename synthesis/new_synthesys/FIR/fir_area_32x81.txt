@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : FIR_TOP_N_bits32_N_size81
+Version: F-2011.09-SP3
+Date   : Sat Jul  8 22:35:30 2017
+****************************************
+
+Information: Updating design information... (UID-85)
+Warning: Design 'FIR_TOP_N_bits32_N_size81' contains 2 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+Library(s) Used:
+
+    C28SOI_SC_12_CORE_LL (File: /software/design-kits/cmp/28nm_fdsoi/v2p4/C28SOI_SC_12_CORE_LL@2.2@20131004.0/libs/C28SOI_SC_12_CORE_LL_tt28_0.90V_0.00V_0.00V_0.00V_25C.db)
+
+Number of ports:                         2658
+Number of nets:                         10338
+Number of cells:                          241
+Number of combinational cells:              0
+Number of sequential cells:                 0
+Number of macros:                           0
+Number of buf/inv:                          0
+Number of references:                     241
+
+Combinational area:       134534.087375
+Noncombinational area:    6684.672241
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:          141218.759616
+Total area:                 undefined
+1
