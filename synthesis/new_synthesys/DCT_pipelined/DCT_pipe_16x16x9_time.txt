@@ -1,0 +1,129 @@
+Information: Updating design information... (UID-85)
+Warning: Design 'DCT_TOP_N_int16_N_float16_N_size9' contains 2 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : DCT_TOP_N_int16_N_float16_N_size9
+Version: F-2011.09-SP3
+Date   : Thu Jul  6 21:06:28 2017
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: tt28_0.90V_0.00V_0.00V_0.00V_25C   Library: C28SOI_SC_12_CORE_LL
+Wire Load Model Mode: enclosed
+
+  Startpoint: pipe_input_8/output_reg[15]
+              (rising edge-triggered flip-flop)
+  Endpoint: OUT_DCT[63]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DCT_TOP_N_int16_N_float16_N_size9
+                     wl_zero               C28SOI_SC_12_CORE_LL
+  multiplier_nbit32_2_DW02_mult_0
+                     wl_zero               C28SOI_SC_12_CORE_LL
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  pipe_input_8/output_reg[15]/CP (C12T28SOI_LL_DFPQX8_P0)
+                                                          0.00 #     0.00 r
+  pipe_input_8/output_reg[15]/Q (C12T28SOI_LL_DFPQX8_P0)
+                                                          0.05       0.05 r
+  pipe_input_8/output[15] (pipeline_N144_1)               0.00       0.05 r
+  U23/Z (C12T28SOI_LL_BFX8_P0)                            0.06       0.11 r
+  last_mult_dct_7/Y[29] (multiplier_nbit32_2)             0.00       0.11 r
+  last_mult_dct_7/mult_18/B[29] (multiplier_nbit32_2_DW02_mult_0)
+                                                          0.00       0.11 r
+  last_mult_dct_7/mult_18/U85/Z (C12T28SOI_LL_IVX8_P0)
+                                                          0.02       0.13 f
+  last_mult_dct_7/mult_18/U452/Z (C12T28SOI_LL_NOR2X3_P0)
+                                                          0.03       0.16 r
+  last_mult_dct_7/mult_18/U31/Z (C12T28SOI_LL_AND2X8_P0)
+                                                          0.04       0.20 r
+  last_mult_dct_7/mult_18/S2_2_29/Z (C12T28SOI_LL_XOR3X8_P0)
+                                                          0.05       0.25 f
+  last_mult_dct_7/mult_18/S2_3_28/Z (C12T28SOI_LL_XOR3X8_P0)
+                                                          0.05       0.30 r
+  last_mult_dct_7/mult_18/S2_4_27/Z (C12T28SOI_LL_XOR3X8_P0)
+                                                          0.05       0.34 f
+  last_mult_dct_7/mult_18/S2_5_26/Z (C12T28SOI_LL_XOR3X8_P0)
+                                                          0.05       0.40 r
+  last_mult_dct_7/mult_18/S2_6_25/Z (C12T28SOI_LL_XOR3X8_P0)
+                                                          0.05       0.44 f
+  last_mult_dct_7/mult_18/S2_7_24/Z (C12T28SOI_LL_XOR3X8_P0)
+                                                          0.05       0.50 r
+  last_mult_dct_7/mult_18/S2_8_23/Z (C12T28SOI_LL_XOR3X8_P0)
+                                                          0.05       0.54 f
+  last_mult_dct_7/mult_18/S2_9_22/Z (C12T28SOI_LL_XOR3X8_P0)
+                                                          0.05       0.59 r
+  last_mult_dct_7/mult_18/S2_10_21/Z (C12T28SOI_LL_XOR3X8_P0)
+                                                          0.05       0.64 f
+  last_mult_dct_7/mult_18/S2_11_20/Z (C12T28SOI_LL_XOR3X8_P0)
+                                                          0.05       0.69 r
+  last_mult_dct_7/mult_18/S2_12_19/Z (C12T28SOI_LL_XOR3X8_P0)
+                                                          0.05       0.74 f
+  last_mult_dct_7/mult_18/S2_13_18/Z (C12T28SOI_LL_XOR3X8_P0)
+                                                          0.05       0.79 r
+  last_mult_dct_7/mult_18/S2_14_17/Z (C12T28SOI_LL_XOR3X8_P0)
+                                                          0.05       0.84 f
+  last_mult_dct_7/mult_18/S2_15_16/Z (C12T28SOI_LL_XOR3X8_P0)
+                                                          0.05       0.89 r
+  last_mult_dct_7/mult_18/S2_16_15/Z (C12T28SOI_LL_XOR3X8_P0)
+                                                          0.05       0.94 f
+  last_mult_dct_7/mult_18/S2_17_14/Z (C12T28SOI_LL_XOR3X8_P0)
+                                                          0.05       0.99 r
+  last_mult_dct_7/mult_18/S2_18_13/Z (C12T28SOI_LL_XOR3X8_P0)
+                                                          0.05       1.04 f
+  last_mult_dct_7/mult_18/S2_19_12/Z (C12T28SOI_LL_XOR3X8_P0)
+                                                          0.05       1.09 r
+  last_mult_dct_7/mult_18/S2_20_11/Z (C12T28SOI_LL_XOR3X8_P0)
+                                                          0.05       1.14 f
+  last_mult_dct_7/mult_18/S2_21_10/Z (C12T28SOI_LL_XOR3X8_P0)
+                                                          0.05       1.19 r
+  last_mult_dct_7/mult_18/S2_22_9/Z (C12T28SOI_LL_XOR3X8_P0)
+                                                          0.05       1.24 f
+  last_mult_dct_7/mult_18/S2_23_8/Z (C12T28SOI_LL_XOR3X8_P0)
+                                                          0.05       1.29 r
+  last_mult_dct_7/mult_18/S2_24_7/Z (C12T28SOI_LL_XOR3X8_P0)
+                                                          0.05       1.33 f
+  last_mult_dct_7/mult_18/S2_25_6/Z (C12T28SOI_LL_XOR3X8_P0)
+                                                          0.05       1.39 r
+  last_mult_dct_7/mult_18/S2_26_5/Z (C12T28SOI_LL_XOR3X8_P0)
+                                                          0.05       1.43 f
+  last_mult_dct_7/mult_18/S2_27_4/Z (C12T28SOI_LL_XOR3X8_P0)
+                                                          0.05       1.48 r
+  last_mult_dct_7/mult_18/S2_28_3/Z (C12T28SOI_LL_XOR3X8_P0)
+                                                          0.05       1.53 f
+  last_mult_dct_7/mult_18/S2_29_2/Z (C12T28SOI_LL_XOR3X8_P0)
+                                                          0.05       1.58 r
+  last_mult_dct_7/mult_18/S2_30_1/Z (C12T28SOI_LL_XOR3X8_P0)
+                                                          0.05       1.63 f
+  last_mult_dct_7/mult_18/S4_0/Z (C12T28SOI_LL_XOR3X8_P0)
+                                                          0.05       1.68 r
+  last_mult_dct_7/mult_18/S14_31_0/Z (C12T28SOI_LL_XOR3X8_P0)
+                                                          0.05       1.73 f
+  last_mult_dct_7/mult_18/PRODUCT[31] (multiplier_nbit32_2_DW02_mult_0)
+                                                          0.00       1.73 f
+  last_mult_dct_7/R[31] (multiplier_nbit32_2)             0.00       1.73 f
+  last_add_dct_7/Y[31] (adder_nbit32_2)                   0.00       1.73 f
+  last_add_dct_7/add_18/B[31] (adder_nbit32_2_DW01_add_0)
+                                                          0.00       1.73 f
+  last_add_dct_7/add_18/U1_31/Z (C12T28SOI_LL_XOR3X8_P0)
+                                                          0.05       1.78 r
+  last_add_dct_7/add_18/SUM[31] (adder_nbit32_2_DW01_add_0)
+                                                          0.00       1.78 r
+  last_add_dct_7/R[31] (adder_nbit32_2)                   0.00       1.78 r
+  OUT_DCT[63] (out)                                       0.00       1.78 r
+  data arrival time                                                  1.78
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+1
