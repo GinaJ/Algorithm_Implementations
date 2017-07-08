@@ -1,14 +1,6 @@
 \BOOKMARK [0][]{chapter*.1}{Acknowledgments}{}% 1
-\BOOKMARK [0][]{chapter.1}{Integral Image Algorithm}{}% 2
-\BOOKMARK [1][]{section.1.1}{Method used}{chapter.1}% 3
-\BOOKMARK [1][]{section.1.2}{Hardware Implementation}{chapter.1}% 4
-\BOOKMARK [1][]{section.1.3}{Pipelined Implementation}{chapter.1}% 5
-\BOOKMARK [1][]{section.1.4}{Simulation and Test}{chapter.1}% 6
-\BOOKMARK [1][]{section.1.5}{Comparison}{chapter.1}% 7
-\BOOKMARK [2][]{subsection.1.5.1}{Inclusive Scan algorithm}{section.1.5}% 8
-\BOOKMARK [2][]{subsection.1.5.2}{Balanced Trees Parallel Scan algorithm}{section.1.5}% 9
-\BOOKMARK [2][]{subsection.1.5.3}{Comparing the 3 algorithm implementations}{section.1.5}% 10
-\BOOKMARK [2][]{subsection.1.5.4}{Logic-In-Memory architecture}{section.1.5}% 11
-\BOOKMARK [2][]{subsection.1.5.5}{Comparison with the LIM architecture}{section.1.5}% 12
-\BOOKMARK [1][]{section.1.6}{Characteristics}{chapter.1}% 13
-\BOOKMARK [0][]{chapter*.21}{Bibliography}{}% 14
+\BOOKMARK [0][]{chapter.1}{Magnetostatic field calculation 3D}{}% 2
+\BOOKMARK [1][]{section.1.1}{Product TG and M}{chapter.1}% 3
+\BOOKMARK [1][]{section.1.2}{Logic Plane}{chapter.1}% 4
+\BOOKMARK [1][]{section.1.3}{Sum all}{chapter.1}% 5
+\BOOKMARK [0][]{chapter*.6}{Bibliography}{}% 6

@@ -464,10 +464,10 @@ I take the results of the LIM's architecture
 &	\textbf{3- Complexity}\\
 &	\begin{tabular}{ p{0.2cm} p{3cm} p{7cm}}
 		
-		&Not pipelined & Area $ N\cdot N\cdot log_2(N) $\\
-		& & Time$ (log_2N)2t $ \vspace{3pt}\\
-		& Pipelined & Area $ N^2 $\\
-		& & Time $ 2t $\\
+		&Not pipelined & Area $ N\cdot N\cdot log_2(N) $ adders\\
+		& & Time$ (log_2N)2 $x(time for an addition) \vspace{3pt}\\
+		& Pipelined & Area $ N^2 $ adders\\
+		& & Time $ 2 $x(time for an addition)\\
 		
 	\end{tabular}\vspace{7pt}\\
 &	\textbf{4- Parallelism}\\

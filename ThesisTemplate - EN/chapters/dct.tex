@@ -261,6 +261,77 @@ Usually, systolic arrays cannot be programmed and for this reason the circuit ha
         	\label{fig:dct_sa4}
         \end{figure}
    \clearpage
+   
+   
+   \section{Characteristics}
+   \vspace{10pt}
+   {\large \textbf{PROCESSING ELEMENTS}}\vspace{10pt}\\
+   \begin{tabular}{ p{0.2cm} p{14.5cm}}
+   	
+   	&\textbf{1- Which kind of Processing element?}\\
+   	&	Adder, multiplier\vspace{7pt}\\
+   	&	\textbf{2- Functionality}\\
+   	&	Addition, mulltiplication, summation\vspace{7pt}\\
+   	&	\textbf{3- Complexity}\\
+   	&	\begin{tabular}{ p{0.2cm} p{2.5cm} p{10cm}}
+   		
+   		&Not pipelined & Area\qquad $ N^2 $ multiplier, $ N^2 $ additions\\
+   		& & Time \qquad8x(time for a multiplier followed by an adder) \vspace{3pt}\\
+   		& Pipelined & Area \qquad $ N$ multiplier, $ N$ additions\\
+   		& & Time \qquad time for a multiplication followed by an adder\\
+   		
+   	\end{tabular}\vspace{7pt}\\
+   	&	\textbf{4- Parallelism}\\
+   	&	Multiplications and summation are done in parallel.\vspace{7pt}\\
+   	&	\textbf{5-Reconfigurability}\\
+   	&	No\vspace{7pt}\\
+   	&	\textbf{6- Programmability}\\
+   	&	No\vspace{7pt}\\
+   	&	\textbf{7- Need a dedicated memory?}\\
+   	&	If the architecture is pipelined, you need to store the partial value of the DCT.\\
+   	&	If not pipelined, no memory is required.\vspace{7pt}\\
+   	&\textbf{8- Relationship with I/O}\\
+   	&	INPUT: values of the cosine matrix, values of the input vector\\
+   	&	OUTPUT: result of the DCT algorithm\end{tabular}\vspace{74pt}\\
+   \newpage{\large \textbf{\qquad }}\vspace{10pt}\\
+   {\large \textbf{MEMORY ELEMENTS}}\vspace{10pt}\\\begin{tabular}{ p{0.2cm} p{14.5cm}}
+   	&\textbf{1- Need a clever memory LIM?}\\
+   	&	No, but can be implemented\vspace{7pt}\\
+   	&\textbf{2- Is there a data search algorithm?}\\
+   	&	No\vspace{7pt}\\
+   	&\textbf{	3-Interface mechanism with other PE or memories}\\
+   	&	Communication required between local cells\vspace{7pt}\\
+   	&	\textbf{4- Access mechanism}\\
+   	&	(No memory for this implementation)\vspace{7pt}\\
+   	&	\textbf{5- Hierarchization} \\
+   	&	(No memory for this implementation)\vspace{7pt}\\
+   	&\textbf{	6- Cache coherency} \\
+   	&	(No memory for this implementation)\vspace{7pt}\\
+   	&\textbf{	7- Is it a a transactional memory?}\\
+   	&	(No memory for this implementation)\vspace{7pt}\\
+   	&\textbf{	8- Are there virtualization (paging) mechanisms?}\\
+   	&	(No memory for this implementation)\end{tabular}\vspace{14pt}\\
+   \vspace{10pt}\\
+   {\large\textbf{ENCODING INFORMATION}}\vspace{10pt}\\
+   \begin{tabular}{ p{0.2cm} p{14.5cm}}
+   	&\textbf{1-Which encoding is used?}\\
+   	&Binary encoding for the input vector\\
+&Binary encoding (by reserving some bits for the decimal part) for the cosine matrix and for the result\\
+   \end{tabular}
+   \newpage{\large\textbf{ }}\vspace{10pt}\\
+   {\large\textbf{CONNECTIONS}}\vspace{10pt}\\\begin{tabular}{ p{0.2cm} p{14.5cm}}
+   	&\textbf{1-Packet Exchange Protocol}\\
+   	&Directly\vspace{7pt}\\
+   	&\textbf{2-Timing (asynchronou/synchronous)}\\
+   	&Synchronous\vspace{7pt}\\
+   	&\textbf{3-Are there multiple instances? }\\
+   	&Yes, except for the first row (no adders required)\vspace{7pt}\\
+   	&\textbf{4-Heterogeneity (Local/Distant I/O Connections)}\\
+   	&Heterogeneous when storing the values of the DCT to the cells, and when exchanging the data\vspace{7pt}\\
+   	&\textbf{5-Are there any buffers?}\\
+   	&There are pipeline registers.
+   \end{tabular}\vspace{14pt}\\
+   \clearpage
    \section{LLM DCT}
    There's a faster DCT algorithm, sometimes called LLM for its authors: Loeffler, Ligtenberg, and Moschytz.
    As said before (section \ref{DCT}), we use this formula for the computation of the Discrete Cosine Transformation.
@@ -482,3 +553,70 @@ Usually, systolic arrays cannot be programmed and for this reason the circuit ha
 \end{figure}  
 
         
+\subsection{Characteristics of the LLM DCT}
+\vspace{10pt}
+{\large \textbf{PROCESSING ELEMENTS}}\vspace{10pt}\\
+\begin{tabular}{ p{0.2cm} p{14.5cm}}
+	
+	&\textbf{1- Which kind of Processing element?}\\
+	&	Adder, multiplier, substractor\vspace{7pt}\\
+	&	\textbf{2- Functionality}\\
+	&	Addition, mulltiplication, substraction summation\vspace{7pt}\\
+	&	\textbf{3- Complexity}\\
+	&	\begin{tabular}{ p{0.2cm} p{2.5cm} p{10cm}}
+		
+		&Not pipelined & Area\qquad $ N^2 $ multiplier, $ N^2 $ additions\\
+		& & Time \qquad8x(time for a multiplier followed by an adder) \vspace{3pt}\\
+		& Pipelined & Area \qquad $ N$ multiplier, $ N$ additions\\
+		& & Time \qquad time for a multiplication followed by an adder\\
+		
+	\end{tabular}\vspace{7pt}\\
+	&	\textbf{4- Parallelism}\\
+	&	Multiplications and summation are done in parallel.\vspace{7pt}\\
+	&	\textbf{5-Reconfigurability}\\
+	&	No\vspace{7pt}\\
+	&	\textbf{6- Programmability}\\
+	&	No\vspace{7pt}\\
+	&	\textbf{7- Need a dedicated memory?}\\
+	&	If the architecture is pipelined, you need to store the partial value of the DCT.\\
+	&	If not pipelined, no memory is required.\vspace{7pt}\\
+	&\textbf{8- Relationship with I/O}\\
+	&	INPUT: values of the cosine matrix, values of the input vector\\
+	&	OUTPUT: result of the DCT algorithm\end{tabular}\vspace{74pt}\\
+\newpage{\large \textbf{\qquad }}\vspace{10pt}\\
+{\large \textbf{MEMORY ELEMENTS}}\vspace{10pt}\\\begin{tabular}{ p{0.2cm} p{14.5cm}}
+	&\textbf{1- Need a clever memory LIM?}\\
+	&	No, but can be implemented\vspace{7pt}\\
+	&\textbf{2- Is there a data search algorithm?}\\
+	&	No\vspace{7pt}\\
+	&\textbf{	3-Interface mechanism with other PE or memories}\\
+	&	Communication required between local cells\vspace{7pt}\\
+	&	\textbf{4- Access mechanism}\\
+	&	(No memory for this implementation)\vspace{7pt}\\
+	&	\textbf{5- Hierarchization} \\
+	&	(No memory for this implementation)\vspace{7pt}\\
+	&\textbf{	6- Cache coherency} \\
+	&	(No memory for this implementation)\vspace{7pt}\\
+	&\textbf{	7- Is it a a transactional memory?}\\
+	&	(No memory for this implementation)\vspace{7pt}\\
+	&\textbf{	8- Are there virtualization (paging) mechanisms?}\\
+	&	(No memory for this implementation)\end{tabular}\vspace{14pt}\\
+\vspace{10pt}\\
+{\large\textbf{ENCODING INFORMATION}}\vspace{10pt}\\
+\begin{tabular}{ p{0.2cm} p{14.5cm}}
+	&\textbf{1-Which encoding is used?}\\
+	&Binary encoding
+\end{tabular}
+\newpage{\large\textbf{ }}\vspace{10pt}\\
+{\large\textbf{CONNECTIONS}}\vspace{10pt}\\\begin{tabular}{ p{0.2cm} p{14.5cm}}
+	&\textbf{1-Packet Exchange Protocol}\\
+	&Directly\vspace{7pt}\\
+	&\textbf{2-Timing (asynchronou/synchronous)}\\
+	&Synchronous\vspace{7pt}\\
+	&\textbf{3-Are there multiple instances? }\\
+	&Yes, except for the first row (no adders required)\vspace{7pt}\\
+	&\textbf{4-Heterogeneity (Local/Distant I/O Connections)}\\
+	&Heterogeneous when storing the values of the DCT to the cells, and when exchanging the data\vspace{7pt}\\
+	&\textbf{5-Are there any buffers?}\\
+	&There are pipeline registers.
+\end{tabular}\vspace{14pt}\\
