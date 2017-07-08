@@ -1,0 +1,148 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : TEP_TOP_size9_Nbit32
+Version: F-2011.09-SP3
+Date   : Sat Jul  8 20:56:10 2017
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: tt28_0.90V_0.00V_0.00V_0.00V_25C   Library: C28SOI_SC_12_CORE_LL
+Wire Load Model Mode: enclosed
+
+  Startpoint: IN_tep[2208]
+              (input port)
+  Endpoint: out_tep[2495]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  TEP_TOP_size9_Nbit32
+                     wl_zero               C28SOI_SC_12_CORE_LL
+  adder_nbit32_212_DW01_add_0
+                     wl_zero               C28SOI_SC_12_CORE_LL
+  TEP_unit_Nbit32_71 wl_zero               C28SOI_SC_12_CORE_LL
+  substractor_nbit32_71_DW01_sub_0
+                     wl_zero               C28SOI_SC_12_CORE_LL
+  multiplier_nbit32_71_DW02_mult_0
+                     wl_zero               C28SOI_SC_12_CORE_LL
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  input external delay                                    0.00       0.00 f
+  IN_tep[2208] (in)                                       0.00       0.00 f
+  tep0_2_2/tdx[0] (TEP_unit_Nbit32_71)                    0.00       0.00 f
+  tep0_2_2/add_1/X[0] (adder_nbit32_212)                  0.00       0.00 f
+  tep0_2_2/add_1/add_18/A[0] (adder_nbit32_212_DW01_add_0)
+                                                          0.00       0.00 f
+  tep0_2_2/add_1/add_18/U1/Z (C12T28SOI_LL_AND2X8_P0)     0.02       0.02 f
+  tep0_2_2/add_1/add_18/U1_1/S0 (C12T28SOI_LL_FA1X8_P0)
+                                                          0.05       0.07 r
+  tep0_2_2/add_1/add_18/SUM[1] (adder_nbit32_212_DW01_add_0)
+                                                          0.00       0.07 r
+  tep0_2_2/add_1/R[1] (adder_nbit32_212)                  0.00       0.07 r
+  tep0_2_2/sub_0/Y[1] (substractor_nbit32_71)             0.00       0.07 r
+  tep0_2_2/sub_0/sub_18/B[1] (substractor_nbit32_71_DW01_sub_0)
+                                                          0.00       0.07 r
+  tep0_2_2/sub_0/sub_18/U1/Z (C12T28SOI_LL_IVX8_P0)       0.01       0.08 f
+  tep0_2_2/sub_0/sub_18/U2_1/CO (C12T28SOI_LL_FA1X8_P0)
+                                                          0.04       0.11 f
+  tep0_2_2/sub_0/sub_18/U2_2/CO (C12T28SOI_LL_FA1X8_P0)
+                                                          0.04       0.15 f
+  tep0_2_2/sub_0/sub_18/U2_3/CO (C12T28SOI_LL_FA1X8_P0)
+                                                          0.04       0.19 f
+  tep0_2_2/sub_0/sub_18/U2_4/CO (C12T28SOI_LL_FA1X8_P0)
+                                                          0.04       0.23 f
+  tep0_2_2/sub_0/sub_18/U2_5/CO (C12T28SOI_LL_FA1X8_P0)
+                                                          0.04       0.27 f
+  tep0_2_2/sub_0/sub_18/U2_6/CO (C12T28SOI_LL_FA1X8_P0)
+                                                          0.04       0.31 f
+  tep0_2_2/sub_0/sub_18/U2_7/CO (C12T28SOI_LL_FA1X8_P0)
+                                                          0.04       0.34 f
+  tep0_2_2/sub_0/sub_18/U2_8/CO (C12T28SOI_LL_FA1X8_P0)
+                                                          0.04       0.38 f
+  tep0_2_2/sub_0/sub_18/U2_9/CO (C12T28SOI_LL_FA1X8_P0)
+                                                          0.04       0.42 f
+  tep0_2_2/sub_0/sub_18/U2_10/CO (C12T28SOI_LL_FA1X8_P0)
+                                                          0.04       0.46 f
+  tep0_2_2/sub_0/sub_18/U2_11/CO (C12T28SOI_LL_FA1X8_P0)
+                                                          0.04       0.50 f
+  tep0_2_2/sub_0/sub_18/U2_12/CO (C12T28SOI_LL_FA1X8_P0)
+                                                          0.04       0.54 f
+  tep0_2_2/sub_0/sub_18/U2_13/CO (C12T28SOI_LL_FA1X8_P0)
+                                                          0.04       0.57 f
+  tep0_2_2/sub_0/sub_18/U2_14/CO (C12T28SOI_LL_FA1X8_P0)
+                                                          0.04       0.61 f
+  tep0_2_2/sub_0/sub_18/U2_15/CO (C12T28SOI_LL_FA1X8_P0)
+                                                          0.04       0.65 f
+  tep0_2_2/sub_0/sub_18/U2_16/CO (C12T28SOI_LL_FA1X8_P0)
+                                                          0.04       0.69 f
+  tep0_2_2/sub_0/sub_18/U2_17/CO (C12T28SOI_LL_FA1X8_P0)
+                                                          0.04       0.73 f
+  tep0_2_2/sub_0/sub_18/U2_18/CO (C12T28SOI_LL_FA1X8_P0)
+                                                          0.04       0.77 f
+  tep0_2_2/sub_0/sub_18/U2_19/CO (C12T28SOI_LL_FA1X8_P0)
+                                                          0.04       0.81 f
+  tep0_2_2/sub_0/sub_18/U2_20/CO (C12T28SOI_LL_FA1X8_P0)
+                                                          0.04       0.84 f
+  tep0_2_2/sub_0/sub_18/U2_21/CO (C12T28SOI_LL_FA1X8_P0)
+                                                          0.04       0.88 f
+  tep0_2_2/sub_0/sub_18/U2_22/CO (C12T28SOI_LL_FA1X8_P0)
+                                                          0.04       0.92 f
+  tep0_2_2/sub_0/sub_18/U2_23/CO (C12T28SOI_LL_FA1X8_P0)
+                                                          0.04       0.96 f
+  tep0_2_2/sub_0/sub_18/U2_24/CO (C12T28SOI_LL_FA1X8_P0)
+                                                          0.04       1.00 f
+  tep0_2_2/sub_0/sub_18/U2_25/CO (C12T28SOI_LL_FA1X8_P0)
+                                                          0.04       1.04 f
+  tep0_2_2/sub_0/sub_18/U2_26/CO (C12T28SOI_LL_FA1X8_P0)
+                                                          0.04       1.07 f
+  tep0_2_2/sub_0/sub_18/U2_27/CO (C12T28SOI_LL_FA1X8_P0)
+                                                          0.04       1.11 f
+  tep0_2_2/sub_0/sub_18/U2_28/CO (C12T28SOI_LL_FA1X8_P0)
+                                                          0.04       1.15 f
+  tep0_2_2/sub_0/sub_18/U2_29/CO (C12T28SOI_LL_FA1X8_P0)
+                                                          0.04       1.19 f
+  tep0_2_2/sub_0/sub_18/U2_30/CO (C12T28SOI_LL_FA1X8_P0)
+                                                          0.04       1.23 f
+  tep0_2_2/sub_0/sub_18/U2_31/Z (C12T28SOI_LL_XOR3X8_P0)
+                                                          0.05       1.28 r
+  tep0_2_2/sub_0/sub_18/DIFF[31] (substractor_nbit32_71_DW01_sub_0)
+                                                          0.00       1.28 r
+  tep0_2_2/sub_0/R[31] (substractor_nbit32_71)            0.00       1.28 r
+  tep0_2_2/mult_0/X[31] (multiplier_nbit32_71)            0.00       1.28 r
+  tep0_2_2/mult_0/mult_18/A[31] (multiplier_nbit32_71_DW02_mult_0)
+                                                          0.00       1.28 r
+  tep0_2_2/mult_0/mult_18/U95/Z (C12T28SOI_LL_IVX8_P0)
+                                                          0.01       1.29 f
+  tep0_2_2/mult_0/mult_18/U333/Z (C12T28SOI_LL_NOR2X3_P0)
+                                                          0.03       1.31 r
+  tep0_2_2/mult_0/mult_18/S4_0/Z (C12T28SOI_LL_XOR3X8_P0)
+                                                          0.06       1.37 f
+  tep0_2_2/mult_0/mult_18/S14_31_0/Z (C12T28SOI_LL_XOR3X8_P0)
+                                                          0.05       1.42 f
+  tep0_2_2/mult_0/mult_18/PRODUCT[31] (multiplier_nbit32_71_DW02_mult_0)
+                                                          0.00       1.42 f
+  tep0_2_2/mult_0/R[31] (multiplier_nbit32_71)            0.00       1.42 f
+  tep0_2_2/add_3/X[31] (adder_nbit32_211)                 0.00       1.42 f
+  tep0_2_2/add_3/add_18/A[31] (adder_nbit32_211_DW01_add_0)
+                                                          0.00       1.42 f
+  tep0_2_2/add_3/add_18/U1_31/Z (C12T28SOI_LL_XOR3X8_P0)
+                                                          0.05       1.47 r
+  tep0_2_2/add_3/add_18/SUM[31] (adder_nbit32_211_DW01_add_0)
+                                                          0.00       1.47 r
+  tep0_2_2/add_3/R[31] (adder_nbit32_211)                 0.00       1.47 r
+  tep0_2_2/res[31] (TEP_unit_Nbit32_71)                   0.00       1.47 r
+  out_tep[2495] (out)                                     0.00       1.47 r
+  data arrival time                                                  1.47
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+1
