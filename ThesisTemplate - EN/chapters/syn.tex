@@ -1,11 +1,13 @@
 \chapter{Synthesis Results}
 After having properly tested the architecture of each hardware implementation, the following step is its synthesis to determine the maximum clock frequency, area and power consumption.\\
-The chosen sizes are smaller because I used the \textit{Pentium 4 adder} and the \textit{booth multiplier} as adder and as multiplier. Due to their complexity, the synthesys requires much time.
+In some synthesys the chosen sizes are smaller because I used the \textit{Pentium 4 adder} and the \textit{booth multiplier} as adder and as multiplier. Due to their complexity, the synthesys requires much time.
+In other case, I used the library \textit{ieee.std\_logic\_arith} for the adder and the multiplier.
 
 \section{Integral Image}
 \begin{itemize}
-	\item  16 
+	\item  16 bits
 	\item size = 8x8
+	\item Pentium 4 adder, Booth multiplier
 \end{itemize}
 \begin{center}
 	\begin{tabular}{  p{4.2cm} | p{6.7cm} }
@@ -27,7 +29,55 @@ The chosen sizes are smaller because I used the \textit{Pentium 4 adder} and the
 	\end{tabular}
 \end{center}
 \bigskip
-
+\begin{itemize}
+	\item  32 bits 
+	\item size = 16x16
+	\item ieee.std\_logic\_arith
+\end{itemize}
+\begin{center}
+	\begin{tabular}{  p{4.2cm} | p{6.7cm} }
+		
+		\hline
+		& \quad \textbf{Integral Image}\\
+		& \quad Pipelined\\
+		\hline
+		Total cell area & \quad 164944.777137 $ \mu m^2{} $\\
+		
+		Data arrival time & \quad 1.49 $ ns  $\\
+		Internal Power & \quad	16.6224$ mW $\\
+		Switching Power & \quad5.3584$ mW $\\
+		Total Dynamic Power & \quad21.9808$ mW $\\
+		Leakage Power & \quad1.5235 $ mW $ \\
+		Total Power & \quad23.5043 $ mW $\\
+		\hline
+		
+	\end{tabular}
+\end{center}
+\bigskip
+\begin{itemize}
+	\item 16 bits 
+	\item size = 8x8
+	\item ieee.std\_logic\_arith
+\end{itemize}
+\begin{center}
+	\begin{tabular}{  p{4.2cm} | p{6.7cm} }
+		
+		\hline
+		& \quad \textbf{Integral Image}\\
+		& \quad Pipelined\\
+		\hline
+		Total cell area & \quad 14549.606922 $ \mu m^2{} $\\
+		
+		Data arrival time & \quad 0.77 $ ns  $\\
+		Internal Power & \quad	1.8278$ mW $\\
+		Switching Power & \quad0.6281$ mW $\\
+		Total Dynamic Power & \quad2.4558$ mW $\\
+		Leakage Power & \quad0.1380 $ mW $ \\
+		Total Power & \quad2.5938 $ mW $\\
+		\hline
+		
+	\end{tabular}
+\end{center}
 \section{Discrete Cosine Transformation} \label{synDCT}
 For this DCT's hadware implementation (\ref{DCTH}), I synthesized both the pipeline and not pipeline architecture. I also synthesized a small version of the LLM architecture (\ref{llmarch}).
 The not pipelined version, consumes more power and take a little time more than the pipelined one. However it has a smaller area due to the absence of pipeline registers.
@@ -35,7 +85,8 @@ The not pipelined version, consumes more power and take a little time more than 
 \begin{itemize}
 \item  8 bits for integer part
 \item 8 bits for fractional part
-\item size = 4
+\item size = 4 (cosine matrix 4x4)
+\item Pentium 4 adder, Booth multiplier
 \end{itemize}
 \begin{center}
 	\begin{tabular}{ p{4.2cm} | p{8cm} }
@@ -58,11 +109,69 @@ The not pipelined version, consumes more power and take a little time more than 
 	\end{tabular}
 \end{center}
 \bigskip
+\begin{itemize}
+	\item 16 bits for integer part
+	\item 16 bits for fractional part
+	\item size = 9 (cosine matrix 9x9)
+	\item ieee.std\_logic\_arith
+\end{itemize}
+\begin{center}
+	\begin{tabular}{ p{4.2cm} | p{8cm} }
+		
+		\hline 
+		& \quad \textbf{Discrete Cosine Transformation}\\
+		& \quad Pipelined\\
+		
+		\hline
+		Total cell area & \quad 142762.305198$ \mu m^2{} $\\
+		
+		Data arrival time & \quad 1.78 $ ns $\\
+		Internal Power & \quad 7.1778$ mW $\\
+		Switching Power & \quad 5.3690$ mW $\\
+		Total Dynamic Power & \quad 12.5467$ mW $\\
+		Leakage Power&\quad  1.1714 $ mW $\\
+		Total Power & \quad 13.7181$ mW $\\
+		\hline
+		
+	\end{tabular}
+\end{center}
+\bigskip
 \subsection{DCT not pipelined}
 \begin{itemize}
 	\item  8 bits for integer part
 	\item 8 bits for fractional part
-	\item size = 4
+		\item size = 4
+		\item Pentium 4 adder, Booth multiplier
+
+\end{itemize}
+%\textcolor{red}{{\Large MODIFICARE, mettere osservazioni}}
+\begin{center}
+	\begin{tabular}{ p{5.2cm} | p{8cm} }
+		
+		\hline 
+		& \quad \textbf{Discrete Cosine Transformation}\\
+		& \quad Not Pipelined\\
+		
+		\hline
+		Total cell area & \quad 132202.285691$ \mu m^2{} $\\
+		
+		Data arrival time & \quad 2.05 $ ns $\\
+		Internal Power & \quad 45.6441$ mW $\\
+		Switching Power & \quad 34.0752$ mW $\\
+		Total Dynamic Power & \quad 79.7267$ mW $\\
+		Leakage Power&\quad  1.2945 $ mW $\\
+		Total Power  & \quad 81.0204$ mW $\\
+		\hline
+		
+	\end{tabular}
+\end{center}
+\bigskip
+\begin{itemize}
+	\item 16 bits for integer part
+	\item 16 bits for fractional part
+		\item size = 9 (cosine matrix 9x9)
+		\item ieee.std\_logic\_arith
+
 \end{itemize}
 %\textcolor{red}{{\Large MODIFICARE, mettere osservazioni}}
 \begin{center}
@@ -86,6 +195,7 @@ The not pipelined version, consumes more power and take a little time more than 
 	\end{tabular}
 \end{center}
 \bigskip
+
 \subsection{LLM DCT}
 The LLM DCT architecture shows better performance in everything.\\
 However we remember the complexity of the design for high order (subsection \ref{HLLM}).
@@ -93,6 +203,7 @@ However we remember the complexity of the design for high order (subsection \ref
 	\item  8 bits for integer part
 	\item 8 bits for fractional part
 	\item size = 4
+	\item Pentium 4 adder, Booth multiplier
 \end{itemize}
 \begin{center}
 	\begin{tabular}{ p{4.2cm} | p{8cm} }
@@ -115,12 +226,40 @@ However we remember the complexity of the design for high order (subsection \ref
 	\end{tabular}
 \end{center}
 \bigskip
+\begin{itemize}
+	\item 16 bits for integer part
+	\item 16 bits for fractional part
+	\item size = 8
+\item ieee.std\_logic\_arith
+
+\end{itemize}
+\begin{center}
+	\begin{tabular}{ p{4.2cm} | p{8cm} }
+		
+		\hline 
+		& \quad \textbf{LLM DCT}\\
+		
+		
+		\hline
+		Total cell area & \quad 29145.562493$ \mu m^2{} $\\
+		
+		Data arrival time & \quad 2.96 $ ns $\\
+		Internal Power & \quad 11.4379$ mW $\\
+		Switching Power & \quad 9.7003$ mW $\\
+		Total Dynamic Power & \quad  21.1382$ mW $\\
+		Leakage Power&\quad  0.2789 $ mW $\\
+		Total Power & \quad  21.4174 $ mW $\\
+		\hline
+		
+	\end{tabular}
+\end{center}
 \section{Binomial Filter}
 I synthesized both the implementation described in the subsection \ref{h1} and \ref{h2}.\\We can clearly see that the version 1 is better than the version 2 because it requires less computation, actually it leaves the border values unchanged.
 \subsection{Binomial Filter v1}
 \begin{itemize}
 	\item  16 bits
 	\item size = 4x4
+	\item Pentium 4 adder, Booth multiplier
 \end{itemize}
 \begin{center}
 	\begin{tabular}{ p{5.2cm} | p{8cm} }
@@ -143,11 +282,37 @@ I synthesized both the implementation described in the subsection \ref{h1} and \
 	\end{tabular}
 \end{center}
 \bigskip
-
+\begin{itemize}
+	\item  32 bits
+	\item size = 9x9
+	\item ieee.std\_logic\_arith
+\end{itemize}
+\begin{center}
+	\begin{tabular}{ p{5.2cm} | p{8cm} }
+		
+		\hline 
+		& \quad \textbf{Binomial Filter v1}\\
+		
+		
+		\hline
+		Total cell area & \quad 18318.384653$ \mu m^2{} $\\
+		
+		Data arrival time & \quad 1.39 $ ns $\\
+		Internal Power & \quad 10.1199 $ mW $\\
+		Switching Power & \quad 6.6068$ mW $\\
+		Total Dynamic Power & \quad 16.7267$ mW $\\
+		Leakage Power&\quad  0.1970 $ mW $\\
+		Total Power  & \quad 16.9237$ mW $\\
+		\hline
+		
+	\end{tabular}
+\end{center}
+\bigskip
 \subsection{Binomial Filter v2}
 \begin{itemize}
 	\item  16 bits
 	\item size = 4x4
+	\item Pentium 4 adder, Booth multiplier
 \end{itemize}
 \begin{center}
 	\begin{tabular}{ p{5.2cm} | p{8cm} }
@@ -169,11 +334,37 @@ I synthesized both the implementation described in the subsection \ref{h1} and \
 		
 	\end{tabular}
 \end{center}
+\begin{itemize}
+	\item  32 bits
+	\item size = 9x9
+	\item  ieee.std\_logic\_arith
+\end{itemize}
+\begin{center}
+	\begin{tabular}{ p{5.2cm} | p{8cm} }
+		
+		\hline 
+		& \quad \textbf{Binomial Filter v2}\\
+		
+		
+		\hline
+		Total cell area & \quad 21143.050352$ \mu m^2{} $\\
+		
+		Data arrival time & \quad 1.39 $ ns $\\
+		Internal Power & \quad 11.5835  $ mW $\\
+		Switching Power & \quad 7.5642$ mW $\\
+		Total Dynamic Power & \quad 19.1476$ mW $\\
+		Leakage Power&\quad  0.2275 $ mW $\\
+		Total Power  & \quad 19.3751$ mW $\\
+		\hline
+		
+	\end{tabular}
+\end{center}
 \bigskip
 \section{FIR}
 \begin{itemize}
 	\item  16 bits
 	\item size = 8
+	\item Pentium 4 adder, Booth multiplier
 \end{itemize}
 \begin{center}
 	\begin{tabular}{ p{5.2cm} | p{8cm} }
@@ -196,10 +387,37 @@ I synthesized both the implementation described in the subsection \ref{h1} and \
 	\end{tabular}
 \end{center}
 \bigskip
+\begin{itemize}
+	\item  32 bits
+	\item size = 81
+	\item ieee.std\_logic\_arith
+\end{itemize}
+\begin{center}
+	\begin{tabular}{ p{5.2cm} | p{8cm} }
+		
+		\hline 
+		& \quad \textbf{FIR Filter}\\
+		
+		
+		\hline
+		Total cell area & \quad 141218.759616$ \mu m^2{} $\\
+		
+		Data arrival time & \quad 5.97 $ ns $\\
+		Internal Power & \quad5.2915 $ mW $\\
+		Switching Power & \quad 4.3805$ mW $\\
+		Total Dynamic Power & \quad 9.6725 $ mW $\\
+		Leakage Power&\quad  1.1524 $ mW $\\
+		Total Power  & \quad 10.8229$ mW $\\
+		\hline
+		
+	\end{tabular}
+\end{center}
+\bigskip
 \section{Transport Equation Problem}
 \begin{itemize}
 	\item  16 bits
 	\item size = 3x3
+	\item Pentium 4 adder, Booth multiplier
 \end{itemize}
 \begin{center}
 	\begin{tabular}{ p{5.2cm} | p{8cm} }
@@ -217,6 +435,59 @@ I synthesized both the implementation described in the subsection \ref{h1} and \
 		Total Dynamic Power & \quad 16.1263 $ mW $\\
 		Leakage Power&\quad  0.4151 $ mW $\\
 		Total Power  & \quad 16.5418$ mW $\\
+		\hline
+		
+	\end{tabular}
+\end{center}
+\bigskip
+\begin{itemize}
+	\item  32 bits
+	\item size = 9x9
+	\item ieee.std\_logic\_arith
+\end{itemize}
+\begin{center}
+	\begin{tabular}{ p{5.2cm} | p{8cm} }
+		
+		\hline 
+		\label{syn_tep2}& \quad \textbf{Transport Equation Problem}\\
+		
+		
+		\hline
+		Total cell area & \quad 153012.244757$ \mu m^2{} $\\
+		
+		Data arrival time & \quad 1.47 $ ns $\\
+		Internal Power & \quad15.8138 $ mW $\\
+		Switching Power & \quad 13.7583$ mW $\\
+		Total Dynamic Power & \quad 29.5719 $ mW $\\
+		Leakage Power&\quad  1.3007  $ mW $\\
+		Total Power  & \quad 30.8707$ mW $\\
+		\hline
+		
+	\end{tabular}
+\end{center}
+\bigskip
+\section{Magnetostatic field calculation 3D}
+\begin{itemize}
+	\item  32 bits
+	\item size = 5x4x4 (80 cells)
+	\item ieee.std\_logic\_arith
+\end{itemize}
+\begin{center}
+	\begin{tabular}{ p{5.2cm} | p{8cm} }
+		
+		\hline 
+		\label{3d}& \quad \textbf{Magnetostatic field calculation 3D}\\
+		
+		
+		\hline
+		Total cell area & \quad 115854.867133$ \mu m^2{} $\\
+		
+		Data arrival time & \quad 0.04 $ ns $\\
+		Internal Power & \quad26.6830 $ mW $\\
+		Switching Power & \quad 17.0509$ mW $\\
+		Total Dynamic Power & \quad 43.7346 $ mW $\\
+		Leakage Power&\quad  1.0923 $ mW $\\
+		Total Power  & \quad 44.8267$ mW $\\
 		\hline
 		
 	\end{tabular}

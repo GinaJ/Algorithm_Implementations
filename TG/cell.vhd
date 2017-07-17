@@ -124,13 +124,13 @@ begin
 						fsm_state 	<= READ_TGzx; 
           when READ_TGzx => 
             TGzx<=input;
-            op2<=std_logic_vector(to_signed(to_integer(signed(input)*signed(Mx)),nbit));
+            op1<=std_logic_vector(to_signed(to_integer(signed(input)*signed(Mx)),nbit));
 						
 						
 						fsm_state 	<= READ_TGzy;  
           when READ_TGzy => 
             TGzy<=input;
-            op1<=std_logic_vector(to_signed(to_integer(signed(input)*signed(My)),nbit));
+            op2<=std_logic_vector(to_signed(to_integer(signed(input)*signed(My)),nbit));
 						
 						
 						fsm_state 	<= READ_TGzz; 

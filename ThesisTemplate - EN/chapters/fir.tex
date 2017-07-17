@@ -87,4 +87,73 @@ In the end, when the input has not changed for more than 6 clock cycles, we can 
 \begin{center}
 	$ y[n]=\sum\limits_{k=0}^{6 } x[n-k]\cdot h[k]=7\sum\limits_{k=0}^{6 }=7\cdot42=294$
 \end{center}
-
+\clearpage
+\newpage
+\section{Characteristics of Filter FIR}
+\vspace{10pt}
+{\large \textbf{PROCESSING ELEMENTS}}\vspace{10pt}\\
+\begin{tabular}{ p{0.2cm} p{14.5cm}}
+	
+	&\textbf{1- Which kind of Processing element?}\\
+	&	Adder, multiplier, registers\vspace{7pt}\\
+	&	\textbf{2- Functionality}\\
+	&	Addition, multiplications, storing.\vspace{7pt}\\
+	&	\textbf{3- Complexity}\\
+	&	\begin{tabular}{ p{0.2cm} p{1.2cm}  p{13cm}}
+		
+		& Area: &$ N-1 $ adders\\
+		& & $N-1$ registers\\
+		& & $N$ multipliers\\
+		 & Time: &Time for one registers, one multiplication and  $N-1 $ additions \vspace{3pt}\\
+	
+		
+	\end{tabular}\vspace{7pt}\\
+	&	\textbf{4- Parallelism}\\
+	&	Registers and multiplications can work in parallel, The chain made of adder not (fig. \ref{fig:fir2}).\vspace{7pt}\\
+	&	\textbf{5-Reconfigurability}\\
+	&	No\vspace{7pt}\\
+	&	\textbf{6- Programmability}\\
+	&	No\vspace{7pt}\\
+	&	\textbf{7- Need a dedicated memory?}\\
+	&	It needs some memory to store the previous $N-1$ input values.\\
+	&It is possible also to store the $N$ constants\vspace{7pt}\\
+	&\textbf{8- Relationship with I/O}\\
+	&	INPUT: values of the input and values of the constatnts.\\
+	&	OUTPUT: result of the filter FIR algorithm\end{tabular}\vspace{74pt}\\
+\newpage{\large \textbf{\qquad }}\vspace{10pt}\\
+{\large \textbf{MEMORY ELEMENTS}}\vspace{10pt}\\\begin{tabular}{ p{0.2cm} p{14.5cm}}
+	&\textbf{1- Need a clever memory LIM?}\\
+	&	No, but can be implemented\vspace{7pt}\\
+	&\textbf{2- Is there a data search algorithm?}\\
+	&	No\vspace{7pt}\\
+	&\textbf{	3-Interface mechanism with other PE or memories}\\
+	&	Communication required between local elements\vspace{7pt}\\
+	&	\textbf{4- Access mechanism}\\
+	&	(No memory for this implementation)\vspace{7pt}\\
+	&	\textbf{5- Hierarchization} \\
+	&	(No memory for this implementation)\vspace{7pt}\\
+	&\textbf{	6- Cache coherency} \\
+	&	(No memory for this implementation)\vspace{7pt}\\
+	&\textbf{	7- Is it a a transactional memory?}\\
+	&	(No memory for this implementation)\vspace{7pt}\\
+	&\textbf{	8- Are there virtualization (paging) mechanisms?}\\
+	&	(No memory for this implementation)\end{tabular}\vspace{14pt}\\
+\vspace{10pt}\\
+{\large\textbf{ENCODING INFORMATION}}\vspace{10pt}\\
+\begin{tabular}{ p{0.2cm} p{14.5cm}}
+	&\textbf{1-Which encoding is used?}\\
+	&Binary encoding
+\end{tabular}
+\newpage{\large\textbf{ }}\vspace{10pt}\\
+{\large\textbf{CONNECTIONS}}\vspace{10pt}\\\begin{tabular}{ p{0.2cm} p{14.5cm}}
+	&\textbf{1-Packet Exchange Protocol}\\
+	&Directly\vspace{7pt}\\
+	&\textbf{2-Timing (asynchronou/synchronous)}\\
+	&Synchronous\vspace{7pt}\\
+	&\textbf{3-Are there multiple instances? }\\
+	&Yes\vspace{7pt}\\
+	&\textbf{4-Heterogeneity (Local/Distant I/O Connections)}\\
+	&Heterogeneous. Each elements is connected to the previous and following elementss. (No connections between distant elements)\vspace{7pt}\\
+	&\textbf{5-Are there any buffers?}\\
+	&There are some registers.
+\end{tabular}\vspace{14pt}\\

@@ -343,19 +343,89 @@ We do the partial weighted sum for three consecutive cell
 	\end{center}
 	
 	 \begin{center}
-	 	\begin{tabular}{ | p{1.7cm} | c | c |}
-	 		
+	 	\begin{tabular}{ | p{1.7cm} | c | c | c |}
+	 			
 	 		\hline
-	 		\label{table:bf_tab} & LIM & This work \\
-	 		\hline
-	 		Area & $ N\cdotp N $ cells  &  $ N\cdotp (N-2)+(N-2)\cdotp (N-2)$ adders \\
+	 	 & LIM & This work & This work\\
+	 	\label{table:bf_tab}	& & version 1& version 2\\
+	 			 		\hline
+	 		Area & $ N\cdotp N $ cells  &  $ 2N\cdotp (N-2)+$& $(4N-4)+$ \\
+	 		& & $+2(N-2)^2$ adders & $2(N-2)^2$ adders \\
 	 		\hline
 	 		Time & $ 3N + 29 $ cycles
 	 		&
-	 		 time for 4 adders   \\
+	 		 time for 4 adders  &
+	 		 time for 4 adders  \\
 	 		\hline
 	 		
 	 	\end{tabular}
 	 \end{center}
 	As for this work by looking to the section \ref{bfh}, we know that the time required is the time for 4 adder in sequence, this because 2 adder are required for doing the weighted sum of 3 consecutive cells, and the other 2 for doing the weighted sum of the 9 cells
 
+\section{Characteristics of the Binomial Filter}
+\vspace{10pt}
+{\large \textbf{PROCESSING ELEMENTS}}\vspace{10pt}\\
+\begin{tabular}{ p{0.2cm} p{14.5cm}}
+	
+	&\textbf{1- Which kind of Processing element?}\\
+	&	Adder (static shifter)\vspace{7pt}\\
+	&	\textbf{2- Functionality}\\
+	&	Addition, (static shifting i.e. multiply by 2 and 4, division by 16)\vspace{7pt}\\
+	&	\textbf{3- Complexity}\\
+	&	\begin{tabular}{ p{0.2cm} p{2.2cm} p{7cm}}
+		
+		&Version 1 & Area: $ 2[N(N-2)+(N-2)^2] $ adders\\
+		& & Time: time for 4 additions \vspace{3pt}\\
+		& Version 2 & Area $ 4(N-1)+2(N-2)^2 $ adders\\
+		& & Time: time for 4 additions\\
+		
+	\end{tabular}\vspace{7pt}\\
+	&	\textbf{4- Parallelism}\\
+	&	All the cell can perform their binomial filter value.\vspace{7pt}\\
+	&	\textbf{5-Reconfigurability}\\
+	&	No\vspace{7pt}\\
+	&	\textbf{6- Programmability}\\
+	&	No\vspace{7pt}\\
+	&	\textbf{7- Need a dedicated memory?}\\
+	&	If the architecture is pipelined, you need to store the partial sum.\\
+	&	If not pipelined, no memory is required.\vspace{7pt}\\
+	&\textbf{8- Relationship with I/O}\\
+	&	INPUT: values of the matrix's cells\\
+	&	OUTPUT: result of the binomial filter algorithm\end{tabular}\vspace{74pt}\\
+\newpage{\large \textbf{\qquad }}\vspace{10pt}\\
+{\large \textbf{MEMORY ELEMENTS}}\vspace{10pt}\\\begin{tabular}{ p{0.2cm} p{14.5cm}}
+	&\textbf{1- Need a clever memory LIM?}\\
+	&	No, but can be implemented\vspace{7pt}\\
+	&\textbf{2- Is there a data search algorithm?}\\
+	&	No\vspace{7pt}\\
+	&\textbf{	3-Interface mechanism with other PE or memories}\\
+	&	Communication required between cells in the neighborhood\vspace{7pt}\\
+	&	\textbf{4- Access mechanism}\\
+	&	(No memory for this implementation)\vspace{7pt}\\
+	&	\textbf{5- Hierarchization} \\
+	&	(No memory for this implementation)\vspace{7pt}\\
+	&\textbf{	6- Cache coherency} \\
+	&	(No memory for this implementation)\vspace{7pt}\\
+	&\textbf{	7- Is it a a transactional memory?}\\
+	&	(No memory for this implementation)\vspace{7pt}\\
+	&\textbf{	8- Are there virtualization (paging) mechanisms?}\\
+	&	(No memory for this implementation)\end{tabular}\vspace{14pt}\\
+\vspace{10pt}\\
+{\large\textbf{ENCODING INFORMATION}}\vspace{10pt}\\
+\begin{tabular}{ p{0.2cm} p{14.5cm}}
+	&\textbf{1-Which encoding is used?}\\
+	&Binary encoding
+\end{tabular}
+\newpage{\large\textbf{ }}\vspace{10pt}\\
+{\large\textbf{CONNECTIONS}}\vspace{10pt}\\\begin{tabular}{ p{0.2cm} p{14.5cm}}
+	&\textbf{1-Packet Exchange Protocol}\\
+	&Directly\vspace{7pt}\\
+	&\textbf{2-Timing (asynchronou/synchronous)}\\
+	&Synchronous\vspace{7pt}\\
+	&\textbf{3-Are there multiple instances? }\\
+	&Yes\vspace{7pt}\\
+	&\textbf{4-Heterogeneity (Local/Distant I/O Connections)}\\
+	&Heterogeneous when storing the initial values to the cells and when exchanging the data (For version 2, the border cells require less computation and less data exchanging)\vspace{7pt}\\
+	&\textbf{5-Are there any buffers?}\\
+	&No
+\end{tabular}\vspace{14pt}\\

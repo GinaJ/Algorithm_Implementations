@@ -1,22 +1,4 @@
-C:/Users/Gina/Desktop/Algorithm_Implementations/TG/cell.vhd {1 {vcom -work work -2002 -explicit C:/Users/Gina/Desktop/Algorithm_Implementations/TG/cell.vhd
-Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
--- Loading package standard
--- Loading package std_logic_1164
--- Loading package numeric_std
--- Loading package mytypes
--- Compiling entity cell
--- Compiling architecture beh_cell of cell
-
-} {} {}} C:/Users/Gina/Desktop/Algorithm_Implementations/TG/sum_all.vhd {0 {vcom -work work -2002 -explicit C:/Users/Gina/Desktop/Algorithm_Implementations/TG/sum_all.vhd
-Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
--- Loading package standard
--- Loading package std_logic_1164
--- Loading package numeric_std
--- Loading package mytypes
--- Compiling entity sum_all
-** Error: C:/Users/Gina/Desktop/Algorithm_Implementations/TG/sum_all.vhd(13): near ":": expecting ';' or ')'
-
-} {8.0 9.0} {}} C:/Users/Gina/Desktop/Algorithm_Implementations/TG/logic_plane.vhd {1 {vcom -work work -2002 -explicit C:/Users/Gina/Desktop/Algorithm_Implementations/TG/logic_plane.vhd
+C:/Users/Gina/Desktop/Algorithm_Implementations/TG/logic_plane.vhd {1 {vcom -work work -2002 -explicit C:/Users/Gina/Desktop/Algorithm_Implementations/TG/logic_plane.vhd
 Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
 -- Loading package standard
 -- Loading package std_logic_1164
@@ -24,30 +6,13 @@ Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
 -- Compiling entity logic_plane
 -- Compiling architecture struct_logic_plane of logic_plane
 
-} {} {}} C:/Users/Gina/Desktop/Algorithm_Implementations/TG/tg_top_2d.vhd {0 {vcom -work work -2002 -explicit C:/Users/Gina/Desktop/Algorithm_Implementations/TG/tg_top_2d.vhd
+} {} {}} C:/Users/Gina/Desktop/Algorithm_Implementations/TG/tg_top_2d.vhd {1 {vcom -work work -2002 -explicit C:/Users/Gina/Desktop/Algorithm_Implementations/TG/tg_top_2d.vhd
 Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
 -- Loading package standard
 -- Loading package std_logic_1164
 -- Loading package mytypes
 -- Compiling entity tg_top_2d
 -- Compiling architecture struct_tg_top_2d of tg_top_2d
-** Error: C:/Users/Gina/Desktop/Algorithm_Implementations/TG/tg_top_2d.vhd(60): near ":": expecting ';' or ')'
-
-} {8.0 9.0} {}} C:/Users/Gina/Desktop/Algorithm_Implementations/TG/tb_tg_top_2d.vhd {0 {vcom -work work -2002 -explicit C:/Users/Gina/Desktop/Algorithm_Implementations/TG/tb_tg_top_2d.vhd
-Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
--- Loading package standard
--- Loading package std_logic_1164
--- Loading package mytypes
--- Compiling entity tb_tg_top_2d
--- Compiling architecture test_tg_top_2d of tb_tg_top_2d
-** Error: C:/Users/Gina/Desktop/Algorithm_Implementations/TG/tb_tg_top_2d.vhd(91): near "0001000200030000": syntax error
-** Error: C:/Users/Gina/Desktop/Algorithm_Implementations/TG/tb_tg_top_2d.vhd(159): VHDL Compiler exiting
-
-} {8.0 10.0} {}} C:/Users/Gina/Desktop/Algorithm_Implementations/TG/myTypes.vhd {1 {vcom -work work -2002 -explicit C:/Users/Gina/Desktop/Algorithm_Implementations/TG/myTypes.vhd
-Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
--- Loading package standard
--- Loading package std_logic_1164
--- Compiling package mytypes
 
 } {} {}} C:/Users/Gina/Desktop/Algorithm_Implementations/TG/rst_delay.vhd {1 {vcom -work work -2002 -explicit C:/Users/Gina/Desktop/Algorithm_Implementations/TG/rst_delay.vhd
 Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
@@ -55,5 +20,19 @@ Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
 -- Loading package std_logic_1164
 -- Compiling entity rst_delay
 -- Compiling architecture behavioral of rst_delay
+
+} {} {}} C:/Users/Gina/Desktop/Algorithm_Implementations/TG/myTypes.vhd {1 {vcom -work work -2002 -explicit C:/Users/Gina/Desktop/Algorithm_Implementations/TG/myTypes.vhd
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling package mytypes
+
+} {} {}} C:/Users/Gina/Desktop/Algorithm_Implementations/TG/tb_tg_top_2d.vhd {1 {vcom -work work -2002 -explicit C:/Users/Gina/Desktop/Algorithm_Implementations/TG/tb_tg_top_2d.vhd
+Model Technology ModelSim ALTERA vcom 6.5b Compiler 2009.10 Oct  1 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package mytypes
+-- Compiling entity tb_tg_top_2d
+-- Compiling architecture test_tg_top_2d of tb_tg_top_2d
 
 } {} {}}
