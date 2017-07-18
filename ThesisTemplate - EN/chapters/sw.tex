@@ -72,3 +72,41 @@ The testbench of this architecture is divided in 3 phases:
 	\includegraphics[width=\textwidth]{imm/sw/configuration_phase.png} 	\caption{Phase 1 of the testbench} 
 	\label{tb_sw_1}
 \end{figure}
+In this phase we start to configure all the processing elements.\\
+We need a file where are stored all the Qry AAs in the right format accepted by our testbench:\\
+\textbf{out\_casual\_case\_config.txt} that is composed by:\\
+- 23 rows that correspond to the used amino acids number. \\
+- Each of these rows is associated to an amino acid. \\
+- The first value of each row is the number of PE that must be loaded with the row associated to the amino acid. The following numbers identify the PE id number that must store the Substitutional matrix column. \\
+- If the first value is 0 it means that the amino acid associated to this row is not present into the Qry.\\
+\RecustomVerbatimCommand{\VerbatimInput}{VerbatimInput}%
+{fontsize=\footnotesize,
+	%
+	frame=lines,  % top and bottom rule only
+	framesep=2em, % separation between frame and text
+	rulecolor=\color{Gray},
+	%
+	label=\fbox{\color{Black}out\_casual\_case\_config.txt},
+	labelposition=topline,
+	%
+	commandchars=\|\(\), % escape character and argument delimiters for
+	% commands within the verbatim
+	commentchar=*        % comment character
+}
+\VerbatimInput{file/out_casual_case_config.txt}
+
+we can see that in the first rows it's written "1 \qquad 17", that means that we need to store the similarity values (fig. \ref{blosum62}) of the first amino acid ('A') to the PE whose id is 17.
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=\textwidth]{imm/sw/tb_sw1.png} 	\caption{S-W systolic array initialized with the Substitutional matrix columns: in each PE of the systolic array is stored the column that corresponds to the associated Qry amino acid.} 
+	\label{tb_sw1}
+\end{figure}
+
+In other words we need to store in the 17-PE the values of the first column (the pink one in fig. \ref{tb_sw1}), as we can see aldo in the simulation (fig. \ref{tb_load_17})
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=\textwidth]{imm/sw/load_pe17_AA1.png}
+	 	\caption{Loading into the 17-PE the Substitutional matrix column associated to the amino acid 'A'} 
+	\label{tb_load_17}
+\end{figure}
+
