@@ -75,10 +75,13 @@ The testbench of this architecture is divided in 3 phases:
 In this phase we start to configure all the processing elements.\\
 We need a file where are stored all the Qry AAs in the right format accepted by our testbench:\\
 \textbf{out\_casual\_case\_config.txt} that is composed by:\\
-- 23 rows that correspond to the used amino acids number. \\
-- Each of these rows is associated to an amino acid. \\
-- The first value of each row is the number of PE that must be loaded with the row associated to the amino acid. The following numbers identify the PE id number that must store the Substitutional matrix column. \\
-- If the first value is 0 it means that the amino acid associated to this row is not present into the Qry.\\
+\begin{itemize}
+\item 23 rows that correspond to the used amino acids number. 
+\item Each of these rows is associated to an amino acid. 
+\item The first value of each row is the number of PE that must be loaded with the row associated to the amino acid. The following numbers identify the PE id number that must store the Substitutional matrix column. 
+\item If the first value is 0 it means that the amino acid associated to this row is not present into the Qry.
+\end{itemize}
+\newpage
 \RecustomVerbatimCommand{\VerbatimInput}{VerbatimInput}%
 {fontsize=\footnotesize,
 	%
@@ -95,14 +98,14 @@ We need a file where are stored all the Qry AAs in the right format accepted by 
 }
 \VerbatimInput{file/out_casual_case_config.txt}
 
-we can see that in the first rows it's written "1 \qquad 17", that means that we need to store the similarity values (fig. \ref{blosum62}) of the first amino acid ('A') to the PE whose id is 17.
+we can see that in the first rows it's written "1 \quad 17", that means that we need to store the similarity values (fig. \ref{blosum62}) of the first amino acid ('A') to the PE whose id is 17.
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=\textwidth]{imm/sw/tb_sw1.png} 	\caption{S-W systolic array initialized with the Substitutional matrix columns: in each PE of the systolic array is stored the column that corresponds to the associated Qry amino acid.} 
 	\label{tb_sw1}
 \end{figure}
 
-In other words we need to store in the 17-PE the values of the first column (the pink one in fig. \ref{tb_sw1}), as we can see aldo in the simulation (fig. \ref{tb_load_17})
+In other words we need to store in the 17-PE the values of the first column (the pink one in fig. \ref{tb_sw1}), as we can see also in the simulation (fig. \ref{tb_load_17})\clearpage
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=\textwidth]{imm/sw/load_pe17_AA1.png}
@@ -110,3 +113,60 @@ In other words we need to store in the 17-PE the values of the first column (the
 	\label{tb_load_17}
 \end{figure}
 
+In the simulation we select the 17-PE ('\textit{r\_w\_en\_sel\_s}'=1 and '\textit{pe\_w\_en\_sel\_s}'=17 @ 70 ns ) then we load the substitutional matrix column associated to the amino acid 'A' (the pink one in fig. \ref{tb_sw1}).\\
+\begin{center}
+	
+\begin{tabular}{|l|c|c|c|c|c|c|c|c|}
+
+	\hline
+	\textit{d\_vect\_s} & 4 & -1 & -2 & -2& 0 & -1 & -1& $ \dots $\\
+	\hline
+	\textit{aa\_code\_s} & 1& 2& 3 &4 &5& 6& 7 & $ \dots $\\
+	\hline
+	Amino Acid & A& R& N &D &C& Q& E & $ \dots $\\
+	\hline
+\end{tabular}\\\\
+Loading for 17-PE 
+\end{center}\clearpage
+The second row has "1 \quad 19", so same story as before where we store the second column of the BLOSUM62 matrix (fig. \ref{tb_sw1}).\begin{figure}[h!]
+	\centering
+	\includegraphics[width=\textwidth]{imm/sw/load_pe19.png}
+	\caption{Loading into the 19-PE the Substitutional matrix column associated to the amino acid 'R'} 
+	\label{tb_load_19}
+\end{figure}
+\begin{center}
+	
+\begin{tabular}{|l|c|c|c|c|c|c|c|c|}
+	
+	\hline
+	\textit{d\_vect\_s} & -1 & 5 & 0 & -2& -3 & 1 & 0& $ \dots $\\
+	\hline
+	\textit{aa\_code\_s} & 1& 2& 3 &4 &5& 6& 7 & $ \dots $\\
+	\hline
+	Amino Acid & A& R& N &D &C& Q& E & $ \dots $\\
+	\hline
+\end{tabular}\\\\Loading for 19-PE
+\end{center}\clearpage
+The third row has only the value '0', so no PE has to be configured for the third amino acid 'N'.\\
+The fourth row has "5 \quad 5 \quad6 \quad12 \quad22 \quad27". Therefore we need to configure five PEs (i.e. 5, 6, 12, 22, 27) with the values associated to the Amino Acid 'D' (orange column in fig. \ref{tb_sw1}) as shown in fig. \ref{tb_sw12}.
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=\textwidth]{imm/sw/load_pe_5_6_12.png}
+	\caption{Loading into the 5, 6, 12, 22, 27-PEs the Substitutional matrix column associated to the amino acid 'D'} 
+	\label{tb_sw_12}
+\end{figure}
+\begin{center}
+	
+\begin{tabular}{|l|c|c|c|c|c|c|c|c|}
+	\hline
+	
+	\hline
+	\textit{d\_vect\_s} & -2 & -2 & 1& 6& -3 & 0 & 2& $ \dots $\\
+	\hline
+	\textit{aa\_code\_s} & 1& 2& 3 &4 &5& 6& 7 & $ \dots $\\
+	\hline
+	Amino Acid & A& R& N &D &C& Q& E & $ \dots $\\
+	\hline
+\end{tabular}\\\\
+Loading for 5, 6, 12, 22, 27-PEs
+\end{center}

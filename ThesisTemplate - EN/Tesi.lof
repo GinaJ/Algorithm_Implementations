@@ -67,4 +67,6 @@
 \contentsline {figure}{\numberline {8.5}{\ignorespaces Phase 1 of the testbench\relax }}{107}{figure.caption.61}
 \contentsline {figure}{\numberline {8.6}{\ignorespaces S-W systolic array initialized with the Substitutional matrix columns: in each PE of the systolic array is stored the column that corresponds to the associated Qry amino acid.\relax }}{109}{figure.caption.62}
 \contentsline {figure}{\numberline {8.7}{\ignorespaces Loading into the 17-PE the Substitutional matrix column associated to the amino acid 'A'\relax }}{110}{figure.caption.63}
+\contentsline {figure}{\numberline {8.8}{\ignorespaces Loading into the 19-PE the Substitutional matrix column associated to the amino acid 'R'\relax }}{111}{figure.caption.64}
+\contentsline {figure}{\numberline {8.9}{\ignorespaces Loading into the 5, 6, 12, 22, 27-PEs the Substitutional matrix column associated to the amino acid 'D'\relax }}{112}{figure.caption.65}
 \addvspace {10\p@ }

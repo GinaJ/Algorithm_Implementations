@@ -64,16 +64,16 @@
 \contentsline {section}{\numberline {8.2}Smith-Waterman Local alignment method }{104}{section.8.2}
 \contentsline {section}{\numberline {8.3}Simulation and Test}{104}{section.8.3}
 \contentsline {subsection}{\numberline {8.3.1}Phase 1-sub\_matr\_and\_gap\_load }{107}{subsection.8.3.1}
-\contentsline {chapter}{\numberline {9}Synthesis Results}{111}{chapter.9}
-\contentsline {section}{\numberline {9.1}Integral Image}{111}{section.9.1}
-\contentsline {section}{\numberline {9.2}Discrete Cosine Transformation}{112}{section.9.2}
-\contentsline {subsection}{\numberline {9.2.1}DCT pipelined}{113}{subsection.9.2.1}
-\contentsline {subsection}{\numberline {9.2.2}DCT not pipelined}{114}{subsection.9.2.2}
-\contentsline {subsection}{\numberline {9.2.3}LLM DCT}{115}{subsection.9.2.3}
-\contentsline {section}{\numberline {9.3}Binomial Filter}{116}{section.9.3}
-\contentsline {subsection}{\numberline {9.3.1}Binomial Filter v1}{116}{subsection.9.3.1}
-\contentsline {subsection}{\numberline {9.3.2}Binomial Filter v2}{117}{subsection.9.3.2}
-\contentsline {section}{\numberline {9.4}FIR}{118}{section.9.4}
-\contentsline {section}{\numberline {9.5}Transport Equation Problem}{119}{section.9.5}
-\contentsline {section}{\numberline {9.6}Magnetostatic field calculation 3D}{120}{section.9.6}
-\contentsline {chapter}{Bibliography}{122}{chapter*.64}
+\contentsline {chapter}{\numberline {9}Synthesis Results}{113}{chapter.9}
+\contentsline {section}{\numberline {9.1}Integral Image}{113}{section.9.1}
+\contentsline {section}{\numberline {9.2}Discrete Cosine Transformation}{114}{section.9.2}
+\contentsline {subsection}{\numberline {9.2.1}DCT pipelined}{115}{subsection.9.2.1}
+\contentsline {subsection}{\numberline {9.2.2}DCT not pipelined}{116}{subsection.9.2.2}
+\contentsline {subsection}{\numberline {9.2.3}LLM DCT}{117}{subsection.9.2.3}
+\contentsline {section}{\numberline {9.3}Binomial Filter}{118}{section.9.3}
+\contentsline {subsection}{\numberline {9.3.1}Binomial Filter v1}{118}{subsection.9.3.1}
+\contentsline {subsection}{\numberline {9.3.2}Binomial Filter v2}{119}{subsection.9.3.2}
+\contentsline {section}{\numberline {9.4}FIR}{120}{section.9.4}
+\contentsline {section}{\numberline {9.5}Transport Equation Problem}{121}{section.9.5}
+\contentsline {section}{\numberline {9.6}Magnetostatic field calculation 3D}{122}{section.9.6}
+\contentsline {chapter}{Bibliography}{124}{chapter*.66}
