@@ -37,6 +37,7 @@ This algorithm can be substantially described in three steps:
 	 \end{cases} 
 	 \end{equation}
 	  if the first term '0' in the equation is selected as max it means that the previous alignment is ended or not alignment is possible. \\Since this algorithm evaluates local alignments, in this matrix there are not negative score.
+	 \item   \textbf{output\_writing}: works concurrently with the second process. It checks, in each clock cycle, if the stored Sbj id is changed. If the Sbj id is different, this process will write on the output file the n of Sbj id and the associated Maximum Alignment Score.
 	 
 	
 \end{enumerate}
@@ -44,9 +45,9 @@ This algorithm can be substantially described in three steps:
 \section{Simulation and Test}
 The testbench of this architecture is divided in 3 phases:
 \begin{enumerate}
-	\item \textbf{Phase 1-sub\_matr\_and\_gap\_load }:  configure the systolic array trough the loading of all the storage registers with values coming from the substitutional matrix and gap files.\\
-	\item  \textbf{Phase 2-s\_w\_computation}: It starts when the configuration process is terminated and reads from the DB file the Sbj id number and the associated amino acids sequence. In this phase we compute the S-W algorithm. This process is ended when all the database is scanned.\\
-	\item \textbf{Phase 3-output\_writing}: It checks, in each clock cycle, if the stored Sbj id is changed. If the Sbj id is different, this process will write on the output file the n. of Sbj id and the associated Maximum Alignment Score.
+	\item \textbf{sub\_matr\_and\_gap\_load }:  configure the systolic array trough the loading of all the storage registers with values coming from the substitutional matrix and gap files.\\
+	\item  \textbf{s\_w\_computation}: It starts when the configuration process is terminated and reads from the DB file the Sbj id number and the associated amino acids sequence. In this phase we compute the S-W algorithm. This process is ended when all the database is scanned.\\
+	\item \textbf{output\_writing}: It checks, in each clock cycle, if the stored Sbj id is changed. If the Sbj id is different, this process will write on the output file the n. of Sbj id and the associated Maximum Alignment Score.
 	
 	
 	
@@ -96,7 +97,7 @@ We need a file where are stored all the Qry AAs in the right format accepted by 
 	% commands within the verbatim
 	commentchar=*        % comment character
 }
-\VerbatimInput{file/out_casual_case_config.txt}
+\VerbatimInput{file/out_casual_case_config.txt} \label{file_pes}
 
 we can see that in the first rows it's written "1 \quad 17", that means that we need to store the similarity values (fig. \ref{blosum62}) of the first amino acid ('A') to the PE whose id is 17.
 \begin{figure}[h!]
@@ -125,10 +126,12 @@ In the simulation we select the 17-PE ('\textit{r\_w\_en\_sel\_s}'=1 and '\texti
 	\hline
 	Amino Acid & A& R& N &D &C& Q& E & $ \dots $\\
 	\hline
-\end{tabular}\\\\
-Loading for 17-PE 
+\end{tabular}\\ 
+\end{center}
+\begin{center}
+	Loading for 17-PE
 \end{center}\clearpage
-The second row has "1 \quad 19", so same story as before where we store the second column of the BLOSUM62 matrix (fig. \ref{tb_sw1}).\begin{figure}[h!]
+The second row of the file \textit{out\_casual\_case\_config.txt} (as seen in section \ref{file_pes} has "1 \quad 19", so we do the same thing as before where we store the second column of the BLOSUM62 matrix (fig. \ref{tb_sw1}).\begin{figure}[h!]
 	\centering
 	\includegraphics[width=\textwidth]{imm/sw/load_pe19.png}
 	\caption{Loading into the 19-PE the Substitutional matrix column associated to the amino acid 'R'} 
@@ -145,10 +148,12 @@ The second row has "1 \quad 19", so same story as before where we store the seco
 	\hline
 	Amino Acid & A& R& N &D &C& Q& E & $ \dots $\\
 	\hline
-\end{tabular}\\\\Loading for 19-PE
+\end{tabular}\\
+\end{center}\begin{center}
+Loading for 19-PE
 \end{center}\clearpage
 The third row has only the value '0', so no PE has to be configured for the third amino acid 'N'.\\
-The fourth row has "5 \quad 5 \quad6 \quad12 \quad22 \quad27". Therefore we need to configure five PEs (i.e. 5, 6, 12, 22, 27) with the values associated to the Amino Acid 'D' (orange column in fig. \ref{tb_sw1}) as shown in fig. \ref{tb_sw12}.
+The fourth row has "5 \quad 5 \quad6 \quad12 \quad22 \quad27". Therefore we need to configure five PEs (i.e. 5, 6, 12, 22, 27) with the values associated to the Amino Acid 'D' (orange column in fig. \ref{tb_sw1}) as shown in fig. \ref{tb_sw_12}.
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=\textwidth]{imm/sw/load_pe_5_6_12.png}
@@ -167,6 +172,32 @@ The fourth row has "5 \quad 5 \quad6 \quad12 \quad22 \quad27". Therefore we need
 	\hline
 	Amino Acid & A& R& N &D &C& Q& E & $ \dots $\\
 	\hline
-\end{tabular}\\\\
-Loading for 5, 6, 12, 22, 27-PEs
+\end{tabular}\\
+
 \end{center}
+\begin{center}
+	Loading for 5, 6, 12, 22, 27-PEs
+\end{center}
+We keep this process until we reach the last PE to be configured, which is the number 8 (row 20).\\At the end of this configuration (fig. \ref{tb_sw_pe8}), we need to store the two gap values (written in the file \textit{gap\_open\_ext.txt}) to all the PEs, the first value is the Open gap (fig. \ref{tb_open_gap_10}) while the second one is the Extension gap (fig. \ref{tb_ext_gap}).
+
+
+gap\_sel\_load is high only when storing the extension gap.
+sel\_aa\_or\_gap\_reg, at '1' only when storing both the penalty (open and extension)
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=\textwidth]{imm/sw/load_pe_8.png}
+	\caption{Loading into the 8-PEs the Substitutional matrix column associated to the amino acid 'V'. On the right side, we see that we start to load the open gap penalty.} 
+	\label{tb_sw_pe8}
+\end{figure}
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=\textwidth]{imm/sw/open_gap_10.png}
+	\caption{Loading into all PEs the open gap penalty which value is -10} 
+	\label{tb_open_gap_10}
+\end{figure}
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=\textwidth]{imm/sw/ext_gap.png}
+	\caption{Loading into all PEs the extension gap penalty which value is -1} 
+	\label{tb_ext_gap}
+\end{figure}

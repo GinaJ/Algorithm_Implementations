@@ -69,4 +69,7 @@
 \contentsline {figure}{\numberline {8.7}{\ignorespaces Loading into the 17-PE the Substitutional matrix column associated to the amino acid 'A'\relax }}{110}{figure.caption.63}
 \contentsline {figure}{\numberline {8.8}{\ignorespaces Loading into the 19-PE the Substitutional matrix column associated to the amino acid 'R'\relax }}{111}{figure.caption.64}
 \contentsline {figure}{\numberline {8.9}{\ignorespaces Loading into the 5, 6, 12, 22, 27-PEs the Substitutional matrix column associated to the amino acid 'D'\relax }}{112}{figure.caption.65}
+\contentsline {figure}{\numberline {8.10}{\ignorespaces Loading into the 8-PEs the Substitutional matrix column associated to the amino acid 'V'. On the right side, we see that we start to load the open gap penalty.\relax }}{113}{figure.caption.66}
+\contentsline {figure}{\numberline {8.11}{\ignorespaces Loading into all PEs the open gap penalty which value is -10\relax }}{113}{figure.caption.67}
+\contentsline {figure}{\numberline {8.12}{\ignorespaces Loading into all PEs the extension gap penalty which value is -1\relax }}{114}{figure.caption.68}
 \addvspace {10\p@ }
