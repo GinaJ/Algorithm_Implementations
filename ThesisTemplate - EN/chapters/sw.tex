@@ -42,11 +42,11 @@ This algorithm can be substantially described in three steps:
 	
 \end{enumerate}
 
-\section{Simulation and Test}
+\section{Simulation and Test} \label{simtest}
 The testbench of this architecture is divided in 3 phases:
 \begin{enumerate}
 	\item \textbf{sub\_matr\_and\_gap\_load }:  configure the systolic array trough the loading of all the storage registers with values coming from the substitutional matrix and gap files.\\
-	\item  \textbf{s\_w\_computation}: It starts when the configuration process is terminated and reads from the DB file the Sbj id number and the associated amino acids sequence. In this phase we compute the S-W algorithm. This process is ended when all the database is scanned.\\
+	\item  \textbf{s\_w\_computation}: It starts when the configuration process is terminated and reads from the DB file the Sbj\_id number and the associated amino acids sequence. In this phase we compute the S-W algorithm. This process is ended when all the database is scanned.\\
 	\item \textbf{output\_writing}: It checks, in each clock cycle, if the stored Sbj id is changed. If the Sbj id is different, this process will write on the output file the n. of Sbj id and the associated Maximum Alignment Score.
 	
 	
@@ -78,10 +78,15 @@ We need a file where are stored all the Qry AAs in the right format accepted by 
 \textbf{out\_casual\_case\_config.txt} that is composed by:\\
 \begin{itemize}
 \item 23 rows that correspond to the used amino acids number. 
-\item Each of these rows is associated to an amino acid. 
+\item Each of these rows is associated to an amino acid (see fig. \ref{tabAA}). 
 \item The first value of each row is the number of PE that must be loaded with the row associated to the amino acid. The following numbers identify the PE id number that must store the Substitutional matrix column. 
 \item If the first value is 0 it means that the amino acid associated to this row is not present into the Qry.
 \end{itemize}
+\begin{figure}[h!]
+	\centering
+	\includegraphics[height=0.95\textheight]{imm/sw/tabella.png} 	\caption{Amino acid encoding	} 
+	\label{tabAA}
+\end{figure}
 \newpage
 \RecustomVerbatimCommand{\VerbatimInput}{VerbatimInput}%
 {fontsize=\footnotesize,
@@ -201,3 +206,20 @@ sel\_aa\_or\_gap\_reg, at '1' only when storing both the penalty (open and exten
 	\caption{Loading into all PEs the extension gap penalty which value is -1} 
 	\label{tb_ext_gap}
 \end{figure}
+\subsection{Phase 2- s\_w\_computation}
+When the configuration phase ends, we can start the second process called \textit{s\_w\_computation}already explained in section \ref{simtest} and showed in fig. \ref{tb_sw}.
+Here we scan the DataBase file \textit{DB\_num\_casual\_case\_2.txt} which is composed by:
+ -In the first row of the file is written the number of sequences that compose this database.\\
+ - In this file all the letters are converted in number using, for the conversion, a code that doesn't  take into account   the amino acids frequency (fig. \ref{tabAA}).
+  The encoding code is written directly into the program.\\
+   - The protein id number is the first value of the row (in this case 68). \\
+   - The number of AAs that compose this protein is the second value in the same row.\\
+    - All the other numbers are the encoded amino acids.
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=\textwidth]{imm/sw/db.png}
+	\caption{Section of the database file to be loaded in this testbench} 
+	\label{db}
+\end{figure}
+\clearpage
+\subsection{Phase 3- output\_writing}

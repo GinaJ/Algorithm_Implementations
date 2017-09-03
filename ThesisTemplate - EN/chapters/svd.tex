@@ -1,2 +1,32 @@
 \chapter{Singular Value Decomposition}
-\section{A VHDL Function for finding SQUARE ROOT}
+\section{Example of a SVD computation}
+
+We have the matrix C as:
+\begin{center}
+	$ 
+	C=\begin{bmatrix}
+	5 &   5 \\
+-1  &  7 \\
+	\end{bmatrix}$
+\end{center}
+and we want to write it as $ C=U\Sigma V^{T} $.\\
+We have to take into account these 2 equations:
+\begin{itemize}
+	\item $ C^T C = V\Sigma^T\Sigma V^T$
+	\item $CV=U\Sigma$
+\end{itemize}
+Let's compute $ C^T \cdot C $\\
+\begin{center}
+	$ C^T \cdot C =\begin{bmatrix}
+5 &   -1 \\
+5  &  7 \\
+\end{bmatrix}\begin{bmatrix}
+5 &   5 \\
+-1  &  7 \\
+\end{bmatrix}=\begin{bmatrix}
+26 &   18 \\
+18  &  74 \\
+\end{bmatrix}$
+\end{center}
+Now we can find the eigenvalues of the matrix $ C^T \cdot C $.
+We know that an eigenvalue of $ C^T \cdot C $, is a solutions of the polynomial equation $det( C^T \cdot C-\lambda I)=0 $, where $ I $ is the identity matrix.

@@ -12,6 +12,7 @@
 \@writefile{toc}{\contentsline {section}{\numberline {8.2}Smith-Waterman Local alignment method }{104}{section.8.2}}
 \newlabel{sw_eq}{{8.1}{104}{Smith-Waterman Local alignment method}{equation.8.2.1}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {8.3}Simulation and Test}{104}{section.8.3}}
+\newlabel{simtest}{{8.3}{104}{Simulation and Test}{section.8.3}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {8.3}{\ignorespaces Phases of the testbench\relax }}{105}{figure.caption.59}}
 \newlabel{tb_sw}{{8.3}{105}{Phases of the testbench\relax }{figure.caption.59}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {8.4}{\ignorespaces Main flow chart of \textit  {systolic\_array\_tb.vhd} testbench. In blue the testbench name, in red the processes name\relax }}{106}{figure.caption.60}}
@@ -19,23 +20,29 @@
 \@writefile{toc}{\contentsline {subsection}{\numberline {8.3.1}Phase 1-sub\_matr\_and\_gap\_load }{107}{subsection.8.3.1}}
 \@writefile{lof}{\contentsline {figure}{\numberline {8.5}{\ignorespaces Phase 1 of the testbench\relax }}{107}{figure.caption.61}}
 \newlabel{tb_sw_1}{{8.5}{107}{Phase 1 of the testbench\relax }{figure.caption.61}{}}
-\newlabel{file_pes}{{8.3.1}{108}{Phase 1-sub\_matr\_and\_gap\_load}{figure.caption.61}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {8.6}{\ignorespaces S-W systolic array initialized with the Substitutional matrix columns: in each PE of the systolic array is stored the column that corresponds to the associated Qry amino acid.\relax }}{109}{figure.caption.62}}
-\newlabel{tb_sw1}{{8.6}{109}{S-W systolic array initialized with the Substitutional matrix columns: in each PE of the systolic array is stored the column that corresponds to the associated Qry amino acid.\relax }{figure.caption.62}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {8.7}{\ignorespaces Loading into the 17-PE the Substitutional matrix column associated to the amino acid 'A'\relax }}{110}{figure.caption.63}}
-\newlabel{tb_load_17}{{8.7}{110}{Loading into the 17-PE the Substitutional matrix column associated to the amino acid 'A'\relax }{figure.caption.63}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {8.8}{\ignorespaces Loading into the 19-PE the Substitutional matrix column associated to the amino acid 'R'\relax }}{111}{figure.caption.64}}
-\newlabel{tb_load_19}{{8.8}{111}{Loading into the 19-PE the Substitutional matrix column associated to the amino acid 'R'\relax }{figure.caption.64}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {8.9}{\ignorespaces Loading into the 5, 6, 12, 22, 27-PEs the Substitutional matrix column associated to the amino acid 'D'\relax }}{112}{figure.caption.65}}
-\newlabel{tb_sw_12}{{8.9}{112}{Loading into the 5, 6, 12, 22, 27-PEs the Substitutional matrix column associated to the amino acid 'D'\relax }{figure.caption.65}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {8.10}{\ignorespaces Loading into the 8-PEs the Substitutional matrix column associated to the amino acid 'V'. On the right side, we see that we start to load the open gap penalty.\relax }}{113}{figure.caption.66}}
-\newlabel{tb_sw_pe8}{{8.10}{113}{Loading into the 8-PEs the Substitutional matrix column associated to the amino acid 'V'. On the right side, we see that we start to load the open gap penalty.\relax }{figure.caption.66}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {8.11}{\ignorespaces Loading into all PEs the open gap penalty which value is -10\relax }}{113}{figure.caption.67}}
-\newlabel{tb_open_gap_10}{{8.11}{113}{Loading into all PEs the open gap penalty which value is -10\relax }{figure.caption.67}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {8.12}{\ignorespaces Loading into all PEs the extension gap penalty which value is -1\relax }}{114}{figure.caption.68}}
-\newlabel{tb_ext_gap}{{8.12}{114}{Loading into all PEs the extension gap penalty which value is -1\relax }{figure.caption.68}{}}
+\newlabel{file_pes}{{8.3.1}{108}{Phase 1-sub\_matr\_and\_gap\_load}{figure.caption.62}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8.6}{\ignorespaces Amino acid encoding \relax }}{109}{figure.caption.62}}
+\newlabel{tabAA}{{8.6}{109}{Amino acid encoding \relax }{figure.caption.62}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8.7}{\ignorespaces S-W systolic array initialized with the Substitutional matrix columns: in each PE of the systolic array is stored the column that corresponds to the associated Qry amino acid.\relax }}{110}{figure.caption.63}}
+\newlabel{tb_sw1}{{8.7}{110}{S-W systolic array initialized with the Substitutional matrix columns: in each PE of the systolic array is stored the column that corresponds to the associated Qry amino acid.\relax }{figure.caption.63}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8.8}{\ignorespaces Loading into the 17-PE the Substitutional matrix column associated to the amino acid 'A'\relax }}{111}{figure.caption.64}}
+\newlabel{tb_load_17}{{8.8}{111}{Loading into the 17-PE the Substitutional matrix column associated to the amino acid 'A'\relax }{figure.caption.64}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8.9}{\ignorespaces Loading into the 19-PE the Substitutional matrix column associated to the amino acid 'R'\relax }}{112}{figure.caption.65}}
+\newlabel{tb_load_19}{{8.9}{112}{Loading into the 19-PE the Substitutional matrix column associated to the amino acid 'R'\relax }{figure.caption.65}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8.10}{\ignorespaces Loading into the 5, 6, 12, 22, 27-PEs the Substitutional matrix column associated to the amino acid 'D'\relax }}{113}{figure.caption.66}}
+\newlabel{tb_sw_12}{{8.10}{113}{Loading into the 5, 6, 12, 22, 27-PEs the Substitutional matrix column associated to the amino acid 'D'\relax }{figure.caption.66}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.3.2}Phase 2- s\_w\_computation}{113}{subsection.8.3.2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8.11}{\ignorespaces Loading into the 8-PEs the Substitutional matrix column associated to the amino acid 'V'. On the right side, we see that we start to load the open gap penalty.\relax }}{114}{figure.caption.67}}
+\newlabel{tb_sw_pe8}{{8.11}{114}{Loading into the 8-PEs the Substitutional matrix column associated to the amino acid 'V'. On the right side, we see that we start to load the open gap penalty.\relax }{figure.caption.67}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8.12}{\ignorespaces Loading into all PEs the open gap penalty which value is -10\relax }}{114}{figure.caption.68}}
+\newlabel{tb_open_gap_10}{{8.12}{114}{Loading into all PEs the open gap penalty which value is -10\relax }{figure.caption.68}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8.13}{\ignorespaces Loading into all PEs the extension gap penalty which value is -1\relax }}{115}{figure.caption.69}}
+\newlabel{tb_ext_gap}{{8.13}{115}{Loading into all PEs the extension gap penalty which value is -1\relax }{figure.caption.69}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8.14}{\ignorespaces Section of the database file to be loaded in this testbench\relax }}{116}{figure.caption.70}}
+\newlabel{db}{{8.14}{116}{Section of the database file to be loaded in this testbench\relax }{figure.caption.70}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.3.3}Phase 3- output\_writing}{117}{subsection.8.3.3}}
 \@setckpt{chapters/sw}{
-\setcounter{page}{115}
+\setcounter{page}{118}
 \setcounter{equation}{1}
 \setcounter{enumi}{3}
 \setcounter{enumii}{0}
@@ -46,11 +53,11 @@
 \setcounter{part}{0}
 \setcounter{chapter}{8}
 \setcounter{section}{3}
-\setcounter{subsection}{1}
+\setcounter{subsection}{3}
 \setcounter{subsubsection}{0}
 \setcounter{paragraph}{0}
 \setcounter{subparagraph}{0}
-\setcounter{figure}{12}
+\setcounter{figure}{14}
 \setcounter{table}{0}
 \setcounter{parentequation}{0}
 \setcounter{subfigure}{0}
@@ -61,7 +68,7 @@
 \setcounter{lstnumber}{1}
 \setcounter{Item}{40}
 \setcounter{Hfootnote}{0}
-\setcounter{bookmark@seq@number}{65}
+\setcounter{bookmark@seq@number}{67}
 \setcounter{ContinuedFloat}{0}
 \setcounter{float@type}{8}
 \setcounter{FancyVerbLine}{23}
