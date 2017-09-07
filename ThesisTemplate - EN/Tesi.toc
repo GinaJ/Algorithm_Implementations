@@ -58,15 +58,15 @@
 \contentsline {section}{\numberline {7.4}Simulation and Test}{95}{section.7.4}
 \contentsline {subsection}{\numberline {7.4.1}Testbench of the cell}{95}{subsection.7.4.1}
 \contentsline {subsection}{\numberline {7.4.2}Testbench of the Top entity}{98}{subsection.7.4.2}
-\contentsline {section}{\numberline {7.5}Characteristics of Magnetostatic field calculation 3D}{99}{section.7.5}
-\contentsline {chapter}{\numberline {8}Smith Waterman}{102}{chapter.8}
-\contentsline {section}{\numberline {8.1}The scoring model. The BLOSUM62 matrix}{102}{section.8.1}
-\contentsline {section}{\numberline {8.2}Smith-Waterman Local alignment method }{104}{section.8.2}
-\contentsline {section}{\numberline {8.3}Simulation and Test}{104}{section.8.3}
-\contentsline {subsection}{\numberline {8.3.1}Phase 1-sub\_matr\_and\_gap\_load }{107}{subsection.8.3.1}
-\contentsline {subsection}{\numberline {8.3.2}Phase 2- s\_w\_computation}{113}{subsection.8.3.2}
-\contentsline {subsection}{\numberline {8.3.3}Phase 3- output\_writing}{117}{subsection.8.3.3}
-\contentsline {chapter}{\numberline {9}Singular Value Decomposition}{119}{chapter.9}
-\contentsline {section}{\numberline {9.1}Example of a SVD computation}{119}{section.9.1}
-\contentsline {section}{\numberline {9.2}Difficulties for the SVD in ASIC}{122}{section.9.2}
-\contentsline {chapter}{Bibliography}{123}{chapter*.74}
+\contentsline {section}{\numberline {7.5}Characteristics of Magnetostatic field calculation 3D}{100}{section.7.5}
+\contentsline {chapter}{\numberline {8}Smith Waterman}{103}{chapter.8}
+\contentsline {section}{\numberline {8.1}The scoring model. The BLOSUM62 matrix}{103}{section.8.1}
+\contentsline {section}{\numberline {8.2}Smith-Waterman Local alignment method }{105}{section.8.2}
+\contentsline {section}{\numberline {8.3}Simulation and Test}{105}{section.8.3}
+\contentsline {subsection}{\numberline {8.3.1}Phase 1-sub\_matr\_and\_gap\_load }{108}{subsection.8.3.1}
+\contentsline {subsection}{\numberline {8.3.2}Phase 2- s\_w\_computation}{114}{subsection.8.3.2}
+\contentsline {subsection}{\numberline {8.3.3}Phase 3- output\_writing}{118}{subsection.8.3.3}
+\contentsline {chapter}{\numberline {9}Singular Value Decomposition}{120}{chapter.9}
+\contentsline {section}{\numberline {9.1}Example of a SVD computation}{120}{section.9.1}
+\contentsline {section}{\numberline {9.2}Difficulties for the SVD in ASIC}{123}{section.9.2}
+\contentsline {chapter}{Bibliography}{124}{chapter*.76}
