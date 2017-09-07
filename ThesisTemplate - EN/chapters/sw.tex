@@ -186,8 +186,7 @@ The fourth row has "5 \quad 5 \quad6 \quad12 \quad22 \quad27". Therefore we need
 We keep this process until we reach the last PE to be configured, which is the number 8 (row 20).\\At the end of this configuration (fig. \ref{tb_sw_pe8}), we need to store the two gap values (written in the file \textit{gap\_open\_ext.txt}) to all the PEs, the first value is the Open gap (fig. \ref{tb_open_gap_10}) while the second one is the Extension gap (fig. \ref{tb_ext_gap}).
 
 
-gap\_sel\_load is high only when storing the extension gap.
-sel\_aa\_or\_gap\_reg, at '1' only when storing both the penalty (open and extension)
+The signal \textit{gap\_sel\_load} is high only when storing the extension gap, while \textit{sel\_aa\_or\_gap\_reg} is at '1' only when storing both the penalties (open and extension)
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=\textwidth]{imm/sw/load_pe_8.png}
@@ -223,3 +222,27 @@ Here we scan the DataBase file \textit{DB\_num\_casual\_case\_2.txt} which is co
 \end{figure}
 \clearpage
 \subsection{Phase 3- output\_writing}
+In the \textit{subject\_id\_s} and \textit{out\_subject\_id\_s}, we can see the code for the selected protein, and in the \textit{aa\_code\_s} the proteins associated to such protein (the list of aminoacids is consistent with the database provided in the file \textit{DB\_num\_casual\_case.txt}).
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=\textwidth]{imm/sw/evaluating_output_1.png}
+	\caption{scanning the list of aminoacid (\textit{aa\_code\_s}) of the first protein while computing the Maximum Alignment Score } 
+	\label{output_evaluation_1}
+\end{figure}
+
+The\textit{ out\_f\_i\_j\_s} contains the Score matrix value calculated in the last PE (matrix cell F(i,j)) and the \textit{out\_max\_i\_j\_s} is the Maximum Alignment Score. Both these value are evaluated and shifted through the systolic array. As expected,  we can clearly see the Maximum Alignment Score increasing. In th fig. \ref{149} the value increases from an initial value of 5 to 149.
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=\textwidth]{imm/sw/149.png}
+	\caption{Computing the  Maximum Alignment Score (149) for the first protein } 
+	\label{149}
+\end{figure}
+When all the process ends, we can write for each protein the Maximum Alignment Score evaluated in \textit{out\_id\_subj\_and\_max\_i\_j.txt} file
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.5\textwidth]{imm/sw/out_149.png}
+	\caption{In the first row of \textit{out\_id\_subj\_and\_max\_i\_j.txt} file we can see that the first protein has 149 as Maximum Alignment Score} 
+	\label{out149}
+\end{figure}

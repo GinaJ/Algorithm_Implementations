@@ -1,5 +1,72 @@
 \select@language {english}
 \contentsline {chapter}{Acknowledgments}{{\relax \fontsize {8}{9.5}\selectfont \rm \uppercase {i}}}{chapter*.1}
-\contentsline {chapter}{\numberline {1}Singular Value Decomposition}{1}{chapter.1}
-\contentsline {section}{\numberline {1.1}Example of a SVD computation}{1}{section.1.1}
-\contentsline {chapter}{Bibliography}{4}{chapter*.4}
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Advantages of an ASIC based design}{1}{section.1.1}
+\contentsline {subsection}{\numberline {1.1.1}Unit cost}{1}{subsection.1.1.1}
+\contentsline {subsection}{\numberline {1.1.2}Performance}{2}{subsection.1.1.2}
+\contentsline {subsection}{\numberline {1.1.3}Power consumption}{2}{subsection.1.1.3}
+\contentsline {subsection}{\numberline {1.1.4}Flexibility}{3}{subsection.1.1.4}
+\contentsline {chapter}{\numberline {2}Integral Image Algorithm}{4}{chapter.2}
+\contentsline {section}{\numberline {2.1}Method used}{5}{section.2.1}
+\contentsline {section}{\numberline {2.2}Hardware Implementation}{7}{section.2.2}
+\contentsline {section}{\numberline {2.3}Pipelined Implementation}{11}{section.2.3}
+\contentsline {section}{\numberline {2.4}Simulation and Test}{13}{section.2.4}
+\contentsline {section}{\numberline {2.5}Comparison}{17}{section.2.5}
+\contentsline {subsection}{\numberline {2.5.1}Inclusive Scan algorithm}{17}{subsection.2.5.1}
+\contentsline {subsection}{\numberline {2.5.2}Balanced Trees Parallel Scan algorithm}{17}{subsection.2.5.2}
+\contentsline {subsection}{\numberline {2.5.3}Comparing the 3 algorithm implementations}{18}{subsection.2.5.3}
+\contentsline {subsection}{\numberline {2.5.4}Logic-In-Memory architecture}{19}{subsection.2.5.4}
+\contentsline {subsection}{\numberline {2.5.5}Comparison with the LIM architecture}{22}{subsection.2.5.5}
+\contentsline {section}{\numberline {2.6}Characteristics of the Integral Image Algorithm}{23}{section.2.6}
+\contentsline {chapter}{\numberline {3}Discrete cosine transform}{27}{chapter.3}
+\contentsline {section}{\numberline {3.1}Hardware Implementation}{28}{section.3.1}
+\contentsline {section}{\numberline {3.2}Simulation and Test}{31}{section.3.2}
+\contentsline {section}{\numberline {3.3}Comparison}{34}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Systolic array architecture}{34}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Comparison with systolic array implementation}{35}{subsection.3.3.2}
+\contentsline {section}{\numberline {3.4}Characteristics of DCT}{39}{section.3.4}
+\contentsline {section}{\numberline {3.5}LLM DCT}{43}{section.3.5}
+\contentsline {subsection}{\numberline {3.5.1}Architecture of the LLM DCT}{44}{subsection.3.5.1}
+\contentsline {subsection}{\numberline {3.5.2}Simulation and test}{46}{subsection.3.5.2}
+\contentsline {subsection}{\numberline {3.5.3}Comparison}{48}{subsection.3.5.3}
+\contentsline {subsection}{\numberline {3.5.4}High Order LLM DCT}{52}{subsection.3.5.4}
+\contentsline {subsection}{\numberline {3.5.5}Characteristics of the LLM DCT 8-point}{53}{subsection.3.5.5}
+\contentsline {chapter}{\numberline {4}Binomial Filter}{57}{chapter.4}
+\contentsline {section}{\numberline {4.1}Hardware implementations}{60}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Hardware implementation type 1}{60}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Hardware implementation type 2}{64}{subsection.4.1.2}
+\contentsline {section}{\numberline {4.2}Simulations}{65}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Simulation type 1}{65}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Simulation type 2}{67}{subsection.4.2.2}
+\contentsline {section}{\numberline {4.3}Comparison}{70}{section.4.3}
+\contentsline {subsubsection}{\numberline {4.3.0.1}Logic-In-Memory implementation}{70}{subsubsection.4.3.0.1}
+\contentsline {section}{\numberline {4.4}Characteristics of the Binomial Filter}{71}{section.4.4}
+\contentsline {chapter}{\numberline {5}Digital Filter FIR}{74}{chapter.5}
+\contentsline {section}{\numberline {5.1}Digital filters properties}{74}{section.5.1}
+\contentsline {section}{\numberline {5.2}Hardware Implementation}{75}{section.5.2}
+\contentsline {section}{\numberline {5.3}Simulation}{76}{section.5.3}
+\contentsline {section}{\numberline {5.4}Characteristics of Filter FIR}{78}{section.5.4}
+\contentsline {chapter}{\numberline {6}Transport equation problem}{81}{chapter.6}
+\contentsline {section}{\numberline {6.1}Hardware Implementation}{83}{section.6.1}
+\contentsline {section}{\numberline {6.2}Simulation}{86}{section.6.2}
+\contentsline {section}{\numberline {6.3}Comparison with LIM's architecture}{87}{section.6.3}
+\contentsline {section}{\numberline {6.4}Characteristics of Transport Equation Problem}{89}{section.6.4}
+\contentsline {chapter}{\numberline {7}Magnetostatic field calculation 3D}{92}{chapter.7}
+\contentsline {section}{\numberline {7.1}Product TG and M}{93}{section.7.1}
+\contentsline {section}{\numberline {7.2}Logic Plane}{94}{section.7.2}
+\contentsline {section}{\numberline {7.3}Sum all}{95}{section.7.3}
+\contentsline {section}{\numberline {7.4}Simulation and Test}{95}{section.7.4}
+\contentsline {subsection}{\numberline {7.4.1}Testbench of the cell}{95}{subsection.7.4.1}
+\contentsline {subsection}{\numberline {7.4.2}Testbench of the Top entity}{98}{subsection.7.4.2}
+\contentsline {section}{\numberline {7.5}Characteristics of Magnetostatic field calculation 3D}{99}{section.7.5}
+\contentsline {chapter}{\numberline {8}Smith Waterman}{102}{chapter.8}
+\contentsline {section}{\numberline {8.1}The scoring model. The BLOSUM62 matrix}{102}{section.8.1}
+\contentsline {section}{\numberline {8.2}Smith-Waterman Local alignment method }{104}{section.8.2}
+\contentsline {section}{\numberline {8.3}Simulation and Test}{104}{section.8.3}
+\contentsline {subsection}{\numberline {8.3.1}Phase 1-sub\_matr\_and\_gap\_load }{107}{subsection.8.3.1}
+\contentsline {subsection}{\numberline {8.3.2}Phase 2- s\_w\_computation}{113}{subsection.8.3.2}
+\contentsline {subsection}{\numberline {8.3.3}Phase 3- output\_writing}{117}{subsection.8.3.3}
+\contentsline {chapter}{\numberline {9}Singular Value Decomposition}{119}{chapter.9}
+\contentsline {section}{\numberline {9.1}Example of a SVD computation}{119}{section.9.1}
+\contentsline {section}{\numberline {9.2}Difficulties for the SVD in ASIC}{122}{section.9.2}
+\contentsline {chapter}{Bibliography}{123}{chapter*.74}

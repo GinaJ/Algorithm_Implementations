@@ -1,7 +1,7 @@
 \chapter{Singular Value Decomposition}
 \section{Example of a SVD computation}
 
-We have the matrix C as:
+For simplicity, we compute the SVD of a 2x2 matrix C:
 \begin{center}
 	$ 
 	C=\begin{bmatrix}
@@ -99,7 +99,11 @@ Now we can do the same steps for the second eingenvector
 		18  &  -6\\
 	\end{bmatrix}\begin{bmatrix}v_{2,1}\\v_{2,2}\end{bmatrix}=0  $
 \end{center}
-
+\begin{center}
+	
+	$ \begin{cases} -54\cdot v_{2,1}+18 \cdot v_{2,2}=0 \\
+	18\cdot v_{2,1} -6 \cdot v_{2,2}=0 \end{cases} $
+\end{center}
 \begin{center}
 	$  v_2=\begin{bmatrix}
 	1\\
@@ -152,3 +156,44 @@ To find $U$, we have to decompose $\begin{bmatrix}
 -\sqrt{10} & 2\sqrt{10}\\
 \sqrt{10} &	2\sqrt{10}
 \end{bmatrix}$ as the product of $U$ and $\Sigma$
+
+\begin{center}
+	 $\begin{bmatrix}
+	 -\sqrt{10} & 2\sqrt{10}\\
+	 \sqrt{10} &	2\sqrt{10}
+	 \end{bmatrix}= \begin{bmatrix}
+	 	u_{1,1} & u_{1,2} \\
+	 	u_{2,1} & u_{2,2}
+	 \end{bmatrix}\begin{bmatrix}
+	 2\sqrt{5} & 0\\
+	 0 & 4\sqrt{5}
+	 \end{bmatrix}$\\
+\end{center}
+If we split the matrix, we obtain
+\begin{center}
+	
+	$ -\sqrt{10}=	u_{1,1} \cdot 2\sqrt{5} + u_{1,2} \cdot 0$\quad $ \Longrightarrow $ \quad $ 	u_{1,1}=-\frac{1}{\sqrt{2}} $\\
+	
+	$2\sqrt{10}=	u_{1,1} \cdot 0 + u_{1,2} \cdot 4\sqrt{5}$\quad $ \Longrightarrow $ \quad $ 	u_{1,2}=\frac{1}{\sqrt{2}} $\\
+	
+	$ \sqrt{10}=	u_{2,1} \cdot 2\sqrt{5} + u_{2,2} \cdot 0$\quad $ \Longrightarrow $ \quad $ 	u_{2,1}=\frac{1}{\sqrt{2}} $\\
+	
+	$2\sqrt{10}=	u_{2,1} \cdot 0 + u_{2,2} \cdot 4\sqrt{5}$\quad $ \Longrightarrow $ \quad $ 	u_{2,2}=\frac{1}{\sqrt{2}} $\\
+\end{center}
+
+Then finally 
+
+\begin{center}
+	$ U=\begin{bmatrix}
+	\frac{-1}{\sqrt{2}} & \frac{1}{\sqrt{2}}\\
+	\frac{1}{\sqrt{2}} & \frac{1}{\sqrt{2}}
+	\end{bmatrix} $
+\end{center}
+\section{Difficulties for the SVD in ASIC}
+As you can see in the example above, the SVD is a complex algorithm. I had some problems in designing it in ASIC especially for a generic matrix $ nxn $.
+In order we have
+\begin{itemize}
+	\item \textbf{Determinant}, find the determinant requires times and memory. Greater the dimension of the matrix, harder the computation of the determinant.
+	\item \textbf{Eigenvalues} assuming we have find the Characteristic polynomial of the matrix, we will have a polynomial equation of degree $ n $, and we have to find $ n $ solutions of this polynomial in hardware.
+	\item \textbf{Eigenvectors} assuming we have all the $ n $ eigenvalues, for each of the we have to solve a system of $n$ equations with $n$ variables. In total there will be $n^2$ equations to be solved.
+\end{itemize}
