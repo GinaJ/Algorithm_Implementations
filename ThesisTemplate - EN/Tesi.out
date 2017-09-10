@@ -68,4 +68,18 @@
 \BOOKMARK [0][]{chapter.9}{Singular Value Decomposition}{}% 68
 \BOOKMARK [1][]{section.9.1}{Example of a SVD computation}{chapter.9}% 69
 \BOOKMARK [1][]{section.9.2}{Difficulties for the SVD in ASIC}{chapter.9}% 70
-\BOOKMARK [0][]{chapter*.76}{Bibliography}{}% 71
+\BOOKMARK [0][]{chapter.10}{Synthesis Results}{}% 71
+\BOOKMARK [1][]{section.10.1}{Integral Image}{chapter.10}% 72
+\BOOKMARK [1][]{section.10.2}{Discrete Cosine Transformation}{chapter.10}% 73
+\BOOKMARK [2][]{subsection.10.2.1}{DCT pipelined}{section.10.2}% 74
+\BOOKMARK [2][]{subsection.10.2.2}{DCT not pipelined}{section.10.2}% 75
+\BOOKMARK [2][]{subsection.10.2.3}{LLM DCT}{section.10.2}% 76
+\BOOKMARK [1][]{section.10.3}{Binomial Filter}{chapter.10}% 77
+\BOOKMARK [2][]{subsection.10.3.1}{Binomial Filter v1}{section.10.3}% 78
+\BOOKMARK [2][]{subsection.10.3.2}{Binomial Filter v2}{section.10.3}% 79
+\BOOKMARK [1][]{section.10.4}{FIR}{chapter.10}% 80
+\BOOKMARK [1][]{section.10.5}{Transport Equation Problem}{chapter.10}% 81
+\BOOKMARK [1][]{section.10.6}{Magnetostatic field calculation 3D}{chapter.10}% 82
+\BOOKMARK [0][]{chapter.11}{Thessa tool}{}% 83
+\BOOKMARK [1][]{section.11.1}{Analysis on the Binomial filter algorithm}{chapter.11}% 84
+\BOOKMARK [0][]{chapter*.77}{Bibliography}{}% 85

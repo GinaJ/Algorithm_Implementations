@@ -69,4 +69,18 @@
 \contentsline {chapter}{\numberline {9}Singular Value Decomposition}{120}{chapter.9}
 \contentsline {section}{\numberline {9.1}Example of a SVD computation}{120}{section.9.1}
 \contentsline {section}{\numberline {9.2}Difficulties for the SVD in ASIC}{123}{section.9.2}
-\contentsline {chapter}{Bibliography}{124}{chapter*.76}
+\contentsline {chapter}{\numberline {10}Synthesis Results}{124}{chapter.10}
+\contentsline {section}{\numberline {10.1}Integral Image}{124}{section.10.1}
+\contentsline {section}{\numberline {10.2}Discrete Cosine Transformation}{125}{section.10.2}
+\contentsline {subsection}{\numberline {10.2.1}DCT pipelined}{126}{subsection.10.2.1}
+\contentsline {subsection}{\numberline {10.2.2}DCT not pipelined}{127}{subsection.10.2.2}
+\contentsline {subsection}{\numberline {10.2.3}LLM DCT}{128}{subsection.10.2.3}
+\contentsline {section}{\numberline {10.3}Binomial Filter}{129}{section.10.3}
+\contentsline {subsection}{\numberline {10.3.1}Binomial Filter v1}{129}{subsection.10.3.1}
+\contentsline {subsection}{\numberline {10.3.2}Binomial Filter v2}{130}{subsection.10.3.2}
+\contentsline {section}{\numberline {10.4}FIR}{131}{section.10.4}
+\contentsline {section}{\numberline {10.5}Transport Equation Problem}{132}{section.10.5}
+\contentsline {section}{\numberline {10.6}Magnetostatic field calculation 3D}{133}{section.10.6}
+\contentsline {chapter}{\numberline {11}Thessa tool}{135}{chapter.11}
+\contentsline {section}{\numberline {11.1}Analysis on the Binomial filter algorithm}{135}{section.11.1}
+\contentsline {chapter}{Bibliography}{138}{chapter*.77}
