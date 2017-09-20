@@ -77,9 +77,9 @@
 \contentsline {figure}{\numberline {8.13}{\ignorespaces Loading into all PEs the extension gap penalty which value is -1\relax }}{116}{figure.caption.71}
 \contentsline {figure}{\numberline {8.14}{\ignorespaces Section of the database file to be loaded in this testbench\relax }}{117}{figure.caption.72}
 \contentsline {figure}{\numberline {8.15}{\ignorespaces scanning the list of aminoacid (\textit {aa\_code\_s}) of the first protein while computing the Maximum Alignment Score \relax }}{118}{figure.caption.73}
-\contentsline {figure}{\numberline {8.16}{\ignorespaces Computing the Maximum Alignment Score (149) for the first protein \relax }}{119}{figure.caption.74}
+\contentsline {figure}{\numberline {8.16}{\ignorespaces Computing the Maximum Alignment Score (\textit {out\_max\_i\_j\_s} = 149) for the first protein \relax }}{119}{figure.caption.74}
 \contentsline {figure}{\numberline {8.17}{\ignorespaces In the first row of \textit {out\_id\_subj\_and\_max\_i\_j.txt} file we can see that the first protein has 149 as Maximum Alignment Score\relax }}{119}{figure.caption.75}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {11.1}{\ignorespaces \relax }}{137}{figure.caption.76}
+\contentsline {figure}{\numberline {11.1}{\ignorespaces \relax }}{138}{figure.caption.76}

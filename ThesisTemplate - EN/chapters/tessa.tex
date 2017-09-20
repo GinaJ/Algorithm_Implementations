@@ -85,4 +85,4 @@ We obtain the following graph where each number represent a single instruction (
 	} 
 	\label{pdg}
 \end{figure}
-The SCC and the instructions linked in red lines have to be performed sequentially.
+The instruction in the SCC (Strongly Connected Components) have to be performed sequentially in the same core, while the instructions linked in red lines (strong data dependencies) have can be performed sequentially in pipeline. The instructions in dot red line shows a weak data dependencies.
