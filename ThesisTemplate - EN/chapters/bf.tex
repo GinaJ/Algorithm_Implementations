@@ -15,7 +15,7 @@ The first  odd sized serie is:
 \end{center}
  this form the basis for the 3x3 binomial filter. \\
  The weights of the binomial filter are biggest at the center and taper down towards the outer areas of the neighborhood. \\ 
- To create the 2D low pass binomial filter, we have to form the outer product of the row with its corresponding column. In simple terms take the row and multiply each element in it by the first value in the row. Then take the row and multiply each element in it by the second value in the row. Repeat this until we have multiplied the row by every element in the row. Then stack each of these resulting rows to make a square table or matrix. \\
+ To create the 2D low pass binomial filter, we have to form the outer product of the row with its corresponding column. In simple terms take the row and multiply each element in it by the first value in the row. Then take the row and multiply each element in it by the second value in the row. Repeat this until we have multiplied the row by every element in the row. Then stack each of these resulting rows to make a square table or matrix. \cite{bf1}\\
  For example, the 3x3 matrix is generated as 
    \begin{center}
    	$ \begin{bmatrix}1\\ 2 \\ 1 \end{bmatrix} \cdot

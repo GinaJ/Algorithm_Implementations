@@ -58,7 +58,7 @@ To compute the total magnetostatic energy, the ferromagnetic systems can be disc
      \begin{center}
      	$ \overrightarrow{h}(i-i',j-j',k-k^*)$\quad \quad $ \forall i'<N_x,$\quad $ j'<N_y,$ \qquad $ k=k^* $\\
      	   \end{center}
-     	   which can be also seen as	$ \overrightarrow{h}(i-i',j-j',k-k^*)$ can be computed as
+     	   which can be also seen as	$ \overrightarrow{h}(i-i',j-j',k-k^*)$ and can be computed as
      	      \begin{center}
      	$ \begin{bmatrix}
      	TG_{xx} & TG_{xy} & TG_{xz}\\
@@ -163,7 +163,7 @@ For simplicity, we test the behaviour of a parallelepiped which base is 2x2 and 
 	\label{tb_3d_top}
 \end{figure}
 As we can see in the fig. \ref{tb_3d_top}, in the first 3 clock cycles we see the input   $m_x$, $ my$, $mz $ (\textit{tb\_tg\_top\_2d/dut/tg\_logic/input} signal) of each of the 4 cells of the first plane.\\
-In the next 9 clock cycles we have all the $ tg_{..,..} $ values (\textit{tb\_tg\_top\_2d/dut/tg\_logic/input}). When we have the required input we can compute the output value $ h_x $, $ h_y $, $ h_z $ of each cell (\textit{tb\_tg\_top\_2d/dut/tg\_logic/output},  $ h_x $ at 23 ns, $ h_y $ at 29 ns, $ h_z $ at 35). To better understand the FSM see the testbench of a single cell (\ref{tb_cell_3d}), the only difference is that now we have 4 cells (2x2 matrix) computing in parallel.\\
+In the next 9 clock cycles we have all the 9 values of the  \textbf{TG}  matrix (\textit{tb\_tg\_top\_2d/dut/tg\_logic/input} signal). When we have the required input we can compute the output value $ h_x $, $ h_y $, $ h_z $ of each cell (in the signal \textit{tb\_tg\_top\_2d/dut/tg\_logic/output} we have  $ h_x $ at 23 ns, $ h_y $ at 29 ns, $ h_z $ at 35). To better understand the FSM see the testbench of a single cell (\ref{tb_cell_3d}), the only difference is that now we have 4 cells (2x2 matrix) computing in parallel.\\
 When we have all the cells $ h_x $, $ h_y $, $ h_z $ values, we can compute the  $ H_x $, $ H_y $, $ H_z $ of the plane. In the figure \ref{tb_3d_top}, at 25 ns we have the $H_x$ value of the first plane which is given by the sum of the $h_x$ values computed by the cells (32+24+54+0=110). Same thing for $H_y$ and $H_z$.\\
 Without doing any more tedious calculations, we can see in fig. \ref{tb_3d_acc} that we accumulate the $ H_x $, $H_y$, $H_z$ values of each plane in order to get the final value\textbf{  $ \overrightarrow{H} $ } of the whole parallelepiped.
 \begin{figure}[h]

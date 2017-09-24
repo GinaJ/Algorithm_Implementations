@@ -8,12 +8,34 @@ decomposition for a given matrix $ A $ if
 \item $ A=U\Sigma V^T $
 \end{itemize}
 One application of the SVD is data compression. Consider some matrix $ A $ with rank five hundred; that is, the columns of this matrix span a 500-dimensional space. Encoding this matrix on a computer is going to take quite a lot of memory! We might be interested in approximating this matrix with one of lower rank. How close can we get to this matrix if we only approximate it as a matrix with rank one hundred, so that we only have to store a hundred columns?\\
-It turns out that you can prove that taking the $ n $ largest singular values $ A $, replacing the rest with zero (to form $ \Sigma $), and recomputing $U\Sigma V^T $ gives you the provably best $ n $-rank approximation to the matrix.
+It turns out that you can prove that taking the $ n $ largest singular values $ A $, replacing the rest with zero (to form $ \Sigma $), and recomputing $U\Sigma V^T $ gives you the provably best $ n $-rank approximation to the matrix. \cite{svdintro}
 
 
-It means that we can take a list of RR unique vectors, and approximate them as a linear combination of KK unique vectors.
+It means that we can take a list of $ n $ unique vectors, and approximate them as a linear combination of $ k $ unique vectors.\cite{svdquora}
 
-https://www.quora.com/What-is-an-intuitive-explanation-of-singular-value-decomposition-SVD
+
+  
+    \begin{figure}[h!]
+    	\centering
+    	\includegraphics[width=0.75\textwidth]{imm/svd/10vectors.png} 	\caption{Image made of k=10 unique row vectors
+    	} 
+    	\label{k10}
+    \end{figure}
+    
+      \begin{figure}[h!]
+      	\centering
+      	\includegraphics[width=0.75\textwidth]{imm/svd/50vettori.png} 	\caption{Image made of k=50 unique row vectors
+      	} 
+      	\label{k50}
+      \end{figure}
+      
+        \begin{figure}[h!]
+        	\centering
+        	\includegraphics[width=0.75\textwidth]{imm/svd/400vettori.png} 	\caption{Image made of 400 unique row vectors
+        	} 
+        	\label{k400}
+        \end{figure}
+      \clearpage
 \section{Example of a SVD computation}
 
 For simplicity, we compute the SVD of a 2x2 matrix C:

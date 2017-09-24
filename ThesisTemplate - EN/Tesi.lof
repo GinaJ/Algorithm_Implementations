@@ -1,85 +1,88 @@
 \select@language {english}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces SAT of a single cell\relax }}{4}{figure.caption.4}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Schematic of the SAT of a 1D array\relax }}{5}{figure.caption.5}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces SAT of a 1D array with some values\relax }}{6}{figure.caption.6}
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Subdivision in 2x2 matrices\relax }}{7}{figure.caption.7}
-\contentsline {figure}{\numberline {2.5}{\ignorespaces SAT of a 2x2 matrix\relax }}{8}{figure.caption.8}
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Step 2-Initial state of a 4x4 matrix\relax }}{8}{figure.caption.9}
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Step 2-Sum vertically.\relax }}{9}{figure.caption.10}
-\contentsline {figure}{\numberline {2.8}{\ignorespaces Step 2-Sum horizonatlly.\relax }}{9}{figure.caption.11}
-\contentsline {figure}{\numberline {2.9}{\ignorespaces Step 3-Sum vertically.\relax }}{10}{figure.caption.12}
-\contentsline {figure}{\numberline {2.10}{\ignorespaces Step 3-Sum horizonatlly.\relax }}{10}{figure.caption.13}
-\contentsline {figure}{\numberline {2.11}{\ignorespaces Scheme of the SAT algorithm's imlementation.\relax }}{12}{figure.caption.14}
-\contentsline {figure}{\numberline {2.12}{\ignorespaces Integral Image-Results of the simulation\relax }}{13}{figure.caption.15}
-\contentsline {figure}{\numberline {2.13}{\ignorespaces Integral Image-Checking with MATLAB\relax }}{16}{figure.caption.16}
-\contentsline {figure}{\numberline {2.14}{\ignorespaces Scheme of the inclusive scan algorithm\relax }}{17}{figure.caption.17}
-\contentsline {figure}{\numberline {2.15}{\ignorespaces Parallel Balnced Tree Algorithm for a 1D array\relax }}{18}{figure.caption.18}
-\contentsline {figure}{\numberline {2.16}{\ignorespaces Graphics representation of the architecture 2.0: the yellow pyramid represent the 3D pipeline of smart memories whereas the blue layer represent the programmable logic layer.\relax }}{20}{figure.caption.19}
-\contentsline {figure}{\numberline {2.17}{\ignorespaces Structure of the LIM. The green layer represent the logic and is composed of 81 ALUs communicating each one with every brick of the bottom layer (red); the blue layer represent the upper plane and is composed of 9 bricks, one every 9 bricks of the bottom layer. Only the pillars of the bottom layer can communicate with the upper layer; only the pillar of the upper layer can exchange data with the outside. \relax }}{21}{figure.caption.20}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces SAT of a single cell\relax }}{3}{figure.caption.4}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Schematic of the SAT of a 1D array\relax }}{4}{figure.caption.5}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces SAT of a 1D array with some values\relax }}{5}{figure.caption.6}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Subdivision in 2x2 matrices\relax }}{6}{figure.caption.7}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces SAT of a 2x2 matrix\relax }}{7}{figure.caption.8}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Step 2-Initial state of a 4x4 matrix\relax }}{7}{figure.caption.9}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Step 2-Sum vertically.\relax }}{8}{figure.caption.10}
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Step 2-Sum horizonatlly.\relax }}{8}{figure.caption.11}
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Step 3-Sum vertically.\relax }}{9}{figure.caption.12}
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Step 3-Sum horizonatlly.\relax }}{9}{figure.caption.13}
+\contentsline {figure}{\numberline {2.11}{\ignorespaces Scheme of the SAT algorithm's imlementation.\relax }}{11}{figure.caption.14}
+\contentsline {figure}{\numberline {2.12}{\ignorespaces Integral Image-Results of the simulation\relax }}{12}{figure.caption.15}
+\contentsline {figure}{\numberline {2.13}{\ignorespaces Integral Image-Checking with MATLAB\relax }}{15}{figure.caption.16}
+\contentsline {figure}{\numberline {2.14}{\ignorespaces Scheme of the inclusive scan algorithm\relax }}{16}{figure.caption.17}
+\contentsline {figure}{\numberline {2.15}{\ignorespaces Parallel Balnced Tree Algorithm for a 1D array\relax }}{17}{figure.caption.18}
+\contentsline {figure}{\numberline {2.16}{\ignorespaces Graphics representation of the architecture 2.0: the yellow pyramid represent the 3D pipeline of smart memories whereas the blue layer represent the programmable logic layer.\relax }}{19}{figure.caption.19}
+\contentsline {figure}{\numberline {2.17}{\ignorespaces Structure of the LIM. The green layer represent the logic and is composed of 81 ALUs communicating each one with every brick of the bottom layer (red); the blue layer represent the upper plane and is composed of 9 bricks, one every 9 bricks of the bottom layer. Only the pillars of the bottom layer can communicate with the upper layer; only the pillar of the upper layer can exchange data with the outside. \relax }}{20}{figure.caption.20}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Implementation of DCT algorithm\relax }}{30}{figure.caption.21}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Discrete cosine transform-Results of the simulation\relax }}{31}{figure.caption.22}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces DCT result in MATLAB\relax }}{33}{figure.caption.23}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces A generic figure of a systolic array; it is possible to notice the presence of parallel inputs and parallel outputs. Data are taken from the memory, eleborated along the multiple paths of FUs and then stored again in the memory. \relax }}{34}{figure.caption.24}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Implementation of DCT algorithm in a systolic array architecture\relax }}{35}{figure.caption.25}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Processing element structure\relax }}{36}{figure.caption.26}
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Results of the DCT in a systolic array architecture\relax }}{37}{figure.caption.27}
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Check results in MATLAB for systolic array architecture\relax }}{38}{figure.caption.28}
-\contentsline {figure}{\numberline {3.9}{\ignorespaces LLM DCT for an 8-point with 17 multiplications. For symbols, see figure \ref {dct8_scheme}\relax }}{45}{figure.caption.29}
-\contentsline {figure}{\numberline {3.10}{\ignorespaces Symbols used to describe the LLM DCT for an 8-point with 17 multiplications (fig.\ref {dct8})\relax }}{46}{figure.caption.30}
-\contentsline {figure}{\numberline {3.11}{\ignorespaces LLM 8-point Discrete cosine transform-Results of the simulation\relax }}{47}{figure.caption.31}
-\contentsline {figure}{\numberline {3.12}{\ignorespaces LLM 8-point DCT result in MATLAB\relax }}{48}{figure.caption.32}
-\contentsline {figure}{\numberline {3.13}{\ignorespaces DFG for a rotation block\relax }}{50}{figure.caption.33}
-\contentsline {figure}{\numberline {3.14}{\ignorespaces Critical path for each output element\relax }}{51}{figure.caption.34}
-\contentsline {figure}{\numberline {3.15}{\ignorespaces Order-16 LLM fast DCT algorithm\relax }}{52}{figure.caption.35}
-\contentsline {figure}{\numberline {3.16}{\ignorespaces Fast algorithm for the forward order-32 integer transform with the fast algorithms for the forward order-4, order-8, and order-16 integer transforms embedded. \relax }}{56}{figure.caption.36}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Implementation of DCT algorithm\relax }}{29}{figure.caption.21}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Discrete cosine transform-Results of the simulation\relax }}{30}{figure.caption.22}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces DCT result in MATLAB\relax }}{32}{figure.caption.23}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces A generic figure of a systolic array; it is possible to notice the presence of parallel inputs and parallel outputs. Data are taken from the memory, eleborated along the multiple paths of FUs and then stored again in the memory. \relax }}{33}{figure.caption.24}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Implementation of DCT algorithm in a systolic array architecture\relax }}{34}{figure.caption.25}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Processing element structure\relax }}{35}{figure.caption.26}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Results of the DCT in a systolic array architecture\relax }}{36}{figure.caption.27}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Check results in MATLAB for systolic array architecture\relax }}{37}{figure.caption.28}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces LLM DCT for an 8-point with 17 multiplications. For symbols, see figure \ref {dct8_scheme}\relax }}{44}{figure.caption.29}
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Symbols used to describe the LLM DCT for an 8-point with 17 multiplications (fig.\ref {dct8})\relax }}{45}{figure.caption.30}
+\contentsline {figure}{\numberline {3.11}{\ignorespaces LLM 8-point Discrete cosine transform-Results of the simulation\relax }}{46}{figure.caption.31}
+\contentsline {figure}{\numberline {3.12}{\ignorespaces LLM 8-point DCT result in MATLAB\relax }}{47}{figure.caption.32}
+\contentsline {figure}{\numberline {3.13}{\ignorespaces DFG for a rotation block\relax }}{49}{figure.caption.33}
+\contentsline {figure}{\numberline {3.14}{\ignorespaces Critical path for each output element\relax }}{50}{figure.caption.34}
+\contentsline {figure}{\numberline {3.15}{\ignorespaces Order-16 LLM fast DCT algorithm\relax }}{51}{figure.caption.35}
+\contentsline {figure}{\numberline {3.16}{\ignorespaces Fast algorithm for the forward order-32 integer transform with the fast algorithms for the forward order-4, order-8, and order-16 integer transforms embedded. \relax }}{55}{figure.caption.36}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Binomial Filter for a generic cell\relax }}{59}{figure.caption.37}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Weighted sum for three consecutive cells\relax }}{60}{figure.caption.38}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces First part of the binomial filter HW implementation\relax }}{61}{figure.caption.39}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Weighted sum for 3x3 cells\relax }}{62}{figure.caption.40}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Weighted sum for all 3x3 cells\relax }}{63}{figure.caption.41}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Binomial Filter, second implemetation\relax }}{64}{figure.caption.42}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Binomial Filter-Results of the simulation type 1\relax }}{65}{figure.caption.43}
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Binomial Filter-Results of the simulation type 2\relax }}{67}{figure.caption.44}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Binomial Filter for a generic cell\relax }}{58}{figure.caption.37}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Weighted sum for three consecutive cells\relax }}{59}{figure.caption.38}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces First part of the binomial filter HW implementation\relax }}{60}{figure.caption.39}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Weighted sum for 3x3 cells\relax }}{61}{figure.caption.40}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Weighted sum for all 3x3 cells\relax }}{62}{figure.caption.41}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Binomial Filter, second implemetation\relax }}{63}{figure.caption.42}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Binomial Filter-Results of the simulation type 1\relax }}{64}{figure.caption.43}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Binomial Filter-Results of the simulation type 2\relax }}{66}{figure.caption.44}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Cascading D Flip Flops\relax }}{76}{figure.caption.45}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces FIR hardware implementation\relax }}{76}{figure.caption.46}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces FIR's simulation\relax }}{77}{figure.caption.47}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Cascading D Flip Flops\relax }}{75}{figure.caption.45}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces FIR hardware implementation\relax }}{75}{figure.caption.46}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces FIR's simulation\relax }}{76}{figure.caption.47}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Grid for the Transport equation Problem\relax }}{82}{figure.caption.48}
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Transport Equation Problem for a single cell\relax }}{83}{figure.caption.49}
-\contentsline {figure}{\numberline {6.3}{\ignorespaces Propagarting the values to the boundary\relax }}{84}{figure.caption.50}
-\contentsline {figure}{\numberline {6.4}{\ignorespaces Tep\_unit DFG\relax }}{85}{figure.caption.51}
-\contentsline {figure}{\numberline {6.5}{\ignorespaces Transport Equation Problem's simulation\relax }}{86}{figure.caption.52}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Grid for the Transport equation Problem\relax }}{81}{figure.caption.48}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Transport Equation Problem for a single cell\relax }}{82}{figure.caption.49}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Propagarting the values to the boundary\relax }}{82}{figure.caption.50}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Tep\_unit DFG\relax }}{84}{figure.caption.51}
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Transport Equation Problem's simulation\relax }}{85}{figure.caption.52}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {7.1}{\ignorespaces The selected cell is supposed to sum all the magnetostatic field contributions between it and all the other cells\relax }}{92}{figure.caption.53}
-\contentsline {figure}{\numberline {7.2}{\ignorespaces Magnetostatic field of each cell in a given plane\relax }}{94}{figure.caption.54}
-\contentsline {figure}{\numberline {7.3}{\ignorespaces The phases of a single cell\relax }}{96}{figure.caption.55}
-\contentsline {figure}{\numberline {7.4}{\ignorespaces Testbench of a single cell\relax }}{97}{figure.caption.56}
-\contentsline {figure}{\numberline {7.5}{\ignorespaces Testbench of the top entity - first plane\relax }}{98}{figure.caption.57}
-\contentsline {figure}{\numberline {7.6}{\ignorespaces Testbench of the top entity - whole parallelepiped\relax }}{99}{figure.caption.58}
+\contentsline {figure}{\numberline {7.1}{\ignorespaces The selected cell is supposed to sum all the magnetostatic field contributions between it and all the other cells\relax }}{91}{figure.caption.53}
+\contentsline {figure}{\numberline {7.2}{\ignorespaces Magnetostatic field of each cell in a given plane\relax }}{93}{figure.caption.54}
+\contentsline {figure}{\numberline {7.3}{\ignorespaces The phases of a single cell\relax }}{95}{figure.caption.55}
+\contentsline {figure}{\numberline {7.4}{\ignorespaces Testbench of a single cell\relax }}{96}{figure.caption.56}
+\contentsline {figure}{\numberline {7.5}{\ignorespaces Testbench of the top entity - first plane\relax }}{97}{figure.caption.57}
+\contentsline {figure}{\numberline {7.6}{\ignorespaces Testbench of the top entity - whole parallelepiped\relax }}{98}{figure.caption.58}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {8.1}{\ignorespaces Alignments with matching, substitution, insertion and deletion. \relax }}{103}{figure.caption.59}
-\contentsline {figure}{\numberline {8.2}{\ignorespaces The BLOSUM62 substitution matrix.\relax }}{104}{figure.caption.60}
-\contentsline {figure}{\numberline {8.3}{\ignorespaces Phases of the testbench\relax }}{106}{figure.caption.61}
-\contentsline {figure}{\numberline {8.4}{\ignorespaces Main flow chart of \textit {systolic\_array\_tb.vhd} testbench. In blue the testbench name, in red the processes name\relax }}{107}{figure.caption.62}
-\contentsline {figure}{\numberline {8.5}{\ignorespaces Phase 1 of the testbench\relax }}{108}{figure.caption.63}
-\contentsline {figure}{\numberline {8.6}{\ignorespaces Amino acid encoding \relax }}{110}{figure.caption.64}
-\contentsline {figure}{\numberline {8.7}{\ignorespaces S-W systolic array initialized with the Substitutional matrix columns: in each PE of the systolic array is stored the column that corresponds to the associated Qry amino acid.\relax }}{111}{figure.caption.65}
-\contentsline {figure}{\numberline {8.8}{\ignorespaces Loading into the 17-PE the Substitutional matrix column associated to the amino acid 'A'\relax }}{112}{figure.caption.66}
-\contentsline {figure}{\numberline {8.9}{\ignorespaces Loading into the 19-PE the Substitutional matrix column associated to the amino acid 'R'\relax }}{113}{figure.caption.67}
-\contentsline {figure}{\numberline {8.10}{\ignorespaces Loading into the 5, 6, 12, 22, 27-PEs the Substitutional matrix column associated to the amino acid 'D'\relax }}{114}{figure.caption.68}
-\contentsline {figure}{\numberline {8.11}{\ignorespaces Loading into the 8-PEs the Substitutional matrix column associated to the amino acid 'V'. On the right side, we see that we start to load the open gap penalty.\relax }}{115}{figure.caption.69}
-\contentsline {figure}{\numberline {8.12}{\ignorespaces Loading into all PEs the open gap penalty which value is -10\relax }}{115}{figure.caption.70}
-\contentsline {figure}{\numberline {8.13}{\ignorespaces Loading into all PEs the extension gap penalty which value is -1\relax }}{116}{figure.caption.71}
-\contentsline {figure}{\numberline {8.14}{\ignorespaces Section of the database file to be loaded in this testbench\relax }}{117}{figure.caption.72}
-\contentsline {figure}{\numberline {8.15}{\ignorespaces scanning the list of aminoacid (\textit {aa\_code\_s}) of the first protein while computing the Maximum Alignment Score \relax }}{118}{figure.caption.73}
-\contentsline {figure}{\numberline {8.16}{\ignorespaces Computing the Maximum Alignment Score (\textit {out\_max\_i\_j\_s} = 149) for the first protein \relax }}{119}{figure.caption.74}
-\contentsline {figure}{\numberline {8.17}{\ignorespaces In the first row of \textit {out\_id\_subj\_and\_max\_i\_j.txt} file we can see that the first protein has 149 as Maximum Alignment Score\relax }}{119}{figure.caption.75}
+\contentsline {figure}{\numberline {8.1}{\ignorespaces Alignments with matching, substitution, insertion and deletion. \relax }}{102}{figure.caption.59}
+\contentsline {figure}{\numberline {8.2}{\ignorespaces The BLOSUM62 substitution matrix.\relax }}{103}{figure.caption.60}
+\contentsline {figure}{\numberline {8.3}{\ignorespaces Phases of the testbench\relax }}{105}{figure.caption.61}
+\contentsline {figure}{\numberline {8.4}{\ignorespaces Main flow chart of \textit {systolic\_array\_tb.vhd} testbench. In blue the testbench name, in red the processes name\relax }}{106}{figure.caption.62}
+\contentsline {figure}{\numberline {8.5}{\ignorespaces Phase 1 of the testbench\relax }}{107}{figure.caption.63}
+\contentsline {figure}{\numberline {8.6}{\ignorespaces Amino acid encoding \relax }}{109}{figure.caption.64}
+\contentsline {figure}{\numberline {8.7}{\ignorespaces S-W systolic array initialized with the Substitutional matrix columns: in each PE of the systolic array is stored the column that corresponds to the associated Qry amino acid.\relax }}{110}{figure.caption.65}
+\contentsline {figure}{\numberline {8.8}{\ignorespaces Loading into the 17-PE the Substitutional matrix column associated to the amino acid 'A'\relax }}{111}{figure.caption.66}
+\contentsline {figure}{\numberline {8.9}{\ignorespaces Loading into the 19-PE the Substitutional matrix column associated to the amino acid 'R'\relax }}{112}{figure.caption.67}
+\contentsline {figure}{\numberline {8.10}{\ignorespaces Loading into the 5, 6, 12, 22, 27-PEs the Substitutional matrix column associated to the amino acid 'D'\relax }}{113}{figure.caption.68}
+\contentsline {figure}{\numberline {8.11}{\ignorespaces Loading into the 8-PEs the Substitutional matrix column associated to the amino acid 'V'. On the right side, we see that we start to load the open gap penalty.\relax }}{114}{figure.caption.69}
+\contentsline {figure}{\numberline {8.12}{\ignorespaces Loading into all PEs the open gap penalty which value is -10\relax }}{114}{figure.caption.70}
+\contentsline {figure}{\numberline {8.13}{\ignorespaces Loading into all PEs the extension gap penalty which value is -1\relax }}{115}{figure.caption.71}
+\contentsline {figure}{\numberline {8.14}{\ignorespaces Section of the database file to be loaded in this testbench\relax }}{116}{figure.caption.72}
+\contentsline {figure}{\numberline {8.15}{\ignorespaces scanning the list of aminoacid (\textit {aa\_code\_s}) of the first protein while computing the Maximum Alignment Score \relax }}{117}{figure.caption.73}
+\contentsline {figure}{\numberline {8.16}{\ignorespaces Computing the Maximum Alignment Score (\textit {out\_max\_i\_j\_s} = 149) for the first protein \relax }}{118}{figure.caption.74}
+\contentsline {figure}{\numberline {8.17}{\ignorespaces In the first row of \textit {out\_id\_subj\_and\_max\_i\_j.txt} file we can see that the first protein has 149 as Maximum Alignment Score\relax }}{118}{figure.caption.75}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {9.1}{\ignorespaces Image made of 400 unique row vectors \relax }}{120}{figure.caption.76}
+\contentsline {figure}{\numberline {9.2}{\ignorespaces Image made of k=10 unique row vectors \relax }}{121}{figure.caption.77}
+\contentsline {figure}{\numberline {9.3}{\ignorespaces Image made of k=50 unique row vectors \relax }}{122}{figure.caption.78}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {11.1}{\ignorespaces \relax }}{138}{figure.caption.76}
+\contentsline {figure}{\numberline {11.1}{\ignorespaces \relax }}{141}{figure.caption.79}

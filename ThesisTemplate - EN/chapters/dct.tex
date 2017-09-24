@@ -1,6 +1,6 @@
 \chapter{Discrete cosine transform} \label{DCT}
-A discrete cosine transform (DCT) expresses a finite sequence of data points in terms of a sum of cosine functions oscillating at different frequencies. DCTs are important to numerous applications in science and engineering, from lossy compression of audio (e.g. MP3) and images (e.g. JPEG).
-The DCT is often used in signal and image processing, especially for lossy compression, because it has a strong "energy compaction" property: in typical applications, most of the signal information tends to be concentrated in a few low-frequency components of the DCT.
+A discrete cosine transform (DCT) expresses a finite sequence of data points in terms of a sum of cosine functions oscillating at different frequencies. DCTs are important to numerous applications in science and engineering, from lossy compression of audio (e.g. MP3) and images (e.g. JPEG). 
+The DCT is often used in signal and image processing, especially for lossy compression, because it has a strong "energy compaction" property: in typical applications, most of the signal information tends to be concentrated in a few low-frequency components of the DCT. \cite{dct0}
 
 There are different variations of the discrete cosine transform, but the most common one is the "DCT-II" which is also used in JPEG image compression and by MATLAB \circledR:
 
@@ -194,7 +194,7 @@ We see that it differs from the Matlab result by a value in the order of 1/100. 
 A systolic array can be seen as a homogeneous network of funtional units (called also \textbf{nodes} or \textit{Data Processing Units (DPU)}) which elaborate data and exchange them with their neighbours following a flow; in particular each FU receives the data from its upstream FU, elaborates it and passes it downstream. 
 Each FU is indipendent from the others and executes only one operation over a huge amount of data; for this reason, systolic arrays are classified as SIMD (single instruction, multiple data) architectures. 
 The particular name ("systolic") derives from the fact that inside the array there is a continuous flow of data propagating from a FU to the next one resembling the flow of the blood in the human body.
-Usually, systolic arrays cannot be programmed and for this reason the circuit has to be designed $ ad-hoc $. This kind of structure is made of simple FUs which usually implement a simple operation (addition, multiplication, ecc..) and that have a very small memory capability. The main purpose of each node is to compute a data and send it to the next FU following the flow. 
+Usually, systolic arrays cannot be programmed and for this reason the circuit has to be designed $ ad-hoc $. This kind of structure is made of simple FUs which usually implement a simple operation (addition, multiplication, ecc..) and that have a very small memory capability. The main purpose of each node is to compute a data and send it to the next FU following the flow. \cite{dct2}
 
 \begin{figure}[h!]
 	\centering	
@@ -205,7 +205,7 @@ Usually, systolic arrays cannot be programmed and for this reason the circuit ha
 \end{figure}
 \clearpage
  \subsection{Comparison with systolic array implementation}  \label{DCTSA}
- The DCT has been implemented in a systolic array architecture with the following structure (Fig \ref{fig:dct_sa1})
+ The DCT has been implemented in a systolic array architecture \cite{dct2} with the following structure (Fig \ref{fig:dct_sa1})
  
  \begin{figure}[h!]
  	\centering
@@ -333,7 +333,7 @@ Usually, systolic arrays cannot be programmed and for this reason the circuit ha
    \end{tabular}\vspace{14pt}\\
    \clearpage
    \section{LLM DCT}
-   There's a faster DCT algorithm, sometimes called LLM for its authors: Loeffler, Ligtenberg, and Moschytz.
+   There's a faster DCT algorithm, sometimes called LLM for its authors: Loeffler, Ligtenberg, and Moschytz. \cite{dct1}
    As said before (section \ref{DCT}), we use this formula for the computation of the Discrete Cosine Transformation.
    \bigskip
    
@@ -354,7 +354,7 @@ Usually, systolic arrays cannot be programmed and for this reason the circuit ha
      \bigskip
      
      It has been found that for a certain kind of matrix, we can reduce the number of multiplications.\\
-     In this work I present the algorithm for a 8-point DCT.\\
+     In this work I present the algorithm for a 8-point DCT \cite{dct1}.\\
      First of all, let's have a look to the cosine matrix.
      Setting $ \gamma(k)=cos(\frac{2\pi k}{32}) $ the 8-point DCT matrix is
      \bigskip
@@ -536,7 +536,7 @@ Usually, systolic arrays cannot be programmed and for this reason the circuit ha
           \newpage
           \subsection{High Order LLM DCT} \label{HLLM}
           Many studies has been done for the LLM architecture, and it has been theorized that the LLM can be applied for the DCT that has a size of $ 2^{n}$.\\
- Although we can see a recursive approach for the even parts at top, such as an addition/substraction, nothing can be said for the odd parts. A brute-force search is required.\\
+ Although we can see a recursive approach for the even parts at top, such as an addition/substraction, nothing can be said for the odd parts. A brute-force search is required. \cite{llm2}\\
  Fig. \ref{dct16} and fig. \ref{dct32} show an implementation for the LLM of order-16 and order-32 respectively.  
 \begin{figure}[h!]
      	\centering	

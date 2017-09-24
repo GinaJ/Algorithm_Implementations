@@ -342,7 +342,7 @@
  \subsection{Inclusive Scan algorithm}
  We perform the inclusive scan for each row and evaluate the partial sum.
  Finally we perform the inclusive scan for each column.
- Figure \ref{fig:inclusive_scan} shows an example of this implementation for a matrix 3x3.
+ Figure \ref{fig:inclusive_scan} shows an example of this implementation for a matrix 3x3. \cite{sat3}
  
    \begin{figure}[h!]
    	\centering
@@ -353,7 +353,7 @@
  
  \subsection{Balanced Trees Parallel Scan algorithm}
  For simplicity, i will explain the algorithm for a 1D-array.
- The goal is to evaluate the SAT of a single row which is also known as the prefix sum, also called cumulative sum, inclusive scan. 
+ The goal is to evaluate the SAT of a single row which is also known as the prefix sum, also called cumulative sum, inclusive scan. \cite{sat1}
  
  A prefix sum can be calculated in parallel by the following steps.
 
@@ -396,7 +396,7 @@ In the table \ref{table:iia_tab} the unit time $ t $ is the time required to get
 	\end{tabular}
 \end{center}
 \subsection{Logic-In-Memory architecture} \label{sssec:1}
-The \textit{Logic-In-Memory} is  a new architecture where logic and memory are embedded as unique entity instead of two separated ones (fig. \ref{fig:A}).
+The \textit{Logic-In-Memory} is  a new architecture where logic and memory are embedded as unique entity instead of two separated ones (fig. \ref{fig:A}). \cite{lim}
 
 The memory is made of small entities called \textit{bricks} populating two different layers: the bricks of each layer can communicate each other like in a matrix structure and only specifc bricks, called \textit{pillars}, are allowed to exchange data with the upper layer(fig. \ref{fig:B}). 
 \begin{figure}[h!]

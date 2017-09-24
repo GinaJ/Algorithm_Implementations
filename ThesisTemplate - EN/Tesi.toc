@@ -3,84 +3,83 @@
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Advantages of an ASIC based design}{1}{section.1.1}
 \contentsline {subsection}{\numberline {1.1.1}Unit cost}{1}{subsection.1.1.1}
-\contentsline {subsection}{\numberline {1.1.2}Performance}{2}{subsection.1.1.2}
+\contentsline {subsection}{\numberline {1.1.2}Performance}{1}{subsection.1.1.2}
 \contentsline {subsection}{\numberline {1.1.3}Power consumption}{2}{subsection.1.1.3}
-\contentsline {subsection}{\numberline {1.1.4}Flexibility}{3}{subsection.1.1.4}
-\contentsline {chapter}{\numberline {2}Integral Image Algorithm}{4}{chapter.2}
-\contentsline {section}{\numberline {2.1}Method used}{5}{section.2.1}
-\contentsline {section}{\numberline {2.2}Hardware Implementation}{7}{section.2.2}
-\contentsline {section}{\numberline {2.3}Pipelined Implementation}{11}{section.2.3}
-\contentsline {section}{\numberline {2.4}Simulation and Test}{13}{section.2.4}
-\contentsline {section}{\numberline {2.5}Comparison}{17}{section.2.5}
-\contentsline {subsection}{\numberline {2.5.1}Inclusive Scan algorithm}{17}{subsection.2.5.1}
-\contentsline {subsection}{\numberline {2.5.2}Balanced Trees Parallel Scan algorithm}{17}{subsection.2.5.2}
-\contentsline {subsection}{\numberline {2.5.3}Comparing the 3 algorithm implementations}{18}{subsection.2.5.3}
-\contentsline {subsection}{\numberline {2.5.4}Logic-In-Memory architecture}{19}{subsection.2.5.4}
-\contentsline {subsection}{\numberline {2.5.5}Comparison with the LIM architecture}{22}{subsection.2.5.5}
-\contentsline {section}{\numberline {2.6}Characteristics of the Integral Image Algorithm}{23}{section.2.6}
-\contentsline {chapter}{\numberline {3}Discrete cosine transform}{27}{chapter.3}
-\contentsline {section}{\numberline {3.1}Hardware Implementation}{28}{section.3.1}
-\contentsline {section}{\numberline {3.2}Simulation and Test}{31}{section.3.2}
-\contentsline {section}{\numberline {3.3}Comparison}{34}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Systolic array architecture}{34}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}Comparison with systolic array implementation}{35}{subsection.3.3.2}
-\contentsline {section}{\numberline {3.4}Characteristics of DCT}{39}{section.3.4}
-\contentsline {section}{\numberline {3.5}LLM DCT}{43}{section.3.5}
-\contentsline {subsection}{\numberline {3.5.1}Architecture of the LLM DCT}{44}{subsection.3.5.1}
-\contentsline {subsection}{\numberline {3.5.2}Simulation and test}{46}{subsection.3.5.2}
-\contentsline {subsection}{\numberline {3.5.3}Comparison}{48}{subsection.3.5.3}
-\contentsline {subsection}{\numberline {3.5.4}High Order LLM DCT}{52}{subsection.3.5.4}
-\contentsline {subsection}{\numberline {3.5.5}Characteristics of the LLM DCT 8-point}{53}{subsection.3.5.5}
-\contentsline {chapter}{\numberline {4}Binomial Filter}{57}{chapter.4}
-\contentsline {section}{\numberline {4.1}Hardware implementations}{60}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Hardware implementation type 1}{60}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}Hardware implementation type 2}{64}{subsection.4.1.2}
-\contentsline {section}{\numberline {4.2}Simulations}{65}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Simulation type 1}{65}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}Simulation type 2}{67}{subsection.4.2.2}
-\contentsline {section}{\numberline {4.3}Comparison}{70}{section.4.3}
-\contentsline {subsubsection}{\numberline {4.3.0.1}Logic-In-Memory implementation}{70}{subsubsection.4.3.0.1}
-\contentsline {section}{\numberline {4.4}Characteristics of the Binomial Filter}{71}{section.4.4}
-\contentsline {chapter}{\numberline {5}Digital Filter FIR}{74}{chapter.5}
-\contentsline {section}{\numberline {5.1}Digital filters properties}{74}{section.5.1}
-\contentsline {section}{\numberline {5.2}Hardware Implementation}{75}{section.5.2}
-\contentsline {section}{\numberline {5.3}Simulation}{76}{section.5.3}
-\contentsline {section}{\numberline {5.4}Characteristics of Filter FIR}{78}{section.5.4}
-\contentsline {chapter}{\numberline {6}Transport equation problem}{81}{chapter.6}
-\contentsline {section}{\numberline {6.1}Hardware Implementation}{83}{section.6.1}
-\contentsline {section}{\numberline {6.2}Simulation}{86}{section.6.2}
-\contentsline {section}{\numberline {6.3}Comparison with LIM's architecture}{87}{section.6.3}
-\contentsline {section}{\numberline {6.4}Characteristics of Transport Equation Problem}{89}{section.6.4}
-\contentsline {chapter}{\numberline {7}Magnetostatic field calculation 3D}{92}{chapter.7}
-\contentsline {section}{\numberline {7.1}Product TG and M}{93}{section.7.1}
-\contentsline {section}{\numberline {7.2}Logic Plane}{94}{section.7.2}
-\contentsline {section}{\numberline {7.3}Sum all}{95}{section.7.3}
-\contentsline {section}{\numberline {7.4}Simulation and Test}{95}{section.7.4}
-\contentsline {subsection}{\numberline {7.4.1}Testbench of the cell}{95}{subsection.7.4.1}
-\contentsline {subsection}{\numberline {7.4.2}Testbench of the Top entity}{98}{subsection.7.4.2}
-\contentsline {section}{\numberline {7.5}Characteristics of Magnetostatic field calculation 3D}{100}{section.7.5}
-\contentsline {chapter}{\numberline {8}Smith Waterman}{103}{chapter.8}
-\contentsline {section}{\numberline {8.1}The scoring model. The BLOSUM62 matrix}{103}{section.8.1}
-\contentsline {section}{\numberline {8.2}Smith-Waterman Local alignment method }{105}{section.8.2}
-\contentsline {section}{\numberline {8.3}Simulation and Test}{105}{section.8.3}
-\contentsline {subsection}{\numberline {8.3.1}Phase 1-sub\_matr\_and\_gap\_load }{108}{subsection.8.3.1}
-\contentsline {subsection}{\numberline {8.3.2}Phase 2- s\_w\_computation}{114}{subsection.8.3.2}
-\contentsline {subsection}{\numberline {8.3.3}Phase 3- output\_writing}{118}{subsection.8.3.3}
-\contentsline {chapter}{\numberline {9}Singular Value Decomposition}{120}{chapter.9}
-\contentsline {section}{\numberline {9.1}Example of a SVD computation}{120}{section.9.1}
-\contentsline {section}{\numberline {9.2}Difficulties for the SVD in ASIC}{124}{section.9.2}
-\contentsline {chapter}{\numberline {10}Synthesis Results}{125}{chapter.10}
-\contentsline {section}{\numberline {10.1}Integral Image}{125}{section.10.1}
-\contentsline {section}{\numberline {10.2}Discrete Cosine Transformation}{126}{section.10.2}
-\contentsline {subsection}{\numberline {10.2.1}DCT pipelined}{127}{subsection.10.2.1}
-\contentsline {subsection}{\numberline {10.2.2}DCT not pipelined}{128}{subsection.10.2.2}
-\contentsline {subsection}{\numberline {10.2.3}LLM DCT}{129}{subsection.10.2.3}
-\contentsline {section}{\numberline {10.3}Binomial Filter}{130}{section.10.3}
-\contentsline {subsection}{\numberline {10.3.1}Binomial Filter v1}{130}{subsection.10.3.1}
-\contentsline {subsection}{\numberline {10.3.2}Binomial Filter v2}{131}{subsection.10.3.2}
-\contentsline {section}{\numberline {10.4}FIR}{132}{section.10.4}
-\contentsline {section}{\numberline {10.5}Transport Equation Problem}{133}{section.10.5}
-\contentsline {section}{\numberline {10.6}Magnetostatic field calculation 3D}{134}{section.10.6}
-\contentsline {chapter}{\numberline {11}Thessa tool}{136}{chapter.11}
-\contentsline {section}{\numberline {11.1}Analysis on the Binomial filter algorithm}{136}{section.11.1}
-\contentsline {chapter}{Bibliography}{139}{chapter*.77}
+\contentsline {chapter}{\numberline {2}Integral Image Algorithm}{3}{chapter.2}
+\contentsline {section}{\numberline {2.1}Method used}{4}{section.2.1}
+\contentsline {section}{\numberline {2.2}Hardware Implementation}{6}{section.2.2}
+\contentsline {section}{\numberline {2.3}Pipelined Implementation}{10}{section.2.3}
+\contentsline {section}{\numberline {2.4}Simulation and Test}{12}{section.2.4}
+\contentsline {section}{\numberline {2.5}Comparison}{16}{section.2.5}
+\contentsline {subsection}{\numberline {2.5.1}Inclusive Scan algorithm}{16}{subsection.2.5.1}
+\contentsline {subsection}{\numberline {2.5.2}Balanced Trees Parallel Scan algorithm}{16}{subsection.2.5.2}
+\contentsline {subsection}{\numberline {2.5.3}Comparing the 3 algorithm implementations}{17}{subsection.2.5.3}
+\contentsline {subsection}{\numberline {2.5.4}Logic-In-Memory architecture}{18}{subsection.2.5.4}
+\contentsline {subsection}{\numberline {2.5.5}Comparison with the LIM architecture}{21}{subsection.2.5.5}
+\contentsline {section}{\numberline {2.6}Characteristics of the Integral Image Algorithm}{22}{section.2.6}
+\contentsline {chapter}{\numberline {3}Discrete cosine transform}{26}{chapter.3}
+\contentsline {section}{\numberline {3.1}Hardware Implementation}{27}{section.3.1}
+\contentsline {section}{\numberline {3.2}Simulation and Test}{30}{section.3.2}
+\contentsline {section}{\numberline {3.3}Comparison}{33}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Systolic array architecture}{33}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Comparison with systolic array implementation}{34}{subsection.3.3.2}
+\contentsline {section}{\numberline {3.4}Characteristics of DCT}{38}{section.3.4}
+\contentsline {section}{\numberline {3.5}LLM DCT}{42}{section.3.5}
+\contentsline {subsection}{\numberline {3.5.1}Architecture of the LLM DCT}{43}{subsection.3.5.1}
+\contentsline {subsection}{\numberline {3.5.2}Simulation and test}{45}{subsection.3.5.2}
+\contentsline {subsection}{\numberline {3.5.3}Comparison}{47}{subsection.3.5.3}
+\contentsline {subsection}{\numberline {3.5.4}High Order LLM DCT}{51}{subsection.3.5.4}
+\contentsline {subsection}{\numberline {3.5.5}Characteristics of the LLM DCT 8-point}{52}{subsection.3.5.5}
+\contentsline {chapter}{\numberline {4}Binomial Filter}{56}{chapter.4}
+\contentsline {section}{\numberline {4.1}Hardware implementations}{59}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Hardware implementation type 1}{59}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Hardware implementation type 2}{63}{subsection.4.1.2}
+\contentsline {section}{\numberline {4.2}Simulations}{64}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Simulation type 1}{64}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Simulation type 2}{66}{subsection.4.2.2}
+\contentsline {section}{\numberline {4.3}Comparison}{69}{section.4.3}
+\contentsline {subsubsection}{\numberline {4.3.0.1}Logic-In-Memory implementation}{69}{subsubsection.4.3.0.1}
+\contentsline {section}{\numberline {4.4}Characteristics of the Binomial Filter}{70}{section.4.4}
+\contentsline {chapter}{\numberline {5}Digital Filter FIR}{73}{chapter.5}
+\contentsline {section}{\numberline {5.1}Digital filters properties}{73}{section.5.1}
+\contentsline {section}{\numberline {5.2}Hardware Implementation}{74}{section.5.2}
+\contentsline {section}{\numberline {5.3}Simulation}{75}{section.5.3}
+\contentsline {section}{\numberline {5.4}Characteristics of Filter FIR}{77}{section.5.4}
+\contentsline {chapter}{\numberline {6}Transport equation problem}{80}{chapter.6}
+\contentsline {section}{\numberline {6.1}Hardware Implementation}{82}{section.6.1}
+\contentsline {section}{\numberline {6.2}Simulation}{85}{section.6.2}
+\contentsline {section}{\numberline {6.3}Comparison with LIM's architecture}{86}{section.6.3}
+\contentsline {section}{\numberline {6.4}Characteristics of Transport Equation Problem}{88}{section.6.4}
+\contentsline {chapter}{\numberline {7}Magnetostatic field calculation 3D}{91}{chapter.7}
+\contentsline {section}{\numberline {7.1}Product TG and M}{92}{section.7.1}
+\contentsline {section}{\numberline {7.2}Logic Plane}{93}{section.7.2}
+\contentsline {section}{\numberline {7.3}Sum all}{94}{section.7.3}
+\contentsline {section}{\numberline {7.4}Simulation and Test}{94}{section.7.4}
+\contentsline {subsection}{\numberline {7.4.1}Testbench of the cell}{94}{subsection.7.4.1}
+\contentsline {subsection}{\numberline {7.4.2}Testbench of the Top entity}{97}{subsection.7.4.2}
+\contentsline {section}{\numberline {7.5}Characteristics of Magnetostatic field calculation 3D}{99}{section.7.5}
+\contentsline {chapter}{\numberline {8}Smith Waterman}{102}{chapter.8}
+\contentsline {section}{\numberline {8.1}The scoring model. The BLOSUM62 matrix}{102}{section.8.1}
+\contentsline {section}{\numberline {8.2}Smith-Waterman Local alignment method }{104}{section.8.2}
+\contentsline {section}{\numberline {8.3}Simulation and Test}{104}{section.8.3}
+\contentsline {subsection}{\numberline {8.3.1}Phase 1-sub\_matr\_and\_gap\_load }{107}{subsection.8.3.1}
+\contentsline {subsection}{\numberline {8.3.2}Phase 2- s\_w\_computation}{113}{subsection.8.3.2}
+\contentsline {subsection}{\numberline {8.3.3}Phase 3- output\_writing}{117}{subsection.8.3.3}
+\contentsline {chapter}{\numberline {9}Singular Value Decomposition}{119}{chapter.9}
+\contentsline {section}{\numberline {9.1}Example of a SVD computation}{123}{section.9.1}
+\contentsline {section}{\numberline {9.2}Difficulties for the SVD in ASIC}{126}{section.9.2}
+\contentsline {chapter}{\numberline {10}Synthesis Results}{127}{chapter.10}
+\contentsline {section}{\numberline {10.1}Integral Image}{127}{section.10.1}
+\contentsline {section}{\numberline {10.2}Discrete Cosine Transformation}{128}{section.10.2}
+\contentsline {subsection}{\numberline {10.2.1}DCT pipelined}{129}{subsection.10.2.1}
+\contentsline {subsection}{\numberline {10.2.2}DCT not pipelined}{130}{subsection.10.2.2}
+\contentsline {subsection}{\numberline {10.2.3}LLM DCT}{131}{subsection.10.2.3}
+\contentsline {section}{\numberline {10.3}Binomial Filter}{132}{section.10.3}
+\contentsline {subsection}{\numberline {10.3.1}Binomial Filter v1}{132}{subsection.10.3.1}
+\contentsline {subsection}{\numberline {10.3.2}Binomial Filter v2}{133}{subsection.10.3.2}
+\contentsline {section}{\numberline {10.4}FIR}{134}{section.10.4}
+\contentsline {section}{\numberline {10.5}Transport Equation Problem}{135}{section.10.5}
+\contentsline {section}{\numberline {10.6}Magnetostatic field calculation 3D}{136}{section.10.6}
+\contentsline {chapter}{\numberline {11}Thessa tool}{138}{chapter.11}
+\contentsline {section}{\numberline {11.1}Analysis on the Binomial filter algorithm}{138}{section.11.1}
+\contentsline {chapter}{Bibliography}{142}{chapter*.80}

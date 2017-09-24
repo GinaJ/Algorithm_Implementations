@@ -77,12 +77,22 @@ Having the C code, we have yo translate it in a lower language as the MiRcode an
 \end{tabular}\\
 
 After that we have to understand the data and memory dependencies between each single instruction or some critical sections.
-We obtain the following graph where each number represent a single instruction (as you can see in the previous MiRcode)
+We obtain the following graph (Program Dependence Graph (PDG)) where each number represent a single instruction (as you can see in the previous MiRcode).\\
 
-\begin{figure}[h!]
-	\centering
-	\includegraphics[width=\textwidth]{imm/tessa/PDGscc.pdf} 	\caption{
-	} 
-	\label{pdg}
-\end{figure}
-The instruction in the SCC (Strongly Connected Components) have to be performed sequentially in the same core, while the instructions linked in red lines (strong data dependencies) have can be performed sequentially in pipeline. The instructions in dot red line shows a weak data dependencies.
+ This graph is used to recognize the point in the code where it's not possible to parallelize the code. This point are highlighted by the SSCs component that in the figure are colored in gray box. This graph has also a different color and shape edge.\\
+  Here we will list all the different color and their meaning: 
+  \begin{itemize}
+   \item Blue edge : Memory Output Dependence
+   \item Red edge : Register Flow Dependence 
+   \item Light Green edge : Memory Flow Dependence  
+   \item Black edge : Memory Anti-Dependence
+   \item Brown dashed edge : Data Dependence with indexes involved 
+   \item Dark Green dotted edge : Control Dependence 
+  \end{itemize}
+  \begin{figure}[h!]
+  	\centering
+  	\includegraphics[width=\textwidth]{imm/tessa/PDGscc.pdf} 	\caption{
+  	} 
+  	\label{pdg}
+  \end{figure}
+The instruction in the SCC (Strongly Connected Components), shown as gray box, have to be performed sequentially in the same core, while the instructions linked in red lines (strong data dependencies) have can be performed sequentially in pipeline. The instructions in dot red line shows a weak data dependencies.
