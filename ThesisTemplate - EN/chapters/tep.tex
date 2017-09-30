@@ -4,7 +4,8 @@ Gases and liquids surround us, flow inside our bodies, and have a profound influ
  Fluid flows produce winds, rains, floods, and hurricanes.\\ Convection and diffusion are responsible for temperature fluctuations and transport of pollutants in air, water or soil.\\
 The ability to understand, predict, and control transport phenomena is essential for many industrial applications,such as aerodynamic shape design, oil recovery from an underground reservoir, or multiphase/multicomponent flows in furnaces, heat exchangers, and chemical reactors.\\
 The traditional approach to investigation of a physical process is based on observations, experiments, and measurements. The amount of information that can be obtained in this way is usually very limited and subject to measurement errors.\\
-Alternatively, an analytical or computational study can be performed on the basis of a suitable mathematical model. As a rule, such a model consists of several differential and/or algebraic equations which make it possible to predict how the quantities of interest evolve and interact with one another.\\
+Alternatively, an analytical or computational study can be performed on the basis of a suitable mathematical model. As a rule, such a model consists of several differential and/or algebraic equations which make it possible to predict how the quantities of interest evolve and interact with one another. \cite{tep1}
+	\\
 \bigskip
 
 The equations and the functionality used in this work, are the same described in the work of a student for the Logic-In-Memory. \\
@@ -12,7 +13,7 @@ The transport equation is a partial differential equation that describes the dis
 \begin{equation}
 	\dfrac{\partial}{\partial x} + \dfrac{\partial}{\partial y} = -\dfrac{\partial}{\partial t}
 \end{equation}
-Temperature values are calculated over a grid and initialized with a gaussian distribution. The points of the grid represent the local indexes (ix, iy) of the matrix that contains the temperature values. The domain is shown in orange in the picture below. Boundaries are represented in white. Data are evolved along Y=X direction, i.e. towards the up-right corner of the coordinate system.
+Temperature values are calculated over a grid and initialized with a gaussian distribution. The points of the grid represent the local indexes (ix, iy) of the matrix that contains the temperature values. The domain is shown in orange in the picture below. Boundaries are represented in white. Data are evolved along Y=X direction, i.e. towards the up-right corner of the coordinate system \cite{lim}.
 
 \begin{figure}[h!]
 	\centering

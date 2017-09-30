@@ -2,7 +2,7 @@
 A digital filter is a system performing a certain function on an input stream $ X[n] $ (samples are received at constant rate) and generating an output stream called $ Y[n] $. 
 In general it's possible to have multiple input streams and multiple output streams (for example in a parallel architecture this allows to speed up the filter).
 \section{Digital filters properties}
-Filters are systems characterized by the following properties:
+Filters are systems characterized by the following properties \cite{fir1}:
 \begin{enumerate}
 	\item \textbf{Linearity}: it is possible to represent the output as an overlapping of the input pulses. Let $\delta[n-k]$ be the input signal and $ h_{k}[n] $ the filter response, using overlapping property, assuming that the input is a sum of pulses: 
 	\begin{center}
@@ -32,7 +32,7 @@ Filters are systems characterized by the following properties:
     \end{center}
     \item \textbf{Causality}: if we apply an input at time $ k $,
      we expect that the output doesn't come before time $ k $.
-     Assuming that $ x[n] = 0  $ for $ n < 0 $, then $ y[n] = 0 $ for $ k < 0 $: this property is true only if $  h[n] = 0 $ for $ n < 0 $
+     Assuming that $ x[n] = 0  $ for $ n < 0 $, then $ y[n] = 0 $ for $ k < 0 $: this property is true only if $  h[n] = 0 $ for $ n < 0 $ 
     
 \end{enumerate}
 

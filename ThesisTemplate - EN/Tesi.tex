@@ -1,7 +1,7 @@
 %\documentclass[12pt,twoside]{report}
 %cambia qualcosa da twoside a oneside????
 \documentclass[12pt, english, makeidx, a4paper, titlepage, oneside]{report}
-
+%\documentstyle[fancychapters]{report}
 %\documentclass[12pt,openright]{report}
 \usepackage{array}
 \usepackage{mathtools}
@@ -17,6 +17,7 @@
 \usepackage{amsfonts}               %  Pacchetto speciale per i font matematici AMS
 \usepackage{amssymb}                %  Pacchetto speciale per i simboli matematici AMS
 \usepackage{amsmath} 
+
 \usepackage{colortbl}
 \usepackage{color}
 \usepackage[dvipsnames]{xcolor}
@@ -105,6 +106,18 @@ breakindent = 30pt, % indenta le righe di 30pt
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\summary}[2]{%
+	\chapter{%
+		\parbox{\textwidth}{%
+			\left
+			#1\\[1.5ex]% the title and the separation
+			\normalfont\normalsize
+			#2\\[2ex]% the author and the separation
+			\large Summary
+		}%
+	}%
+	\addcontentsline{toc}{chapter}{Summary}%
+}
 
 
 %\facolta{Ingegneria dell'Informazione}
@@ -131,11 +144,18 @@ breakindent = 30pt, % indenta le righe di 30pt
 %\inglese\setcaptions
    \frontespizio
 \ringraziamenti
+ringraziamenti
+%\summary{Summary}
+%{John Smith}
+\sommario
+summary
 
 %\begin{center}
                            
 %\include{new_chapters/sommario}
 %\tablespagetrue
+
+
 \figurespagetrue
                           		% INSERIRE IL NOME DEL FILE CONTENENTE IL SOMMARI
 \indici
