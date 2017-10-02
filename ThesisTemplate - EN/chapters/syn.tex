@@ -144,6 +144,36 @@ The not pipelined version, consumes more power and take a little time more than 
 		\item Pentium 4 adder, Booth multiplier
 
 \end{itemize}
+\begin{center}
+	\begin{tabular}{ p{5.2cm} | p{8cm} }
+		
+		\hline 
+		& \quad \textbf{Discrete Cosine Transformation}\\
+		& \quad Not Pipelined\\
+		
+		\hline
+		Total cell area & \quad 69801.783318$ \mu m^2{} $\\
+		
+		Data arrival time & \quad 2.05 $ ns $\\
+		Internal Power & \quad 5.1175$ mW $\\
+		Switching Power & \quad 3.9349$ mW $\\
+		Total Dynamic Power & \quad 9.0523$ mW $\\
+		Leakage Power&\quad  0.6446 $ mW $\\
+		Total Power  & \quad 9.6970$ mW $\\
+		\hline
+		
+	\end{tabular}
+\end{center}
+%\textcolor{red}{{\Large MODIFICARE, mettere osservazioni}}
+
+\bigskip
+\begin{itemize}
+	\item 16 bits for integer part
+	\item 16 bits for fractional part
+		\item size = 9 (cosine matrix 9x9)
+		\item ieee.std\_logic\_arith
+
+\end{itemize}
 %\textcolor{red}{{\Large MODIFICARE, mettere osservazioni}}
 \begin{center}
 	\begin{tabular}{ p{5.2cm} | p{8cm} }
@@ -165,35 +195,7 @@ The not pipelined version, consumes more power and take a little time more than 
 		
 	\end{tabular}
 \end{center}
-\bigskip
-\begin{itemize}
-	\item 16 bits for integer part
-	\item 16 bits for fractional part
-		\item size = 9 (cosine matrix 9x9)
-		\item ieee.std\_logic\_arith
 
-\end{itemize}
-%\textcolor{red}{{\Large MODIFICARE, mettere osservazioni}}
-\begin{center}
-	\begin{tabular}{ p{5.2cm} | p{8cm} }
-		
-		\hline 
-		& \quad \textbf{Discrete Cosine Transformation}\\
-		& \quad Not Pipelined\\
-		
-		\hline
-		Total cell area & \quad 69801.783318$ \mu m^2{} $\\
-		
-		Data arrival time & \quad 2.05 $ ns $\\
-		Internal Power & \quad 5.1175$ mW $\\
-		Switching Power & \quad 3.9349$ mW $\\
-		Total Dynamic Power & \quad 9.0523$ mW $\\
-		Leakage Power&\quad  0.6446 $ mW $\\
-		Total Power  & \quad 9.6970$ mW $\\
-		\hline
-		
-	\end{tabular}
-\end{center}
 \bigskip
 
 \subsection{LLM DCT}

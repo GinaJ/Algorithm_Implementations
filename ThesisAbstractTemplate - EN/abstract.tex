@@ -52,13 +52,15 @@
 	The systolic array architecture is made of arrays of processors which are connected to a small number of nearest neighbours in a mesh-like topology. Processors perform a sequence of operations on data that flows between them.
 	
 	
-	We have choosen a set of algorithms used for image processing, filter and image compression.\\
+	We have choosen a set of algorithms used for image processing, filter, image compression, and other use.\\
+	The main preferred characteristics are the parallelism, the required data storage, the communication between distant and near cells, and data dependencies.
 	\begin{itemize}
 		\item \textbf{Summed area Table}: is an algorithm for quickly and efficiently generating the sum of values in a rectangular subset of a grid. Here we can perform some addition in parallel and wisely exploit some data dependencies between near and distant cells.
 		\item \textbf{Discrete Cosine Transform}: a finite sequence of data points in terms of a sum of cosine functions oscillating at different frequencies. This computation is divided in two parts: the first one perform all the $ N^2 $ cosine products in parallel, the second one perform the $N $ sums, each sum has as addends $N$ cosine products.
 		\item \textbf{Binomial Filter}: is a smoothing filters used to enhance noisy images (at the expense of blurring). It requires the comunication of all cells in the neighborhood, and all cells can perform in parallel. Here we can exploit some partial results to be used by other cells.
 		\item \textbf{Finite impulse Response}: is a filter structure that can be used to implement almost any sort of frequency response digitally. It has been chosen, because it requires some memory to store the previous input, the multiplication can be done in parallel, while the additions has to be in sequence.
-		\item \textbf{Transport equation problem}: it describes physical phenomena where particles, energy, or other physical quantities are transferred inside a physical system. Each cell has to perform vaious operations and communicate with near cells.			\end{itemize}
+		\item \textbf{Transport equation problem}: it describes physical phenomena where particles, energy, or other physical quantities are transferred inside a physical system. Each cell has to perform vaious operations and communicate with near cells.
+		\item \textbf{Magnetostatic field calculation 3D}It computes the magnetostatic field of a single cells with the magnetostatic field contributions between this cell and all the cells in a given 3D space.	All cells compute its own contributions in parallel, and then we perform the summation of all these contributions.		\end{itemize}
 	
 	Some algorithms have been already implemented on the LIM architecture but not in a "smart" way. The Summed Area Table and the Binomial Filter can be reimplemented using my approach where some partial results can be stored and exploited by other cells (instead of re-evaluating them).		
 \vspace{1cm}

@@ -1,9 +1,6 @@
 \chapter{Thessa tool}
-{
-	"\textit{It was born after have face a problem with the generation of a parallel code for the LIM architecture due to the difficulties to detect the data/control dependency without a proper analysis and optimization. This tool allows to be able to generate a parallel code in order to take the most from a multi-core architecture like the LIM.}"
-	\\[5pt]
-	\rightline{{\rm --- CETRULO E. \cite{tessa}}} \\
- 
+
+ This experimental tool was the work of another student \cite{tessa}.
  It's a tool that given a C code, it translates it into a Mid-level Intermediate Representation code (MIRcode). After that the tool can show the Program Dependence Graph (PDG), the  Control Flow Graph (CFG) and the Quotient graph (Q) of the program in MIRcode. 
 \section{Analysis of Thessa on the Binomial filter algorithm}
 
@@ -45,7 +42,7 @@ return 0;
 }
 \end{lstlisting}
 \subsection{Output generated}
-\subsubsection{MIRcode}
+\subsubsection{MIRcode} \label{mircode}
 Having the C code, we have yo translate it in a lower language as the MiRcode and obtain the following code.\\
 \begin{tabular}{l l l}
 0   & &    ['\$s', 'i', '1'] \\
@@ -60,12 +57,12 @@ Having the C code, we have yo translate it in a lower language as the MiRcode an
 9  & &     ['+', '\_t1', '\_t0', 'in[i-1][j+1]'] \\
 10    & &  ['+', '\_t2', '\_t1', 'in[i][j-1]']\\
 11& &   ['+', '\_t3', '\_t2', 'in[i][j]']\\
-\end{tabular}\\
-\begin{tabular}{l l l}
 12& &   ['+', '\_t4', '\_t3', 'in[i][j+1]']\\
 13& &   ['+', '\_t5', '\_t4', 'in[i+1][j-1]']\\
 14& &   ['+', '\_t6', '\_t5', 'in[i+1][j]']\\
 15 & &  ['+', '\_t7', '\_t6', 'in[i+1][j+1]']\\ 
+\end{tabular}\\
+\begin{tabular}{l l l}
 16 & &  ['/', '\_t8', '\_t7', 'divisor'] \\
 17 & &  ['\$s', 'out[i][j]', '\_t8'] \\
 18 & &  ['+', '\_t9', 'j', '1'] \\
@@ -73,8 +70,6 @@ Having the C code, we have yo translate it in a lower language as the MiRcode an
 20 & &  ['+', '\_f3', 'j', '1']\\
 21 & &  ['-', '\_f2', 'j', '1'] \\
 22 & &  ['goto', 'L2']\\
-%\end{tabular}\\
-%\begin{tabular}{l l l}
 23  &L1:& ['+', '\_t10', 'i', '1']\\
 24 & &  ['\$s', 'i', '\_t10'] \\
 25 & &  ['+', '\_f1', 'i', '1']\\
@@ -125,12 +120,88 @@ We obtain the following graph (Program Dependence Graph (PDG)) where each number
    \end{figure} 
    \clearpage
   \subsection{Code Generation hints}
-The instruction in the SCC (Strongly Connected Components), shown as gray box, have to be performed sequentially in the same core, while the instructions linked in red lines (strong data dependencies) have can be performed sequentially in pipeline. The instructions in dot red line shows a weak data dependencies.\\
+The instruction in the SCC (Strongly Connected Components), shown as gray box, have to be performed sequentially in the same core with the instruction linked with black arrows towards these SCC. (example instructions (1) and (2) points to the SCC \#1 in fig. \ref{pdg}).\\
+ While the instructions linked in red lines (Register Flows dependencies) can be performed sequentially in pipeline.\\
+To simplify the understanding, i have drawn the PDG graph (shown before in fig. \ref{pdg}) with some blocks.
+   \begin{figure}[h!]
+   	\centering
+   	\includegraphics[width=\textwidth]{imm/tessa/pdgblocks.png} 	\caption{PDG divided in blocks of the Binomial Filter's MIRcode
+   	} 
+   	\label{pdgblocks}
+   \end{figure}
+   In the next lines, if I want to talk about the $ n^{th} $ instruction of the MIRcode generated ( section \ref{mircode}), I will write (n).
+   \begin{itemize}
+   	\item The Red blocks shows the instruction with data dependencies. You can either put them in a single core (easier to manage, but the core will have more work to do), or have each instruction in a single core (faster but requires more area).
+   	\item The blocks with black border represent the SCC.
+   	\item The Blue blocks, represent the instructions ((1)(2)) before the first loop (3), and the instructions ((25)(26)) are put before going backwards (27) to the loop (3). Since in the computation, they are near to the SCC-loop ((24)(25)(3)) I suggest to put them all together.
+   	\item The orange blocks has similar characteristic with the blue ones.
+   	The instructions (5)(6) are before the loop (7) and the lines (20)(21) are executed before going backwards (22) to the loop (7). Lines (18)(19)(7) are in SCC because here we have the update (increase) of the variable 'j' and the comparison. I suggest to put all these instructions in the same core.
+   	\item The Green block it's an instruction performed after the first loop and before the second loop. You can put with the blue blocks or with the orange ones.
+   \end{itemize}
+   
+   \subsection{Comments and improvements}
+   I can't comment on the MIRcode generation, because i don't know this language and i don't understand the meaning of instructions [(1) (2) (25) (26)] and [(5) (6) (20) (21)]. Maybe they are used for the synchronization of the for loop (3) and loop (7).\\
+   For other lines, it's easier to understand the translation from C code to MIRcode.\\
+   
+   Here i will post some quotation of the original work \cite{tessa}.\\
+   
+   \begin{tabular}{ p{0.3cm} p{13.3cm}}
+&\textit{"The topological sort doesn't give the best solution, but what it gives is always correct (with respect to the correct starting graph)."} \\
+\end{tabular}\\
+
+I can't comment on the utility of this topological sort, because i didn't use it. Futhermore, i believe you need to see the MIRcode to see the dependencies and the PDG to see the SCCs.\\
+
+   \begin{tabular}{ p{0.2cm} p{13.3cm}}
+&\textit{"Only the nodes that are inside the loop are relevant for the optimization. This because the nodes that don't need to be executed multiple time because they are inside a for can be are not liked in particular to as specific core, but can used and merged to other one,"}
+\end{tabular}\\
+
+That's true, but to optimize better, i suggest the \textbf{Loop unrolling}, a technique that attempts to optimize a program's execution speed at the expense of its binary size.\\
+In other words, instead of writing this piece of code, (because in a given time it performs iteratively the binomial filter of ONLY a single cell)
+\begin{lstlisting}[frame=single]  % Start your 
+
+for (i = 1; i < h-1; i++){
+	for (j = 1; j < w-1; j=j+1){
+		out[i][j] = ...
+	}
+}
+\end{lstlisting}
+
+write 
+
+\begin{lstlisting}[frame=single]  % Start your 
+
+	out[1][1] = ...
+	out[1][2] = ...
+	out[1][3] = ...
+	out[1][4] = ...
+	...
+	out[6][3] = ...
+	out[6][4] = ...
+	out[6][5] = ...
+	out[6][6] = ...
+	
+\end{lstlisting}
+this will enable the computation of all the cells in parallel.\\
+Another suggestion is to use a computation optimization like the one i used for my binomial filter: instead of doing 
 
 
-\textit{The topological sort doesn't give the best solution, but what it gives is always correct (with respect to the correct starting graph).} \\
+\begin{lstlisting}[frame=single]  % Start your 
 
-\textit{ Only the nodes that are inside the loop are relevant for the optimization. This because the nodes that don't need to be executed multiple time because they are inside a for can be are not liked in particular to as specific core, but can used and merged to other one, }
+	out[1][1] = ...+...+ in[2][0] + in[2][1] + in[2][2]; //row[0], row[1], row[2]
+	out[2][1] = ...+ in[2][0] + in[2][1] + in[2][2] + ...; //row[1], row[2], row[3]
+	out[3][1] = in[2][0] + in[2][1] + in[2][2] + ... + ...;// row[2], row[3], row[4]
+
+\end{lstlisting}
+you could simplify by writing
+\begin{lstlisting}[frame=single]  % Start your 
+
+temp=in[2][0] + in[2][1] + in[2][2];
+out[1][1] = ...+...+ temp //row[0], row[1], row[2]
+out[2][1] = ...+temp + ...; //row[1], row[2], row[3]
+out[3][1] = temp + ... + ...;// row[2], row[3], row[4]
+
+\end{lstlisting}
+This will save you to do the same additions three times.
 
 \section{How to use}
 \subsection{Install python 2.7}
@@ -161,7 +232,7 @@ $ sudo make altinstall
 
 to see which version of python you have, open the terminal and digit\\
 \begin{lstlisting}[language=bash]
-\$ python2 --version
+$ python2 --version
 \end{lstlisting}
 
 
@@ -175,13 +246,13 @@ $ pip install --upgrade pip
 
 Before installing networkx, you need the setuptools\\
 \begin{lstlisting}[language=bash]
-\$sudo apt-get install python-setuptools
+$sudo apt-get install python-setuptools
 \end{lstlisting}
 
 \subsection{networkx}
 Now you can try to install networkx\\
 \begin{lstlisting}[language=bash]
-\$ pip install networkx
+$ pip install networkx
 \end{lstlisting}
 
 
@@ -248,7 +319,7 @@ $ pip install numpy scipy pandas matplotlib pygraphviz pydot pyyaml gdal
 If you get the error:\\
 \textit{gnome-open: command not found}\\ 
 \begin{lstlisting}[language=bash]
-\$sudo apt-get install libgnome2-0
+$sudo apt-get install libgnome2-0
 \end{lstlisting}
 
 Now this is where my exploration on tessa tools ends.
@@ -261,17 +332,17 @@ I get the error:\\
 	\label{OutEdgeDataView}
 \end{figure}
 I tried to find where the object 'OutEdgeDataView' was declared but I didn't find it on the script. Then, after searching on internet, I figure it out it was written in the file "\textit{reportviews.py}" which was in the folder "\textit{~/.local/lib/python2.7/site-packages/networkx/classes}"
-And without this script, i can't get the graphs
+And without this modified file, i can't get the graphs
 \begin{lstlisting}[language=bash]
 \end{lstlisting}
-Toy Parser Generator\\
-http://cdsoft.fr/tpg/\\
-go to the folder "TPG-3.2.2" and run\\
-python setup.py install
+%Toy Parser Generator\\
+%http://cdsoft.fr/tpg/\\
+%go to the folder "TPG-3.2.2" and run\\
+%python setup.py install
 
-https://networkx.github.io/
+%https://networkx.github.io/
 
-http://www.graphviz.org/  
-run the bash script
+%http://www.graphviz.org/  
+%run the bash script
 
-place your c file in the folder modules/class/test
+%place your c file in the folder modules/class/test

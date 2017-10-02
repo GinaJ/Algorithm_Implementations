@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.5.9)  30 SEP 2017 23:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.5.9)  2 OCT 2017 22:46
 entering extended mode
 **./Tesi.tex
 (Tesi.tex
@@ -601,7 +601,7 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: End \AtBeginDocument code.
 
-<imm/LogoPoliTo-eps-converted-to.pdf, id=387, 574.145pt x 565.11125pt>
+<imm/LogoPoliTo-eps-converted-to.pdf, id=399, 574.145pt x 565.11125pt>
 File: imm/LogoPoliTo-eps-converted-to.pdf Graphic file (type pdf)
 
 <use imm/LogoPoliTo-eps-converted-to.pdf>
@@ -651,7 +651,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 ] (Tesi.toc
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\uppercase' on input line 34.
+(hyperref)                removing `\uppercase' on input line 35.
 
 [3
 
@@ -726,7 +726,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 19--169
 
  (chapters/iia.tex
 Chapter 2.
-<imm/iia/Disegno1.pdf, id=736, 844.65562pt x 597.23125pt>
+<imm/iia/Disegno1.pdf, id=756, 844.65562pt x 597.23125pt>
 File: imm/iia/Disegno1.pdf Graphic file (type pdf)
 
 <use imm/iia/Disegno1.pdf>
@@ -739,13 +739,13 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
- <./imm/iia/Disegno1.pdf>] <imm/iia/iia00.png, id=776, 584.44435pt x 361.35pt>
+ <./imm/iia/Disegno1.pdf>] <imm/iia/iia00.png, id=796, 584.44435pt x 361.35pt>
 File: imm/iia/iia00.png Graphic file (type png)
 
 <use imm/iia/iia00.png>
 Package pdftex.def Info: imm/iia/iia00.png used on input line 31.
 (pdftex.def)             Requested size: 426.79134pt x 263.87704pt.
- <imm/iia/iia1.png, id=778, 473.42087pt x 468.18391pt>
+ <imm/iia/iia1.png, id=798, 473.42087pt x 468.18391pt>
 File: imm/iia/iia1.png Graphic file (type png)
 
 <use imm/iia/iia1.png>
@@ -756,14 +756,14 @@ Package pdftex.def Info: imm/iia/iia1.png used on input line 38.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [4 <./imm/iia/iia00.png>] [5 <./imm/iia/iia1.png>]
-<imm/iia/iia_step1.pdf, id=792, 844.65562pt x 597.23125pt>
+<imm/iia/iia_step1.pdf, id=812, 844.65562pt x 597.23125pt>
 File: imm/iia/iia_step1.pdf Graphic file (type pdf)
 
 <use imm/iia/iia_step1.pdf>
 Package pdftex.def Info: imm/iia/iia_step1.pdf used on input line 54.
 (pdftex.def)             Requested size: 380.09152pt x 268.75157pt.
 
-<imm/iia/iia_step1a.pdf, id=793, 756.32562pt x 610.28pt>
+<imm/iia/iia_step1a.pdf, id=813, 756.32562pt x 610.28pt>
 File: imm/iia/iia_step1a.pdf Graphic file (type pdf)
 
 <use imm/iia/iia_step1a.pdf>
@@ -776,14 +776,14 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [6
 
  <./imm/iia/iia_step1.pdf>]
-<imm/iia/iia_step2a.pdf, id=911, 566.115pt x 554.57187pt>
+<imm/iia/iia_step2a.pdf, id=931, 566.115pt x 554.57187pt>
 File: imm/iia/iia_step2a.pdf Graphic file (type pdf)
 
 <use imm/iia/iia_step2a.pdf>
 Package pdftex.def Info: imm/iia/iia_step2a.pdf used on input line 76.
 (pdftex.def)             Requested size: 226.44199pt x 221.82481pt.
 
-<imm/iia/iia_step2aa.pdf, id=912, 584.1825pt x 573.14125pt>
+<imm/iia/iia_step2aa.pdf, id=932, 584.1825pt x 573.14125pt>
 File: imm/iia/iia_step2aa.pdf Graphic file (type pdf)
 
 <use imm/iia/iia_step2aa.pdf>
@@ -793,7 +793,7 @@ Package pdftex.def Info: imm/iia/iia_step2aa.pdf used on input line 83.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<imm/iia/iia_step2b.pdf, id=913, 566.115pt x 547.04375pt>
+<imm/iia/iia_step2b.pdf, id=933, 566.115pt x 547.04375pt>
 File: imm/iia/iia_step2b.pdf Graphic file (type pdf)
 
 <use imm/iia/iia_step2b.pdf>
@@ -803,7 +803,7 @@ Package pdftex.def Info: imm/iia/iia_step2b.pdf used on input line 90.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<imm/iia/iia_step3a.pdf, id=914, 571.63562pt x 565.61313pt>
+<imm/iia/iia_step3a.pdf, id=934, 571.63562pt x 565.61313pt>
 File: imm/iia/iia_step3a.pdf Graphic file (type pdf)
 
 <use imm/iia/iia_step3a.pdf>
@@ -813,7 +813,7 @@ Package pdftex.def Info: imm/iia/iia_step3a.pdf used on input line 99.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<imm/iia/iia_step3b.pdf, id=915, 574.64688pt x 542.025pt>
+<imm/iia/iia_step3b.pdf, id=935, 574.64688pt x 542.025pt>
 File: imm/iia/iia_step3b.pdf Graphic file (type pdf)
 
 <use imm/iia/iia_step3b.pdf>
@@ -835,7 +835,7 @@ ltiple pdfs with page group included in a single page
 
 pdfTeX warning: pdflatex.exe (file ./imm/iia/iia_step3b.pdf): PDF inclusion: mu
 ltiple pdfs with page group included in a single page
->] <imm/iia/iia_overall.pdf, id=1470, 506.39188pt x 583.68062pt>
+>] <imm/iia/iia_overall.pdf, id=1490, 506.39188pt x 583.68062pt>
 File: imm/iia/iia_overall.pdf Graphic file (type pdf)
 
 <use imm/iia/iia_overall.pdf>
@@ -858,7 +858,7 @@ LaTeX Warning: Text page 11 contains only floats.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [11 <./imm/iia/iia_overall.pdf>] <imm/iia/wave1.png, id=2796, 932.58412pt x 47
+ [11 <./imm/iia/iia_overall.pdf>] <imm/iia/wave1.png, id=2816, 932.58412pt x 47
 8.48763pt>
 File: imm/iia/wave1.png Graphic file (type png)
 
@@ -868,7 +868,7 @@ Package pdftex.def Info: imm/iia/wave1.png used on input line 131.
  [12
 
  <./imm/iia/wave1.png>] [13]
-<imm/iia/iia_mat.png, id=2809, 233.97412pt x 255.05287pt>
+<imm/iia/iia_mat.png, id=2829, 233.97412pt x 255.05287pt>
 File: imm/iia/iia_mat.png Graphic file (type png)
 
 <use imm/iia/iia_mat.png>
@@ -879,7 +879,7 @@ Package pdftex.def Info: imm/iia/iia_mat.png used on input line 332.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [14] [15 <./imm/iia/iia_mat.png>]
-<imm/iia/inclusive_scan.png, id=2820, 938.50626pt x 343.78438pt>
+<imm/iia/inclusive_scan.png, id=2840, 938.50626pt x 343.78438pt>
 File: imm/iia/inclusive_scan.png Graphic file (type png)
 
 <use imm/iia/inclusive_scan.png>
@@ -888,7 +888,7 @@ Package pdftex.def Info: imm/iia/inclusive_scan.png used on input line 349.
  [16
 
  <./imm/iia/inclusive_scan.png>]
-<imm/iia/Balanced_tree0.png, id=2830, 628.84938pt x 474.77374pt>
+<imm/iia/Balanced_tree0.png, id=2850, 628.84938pt x 474.77374pt>
 File: imm/iia/Balanced_tree0.png Graphic file (type png)
 
 <use imm/iia/Balanced_tree0.png>
@@ -899,7 +899,7 @@ Overfull \hbox (27.4699pt too wide) in paragraph at lines 383--397
  [] 
  []
 
-<imm/iia/A.png, id=2842, 478.78876pt x 398.99063pt>
+<imm/iia/A.png, id=2862, 478.78876pt x 398.99063pt>
 File: imm/iia/A.png Graphic file (type png)
  <use imm/iia/A.png>
 Package pdftex.def Info: imm/iia/A.png used on input line 404.
@@ -908,7 +908,7 @@ Package pdftex.def Info: imm/iia/A.png used on input line 404.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<imm/iia/B.png, id=2843, 598.6365pt x 333.6465pt>
+<imm/iia/B.png, id=2863, 598.6365pt x 333.6465pt>
 File: imm/iia/B.png Graphic file (type png)
  <use imm/iia/B.png>
 Package pdftex.def Info: imm/iia/B.png used on input line 411.
@@ -938,36 +938,34 @@ Underfull \hbox (badness 10000) in paragraph at lines 457--485
 
 [21
 
-]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [22]
-[23]
-Overfull \hbox (15.46408pt too wide) in paragraph at lines 485--509
+] [22]
+Overfull \hbox (15.46408pt too wide) in paragraph at lines 486--510
 [] 
  []
 
 
-Overfull \hbox (15.46408pt too wide) in paragraph at lines 485--509
+Overfull \hbox (15.46408pt too wide) in paragraph at lines 486--510
 [] 
  []
 
-[24])
-Overfull \hbox (15.46408pt too wide) in paragraph at lines 509--170
+[23
+
+])
+Overfull \hbox (15.46408pt too wide) in paragraph at lines 511--170
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 509--170
+Underfull \hbox (badness 10000) in paragraph at lines 511--170
 
  []
 
-[25]
+[24]
 \openout2 = `chapters/dct.aux'.
 
  (chapters/dct.tex
 Chapter 3.
-[26
+[25
 
 
 
@@ -976,17 +974,30 @@ Overfull \hbox (48.68599pt too wide) in paragraph at lines 42--47
  $[]$ 
  []
 
-[27] <imm/dct/dct_scheme.pdf, id=2903, 597.50786pt x 845.04686pt>
-File: imm/dct/dct_scheme.pdf Graphic file (type pdf)
+<imm/dct/dct_nopipe.pdf, id=2911, 597.50786pt x 845.04686pt>
+File: imm/dct/dct_nopipe.pdf Graphic file (type pdf)
 
-<use imm/dct/dct_scheme.pdf>
-Package pdftex.def Info: imm/dct/dct_scheme.pdf used on input line 135.
+<use imm/dct/dct_nopipe.pdf>
+Package pdftex.def Info: imm/dct/dct_nopipe.pdf used on input line 59.
 (pdftex.def)             Requested size: 384.10959pt x 543.2394pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[28]
+[26] [27 <./imm/dct/dct_nopipe.pdf>]
+<imm/dct/dct_scheme.pdf, id=2935, 597.50786pt x 845.04686pt>
+File: imm/dct/dct_scheme.pdf Graphic file (type pdf)
+
+<use imm/dct/dct_scheme.pdf>
+Package pdftex.def Info: imm/dct/dct_scheme.pdf used on input line 150.
+(pdftex.def)             Requested size: 384.10959pt x 543.2394pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[28
+
+]
 
 LaTeX Warning: Text page 29 contains only floats.
 
@@ -995,47 +1006,47 @@ Overfull \vbox (3.73938pt too high) has occurred while \output is active []
 
 
 [29 <./imm/dct/dct_scheme.pdf>]
-<imm/dct/wave1.png, id=2923, 1215.89392pt x 390.64865pt>
+<imm/dct/wave1.png, id=2959, 1215.89392pt x 390.64865pt>
 File: imm/dct/wave1.png Graphic file (type png)
 
 <use imm/dct/wave1.png>
-Package pdftex.def Info: imm/dct/wave1.png used on input line 145.
+Package pdftex.def Info: imm/dct/wave1.png used on input line 160.
 (pdftex.def)             Requested size: 426.79134pt x 137.12248pt.
  [30
 
  <./imm/dct/wave1.png>]
-<imm/dct/dct_res_matlab.png, id=2930, 316.48238pt x 312.26663pt>
+<imm/dct/dct_res_matlab.png, id=2966, 316.48238pt x 312.26663pt>
 File: imm/dct/dct_res_matlab.png Graphic file (type png)
 
 <use imm/dct/dct_res_matlab.png>
-Package pdftex.def Info: imm/dct/dct_res_matlab.png used on input line 186.
+Package pdftex.def Info: imm/dct/dct_res_matlab.png used on input line 201.
 (pdftex.def)             Requested size: 384.10959pt x 379.00638pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [31] [32 <./imm/dct/dct_res_matlab.png>]
-<imm/dct/dct_sa0.png, id=2940, 984.67876pt x 549.252pt>
+<imm/dct/dct_sa0.png, id=2976, 984.67876pt x 549.252pt>
 File: imm/dct/dct_sa0.png Graphic file (type png)
 
 <use imm/dct/dct_sa0.png>
-Package pdftex.def Info: imm/dct/dct_sa0.png used on input line 201.
+Package pdftex.def Info: imm/dct/dct_sa0.png used on input line 216.
 (pdftex.def)             Requested size: 384.10959pt x 214.2577pt.
  [33
 
  <./imm/dct/dct_sa0.png>]
-<imm/dct/dct_sa1.png, id=2948, 545.93962pt x 478.48763pt>
+<imm/dct/dct_sa1.png, id=2984, 545.93962pt x 478.48763pt>
 File: imm/dct/dct_sa1.png Graphic file (type png)
 
 <use imm/dct/dct_sa1.png>
-Package pdftex.def Info: imm/dct/dct_sa1.png used on input line 212.
+Package pdftex.def Info: imm/dct/dct_sa1.png used on input line 227.
 (pdftex.def)             Requested size: 320.09349pt x 280.53838pt.
 
-<imm/dct/dct_sa2.png, id=2951, 459.81787pt x 453.49425pt>
+<imm/dct/dct_sa2.png, id=2987, 459.81787pt x 453.49425pt>
 File: imm/dct/dct_sa2.png Graphic file (type png)
 
 <use imm/dct/dct_sa2.png>
-Package pdftex.def Info: imm/dct/dct_sa2.png used on input line 223.
+Package pdftex.def Info: imm/dct/dct_sa2.png used on input line 238.
 (pdftex.def)             Requested size: 320.09349pt x 315.6931pt.
 
 
@@ -1044,35 +1055,40 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 [34
 
  <./imm/dct/dct_sa1.png>]
-Overfull \hbox (1.63036pt too wide) in paragraph at lines 235--249
+Overfull \hbox (1.63036pt too wide) in paragraph at lines 250--264
  [] 
  []
 
-<imm/dct/dct_sa3.png, id=2962, 781.41937pt x 468.24937pt>
+<imm/dct/dct_sa3.png, id=2998, 781.41937pt x 468.24937pt>
 File: imm/dct/dct_sa3.png Graphic file (type png)
 
 <use imm/dct/dct_sa3.png>
-Package pdftex.def Info: imm/dct/dct_sa3.png used on input line 252.
+Package pdftex.def Info: imm/dct/dct_sa3.png used on input line 267.
 (pdftex.def)             Requested size: 426.79134pt x 255.74457pt.
  [35 <./imm/dct/dct_sa2.png>]
-<imm/dct/dct_sa4.png, id=2968, 787.44188pt x 459.21562pt>
+<imm/dct/dct_sa4.png, id=3004, 787.44188pt x 459.21562pt>
 File: imm/dct/dct_sa4.png Graphic file (type png)
 
 <use imm/dct/dct_sa4.png>
-Package pdftex.def Info: imm/dct/dct_sa4.png used on input line 259.
+Package pdftex.def Info: imm/dct/dct_sa4.png used on input line 274.
 (pdftex.def)             Requested size: 426.79134pt x 248.89066pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [36 <./imm/dct/dct_sa3.png>] [37 <./imm/dct/dct_sa4.png>]
-Overfull \hbox (15.46408pt too wide) in paragraph at lines 268--296
+Overfull \hbox (15.46408pt too wide) in paragraph at lines 283--336
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 268--296
+Overfull \hbox (15.46408pt too wide) in paragraph at lines 283--336
+[] 
+ []
 
+
+Overfull \hbox (15.46408pt too wide) in paragraph at lines 283--336
+[] 
  []
 
 
@@ -1082,219 +1098,209 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 ]
 [39]
-Overfull \hbox (15.46408pt too wide) in paragraph at lines 296--321
+Overfull \hbox (15.46408pt too wide) in paragraph at lines 336--349
 [] 
  []
 
 
-Overfull \hbox (15.46408pt too wide) in paragraph at lines 296--321
-[] 
- []
-
-[40]
-Overfull \hbox (15.46408pt too wide) in paragraph at lines 321--334
-[] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 321--334
+Underfull \hbox (badness 10000) in paragraph at lines 336--349
 
  []
 
-[41] [42
+[40] [41
 
-] <imm/dct/dct8.png, id=3004, 527.571pt x 501.072pt>
+] <imm/dct/dct8.png, id=3036, 527.571pt x 501.072pt>
 File: imm/dct/dct8.png Graphic file (type png)
 
 <use imm/dct/dct8.png>
-Package pdftex.def Info: imm/dct/dct8.png used on input line 424.
+Package pdftex.def Info: imm/dct/dct8.png used on input line 439.
 (pdftex.def)             Requested size: 426.79134pt x 405.35384pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[43]
+[42]
 Underfull \vbox (badness 5652) has occurred while \output is active []
 
- [44 <./imm/dct/dct8.png>] <imm/dct/dct8_scheme.png, id=3019, 536.404pt x 205.5
+ [43 <./imm/dct/dct8.png>] <imm/dct/dct8_scheme.png, id=3051, 536.404pt x 205.5
 68pt>
 File: imm/dct/dct8_scheme.png Graphic file (type png)
 
 <use imm/dct/dct8_scheme.png>
-Package pdftex.def Info: imm/dct/dct8_scheme.png used on input line 446.
+Package pdftex.def Info: imm/dct/dct8_scheme.png used on input line 461.
 (pdftex.def)             Requested size: 426.79134pt x 163.56691pt.
 
-<imm/dct/tb_dct8.png, id=3023, 955.46962pt x 424.28513pt>
+<imm/dct/tb_dct8.png, id=3055, 955.46962pt x 424.28513pt>
 File: imm/dct/tb_dct8.png Graphic file (type png)
 
 <use imm/dct/tb_dct8.png>
-Package pdftex.def Info: imm/dct/tb_dct8.png used on input line 457.
+Package pdftex.def Info: imm/dct/tb_dct8.png used on input line 472.
 (pdftex.def)             Requested size: 426.79134pt x 189.52167pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[45 <./imm/dct/dct8_scheme.png>] [46 <./imm/dct/tb_dct8.png>]
-<imm/dct/dct8_matlab.png, id=3035, 335.75438pt x 359.84438pt>
+[44 <./imm/dct/dct8_scheme.png>] [45 <./imm/dct/tb_dct8.png>]
+<imm/dct/dct8_matlab.png, id=3066, 335.75438pt x 359.84438pt>
 File: imm/dct/dct8_matlab.png Graphic file (type png)
 
 <use imm/dct/dct8_matlab.png>
-Package pdftex.def Info: imm/dct/dct8_matlab.png used on input line 494.
+Package pdftex.def Info: imm/dct/dct8_matlab.png used on input line 509.
 (pdftex.def)             Requested size: 384.10959pt x 411.67091pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 504--504
+Underfull \hbox (badness 10000) in paragraph at lines 519--519
 []|\OT1/cmr/m/n/12 This work
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 504--505
+Underfull \hbox (badness 10000) in paragraph at lines 519--520
 []|\OT1/cmr/m/n/12 LLM
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 506--506
+Underfull \hbox (badness 10000) in paragraph at lines 521--521
 []|$\OT1/cmr/m/n/12 8[]$  \OT1/cmr/m/it/12 molti-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 506--506
+Underfull \hbox (badness 10000) in paragraph at lines 521--521
 \OT1/cmr/m/it/12 pli-ca-tions
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 506--506
+Underfull \hbox (badness 10000) in paragraph at lines 521--521
 []|$\OT1/cmr/m/n/12 8$ \OT1/cmr/m/it/12 molti-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 506--506
+Underfull \hbox (badness 10000) in paragraph at lines 521--521
 \OT1/cmr/m/it/12 pli-ca-tions
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 506--506
+Underfull \hbox (badness 10000) in paragraph at lines 521--521
 []|$\OT1/cmr/m/n/12 17$ \OT1/cmr/m/it/12 molti-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 506--506
+Underfull \hbox (badness 10000) in paragraph at lines 521--521
 \OT1/cmr/m/it/12 pli-ca-tions
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 506--508
+Underfull \hbox (badness 10000) in paragraph at lines 521--523
 []|$\OT1/cmr/m/n/12 4\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 25$ \OT1/cmr/m/it/12 mol
 ti-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 506--508
+Underfull \hbox (badness 10000) in paragraph at lines 521--523
 \OT1/cmr/m/it/12 pli-ca-tions
  []
 
 
-Underfull \hbox (badness 6125) in paragraph at lines 509--509
+Underfull \hbox (badness 6125) in paragraph at lines 524--524
 []|$\OT1/cmr/m/n/12 (2 \OMS/cmsy/m/n/12  \OT1/cmr/m/n/12 8 \OMS/cmsy/m/n/12   
 \OT1/cmr/m/n/12 1)$
  []
 
 
-Underfull \hbox (badness 6300) in paragraph at lines 509--509
+Underfull \hbox (badness 6300) in paragraph at lines 524--524
 \OT1/cmr/m/n/12 x \OT1/cmr/m/it/12 (time for
  []
 
 
-Underfull \hbox (badness 5696) in paragraph at lines 509--509
+Underfull \hbox (badness 5696) in paragraph at lines 524--524
 \OT1/cmr/m/it/12 a mul-ti-pli-ca-
  []
 
 
-Underfull \hbox (badness 3758) in paragraph at lines 509--509
+Underfull \hbox (badness 3758) in paragraph at lines 524--524
 \OT1/cmr/m/it/12 tion fol-lowed
  []
 
 
-Underfull \hbox (badness 4954) in paragraph at lines 509--509
+Underfull \hbox (badness 4954) in paragraph at lines 524--524
 \OT1/cmr/m/it/12 by an ad-di-
  []
 
 
-Underfull \hbox (badness 5696) in paragraph at lines 510--510
+Underfull \hbox (badness 5696) in paragraph at lines 525--525
 \OT1/cmr/m/it/12 a mul-ti-pli-ca-
  []
 
 
-Underfull \hbox (badness 3758) in paragraph at lines 510--510
+Underfull \hbox (badness 3758) in paragraph at lines 525--525
 \OT1/cmr/m/it/12 tion fol-lowed
  []
 
 
-Underfull \hbox (badness 4954) in paragraph at lines 510--510
+Underfull \hbox (badness 4954) in paragraph at lines 525--525
 \OT1/cmr/m/it/12 by an ad-di-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 510--510
+Underfull \hbox (badness 10000) in paragraph at lines 525--525
 []|\OT1/cmr/m/it/12 time for a
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 510--510
+Underfull \hbox (badness 10000) in paragraph at lines 525--525
 \OT1/cmr/m/it/12 mul-ti-pli-ca-tion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 510--510
+Underfull \hbox (badness 10000) in paragraph at lines 525--525
 \OT1/cmr/m/it/12 fol-lowed by
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 510--510
+Underfull \hbox (badness 10000) in paragraph at lines 525--525
 []|\OT1/cmr/m/it/12 time for 3
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 510--510
+Underfull \hbox (badness 10000) in paragraph at lines 525--525
 \OT1/cmr/m/it/12 mul-ti-pli-ca-
  []
 
 
-Underfull \hbox (badness 4954) in paragraph at lines 510--510
+Underfull \hbox (badness 4954) in paragraph at lines 525--525
 \OT1/cmr/m/it/12 tions and 6
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 510--511
+Underfull \hbox (badness 10000) in paragraph at lines 525--526
 []|\OT1/cmr/m/it/12 time for 1
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 510--511
+Underfull \hbox (badness 10000) in paragraph at lines 525--526
 \OT1/cmr/m/it/12 mul-ti-pli-ca-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 510--511
+Underfull \hbox (badness 10000) in paragraph at lines 525--526
 \OT1/cmr/m/it/12 tion and 2
  []
 
 
-Overfull \hbox (32.12077pt too wide) in paragraph at lines 502--514
+Overfull \hbox (32.12077pt too wide) in paragraph at lines 517--529
  [] 
  []
 
-[47 <./imm/dct/dct8_matlab.png>]
-<imm/dct/rot.png, id=3043, 569.327pt x 538.813pt>
+[46 <./imm/dct/dct8_matlab.png>]
+<imm/dct/rot.png, id=3075, 569.327pt x 538.813pt>
 File: imm/dct/rot.png Graphic file (type png)
  <use imm/dct/rot.png>
-Package pdftex.def Info: imm/dct/rot.png used on input line 520.
+Package pdftex.def Info: imm/dct/rot.png used on input line 535.
 (pdftex.def)             Requested size: 298.75262pt x 282.74129pt.
 
-<imm/dct/dfg_llm.png, id=3046, 562.903pt x 678.535pt>
+<imm/dct/dfg_llm.png, id=3078, 562.903pt x 678.535pt>
 File: imm/dct/dfg_llm.png Graphic file (type png)
 
 <use imm/dct/dfg_llm.png>
-Package pdftex.def Info: imm/dct/dfg_llm.png used on input line 529.
+Package pdftex.def Info: imm/dct/dfg_llm.png used on input line 544.
 (pdftex.def)             Requested size: 426.79134pt x 514.48059pt.
 
 
@@ -1303,71 +1309,71 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[48] [49 <./imm/dct/rot.png>] [50 <./imm/dct/dfg_llm.png>]
-<imm/dct/dct16.png, id=3065, 610.38037pt x 510.40688pt>
+[47] [48 <./imm/dct/rot.png>] [49 <./imm/dct/dfg_llm.png>]
+<imm/dct/dct16.png, id=3097, 610.38037pt x 510.40688pt>
 File: imm/dct/dct16.png Graphic file (type png)
 
 <use imm/dct/dct16.png>
-Package pdftex.def Info: imm/dct/dct16.png used on input line 543.
+Package pdftex.def Info: imm/dct/dct16.png used on input line 558.
 (pdftex.def)             Requested size: 426.79134pt x 356.88518pt.
 
-<imm/dct/dct_2n.png, id=3066, 499.8675pt x 670.60538pt>
+<imm/dct/dct_2n.png, id=3098, 499.8675pt x 670.60538pt>
 File: imm/dct/dct_2n.png Graphic file (type png)
 
 <use imm/dct/dct_2n.png>
-Package pdftex.def Info: imm/dct/dct_2n.png used on input line 550.
+Package pdftex.def Info: imm/dct/dct_2n.png used on input line 565.
 (pdftex.def)             Requested size: 426.79134pt x 572.58563pt.
 
 
-LaTeX Warning: Float too large for page by 34.08562pt on input line 553.
+LaTeX Warning: Float too large for page by 34.08562pt on input line 568.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[51
+[50
 
- <./imm/dct/dct16.png>] [52 <./imm/dct/dct_2n.png>]
-Overfull \hbox (15.46408pt too wide) in paragraph at lines 558--586
+ <./imm/dct/dct16.png>] [51 <./imm/dct/dct_2n.png>]
+Overfull \hbox (15.46408pt too wide) in paragraph at lines 573--601
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 558--586
+Underfull \hbox (badness 10000) in paragraph at lines 573--601
 
  []
 
-[53
+[52
 
 ]
-Overfull \hbox (15.46408pt too wide) in paragraph at lines 586--610
+Overfull \hbox (15.46408pt too wide) in paragraph at lines 601--625
 [] 
  []
 
 
-Overfull \hbox (15.46408pt too wide) in paragraph at lines 586--610
+Overfull \hbox (15.46408pt too wide) in paragraph at lines 601--625
 [] 
  []
 
-[54])
-Overfull \hbox (15.46408pt too wide) in paragraph at lines 610--171
+[53])
+Overfull \hbox (15.46408pt too wide) in paragraph at lines 625--171
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 610--171
+Underfull \hbox (badness 10000) in paragraph at lines 625--171
 
  []
 
-[55]
+[54]
 \openout2 = `chapters/bf.aux'.
 
  (chapters/bf.tex
 Chapter 4.
-[56
+[55
 
 
 
-] <imm/bf/bf1.pdf, id=3098, 421.575pt x 420.67163pt>
+] <imm/bf/bf1.pdf, id=3130, 421.575pt x 420.67163pt>
 File: imm/bf/bf1.pdf Graphic file (type pdf)
  <use imm/bf/bf1.pdf>
 Package pdftex.def Info: imm/bf/bf1.pdf used on input line 44.
@@ -1376,14 +1382,14 @@ Package pdftex.def Info: imm/bf/bf1.pdf used on input line 44.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[57] [58 <./imm/bf/bf1.pdf>]
-<imm/bf/bflev11.png, id=3162, 533.192pt x 264.99pt>
+[56] [57 <./imm/bf/bf1.pdf>]
+<imm/bf/bflev11.png, id=3193, 533.192pt x 264.99pt>
 File: imm/bf/bflev11.png Graphic file (type png)
  <use imm/bf/bflev11.png>
 Package pdftex.def Info: imm/bf/bflev11.png used on input line 58.
 (pdftex.def)             Requested size: 426.79134pt x 212.10954pt.
 
-<imm/bf/bflevel1.pdf, id=3163, 483.30562pt x 484.51013pt>
+<imm/bf/bflevel1.pdf, id=3194, 483.30562pt x 484.51013pt>
 File: imm/bf/bflevel1.pdf Graphic file (type pdf)
 
 <use imm/bf/bflevel1.pdf>
@@ -1393,16 +1399,16 @@ Package pdftex.def Info: imm/bf/bflevel1.pdf used on input line 65.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[59
+[58
 
- <./imm/bf/bflev11.png>] [60 <./imm/bf/bflevel1.pdf>]
-<imm/bf/bflev12.png, id=3253, 544.434pt x 366.971pt>
+ <./imm/bf/bflev11.png>] [59 <./imm/bf/bflevel1.pdf>]
+<imm/bf/bflev12.png, id=3285, 544.434pt x 366.971pt>
 File: imm/bf/bflev12.png Graphic file (type png)
  <use imm/bf/bflev12.png>
 Package pdftex.def Info: imm/bf/bflev12.png used on input line 89.
 (pdftex.def)             Requested size: 405.45045pt x 273.30133pt.
 
-<imm/bf/bflev2.pdf, id=3254, 483.30562pt x 487.5214pt>
+<imm/bf/bflev2.pdf, id=3286, 483.30562pt x 487.5214pt>
 File: imm/bf/bflev2.pdf Graphic file (type pdf)
  <use imm/bf/bflev2.pdf>
 Package pdftex.def Info: imm/bf/bflev2.pdf used on input line 95.
@@ -1411,13 +1417,13 @@ Package pdftex.def Info: imm/bf/bflev2.pdf used on input line 95.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[61
+[60
 
- <./imm/bf/bflev12.png>] [62 <./imm/bf/bflev2.pdf>]
+ <./imm/bf/bflev12.png>] [61 <./imm/bf/bflev2.pdf>]
 
-LaTeX Warning: Reference `fig:h2' on page 63 undefined on input line 106.
+LaTeX Warning: Reference `fig:h2' on page 62 undefined on input line 106.
 
-<imm/bf/bf_h2.pdf, id=3572, 496.85625pt x 497.75961pt>
+<imm/bf/bf_h2.pdf, id=3604, 496.85625pt x 497.75961pt>
 File: imm/bf/bf_h2.pdf Graphic file (type pdf)
  <use imm/bf/bf_h2.pdf>
 Package pdftex.def Info: imm/bf/bf_h2.pdf used on input line 110.
@@ -1425,22 +1431,22 @@ Package pdftex.def Info: imm/bf/bf_h2.pdf used on input line 110.
 
 Underfull \vbox (badness 1478) has occurred while \output is active []
 
- [63
+ [62
 
- <./imm/bf/bf_h2.pdf>] <imm/bf/tb_bf.png, id=3655, 918.13013pt x 446.56837pt>
+ <./imm/bf/bf_h2.pdf>] <imm/bf/tb_bf.png, id=3687, 918.13013pt x 446.56837pt>
 File: imm/bf/tb_bf.png Graphic file (type png)
 
 <use imm/bf/tb_bf.png>
 Package pdftex.def Info: imm/bf/tb_bf.png used on input line 122.
 (pdftex.def)             Requested size: 426.79134pt x 207.584pt.
- [64 <./imm/bf/tb_bf.png>] [65]
-<imm/bf/bfwavev2.png, id=3670, 897.65363pt x 423.68288pt>
+ [63 <./imm/bf/tb_bf.png>] [64]
+<imm/bf/bfwavev2.png, id=3702, 897.65363pt x 423.68288pt>
 File: imm/bf/bfwavev2.png Graphic file (type png)
 
 <use imm/bf/bfwavev2.png>
 Package pdftex.def Info: imm/bf/bfwavev2.png used on input line 219.
 (pdftex.def)             Requested size: 426.79134pt x 201.4454pt.
- [66 <./imm/bf/bfwavev2.png>] [67]
+ [65 <./imm/bf/bfwavev2.png>] [66]
 Underfull \hbox (badness 10000) in paragraph at lines 294--296
 
  []
@@ -1454,7 +1460,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 313--314
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
 (hyperref)                than one, level fixed on input line 326.
 
-[68]
+[67]
 Overfull \hbox (15.46408pt too wide) in paragraph at lines 367--395
 [] 
  []
@@ -1464,7 +1470,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 367--395
 
  []
 
-[69] [70]
+[68] [69]
 Overfull \hbox (15.46408pt too wide) in paragraph at lines 395--419
 [] 
  []
@@ -1474,7 +1480,7 @@ Overfull \hbox (15.46408pt too wide) in paragraph at lines 395--419
 [] 
  []
 
-[71])
+[70])
 Overfull \hbox (15.46408pt too wide) in paragraph at lines 419--172
 [] 
  []
@@ -1484,16 +1490,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 419--172
 
  []
 
-[72]
+[71]
 \openout2 = `chapters/fir.aux'.
 
  (chapters/fir.tex
 Chapter 5.
-[73
+[72
 
 
 
-] <imm/fir/fir1.png, id=3719, 580.569pt x 48.18pt>
+] <imm/fir/fir1.png, id=3751, 580.569pt x 48.18pt>
 File: imm/fir/fir1.png Graphic file (type png)
  <use imm/fir/fir1.png>
 Package pdftex.def Info: imm/fir/fir1.png used on input line 48.
@@ -1502,7 +1508,7 @@ Package pdftex.def Info: imm/fir/fir1.png used on input line 48.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<imm/fir/fir2.png, id=3721, 581.372pt x 147.752pt>
+<imm/fir/fir2.png, id=3753, 581.372pt x 147.752pt>
 File: imm/fir/fir2.png Graphic file (type png)
  <use imm/fir/fir2.png>
 Package pdftex.def Info: imm/fir/fir2.png used on input line 57.
@@ -1511,7 +1517,7 @@ Package pdftex.def Info: imm/fir/fir2.png used on input line 57.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[74] <imm/fir/fir_sim.png, id=3729, 959.68538pt x 388.15013pt>
+[73] <imm/fir/fir_sim.png, id=3761, 959.68538pt x 388.15013pt>
 File: imm/fir/fir_sim.png Graphic file (type png)
 
 <use imm/fir/fir_sim.png>
@@ -1521,7 +1527,7 @@ Package pdftex.def Info: imm/fir/fir_sim.png used on input line 74.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[75 <./imm/fir/fir1.png> <./imm/fir/fir2.png>] [76 <./imm/fir/fir_sim.png>]
+[74 <./imm/fir/fir1.png> <./imm/fir/fir2.png>] [75 <./imm/fir/fir_sim.png>]
 Overfull \hbox (33.15454pt too wide) in paragraph at lines 102--111
 []|[]| 
  []
@@ -1536,7 +1542,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 94--123
 
  []
 
-[77
+[76
 
 ]
 Overfull \hbox (15.46408pt too wide) in paragraph at lines 123--147
@@ -1548,7 +1554,7 @@ Overfull \hbox (15.46408pt too wide) in paragraph at lines 123--147
 [] 
  []
 
-[78])
+[77])
 Overfull \hbox (15.46408pt too wide) in paragraph at lines 147--173
 [] 
  []
@@ -1558,28 +1564,28 @@ Underfull \hbox (badness 10000) in paragraph at lines 147--173
 
  []
 
-[79]
+[78]
 \openout2 = `chapters/tep.aux'.
 
  (chapters/tep.tex
 Chapter 6.
-[80
+[79
 
 
 
-] <imm/tep/tep0.png, id=3763, 733.84163pt x 567.01837pt>
+] <imm/tep/tep0.png, id=3795, 733.84163pt x 567.01837pt>
 File: imm/tep/tep0.png Graphic file (type png)
 
 <use imm/tep/tep0.png>
 Package pdftex.def Info: imm/tep/tep0.png used on input line 20.
 (pdftex.def)             Requested size: 341.43436pt x 263.8252pt.
- <imm/tep/tep1.png, id=3764, 492.33937pt x 487.52138pt>
+ <imm/tep/tep1.png, id=3796, 492.33937pt x 487.52138pt>
 File: imm/tep/tep1.png Graphic file (type png)
 
 <use imm/tep/tep1.png>
 Package pdftex.def Info: imm/tep/tep1.png used on input line 32.
 (pdftex.def)             Requested size: 213.39566pt x 211.31131pt.
- <imm/tep/tep2.png, id=3765, 497.15738pt x 494.74838pt>
+ <imm/tep/tep2.png, id=3797, 497.15738pt x 494.74838pt>
 File: imm/tep/tep2.png Graphic file (type png)
 
 <use imm/tep/tep2.png>
@@ -1592,8 +1598,8 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[81 <./imm/tep/tep0.png>] [82 <./imm/tep/tep1.png> <./imm/tep/tep2.png>]
-<imm/tep/tep_unit0.png, id=3777, 327.20044pt x 679.8145pt>
+[80 <./imm/tep/tep0.png>] [81 <./imm/tep/tep1.png> <./imm/tep/tep2.png>]
+<imm/tep/tep_unit0.png, id=3808, 327.20044pt x 679.8145pt>
 File: imm/tep/tep_unit0.png Graphic file (type png)
 
 <use imm/tep/tep_unit0.png>
@@ -1603,26 +1609,26 @@ Package pdftex.def Info: imm/tep/tep_unit0.png used on input line 64.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[83] [84 <./imm/tep/tep_unit0.png>]
-<imm/tep/wave_t.png, id=3789, 505.58888pt x 458.61337pt>
+[82] [83 <./imm/tep/tep_unit0.png>]
+<imm/tep/wave_t.png, id=3821, 505.58888pt x 458.61337pt>
 File: imm/tep/wave_t.png Graphic file (type png)
 
 <use imm/tep/wave_t.png>
 Package pdftex.def Info: imm/tep/wave_t.png used on input line 83.
 (pdftex.def)             Requested size: 426.79134pt x 387.15001pt.
- [85
+ [84
 
  <./imm/tep/wave_t.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 126--127
 
  []
 
-[86]
+[85]
 Overfull \hbox (3.45673pt too wide) in paragraph at lines 133--147
  [] 
  []
 
-[87]
+[86]
 Overfull \hbox (33.15454pt too wide) in paragraph at lines 160--169
 []|[]| 
  []
@@ -1637,7 +1643,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 152--180
 
  []
 
-[88
+[87
 
 ]
 Overfull \hbox (15.46408pt too wide) in paragraph at lines 180--204
@@ -1649,7 +1655,7 @@ Overfull \hbox (15.46408pt too wide) in paragraph at lines 180--204
 [] 
  []
 
-[89]
+[88]
 Overfull \hbox (15.46408pt too wide) in paragraph at lines 204--217
 [] 
  []
@@ -1659,7 +1665,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 204--217
 
  []
 
-) [90]
+) [89]
 \openout2 = `chapters/3D.aux'.
 
  (chapters/3D.tex
@@ -1669,13 +1675,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 2--3
 
  []
 
-<imm/3d/cube.pdf, id=3821, 521.54848pt x 413.44463pt>
+<imm/3d/cube.pdf, id=3853, 521.54848pt x 413.44463pt>
 File: imm/3d/cube.pdf Graphic file (type pdf)
  <use imm/3d/cube.pdf>
 Package pdftex.def Info: imm/3d/cube.pdf used on input line 6.
 (pdftex.def)             Requested size: 298.75262pt x 236.83298pt.
 
-[91
+[90
 
 
 
@@ -1684,18 +1690,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 39--41
 
  []
 
-[92] <imm/3d/logic_plane1.png, id=4187, 963.6pt x 542.025pt>
+[91] <imm/3d/logic_plane1.png, id=4219, 963.6pt x 542.025pt>
 File: imm/3d/logic_plane1.png Graphic file (type png)
 
 <use imm/3d/logic_plane1.png>
 Package pdftex.def Info: imm/3d/logic_plane1.png used on input line 76.
 (pdftex.def)             Requested size: 384.10959pt x 216.0618pt.
- [93 <./imm/3d/logic_plane1.png>]
+ [92 <./imm/3d/logic_plane1.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 93--96
 
  []
 
-<imm/3d/tb_cell_phases.png, id=4196, 389.35463pt x 309.85762pt>
+<imm/3d/tb_cell_phases.png, id=4228, 389.35463pt x 309.85762pt>
 File: imm/3d/tb_cell_phases.png Graphic file (type png)
 
 <use imm/3d/tb_cell_phases.png>
@@ -1705,22 +1711,22 @@ Package pdftex.def Info: imm/3d/tb_cell_phases.png used on input line 116.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[94] [95 <./imm/3d/tb_cell_phases.png>]
-<imm/3d/tb_cell.png, id=4211, 959.38425pt x 417.66037pt>
+[93] [94 <./imm/3d/tb_cell_phases.png>]
+<imm/3d/tb_cell.png, id=4243, 959.38425pt x 417.66037pt>
 File: imm/3d/tb_cell.png Graphic file (type png)
 
 <use imm/3d/tb_cell.png>
 Package pdftex.def Info: imm/3d/tb_cell.png used on input line 150.
 (pdftex.def)             Requested size: 426.79134pt x 185.79773pt.
- [96 <./imm/3d/tb_cell.png>]
-<imm/3d/tb_3d_top.png, id=4218, 963.29887pt x 427.29637pt>
+ [95 <./imm/3d/tb_cell.png>]
+<imm/3d/tb_3d_top.png, id=4250, 963.29887pt x 427.29637pt>
 File: imm/3d/tb_3d_top.png Graphic file (type png)
 
 <use imm/3d/tb_3d_top.png>
 Package pdftex.def Info: imm/3d/tb_3d_top.png used on input line 161.
 (pdftex.def)             Requested size: 426.79134pt x 189.31497pt.
 
-<imm/3d/tb_3d_acc.png, id=4223, 945.83362pt x 424.88737pt>
+<imm/3d/tb_3d_acc.png, id=4255, 945.83362pt x 424.88737pt>
 File: imm/3d/tb_3d_acc.png Graphic file (type png)
 
 <use imm/3d/tb_3d_acc.png>
@@ -1733,7 +1739,7 @@ T1/cmr/bx/n/12 TG \OT1/cmr/m/n/12 ma-trix (\OT1/cmr/m/it/12 tb[]tg[]top[]2d/dut
 /tg[]logic/input
  []
 
-[97 <./imm/3d/tb_3d_top.png>] [98 <./imm/3d/tb_3d_acc.png>]
+[96 <./imm/3d/tb_3d_top.png>] [97 <./imm/3d/tb_3d_acc.png>]
 Overfull \hbox (33.15454pt too wide) in paragraph at lines 187--195
 []|[]| 
  []
@@ -1748,7 +1754,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 179--206
 
  []
 
-[99
+[98
 
 ]
 Overfull \hbox (15.46408pt too wide) in paragraph at lines 206--230
@@ -1760,7 +1766,7 @@ Overfull \hbox (15.46408pt too wide) in paragraph at lines 206--230
 [] 
  []
 
-[100])
+[99])
 Overfull \hbox (15.46408pt too wide) in paragraph at lines 230--175
 [] 
  []
@@ -1770,18 +1776,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 230--175
 
  []
 
-[101]
+[100]
 \openout2 = `chapters/sw.aux'.
 
  (chapters/sw.tex
 Chapter 8.
-<imm/sw/sw1.png, id=4247, 779.61263pt x 137.61412pt>
+<imm/sw/sw1.png, id=4279, 779.61263pt x 137.61412pt>
 File: imm/sw/sw1.png Graphic file (type png)
  <use imm/sw/sw1.png>
 Package pdftex.def Info: imm/sw/sw1.png used on input line 9.
 (pdftex.def)             Requested size: 362.77524pt x 64.03609pt.
 
-<imm/sw/blosum62.png, id=4250, 780.81712pt x 497.75963pt>
+<imm/sw/blosum62.png, id=4282, 780.81712pt x 497.75963pt>
 File: imm/sw/blosum62.png Graphic file (type png)
 
 <use imm/sw/blosum62.png>
@@ -1791,11 +1797,11 @@ Package pdftex.def Info: imm/sw/blosum62.png used on input line 21.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[102
+[101
 
 
 
- <./imm/sw/sw1.png>] [103 <./imm/sw/blosum62.png>]
+ <./imm/sw/sw1.png>] [102 <./imm/sw/blosum62.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 30--31
 
  []
@@ -1810,10 +1816,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 50--51
 
  []
 
-[104
+[103
 
 ]
-<imm/sw/tb_systolic_array_phases.png, id=4271, 1215.89392pt x 528.3523pt>
+<imm/sw/tb_systolic_array_phases.png, id=4303, 1215.89392pt x 528.3523pt>
 File: imm/sw/tb_systolic_array_phases.png Graphic file (type png)
 
 <use imm/sw/tb_systolic_array_phases.png>
@@ -1821,7 +1827,7 @@ Package pdftex.def Info: imm/sw/tb_systolic_array_phases.png used on input line
  58.
 (pdftex.def)             Requested size: 426.79134pt x 185.45816pt.
 
-<imm/sw/tb_flow.png, id=4272, 488.12363pt x 736.85287pt>
+<imm/sw/tb_flow.png, id=4304, 488.12363pt x 736.85287pt>
 File: imm/sw/tb_flow.png Graphic file (type png)
 
 <use imm/sw/tb_flow.png>
@@ -1831,8 +1837,8 @@ Package pdftex.def Info: imm/sw/tb_flow.png used on input line 64.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[105 <./imm/sw/tb_systolic_array_phases.png>] [106 <./imm/sw/tb_flow.png>]
-<imm/sw/configuration_phase.png, id=4285, 1215.89392pt x 528.3523pt>
+[104 <./imm/sw/tb_systolic_array_phases.png>] [105 <./imm/sw/tb_flow.png>]
+<imm/sw/configuration_phase.png, id=4316, 1215.89392pt x 528.3523pt>
 File: imm/sw/configuration_phase.png Graphic file (type png)
 
 <use imm/sw/configuration_phase.png>
@@ -1843,7 +1849,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 77--80
 
  []
 
-<imm/sw/tabella.png, id=4287, 212.89537pt x 458.61337pt>
+<imm/sw/tabella.png, id=4318, 212.89537pt x 458.61337pt>
 File: imm/sw/tabella.png Graphic file (type png)
 
 <use imm/sw/tabella.png>
@@ -1853,10 +1859,10 @@ Package pdftex.def Info: imm/sw/tabella.png used on input line 88.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[107
+[106
 
  <./imm/sw/configuration_phase.png>]
-<imm/sw/tb_sw1.png, id=4294, 592.91513pt x 482.10112pt>
+<imm/sw/tb_sw1.png, id=4326, 592.91513pt x 482.10112pt>
 File: imm/sw/tb_sw1.png Graphic file (type png)
 
 <use imm/sw/tb_sw1.png>
@@ -1866,8 +1872,8 @@ Package pdftex.def Info: imm/sw/tb_sw1.png used on input line 111.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[108] [109 <./imm/sw/tabella.png>] [110 <./imm/sw/tb_sw1.png>]
-<imm/sw/load_pe17_AA1.png, id=4310, 374.90062pt x 162.90863pt>
+[107] [108 <./imm/sw/tabella.png>] [109 <./imm/sw/tb_sw1.png>]
+<imm/sw/load_pe17_AA1.png, id=4342, 374.90062pt x 162.90863pt>
 File: imm/sw/load_pe17_AA1.png Graphic file (type png)
 
 <use imm/sw/load_pe17_AA1.png>
@@ -1878,40 +1884,40 @@ Underfull \hbox (badness 10000) in paragraph at lines 123--124
 
  []
 
-[111
+[110
 
  <./imm/sw/load_pe17_AA1.png>]
-<imm/sw/load_pe19.png, id=4318, 245.41687pt x 162.90863pt>
+<imm/sw/load_pe19.png, id=4350, 245.41687pt x 162.90863pt>
 File: imm/sw/load_pe19.png Graphic file (type png)
 
 <use imm/sw/load_pe19.png>
 Package pdftex.def Info: imm/sw/load_pe19.png used on input line 142.
 (pdftex.def)             Requested size: 426.79134pt x 283.31702pt.
- [112
+ [111
 
  <./imm/sw/load_pe19.png>]
-<imm/sw/load_pe_5_6_12.png, id=4326, 274.32487pt x 87.62738pt>
+<imm/sw/load_pe_5_6_12.png, id=4357, 274.32487pt x 87.62738pt>
 File: imm/sw/load_pe_5_6_12.png Graphic file (type png)
 
 <use imm/sw/load_pe_5_6_12.png>
 Package pdftex.def Info: imm/sw/load_pe_5_6_12.png used on input line 165.
 (pdftex.def)             Requested size: 426.79134pt x 136.33444pt.
 
-<imm/sw/load_pe_8.png, id=4330, 958.48088pt x 423.08063pt>
+<imm/sw/load_pe_8.png, id=4361, 958.48088pt x 423.08063pt>
 File: imm/sw/load_pe_8.png Graphic file (type png)
 
 <use imm/sw/load_pe_8.png>
 Package pdftex.def Info: imm/sw/load_pe_8.png used on input line 193.
 (pdftex.def)             Requested size: 426.79134pt x 188.38971pt.
 
-<imm/sw/open_gap_10.png, id=4331, 961.49213pt x 421.27388pt>
+<imm/sw/open_gap_10.png, id=4362, 961.49213pt x 421.27388pt>
 File: imm/sw/open_gap_10.png Graphic file (type png)
 
 <use imm/sw/open_gap_10.png>
 Package pdftex.def Info: imm/sw/open_gap_10.png used on input line 199.
 (pdftex.def)             Requested size: 426.79134pt x 187.00024pt.
 
-<imm/sw/ext_gap.png, id=4332, 959.68538pt x 419.46713pt>
+<imm/sw/ext_gap.png, id=4363, 959.68538pt x 419.46713pt>
 File: imm/sw/ext_gap.png Graphic file (type png)
 
 <use imm/sw/ext_gap.png>
@@ -1933,7 +1939,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<imm/sw/db.png, id=4336, 510.40688pt x 418.86487pt>
+<imm/sw/db.png, id=4367, 510.40688pt x 418.86487pt>
 File: imm/sw/db.png Graphic file (type png)
  <use imm/sw/db.png>
 Package pdftex.def Info: imm/sw/db.png used on input line 220.
@@ -1944,15 +1950,15 @@ Overfull \hbox (67.98267pt too wide) in paragraph at lines 210--224
  pro-cess called \OT1/cmr/m/it/12 s[]w[]computation\OT1/cmr/m/n/12 already
  []
 
-[113
+[112
 
- <./imm/sw/load_pe_5_6_12.png>] [114 <./imm/sw/load_pe_8.png> <./imm/sw/open_ga
+ <./imm/sw/load_pe_5_6_12.png>] [113 <./imm/sw/load_pe_8.png> <./imm/sw/open_ga
 p_10.png>]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[115 <./imm/sw/ext_gap.png>] [116 <./imm/sw/db.png>]
-<imm/sw/evaluating_output_1.png, id=4353, 855.49612pt x 421.27388pt>
+[114 <./imm/sw/ext_gap.png>] [115 <./imm/sw/db.png>]
+<imm/sw/evaluating_output_1.png, id=4385, 855.49612pt x 421.27388pt>
 File: imm/sw/evaluating_output_1.png Graphic file (type png)
 
 <use imm/sw/evaluating_output_1.png>
@@ -1960,7 +1966,7 @@ Package pdftex.def Info: imm/sw/evaluating_output_1.png used on input line 230.
 
 (pdftex.def)             Requested size: 426.79134pt x 210.16716pt.
 
-<imm/sw/149.png, id=4355, 959.08313pt x 373.09387pt>
+<imm/sw/149.png, id=4387, 959.08313pt x 373.09387pt>
 File: imm/sw/149.png Graphic file (type png)
  <use imm/sw/149.png>
 Package pdftex.def Info: imm/sw/149.png used on input line 238.
@@ -1969,7 +1975,7 @@ Package pdftex.def Info: imm/sw/149.png used on input line 238.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<imm/sw/out_149.png, id=4356, 270.71138pt x 214.09987pt>
+<imm/sw/out_149.png, id=4388, 270.71138pt x 214.09987pt>
 File: imm/sw/out_149.png Graphic file (type png)
 
 <use imm/sw/out_149.png>
@@ -1979,15 +1985,15 @@ Package pdftex.def Info: imm/sw/out_149.png used on input line 246.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) [117
+) [116
 
- <./imm/sw/evaluating_output_1.png>] [118 <./imm/sw/149.png> <./imm/sw/out_149.
+ <./imm/sw/evaluating_output_1.png>] [117 <./imm/sw/149.png> <./imm/sw/out_149.
 png>]
 \openout2 = `chapters/svd.aux'.
 
  (chapters/svd.tex
 Chapter 9.
-<imm/svd/10vectors.png, id=4368, 143.03438pt x 186.6975pt>
+<imm/svd/10vectors.png, id=4399, 143.03438pt x 186.6975pt>
 File: imm/svd/10vectors.png Graphic file (type png)
 
 <use imm/svd/10vectors.png>
@@ -1997,7 +2003,7 @@ Package pdftex.def Info: imm/svd/10vectors.png used on input line 20.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<imm/svd/50vettori.png, id=4369, 143.03438pt x 186.6975pt>
+<imm/svd/50vettori.png, id=4400, 143.03438pt x 186.6975pt>
 File: imm/svd/50vettori.png Graphic file (type png)
 
 <use imm/svd/50vettori.png>
@@ -2007,7 +2013,7 @@ Package pdftex.def Info: imm/svd/50vettori.png used on input line 27.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<imm/svd/400vettori.png, id=4370, 143.03438pt x 186.6975pt>
+<imm/svd/400vettori.png, id=4401, 143.03438pt x 186.6975pt>
 File: imm/svd/400vettori.png Graphic file (type png)
 
 <use imm/svd/400vettori.png>
@@ -2017,11 +2023,11 @@ Package pdftex.def Info: imm/svd/400vettori.png used on input line 34.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[119
+[118
 
 
 
-] [120 <./imm/svd/10vectors.png>] [121 <./imm/svd/50vettori.png>] [122 <./imm/s
+] [119 <./imm/svd/10vectors.png>] [120 <./imm/svd/50vettori.png>] [121 <./imm/s
 vd/400vettori.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 55--58
 
@@ -2032,176 +2038,200 @@ Underfull \hbox (badness 10000) in paragraph at lines 70--72
 
  []
 
-[123
+[122
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 102--104
 
  []
 
-[124]
+[123]
 Underfull \hbox (badness 10000) in paragraph at lines 176--177
 
  []
 
-[125]) [126]
+[124]) [125]
 \openout2 = `chapters/syn.aux'.
 
  (chapters/syn.tex
 Chapter 10.
-[127
+[126
 
 
 
-] [128] [129] [130] [131]
+] [127] [128] [129] [130]
 Underfull \vbox (badness 1400) has occurred while \output is active []
 
- [132]
-[133] [134] [135] [136]) [137]
+ [131]
+[132] [133] [134] [135]) [136]
 \openout2 = `chapters/tessa.aux'.
 
  (chapters/tessa.tex
 Chapter 11.
-
-Underfull \hbox (badness 10000) in paragraph at lines 3--6
-
- []
-
-LaTeX Font Info:    Try loading font information for OML+cmr on input line 25.
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 22.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omlcmr.fd"
 File: omlcmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 25.
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 22.
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 28.
- [138
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 25.
+ [137
 
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 49--86
+Underfull \hbox (badness 10000) in paragraph at lines 46--81
 
  []
 
 
-Underfull \vbox (badness 3271) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [139]
-Underfull \hbox (badness 10000) in paragraph at lines 87--89
+ [138]
+Underfull \hbox (badness 10000) in paragraph at lines 82--84
 
  []
 
-[140] <imm/tessa/PDGscc.pdf, id=4496, 1540.75626pt x 1206.5075pt>
+<imm/tessa/PDGscc.pdf, id=4524, 1540.75626pt x 1206.5075pt>
 File: imm/tessa/PDGscc.pdf Graphic file (type pdf)
 
 <use imm/tessa/PDGscc.pdf>
-Package pdftex.def Info: imm/tessa/PDGscc.pdf used on input line 102.
+Package pdftex.def Info: imm/tessa/PDGscc.pdf used on input line 97.
 (pdftex.def)             Requested size: 426.79134pt x 334.19307pt.
- [141 <./imm/tessa/PDGscc.pdf>]
-<imm/tessa/Q.pdf, id=4509, 1746.525pt x 1345.025pt>
+ [139] [140 <./imm/tessa/PDGscc.pdf>]
+<imm/tessa/Q.pdf, id=4541, 1746.525pt x 1345.025pt>
 File: imm/tessa/Q.pdf Graphic file (type pdf)
  <use imm/tessa/Q.pdf>
-Package pdftex.def Info: imm/tessa/Q.pdf used on input line 113.
+Package pdftex.def Info: imm/tessa/Q.pdf used on input line 108.
 (pdftex.def)             Requested size: 426.79134pt x 328.66176pt.
 
-<imm/tessa/topsort.png, id=4510, 527.87213pt x 294.80138pt>
+<imm/tessa/topsort.png, id=4542, 527.87213pt x 294.80138pt>
 File: imm/tessa/topsort.png Graphic file (type png)
 
 <use imm/tessa/topsort.png>
-Package pdftex.def Info: imm/tessa/topsort.png used on input line 122.
+Package pdftex.def Info: imm/tessa/topsort.png used on input line 117.
 (pdftex.def)             Requested size: 426.79134pt x 238.36046pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[142
+[141
 
- <./imm/tessa/Q.pdf>] [143 <./imm/tessa/topsort.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 128--129
+ <./imm/tessa/Q.pdf>] [142 <./imm/tessa/topsort.png>]
+<imm/tessa/pdgblocks.png, id=4560, 695.59875pt x 502.2765pt>
+File: imm/tessa/pdgblocks.png Graphic file (type png)
+
+<use imm/tessa/pdgblocks.png>
+Package pdftex.def Info: imm/tessa/pdgblocks.png used on input line 128.
+(pdftex.def)             Requested size: 426.79134pt x 308.17397pt.
+ [143
+
+ <./imm/tessa/pdgblocks.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 143--145
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 131--132
+Underfull \hbox (badness 10000) in paragraph at lines 146--147
 
  []
 
+
+Overfull \hbox (1.79112pt too wide) in paragraph at lines 148--151
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 148--151
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 152--153
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 154--157
+
+ []
+
+[144] [145]
 (C:\Users\Gina\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
 (C:\Users\Gina\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
-Underfull \hbox (badness 10000) in paragraph at lines 162--163
-
- []
-
-[144
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 169--171
+Underfull \hbox (badness 10000) in paragraph at lines 233--234
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 176--177
+Underfull \hbox (badness 10000) in paragraph at lines 240--242
+
+ []
+
+[146]
+Underfull \hbox (badness 10000) in paragraph at lines 247--248
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 182--183
+Underfull \hbox (badness 10000) in paragraph at lines 253--254
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 188--189
+Underfull \hbox (badness 10000) in paragraph at lines 259--260
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 194--195
+Underfull \hbox (badness 10000) in paragraph at lines 265--266
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 201--203
+Underfull \hbox (badness 10000) in paragraph at lines 272--274
 
  []
 
-[145] <imm/tessa/list_C.png, id=4560, 186.09525pt x 121.95563pt>
+<imm/tessa/list_C.png, id=4619, 186.09525pt x 121.95563pt>
 File: imm/tessa/list_C.png Graphic file (type png)
 
 <use imm/tessa/list_C.png>
-Package pdftex.def Info: imm/tessa/list_C.png used on input line 212.
+Package pdftex.def Info: imm/tessa/list_C.png used on input line 283.
 (pdftex.def)             Requested size: 426.79134pt x 279.69366pt.
- [146 <./imm/tessa/list_C.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 235--237
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 248--250
-
- []
-
-<imm/tessa/OutEdgeDataView.png, id=4568, 384.2355pt x 169.8345pt>
-File: imm/tessa/OutEdgeDataView.png Graphic file (type png)
-
-<use imm/tessa/OutEdgeDataView.png>
-Package pdftex.def Info: imm/tessa/OutEdgeDataView.png used on input line 259.
-(pdftex.def)             Requested size: 426.79134pt x 188.65068pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[147]) [148 <./imm/tessa/OutEdgeDataView.png>] (Tesi.bbl)
+[147] [148 <./imm/tessa/list_C.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 306--308
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 319--321
+
+ []
+
+<imm/tessa/OutEdgeDataView.png, id=4643, 384.2355pt x 169.8345pt>
+File: imm/tessa/OutEdgeDataView.png Graphic file (type png)
+
+<use imm/tessa/OutEdgeDataView.png>
+Package pdftex.def Info: imm/tessa/OutEdgeDataView.png used on input line 330.
+(pdftex.def)             Requested size: 426.79134pt x 188.65068pt.
+ [149 <./imm/tessa/OutEdgeDataView.png>])
+[150] (Tesi.bbl)
 Underfull \hbox (badness 1715) in paragraph at lines 188--195
 []\OT1/cmr/m/n/12 Actel, \Igloo low-power flash fp-gas hand-book,"2008. [On-lin
 e]. Avail-able:
  []
 
-[149
+[151
 
 
 ]
@@ -2223,7 +2253,7 @@ itive-
  []
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 230.
-[150]
+[152]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 230.
  (Tesi.aux (chapters/introduction.aux) (chapters/iia.aux)
 (chapters/dct.aux) (chapters/bf.aux) (chapters/fir.aux) (chapters/tep.aux)
@@ -2232,47 +2262,42 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 230.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 230.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 230.
 Package rerunfilecheck Info: File `Tesi.out' has not changed.
-(rerunfilecheck)             Checksum: 1EF057BE28C8E029D52774DC1EFE01FF;6895.
+(rerunfilecheck)             Checksum: 54BF913254D1C35544DD68C79B9104D8;7122.
 
 
 LaTeX Warning: There were undefined references.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 230.
- )
-(\end occurred inside a group at level 1)
-
-### simple group (level 1) entered at line 2 ({)
-### bottom level 
+ ) 
 Here is how much of TeX's memory you used:
- 12982 strings out of 493634
- 188438 string characters out of 3143748
- 371511 words of memory out of 3000000
- 15496 multiletter control sequences out of 15000+200000
+ 13032 strings out of 493634
+ 189258 string characters out of 3143748
+ 389360 words of memory out of 3000000
+ 15512 multiletter control sequences out of 15000+200000
  18795 words of font info for 69 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 42i,22n,58p,900b,2023s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmb
-x12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb
-><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Pro
-gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Fil
-es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTe
-X 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX 2.9/fon
-ts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
-public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/am
-sfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
-/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb
-><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Progr
-am Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsl10.pfb><C:/Program Files
-/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 
-2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.9/fonts
-/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
-blic/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
-fonts/cm/cmtt10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/sy
-mbols/msam10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb>
-
-Output written on Tesi.pdf (159 pages, 30577004 bytes).
+ 42i,22n,58p,900b,1923s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Pr
+ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Program F
+iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiK
+TeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/
+fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
+pe1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
+c/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfont
+s/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr1
+2.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:
+/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program F
+iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTe
+X 2.9/fonts/type1/public/amsfonts/cm/cmsl10.pfb><C:/Program Files/MiKTeX 2.9/fo
+nts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
+1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
+amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/
+cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt1
+0.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.p
+fb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb>
+Output written on Tesi.pdf (161 pages, 32030958 bytes).
 PDF statistics:
- 4765 PDF objects out of 5155 (max. 8388607)
- 468 named destinations out of 1000 (max. 500000)
- 1174 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 4846 PDF objects out of 5155 (max. 8388607)
+ 500 named destinations out of 1000 (max. 500000)
+ 1208 words of extra memory for PDF output out of 10000 (max. 10000000)
 

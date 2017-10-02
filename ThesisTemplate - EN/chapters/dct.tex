@@ -47,6 +47,21 @@ $ \begin{bmatrix} \frac{1}{\sqrt{N}}cos(\frac{\pi}{N}(0+\frac{1}{2})\cdotp 0) & 
 \end{center}
 
   \section{Hardware Implementation} \label{DCTH}
+  \subsection{Not pipelined version}
+  The result can be seen as a sum of products.
+  Each element of the output array can be written as:
+  \begin{center}
+  	$ X_{i} =  x_{0}cos_{i,0}+x_{1}cos_{i,1}+ \cdots +x_{n-1}cos_{i,n-1}$
+  \end{center}
+  We can perform all the multiplications in parallel and then do an accumulator (or a chain of additions) with these product results. As we will see in the DCT synthesys result (\ref{synDCT}), there is no practical difference between the pipelined and not pipelined versions. The only difference is the area for the pipeline registers and the time for the addition chain over the multiplications (One addition is faster than one multiplications, however if the $ n $ number of additions in sequence to do is big enough, this time can offset the time for a single multiplication ).
+  \begin{figure}[h!]
+  	\centering	
+  	\includegraphics[width=0.9\textwidth]{imm/dct/dct_nopipe.pdf}  
+  	\caption{Implementation of DCT algorithm (not pipelined). All multiplications are done in parallel} 
+  	\label{fig:dct_nopipe}
+  \end{figure}
+  \clearpage
+  \subsection{Pipelined version}
 The result can be seen as a sum of products.
 Each element of the output array can be written as:
 \begin{center}
@@ -133,7 +148,7 @@ In the following, we have the process explained in a matrix form, while figure \
 \begin{figure}[h!]
 	\centering	
 	\includegraphics[width=0.9\textwidth]{imm/dct/dct_scheme.pdf}  
-	\caption{Implementation of DCT algorithm} 
+	\caption{Implementation of DCT algorithm (pipelined)} 
 	\label{fig:dct_scheme}
 \end{figure}
 \clearpage
@@ -293,7 +308,7 @@ Usually, systolic arrays cannot be programmed and for this reason the circuit ha
    	&\textbf{8- Relationship with I/O}\\
    	&	INPUT: values of the cosine matrix, values of the input vector\\
    	&	OUTPUT: result of the DCT algorithm\end{tabular}\vspace{74pt}\\
-   \newpage{\large \textbf{\qquad }}\vspace{10pt}\\
+   {\large \textbf{\qquad }}\vspace{10pt}\\
    {\large \textbf{MEMORY ELEMENTS}}\vspace{10pt}\\\begin{tabular}{ p{0.2cm} p{14.5cm}}
    	&\textbf{1- Need a clever memory LIM?}\\
    	&	No, but can be implemented\vspace{7pt}\\
