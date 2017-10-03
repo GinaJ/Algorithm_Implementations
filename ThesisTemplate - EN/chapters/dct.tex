@@ -290,8 +290,8 @@ Usually, systolic arrays cannot be programmed and for this reason the circuit ha
    	&	\textbf{3- Complexity}\\
    	&	\begin{tabular}{ p{0.2cm} p{2.5cm} p{10cm}}
    		
-   		&Not pipelined & Area:\qquad $ N^2 $ multiplier, $ N^2 $ additions\\
-   		& & Time: \qquad8x(time for a multiplier followed by an adder) \vspace{3pt}\\
+   		&Not pipelined & Area:\qquad $ N^2 $ multiplier, $ N\cdot(N-1) $ additions\\
+   		& & Time: \qquad time for a multiplier followed by a chain of $ N-1 $ adder) \vspace{3pt}\\
    		& Pipelined & Area: \qquad $ N$ multiplier, $ N$ additions\\
    		& & Time: \qquad time for a multiplication followed by an adder\\
    		
