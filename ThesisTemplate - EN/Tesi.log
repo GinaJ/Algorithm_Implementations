@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.5.9)  3 OCT 2017 23:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.5.9)  6 OCT 2017 18:18
 entering extended mode
 **./Tesi.tex
 (Tesi.tex
@@ -680,12 +680,12 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\uppercase' on input line 197.
+(hyperref)                removing `\uppercase' on input line 198.
 
 [3]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\uppercase' on input line 197.
+(hyperref)                removing `\uppercase' on input line 198.
 
 [4 <./imm/3d.png>] (Tesi.toc
 
@@ -706,7 +706,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\uppercase' on input line 197.
+(hyperref)                removing `\uppercase' on input line 198.
 
 [7] (Tesi.lof
 
@@ -728,7 +728,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\uppercase' on input line 197.
+(hyperref)                removing `\uppercase' on input line 198.
 
 [10]
 \openout2 = `chapters/introduction.aux'.
@@ -751,7 +751,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 15--17
  []
 
 )
-Underfull \hbox (badness 10000) in paragraph at lines 19--205
+Underfull \hbox (badness 10000) in paragraph at lines 19--206
 
  []
 
@@ -981,12 +981,12 @@ Overfull \hbox (15.46408pt too wide) in paragraph at lines 486--510
 [23
 
 ])
-Overfull \hbox (15.46408pt too wide) in paragraph at lines 511--206
+Overfull \hbox (15.46408pt too wide) in paragraph at lines 511--207
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 511--206
+Underfull \hbox (badness 10000) in paragraph at lines 511--207
 
  []
 
@@ -1385,12 +1385,12 @@ Overfull \hbox (15.46408pt too wide) in paragraph at lines 601--625
  []
 
 [53])
-Overfull \hbox (15.46408pt too wide) in paragraph at lines 625--207
+Overfull \hbox (15.46408pt too wide) in paragraph at lines 625--208
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 625--207
+Underfull \hbox (badness 10000) in paragraph at lines 625--208
 
  []
 
@@ -1511,12 +1511,12 @@ Overfull \hbox (15.46408pt too wide) in paragraph at lines 395--419
  []
 
 [70])
-Overfull \hbox (15.46408pt too wide) in paragraph at lines 419--208
+Overfull \hbox (15.46408pt too wide) in paragraph at lines 419--209
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 419--208
+Underfull \hbox (badness 10000) in paragraph at lines 419--209
 
  []
 
@@ -1585,12 +1585,12 @@ Overfull \hbox (15.46408pt too wide) in paragraph at lines 123--147
  []
 
 [77])
-Overfull \hbox (15.46408pt too wide) in paragraph at lines 147--209
+Overfull \hbox (15.46408pt too wide) in paragraph at lines 147--210
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 147--209
+Underfull \hbox (badness 10000) in paragraph at lines 147--210
 
  []
 
@@ -1797,12 +1797,12 @@ Overfull \hbox (15.46408pt too wide) in paragraph at lines 206--230
  []
 
 [99])
-Overfull \hbox (15.46408pt too wide) in paragraph at lines 230--211
+Overfull \hbox (15.46408pt too wide) in paragraph at lines 230--212
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 230--211
+Underfull \hbox (badness 10000) in paragraph at lines 230--212
 
  []
 
@@ -2256,7 +2256,7 @@ Package pdftex.def Info: imm/tessa/OutEdgeDataView.png used on input line 330.
 (pdftex.def)             Requested size: 426.79134pt x 188.65068pt.
  [149 <./imm/tessa/OutEdgeDataView.png>])
 [150] (Tesi.bbl)
-Underfull \hbox (badness 1715) in paragraph at lines 224--231
+Underfull \hbox (badness 1715) in paragraph at lines 225--232
 []\OT1/cmr/m/n/12 Actel, \Igloo low-power flash fp-gas hand-book,"2008. [On-lin
 e]. Avail-able:
  []
@@ -2265,44 +2265,44 @@ e]. Avail-able:
 
 
 ]
-Underfull \hbox (badness 7981) in paragraph at lines 255--256
+Underfull \hbox (badness 7981) in paragraph at lines 256--257
 []\OT1/cmr/m/n/12 Andrew Gib-ian-sky, Cool Lin-ear Al-ge-bra: Sin-gu-lar Value 
 De-com-
  []
 
 
-Underfull \hbox (badness 4673) in paragraph at lines 255--256
+Underfull \hbox (badness 4673) in paragraph at lines 256--257
 \OT1/cmr/m/n/12 po-si-tion, [][]http://andrew.gibiansky.com/blog/mathematics/co
 ol-linear-algebra-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 256--257
+Underfull \hbox (badness 10000) in paragraph at lines 257--258
 []\OT1/cmr/m/n/12 Jason Liu, on Quora [][]https://www.quora.com/What-is-an-intu
 itive-
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 266.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 267.
 [152]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 266.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 267.
  (Tesi.aux (chapters/introduction.aux) (chapters/iia.aux)
 (chapters/dct.aux) (chapters/bf.aux) (chapters/fir.aux) (chapters/tep.aux)
 (chapters/3D.aux) (chapters/sw.aux) (chapters/svd.aux) (chapters/syn.aux)
 (chapters/tessa.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 266.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 266.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 267.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 267.
 Package rerunfilecheck Info: File `Tesi.out' has not changed.
 (rerunfilecheck)             Checksum: F3C6292D252FCCCC52BC1979A0C11B5A;7122.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 266.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 267.
  ) 
 Here is how much of TeX's memory you used:
  13041 strings out of 493634
  189364 string characters out of 3143748
- 389670 words of memory out of 3000000
+ 389669 words of memory out of 3000000
  15517 multiletter control sequences out of 15000+200000
  18795 words of font info for 69 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
@@ -2325,7 +2325,7 @@ amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/
 cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt1
 0.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.p
 fb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb>
-Output written on Tesi.pdf (163 pages, 32272313 bytes).
+Output written on Tesi.pdf (163 pages, 32274555 bytes).
 PDF statistics:
  4860 PDF objects out of 5155 (max. 8388607)
  503 named destinations out of 1000 (max. 500000)
